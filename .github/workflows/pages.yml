@@ -1,0 +1,72 @@
+name: Refresh and deploy MatchLab
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '7,37 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - name: Expand uploaded source package on first run
+        if: hashFiles('matchlab-source.zip') != ''
+        run: |
+          unzip -o matchlab-source.zip
+          rm matchlab-source.zip
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A -- . ':!.github'
+          git commit -m 'Expand tested MatchLab source package'
+          git push
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m unittest discover -s tests -v
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --check app.js && node --check research_ui.js && node tests/test_app.cjs && node tests/test_sheets.cjs
+      - uses: actions/cache@v4
+        with:
+          path: .cache
+          key: public-sources-${{ runner.os }}-${{ github.run_id }}
+          restore-keys: public-sources-${{ runner.os }}-
+      - name: Build Pacific today and yesterday feeds
+        run: |
+          python pipeline.py
+          python build_feed.py --date "$(TZ=America/Los_Angeles date -d yesterday +%Y%m%d)" --output data/yesterday.json
+      - name: Preserve generated research snapshots
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/prediction_log.json
+          if ! git diff --cached --quiet; then git commit -m 'Archive public research snapshots'; git push; fi
+      - name: Stage public assets only
+        run: |
+          mkdir -p _site/data
+          cp index.html app.js research_ui.js sw.js manifest.webmanifest icon.svg _site/
+          cp -R icons _site/
+          cp data/*.json _site/data/
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4
+      - name: Verify published app and fresh feed
+        env:
+          SITE_URL: ${{ steps.deployment.outputs.page_url }}
+        run: python verify_deployment.py "$SITE_URL"
