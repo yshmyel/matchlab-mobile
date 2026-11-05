@@ -1,0 +1,992 @@
+{
+  "schema_version": 1,
+  "timezone": "America/Los_Angeles",
+  "date": "20261104",
+  "generated_utc": "2026-11-05T16:18:41.699445+00:00",
+  "source": "ESPN unofficial public scoreboard",
+  "status": "ok",
+  "counts": {
+    "nba": 14,
+    "epl": 0,
+    "la_liga": 0,
+    "bundesliga": 0,
+    "serie_a": 0,
+    "ligue_1": 0,
+    "ucl": 9,
+    "uel": 1,
+    "uecl": 0
+  },
+  "errors": {},
+  "games": [
+    {
+      "source": "ESPN (unofficial)",
+      "league": "nba",
+      "id": "401909922",
+      "date_utc": "2026-11-05T00:00Z",
+      "status": "STATUS_FINAL",
+      "state": "post",
+      "completed": true,
+      "clock": "0.0",
+      "period": 4,
+      "home": {
+        "id": "8",
+        "name": "Detroit Pistons",
+        "score": 106,
+        "period_scores": [
+          21,
+          21,
+          33,
+          31
+        ],
+        "records": [
+          "6-2",
+          "2-1",
+          "4-1"
+        ]
+      },
+      "away": {
+        "id": "20",
+        "name": "Philadelphia 76ers",
+        "score": 112,
+        "period_scores": [
+          29,
+          27,
+          35,
+          21
+        ],
+        "records": [
+          "8-1",
+          "4-1",
+          "4-0"
+        ]
+      },
+      "halftime": null,
+      "source_url": "https://www.espn.com/nba/game/_/gameId/401909922",
+      "detail_url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909922"
+    },
+    {
+      "source": "ESPN (unofficial)",
+      "league": "nba",
+      "id": "401909923",
+      "date_utc": "2026-11-05T00:00Z",
+      "status": "STATUS_FINAL",
+      "state": "post",
+      "completed": true,
+      "clock": "0.0",
+      "period": 4,
+      "home": {
+        "id": "27",
+        "name": "Washington Wizards",
+        "score": 105,
+        "period_scores": [
+          32,
+          29,
+          24,
+          20
+        ],
+        "records": [
+          "4-4",
+          "2-2",
+          "2-2"
+        ]
+      },
+      "away": {
+        "id": "1",
+        "name": "Atlanta Hawks",
+        "score": 120,
+        "period_scores": [
+          37,
+          31,
+          25,
+          27
+        ],
+        "records": [
+          "5-4",
+          "1-2",
+          "4-2"
+        ]
+      },
+      "halftime": null,
+      "source_url": "https://www.espn.com/nba/game/_/gameId/401909923",
+      "detail_url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909923"
+    },
+    {
+      "source": "ESPN (unofficial)",
+      "league": "nba",
+      "id": "401909924",
+      "date_utc": "2026-11-05T00:30Z",
+      "status": "STATUS_FINAL",
+      "state": "post",
+      "completed": true,
+      "clock": "12:00",
+      "period": 4,
+      "home": {
+        "id": "2",
+        "name": "Boston Celtics",
+        "score": 109,
+        "period_scores": [
+          28,
+          34,
+          25,
+          22
+        ],
+        "records": [
+          "6-2",
+          "5-0",
+          "1-2"
+        ]
+      },
+      "away": {
+        "id": "15",
+        "name": "Milwaukee Bucks",
+        "score": 102,
+        "period_scores": [
+          14,
+          27,
+          38,
+          23
+        ],
+        "records": [
+          "1-7",
+          "1-3",
+          "0-4"
+        ]
+      },
+      "halftime": null,
+      "source_url": "https://www.espn.com/nba/game/_/gameId/401909924",
+      "detail_url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909924"
+    },
+    {
+      "source": "ESPN (unofficial)",
+      "league": "nba",
+      "id": "401909925",
+      "date_utc": "2026-11-05T00:30Z",
+      "status": "STATUS_FINAL",
+      "state": "post",
+      "completed": true,
+      "clock": "0.0",
+      "period": 4,
+      "home": {
+        "id": "17",
+        "name": "Brooklyn Nets",
+        "score": 114,
+        "period_scores": [
+          21,
+          29,
+          30,
+          34
+        ],
+        "records": [
+          "2-6",
+          "1-3",
+          "1-3"
+        ]
+      },
+      "away": {
+        "id": "30",
+        "name": "Charlotte Hornets",
+        "score": 104,
+        "period_scores": [
+          24,
+          33,
+          23,
+          24
+        ],
+        "records": [
+          "3-6",
+          "2-3",
+          "1-3"
+        ]
+      },
+      "halftime": null,
+      "source_url": "https://www.espn.com/nba/game/_/gameId/401909925",
+      "detail_url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909925"
+    },
+    {
+      "source": "ESPN (unofficial)",
+      "league": "nba",
+      "id": "401909926",
+      "date_utc": "2026-11-05T00:30Z",
+      "status": "STATUS_FINAL",
+      "state": "post",
+      "completed": true,
+      "clock": "0.0",
+      "period": 4,
+      "home": {
+        "id": "18",
+        "name": "New York Knicks",
+        "score": 135,
+        "period_scores": [
+          43,
+          41,
+          29,
+          22
+        ],
+        "records": [
+          "4-4",
+          "3-2",
+          "1-2"
+        ]
+      },
+      "away": {
+        "id": "4",
+        "name": "Chicago Bulls",
+        "score": 105,
+        "period_scores": [
+          21,
+          31,
+          27,
+          26
+        ],
+        "records": [
+          "1-7",
+          "0-2",
+          "1-5"
+        ]
+      },
+      "halftime": null,
+      "source_url": "https://www.espn.com/nba/game/_/gameId/401909926",
+      "detail_url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909926"
+    },
+    {
+      "source": "ESPN (unofficial)",
+      "league": "nba",
+      "id": "401909927",
+      "date_utc": "2026-11-05T01:00Z",
+      "status": "STATUS_FINAL",
+      "state": "post",
+      "completed": true,
+      "clock": "0.0",
+      "period": 4,
+      "home": {
+        "id": "29",
+        "name": "Memphis Grizzlies",
+        "score": 103,
+        "period_scores": [
+          24,
+          28,
+          30,
+          21
+        ],
+        "records": [
+          "6-2",
+          "2-2",
+          "4-0"
+        ]
+      },
+      "away": {
+        "id": "11",
+        "name": "Indiana Pacers",
+        "score": 107,
+        "period_scores": [
+          32,
+          22,
+          26,
+          27
+        ],
+        "records": [
+          "3-6",
+          "0-4",
+          "3-2"
+        ]
+      },
+      "halftime": null,
+      "source_url": "https://www.espn.com/nba/game/_/gameId/401909927",
+      "detail_url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909927"
+    },
+    {
+      "source": "ESPN (unofficial)",
+      "league": "nba",
+      "id": "401909928",
+      "date_utc": "2026-11-05T01:00Z",
+      "status": "STATUS_FINAL",
+      "state": "post",
+      "completed": true,
+      "clock": "0.0",
+      "period": 5,
+      "home": {
+        "id": "3",
+        "name": "New Orleans Pelicans",
+        "score": 120,
+        "period_scores": [
+          24,
+          18,
+          28,
+          34,
+          16
+        ],
+        "records": [
+          "4-4",
+          "3-2",
+          "1-2"
+        ]
+      },
+      "away": {
+        "id": "26",
+        "name": "Utah Jazz",
+        "score": 113,
+        "period_scores": [
+          24,
+          13,
+          43,
+          24,
+          9
+        ],
+        "records": [
+          "1-7",
+          "1-4",
+          "0-3"
+        ]
+      },
+      "halftime": null,
+      "source_url": "https://www.espn.com/nba/game/_/gameId/401909928",
+      "detail_url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909928"
+    },
+    {
+      "source": "ESPN (unofficial)",
+      "league": "nba",
+      "id": "401909929",
+      "date_utc": "2026-11-05T01:00Z",
+      "status": "STATUS_FINAL",
+      "state": "post",
+      "completed": true,
+      "clock": "0.0",
+      "period": 4,
+      "home": {
+        "id": "25",
+        "name": "Oklahoma City Thunder",
+        "score": 124,
+        "period_scores": [
+          37,
+          23,
+          28,
+          36
+        ],
+        "records": [
+          "6-2",
+          "4-0",
+          "2-2"
+        ]
+      },
+      "away": {
+        "id": "5",
+        "name": "Cleveland Cavaliers",
+        "score": 116,
+        "period_scores": [
+          20,
+          24,
+          30,
+          42
+        ],
+        "records": [
+          "4-4",
+          "3-1",
+          "1-3"
+        ]
+      },
+      "halftime": null,
+      "source_url": "https://www.espn.com/nba/game/_/gameId/401909929",
+      "detail_url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909929"
+    },
+    {
+      "source": "ESPN (unofficial)",
+      "league": "nba",
+      "id": "401909930",
+      "date_utc": "2026-11-05T01:30Z",
+      "status": "STATUS_FINAL",
+      "state": "post",
+      "completed": true,
+      "clock": "0.0",
+      "period": 4,
+      "home": {
+        "id": "10",
+        "name": "Houston Rockets",
+        "score": 107,
+        "period_scores": [
+          30,
+          27,
+          27,
+          23
+        ],
+        "records": [
+          "7-2",
+          "4-1",
+          "3-1"
+        ]
+      },
+      "away": {
+        "id": "16",
+        "name": "Minnesota Timberwolves",
+        "score": 117,
+        "period_scores": [
+          33,
+          24,
+          25,
+          35
+        ],
+        "records": [
+          "6-3",
+          "3-1",
+          "3-2"
+        ]
+      },
+      "halftime": null,
+      "source_url": "https://www.espn.com/nba/game/_/gameId/401909930",
+      "detail_url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909930"
+    },
+    {
+      "source": "ESPN (unofficial)",
+      "league": "nba",
+      "id": "401909931",
+      "date_utc": "2026-11-05T02:00Z",
+      "status": "STATUS_FINAL",
+      "state": "post",
+      "completed": true,
+      "clock": "0.0",
+      "period": 4,
+      "home": {
+        "id": "7",
+        "name": "Denver Nuggets",
+        "score": 128,
+        "period_scores": [
+          33,
+          31,
+          41,
+          23
+        ],
+        "records": [
+          "4-3",
+          "2-2",
+          "2-1"
+        ]
+      },
+      "away": {
+        "id": "28",
+        "name": "Toronto Raptors",
+        "score": 109,
+        "period_scores": [
+          35,
+          32,
+          15,
+          27
+        ],
+        "records": [
+          "4-4",
+          "2-1",
+          "2-3"
+        ]
+      },
+      "halftime": null,
+      "source_url": "https://www.espn.com/nba/game/_/gameId/401909931",
+      "detail_url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909931"
+    },
+    {
+      "source": "ESPN (unofficial)",
+      "league": "nba",
+      "id": "401909932",
+      "date_utc": "2026-11-05T02:00Z",
+      "status": "STATUS_FINAL",
+      "state": "post",
+      "completed": true,
+      "clock": "0.0",
+      "period": 4,
+      "home": {
+        "id": "21",
+        "name": "Phoenix Suns",
+        "score": 119,
+        "period_scores": [
+          34,
+          25,
+          26,
+          34
+        ],
+        "records": [
+          "1-5",
+          "1-2",
+          "0-3"
+        ]
+      },
+      "away": {
+        "id": "22",
+        "name": "Portland Trail Blazers",
+        "score": 132,
+        "period_scores": [
+          29,
+          43,
+          32,
+          28
+        ],
+        "records": [
+          "6-1",
+          "1-1",
+          "5-0"
+        ]
+      },
+      "halftime": null,
+      "source_url": "https://www.espn.com/nba/game/_/gameId/401909932",
+      "detail_url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909932"
+    },
+    {
+      "source": "ESPN (unofficial)",
+      "league": "nba",
+      "id": "401909933",
+      "date_utc": "2026-11-05T02:30Z",
+      "status": "STATUS_FINAL",
+      "state": "post",
+      "completed": true,
+      "clock": "0.0",
+      "period": 4,
+      "home": {
+        "id": "24",
+        "name": "San Antonio Spurs",
+        "score": 112,
+        "period_scores": [
+          32,
+          36,
+          22,
+          22
+        ],
+        "records": [
+          "6-2",
+          "4-2",
+          "2-0"
+        ]
+      },
+      "away": {
+        "id": "6",
+        "name": "Dallas Mavericks",
+        "score": 111,
+        "period_scores": [
+          26,
+          25,
+          29,
+          31
+        ],
+        "records": [
+          "4-4",
+          "2-2",
+          "2-2"
+        ]
+      },
+      "halftime": null,
+      "source_url": "https://www.espn.com/nba/game/_/gameId/401909933",
+      "detail_url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909933"
+    },
+    {
+      "source": "ESPN (unofficial)",
+      "league": "nba",
+      "id": "401909934",
+      "date_utc": "2026-11-05T03:00Z",
+      "status": "STATUS_FINAL",
+      "state": "post",
+      "completed": true,
+      "clock": "0.0",
+      "period": 4,
+      "home": {
+        "id": "23",
+        "name": "Sacramento Kings",
+        "score": 103,
+        "period_scores": [
+          28,
+          26,
+          20,
+          29
+        ],
+        "records": [
+          "1-7",
+          "0-3",
+          "1-4"
+        ]
+      },
+      "away": {
+        "id": "13",
+        "name": "Los Angeles Lakers",
+        "score": 116,
+        "period_scores": [
+          28,
+          33,
+          26,
+          29
+        ],
+        "records": [
+          "7-2",
+          "4-1",
+          "3-1"
+        ]
+      },
+      "halftime": null,
+      "source_url": "https://www.espn.com/nba/game/_/gameId/401909934",
+      "detail_url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909934"
+    },
+    {
+      "source": "ESPN (unofficial)",
+      "league": "nba",
+      "id": "401909935",
+      "date_utc": "2026-11-05T03:30Z",
+      "status": "STATUS_FINAL",
+      "state": "post",
+      "completed": true,
+      "clock": "5:00",
+      "period": 5,
+      "home": {
+        "id": "12",
+        "name": "LA Clippers",
+        "score": 116,
+        "period_scores": [
+          24,
+          43,
+          20,
+          20,
+          9
+        ],
+        "records": [
+          "1-7",
+          "1-3",
+          "0-4"
+        ]
+      },
+      "away": {
+        "id": "14",
+        "name": "Miami Heat",
+        "score": 117,
+        "period_scores": [
+          33,
+          19,
+          26,
+          29,
+          10
+        ],
+        "records": [
+          "3-5",
+          "1-3",
+          "2-2"
+        ]
+      },
+      "halftime": null,
+      "source_url": "https://www.espn.com/nba/game/_/gameId/401909935",
+      "detail_url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909935"
+    },
+    {
+      "source": "ESPN (unofficial)",
+      "league": "ucl",
+      "id": "401915383",
+      "date_utc": "2026-11-04T17:45Z",
+      "status": "STATUS_FULL_TIME",
+      "state": "post",
+      "completed": true,
+      "clock": "90'+4'",
+      "period": 2,
+      "home": {
+        "id": "887",
+        "name": "AEK Athens",
+        "score": 2,
+        "period_scores": [],
+        "records": [
+          "1-0-3"
+        ]
+      },
+      "away": {
+        "id": "86",
+        "name": "Real Madrid",
+        "score": 3,
+        "period_scores": [],
+        "records": [
+          "4-0-0"
+        ]
+      },
+      "halftime": null,
+      "source_url": "https://www.espn.com/soccer/game/_/gameId/401915383",
+      "detail_url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.champions/summary?event=401915383"
+    },
+    {
+      "source": "ESPN (unofficial)",
+      "league": "ucl",
+      "id": "401915382",
+      "date_utc": "2026-11-04T17:45Z",
+      "status": "STATUS_FULL_TIME",
+      "state": "post",
+      "completed": true,
+      "clock": "90'+3'",
+      "period": 2,
+      "home": {
+        "id": "436",
+        "name": "Fenerbahce",
+        "score": 3,
+        "period_scores": [],
+        "records": [
+          "1-2-1"
+        ]
+      },
+      "away": {
+        "id": "364",
+        "name": "Liverpool",
+        "score": 2,
+        "period_scores": [],
+        "records": [
+          "3-0-1"
+        ]
+      },
+      "halftime": null,
+      "source_url": "https://www.espn.com/soccer/game/_/gameId/401915382",
+      "detail_url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.champions/summary?event=401915382"
+    },
+    {
+      "source": "ESPN (unofficial)",
+      "league": "ucl",
+      "id": "401915304",
+      "date_utc": "2026-11-04T20:00Z",
+      "status": "STATUS_FULL_TIME",
+      "state": "post",
+      "completed": true,
+      "clock": "90'+4'",
+      "period": 2,
+      "home": {
+        "id": "124",
+        "name": "Borussia Dortmund",
+        "score": 2,
+        "period_scores": [],
+        "records": [
+          "3-0-1"
+        ]
+      },
+      "away": {
+        "id": "244",
+        "name": "Real Betis",
+        "score": 1,
+        "period_scores": [],
+        "records": [
+          "3-0-1"
+        ]
+      },
+      "halftime": null,
+      "source_url": "https://www.espn.com/soccer/game/_/gameId/401915304",
+      "detail_url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.champions/summary?event=401915304"
+    },
+    {
+      "source": "ESPN (unofficial)",
+      "league": "ucl",
+      "id": "401915301",
+      "date_utc": "2026-11-04T20:00Z",
+      "status": "STATUS_FULL_TIME",
+      "state": "post",
+      "completed": true,
+      "clock": "90'+3'",
+      "period": 2,
+      "home": {
+        "id": "437",
+        "name": "FC Porto",
+        "score": 4,
+        "period_scores": [],
+        "records": [
+          "1-0-3"
+        ]
+      },
+      "away": {
+        "id": "114",
+        "name": "Napoli",
+        "score": 1,
+        "period_scores": [],
+        "records": [
+          "1-0-3"
+        ]
+      },
+      "halftime": null,
+      "source_url": "https://www.espn.com/soccer/game/_/gameId/401915301",
+      "detail_url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.champions/summary?event=401915301"
+    },
+    {
+      "source": "ESPN (unofficial)",
+      "league": "ucl",
+      "id": "401915305",
+      "date_utc": "2026-11-04T20:00Z",
+      "status": "STATUS_FULL_TIME",
+      "state": "post",
+      "completed": true,
+      "clock": "90'+3'",
+      "period": 2,
+      "home": {
+        "id": "175",
+        "name": "Lens",
+        "score": 1,
+        "period_scores": [],
+        "records": [
+          "1-0-3"
+        ]
+      },
+      "away": {
+        "id": "2572",
+        "name": "Como",
+        "score": 9,
+        "period_scores": [],
+        "records": [
+          "3-0-1"
+        ]
+      },
+      "halftime": null,
+      "source_url": "https://www.espn.com/soccer/game/_/gameId/401915305",
+      "detail_url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.champions/summary?event=401915305"
+    },
+    {
+      "source": "ESPN (unofficial)",
+      "league": "ucl",
+      "id": "401915303",
+      "date_utc": "2026-11-04T20:00Z",
+      "status": "STATUS_FULL_TIME",
+      "state": "post",
+      "completed": true,
+      "clock": "90'+3'",
+      "period": 2,
+      "home": {
+        "id": "148",
+        "name": "PSV Eindhoven",
+        "score": 1,
+        "period_scores": [],
+        "records": [
+          "1-1-2"
+        ]
+      },
+      "away": {
+        "id": "570",
+        "name": "Club Brugge",
+        "score": 2,
+        "period_scores": [],
+        "records": [
+          "3-0-1"
+        ]
+      },
+      "halftime": null,
+      "source_url": "https://www.espn.com/soccer/game/_/gameId/401915303",
+      "detail_url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.champions/summary?event=401915303"
+    },
+    {
+      "source": "ESPN (unofficial)",
+      "league": "ucl",
+      "id": "401915306",
+      "date_utc": "2026-11-04T20:00Z",
+      "status": "STATUS_FULL_TIME",
+      "state": "post",
+      "completed": true,
+      "clock": "90'+5'",
+      "period": 2,
+      "home": {
+        "id": "11420",
+        "name": "RB Leipzig",
+        "score": 2,
+        "period_scores": [],
+        "records": [
+          "1-0-3"
+        ]
+      },
+      "away": {
+        "id": "382",
+        "name": "Manchester City",
+        "score": 3,
+        "period_scores": [],
+        "records": [
+          "3-0-1"
+        ]
+      },
+      "halftime": null,
+      "source_url": "https://www.espn.com/soccer/game/_/gameId/401915306",
+      "detail_url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.champions/summary?event=401915306"
+    },
+    {
+      "source": "ESPN (unofficial)",
+      "league": "ucl",
+      "id": "401915381",
+      "date_utc": "2026-11-04T20:00Z",
+      "status": "STATUS_FULL_TIME",
+      "state": "post",
+      "completed": true,
+      "clock": "90'+6'",
+      "period": 2,
+      "home": {
+        "id": "494",
+        "name": "Slavia Prague",
+        "score": 1,
+        "period_scores": [],
+        "records": [
+          "0-1-3"
+        ]
+      },
+      "away": {
+        "id": "359",
+        "name": "Arsenal",
+        "score": 2,
+        "period_scores": [],
+        "records": [
+          "3-1-0"
+        ]
+      },
+      "halftime": null,
+      "source_url": "https://www.espn.com/soccer/game/_/gameId/401915381",
+      "detail_url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.champions/summary?event=401915381"
+    },
+    {
+      "source": "ESPN (unofficial)",
+      "league": "ucl",
+      "id": "401915302",
+      "date_utc": "2026-11-04T20:00Z",
+      "status": "STATUS_FULL_TIME",
+      "state": "post",
+      "completed": true,
+      "clock": "90'+5'",
+      "period": 2,
+      "home": {
+        "id": "510",
+        "name": "Viking FK",
+        "score": 4,
+        "period_scores": [],
+        "records": [
+          "1-1-2"
+        ]
+      },
+      "away": {
+        "id": "21922",
+        "name": "Sabah FK",
+        "score": 1,
+        "period_scores": [],
+        "records": [
+          "1-0-3"
+        ]
+      },
+      "halftime": null,
+      "source_url": "https://www.espn.com/soccer/game/_/gameId/401915302",
+      "detail_url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.champions/summary?event=401915302"
+    },
+    {
+      "source": "ESPN (unofficial)",
+      "league": "uel",
+      "id": "401915551",
+      "date_utc": "2026-11-04T15:30Z",
+      "status": "STATUS_FULL_TIME",
+      "state": "post",
+      "completed": true,
+      "clock": "90'+4'",
+      "period": 2,
+      "home": {
+        "id": "169",
+        "name": "Stade Rennais",
+        "score": 0,
+        "period_scores": [],
+        "records": [
+          "1-3-0"
+        ]
+      },
+      "away": {
+        "id": "435",
+        "name": "Olympiacos",
+        "score": 0,
+        "period_scores": [],
+        "records": [
+          "3-1-0"
+        ]
+      },
+      "halftime": null,
+      "source_url": "https://www.espn.com/soccer/game/_/gameId/401915551",
+      "detail_url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa/summary?event=401915551"
+    }
+  ],
+  "predictions": [],
+  "disclaimer": "Research only. No odds, picks or halftime probabilities are fabricated."
+}

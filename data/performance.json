@@ -1,0 +1,2220 @@
+{
+  "schema_version": 1,
+  "generated_utc": "2026-11-05T16:37:17.773351+00:00",
+  "soccer": {
+    "epl": {
+      "status": "provisional",
+      "model": "ht-poisson-shrink-v1",
+      "shrink": 20,
+      "temperature": 0.8,
+      "validation_start": "2026-10-10",
+      "test_start": "2026-10-23",
+      "validation": {
+        "n": 20,
+        "accuracy": 0.6,
+        "log_loss": 0.9813658488624355,
+        "brier": 0.5916554672394292,
+        "ece": 0.1623558321216981,
+        "calibration_bins": [
+          {
+            "lower": 0.3,
+            "n": 2,
+            "confidence": 0.39849089678846183,
+            "accuracy": 1.0
+          },
+          {
+            "lower": 0.4,
+            "n": 18,
+            "confidence": 0.4419945313327286,
+            "accuracy": 0.5555555555555556
+          }
+        ]
+      },
+      "test": {
+        "n": 20,
+        "accuracy": 0.2,
+        "log_loss": 1.0897366442723948,
+        "brier": 0.6647294475633079,
+        "ece": 0.25068549344601115,
+        "calibration_bins": [
+          {
+            "lower": 0.4,
+            "n": 20,
+            "confidence": 0.45068549344601117,
+            "accuracy": 0.2
+          }
+        ]
+      },
+      "baseline_test": {
+        "n": 20,
+        "accuracy": 0.35,
+        "log_loss": 1.0823359332364642,
+        "brier": 0.660877792163065,
+        "ece": 0.10563600072550106,
+        "calibration_bins": [
+          {
+            "lower": 0.4,
+            "n": 20,
+            "confidence": 0.45563600072550103,
+            "accuracy": 0.35
+          }
+        ]
+      },
+      "labelled_n": 90,
+      "method": "Date-grouped 60/20/20 split; past dates only; hyperparameters chosen on validation, fixed before test. Expanding training history."
+    },
+    "la_liga": {
+      "status": "provisional",
+      "model": "ht-poisson-shrink-v1",
+      "shrink": 5,
+      "temperature": 0.8,
+      "validation_start": "2026-09-18",
+      "test_start": "2026-10-19",
+      "validation": {
+        "n": 28,
+        "accuracy": 0.39285714285714285,
+        "log_loss": 1.0256834916927327,
+        "brier": 0.6199309880945668,
+        "ece": 0.12512421320529818,
+        "calibration_bins": [
+          {
+            "lower": 0.3,
+            "n": 5,
+            "confidence": 0.3730562903590614,
+            "accuracy": 0.0
+          },
+          {
+            "lower": 0.4,
+            "n": 20,
+            "confidence": 0.44967622081624337,
+            "accuracy": 0.5
+          },
+          {
+            "lower": 0.5,
+            "n": 3,
+            "confidence": 0.5439069780926366,
+            "accuracy": 0.3333333333333333
+          }
+        ]
+      },
+      "test": {
+        "n": 22,
+        "accuracy": 0.4090909090909091,
+        "log_loss": 1.1842847677765425,
+        "brier": 0.7142605165225213,
+        "ece": 0.12070893978853876,
+        "calibration_bins": [
+          {
+            "lower": 0.3,
+            "n": 3,
+            "confidence": 0.37085813918835836,
+            "accuracy": 0.6666666666666666
+          },
+          {
+            "lower": 0.4,
+            "n": 18,
+            "confidence": 0.45777290592324094,
+            "accuracy": 0.3888888888888889
+          },
+          {
+            "lower": 0.5,
+            "n": 1,
+            "confidence": 0.5282587862945912,
+            "accuracy": 0.0
+          }
+        ]
+      },
+      "baseline_test": {
+        "n": 22,
+        "accuracy": 0.22727272727272727,
+        "log_loss": 1.1998586143190748,
+        "brier": 0.7379344355208942,
+        "ece": 0.2393676845378546,
+        "calibration_bins": [
+          {
+            "lower": 0.4,
+            "n": 22,
+            "confidence": 0.46664041181058186,
+            "accuracy": 0.22727272727272727
+          }
+        ]
+      },
+      "labelled_n": 109,
+      "method": "Date-grouped 60/20/20 split; past dates only; hyperparameters chosen on validation, fixed before test. Expanding training history."
+    },
+    "bundesliga": {
+      "status": "provisional",
+      "model": "ht-poisson-shrink-v1",
+      "shrink": 5,
+      "temperature": 1.5,
+      "validation_start": "2026-10-11",
+      "test_start": "2026-10-24",
+      "validation": {
+        "n": 12,
+        "accuracy": 0.3333333333333333,
+        "log_loss": 1.1097536687993554,
+        "brier": 0.6816700246960049,
+        "ece": 0.2591152620225097,
+        "calibration_bins": [
+          {
+            "lower": 0.3,
+            "n": 5,
+            "confidence": 0.38967770928362644,
+            "accuracy": 0.6
+          },
+          {
+            "lower": 0.4,
+            "n": 7,
+            "confidence": 0.43682452724117826,
+            "accuracy": 0.14285714285714285
+          }
+        ]
+      },
+      "test": {
+        "n": 17,
+        "accuracy": 0.35294117647058826,
+        "log_loss": 1.11505440195053,
+        "brier": 0.6827417443129402,
+        "ece": 0.2652850404572203,
+        "calibration_bins": [
+          {
+            "lower": 0.3,
+            "n": 6,
+            "confidence": 0.37851121717813124,
+            "accuracy": 0.6666666666666666
+          },
+          {
+            "lower": 0.4,
+            "n": 11,
+            "confidence": 0.43462845371286657,
+            "accuracy": 0.18181818181818182
+          }
+        ]
+      },
+      "baseline_test": {
+        "n": 17,
+        "accuracy": 0.23529411764705882,
+        "log_loss": 1.1707670532475674,
+        "brier": 0.720001306337411,
+        "ece": 0.19854852071488904,
+        "calibration_bins": [
+          {
+            "lower": 0.4,
+            "n": 17,
+            "confidence": 0.43384263836194786,
+            "accuracy": 0.23529411764705882
+          }
+        ]
+      },
+      "labelled_n": 72,
+      "method": "Date-grouped 60/20/20 split; past dates only; hyperparameters chosen on validation, fixed before test. Expanding training history."
+    },
+    "serie_a": {
+      "status": "provisional",
+      "model": "ht-poisson-shrink-v1",
+      "shrink": 20,
+      "temperature": 1.2,
+      "validation_start": "2026-10-12",
+      "test_start": "2026-10-25",
+      "validation": {
+        "n": 17,
+        "accuracy": 0.23529411764705882,
+        "log_loss": 1.0825158676280677,
+        "brier": 0.6585396915344325,
+        "ece": 0.16362151110891998,
+        "calibration_bins": [
+          {
+            "lower": 0.3,
+            "n": 8,
+            "confidence": 0.3856468965025094,
+            "accuracy": 0.25
+          },
+          {
+            "lower": 0.4,
+            "n": 9,
+            "confidence": 0.4107100574257294,
+            "accuracy": 0.2222222222222222
+          }
+        ]
+      },
+      "test": {
+        "n": 25,
+        "accuracy": 0.24,
+        "log_loss": 1.083352915743147,
+        "brier": 0.6585242327875261,
+        "ece": 0.1473573417913612,
+        "calibration_bins": [
+          {
+            "lower": 0.3,
+            "n": 19,
+            "confidence": 0.3815451619072179,
+            "accuracy": 0.2631578947368421
+          },
+          {
+            "lower": 0.4,
+            "n": 6,
+            "confidence": 0.4057625780911483,
+            "accuracy": 0.16666666666666666
+          }
+        ]
+      },
+      "baseline_test": {
+        "n": 25,
+        "accuracy": 0.36,
+        "log_loss": 1.103742741393388,
+        "brier": 0.6702054696613259,
+        "ece": 0.05072978642953398,
+        "calibration_bins": [
+          {
+            "lower": 0.3,
+            "n": 20,
+            "confidence": 0.3891518695271851,
+            "accuracy": 0.4
+          },
+          {
+            "lower": 0.4,
+            "n": 5,
+            "confidence": 0.41025641025641024,
+            "accuracy": 0.2
+          }
+        ]
+      },
+      "labelled_n": 100,
+      "method": "Date-grouped 60/20/20 split; past dates only; hyperparameters chosen on validation, fixed before test. Expanding training history."
+    },
+    "ligue_1": {
+      "status": "provisional",
+      "model": "ht-poisson-shrink-v1",
+      "shrink": 5,
+      "temperature": 1.5,
+      "validation_start": "2026-10-11",
+      "test_start": "2026-10-25",
+      "validation": {
+        "n": 14,
+        "accuracy": 0.35714285714285715,
+        "log_loss": 1.0995942118419637,
+        "brier": 0.6702948167773551,
+        "ece": 0.05474144264924577,
+        "calibration_bins": [
+          {
+            "lower": 0.3,
+            "n": 7,
+            "confidence": 0.3931708336601922,
+            "accuracy": 0.2857142857142857
+          },
+          {
+            "lower": 0.4,
+            "n": 7,
+            "confidence": 0.4265450912188435,
+            "accuracy": 0.42857142857142855
+          }
+        ]
+      },
+      "test": {
+        "n": 16,
+        "accuracy": 0.5,
+        "log_loss": 1.0052450378576192,
+        "brier": 0.6075333289474754,
+        "ece": 0.09940225622634008,
+        "calibration_bins": [
+          {
+            "lower": 0.3,
+            "n": 8,
+            "confidence": 0.38103419840664365,
+            "accuracy": 0.5
+          },
+          {
+            "lower": 0.4,
+            "n": 8,
+            "confidence": 0.4201612891406762,
+            "accuracy": 0.5
+          }
+        ]
+      },
+      "baseline_test": {
+        "n": 16,
+        "accuracy": 0.5,
+        "log_loss": 1.022979592806357,
+        "brier": 0.6213764598827218,
+        "ece": 0.158325392258728,
+        "calibration_bins": [
+          {
+            "lower": 0.3,
+            "n": 15,
+            "confidence": 0.39256536472322023,
+            "accuracy": 0.5333333333333333
+          },
+          {
+            "lower": 0.4,
+            "n": 1,
+            "confidence": 0.42168674698795183,
+            "accuracy": 0.0
+          }
+        ]
+      },
+      "labelled_n": 81,
+      "method": "Date-grouped 60/20/20 split; past dates only; hyperparameters chosen on validation, fixed before test. Expanding training history."
+    },
+    "ucl": {
+      "status": "unavailable",
+      "reason": "Need 60 labelled matches and 12 distinct dates",
+      "n": 0
+    },
+    "uel": {
+      "status": "unavailable",
+      "reason": "Need 60 labelled matches and 12 distinct dates",
+      "n": 0
+    },
+    "uecl": {
+      "status": "unavailable",
+      "reason": "Need 60 labelled matches and 12 distinct dates",
+      "n": 0
+    }
+  },
+  "nba": [
+    {
+      "player": "Devin Booker",
+      "player_id": "3136193",
+      "stat": "rebounds",
+      "threshold": 6,
+      "backtest": {
+        "status": "provisional",
+        "model": "nba-beta-binomial-v1",
+        "temperature": 1.2,
+        "validation_start": "2026-02-15T22:00:00+00:00",
+        "test_start": "2026-03-23T01:00:00+00:00",
+        "validation": {
+          "n": 15,
+          "accuracy": 0.8,
+          "log_loss": 0.5359971895534117,
+          "brier": 0.3446013687971567,
+          "ece": 0.14316887842768977,
+          "calibration_bins": [
+            {
+              "lower": 0.7,
+              "n": 14,
+              "confidence": 0.7625477225129604,
+              "accuracy": 0.8571428571428571
+            },
+            {
+              "lower": 0.8,
+              "n": 1,
+              "confidence": 0.8232012915967931,
+              "accuracy": 0.0
+            }
+          ]
+        },
+        "test": {
+          "n": 15,
+          "accuracy": 0.9333333333333333,
+          "log_loss": 0.33473323800663085,
+          "brier": 0.1727712663015767,
+          "ece": 0.1554458456458908,
+          "calibration_bins": [
+            {
+              "lower": 0.7,
+              "n": 15,
+              "confidence": 0.7778874876874425,
+              "accuracy": 0.9333333333333333
+            }
+          ]
+        },
+        "method": "Played games only; last 20 prior games with Beta(1,1) smoothing. Date-grouped 60/20/20, temperature selected on validation."
+      }
+    },
+    {
+      "player": "Devin Booker",
+      "player_id": "3136193",
+      "stat": "threes",
+      "threshold": 3,
+      "backtest": {
+        "status": "provisional",
+        "model": "nba-beta-binomial-v1",
+        "temperature": 1.2,
+        "validation_start": "2026-02-15T22:00:00+00:00",
+        "test_start": "2026-03-23T01:00:00+00:00",
+        "validation": {
+          "n": 15,
+          "accuracy": 0.7333333333333333,
+          "log_loss": 0.6035984868931838,
+          "brier": 0.41212035146770537,
+          "ece": 0.060904690318345,
+          "calibration_bins": [
+            {
+              "lower": 0.6,
+              "n": 8,
+              "confidence": 0.6538728327021341,
+              "accuracy": 0.75
+            },
+            {
+              "lower": 0.7,
+              "n": 7,
+              "confidence": 0.7349361451988926,
+              "accuracy": 0.7142857142857143
+            }
+          ]
+        },
+        "test": {
+          "n": 15,
+          "accuracy": 0.6666666666666666,
+          "log_loss": 0.6797342383556145,
+          "brier": 0.4849977501676169,
+          "ece": 0.12278854127786785,
+          "calibration_bins": [
+            {
+              "lower": 0.5,
+              "n": 3,
+              "confidence": 0.5760154132219468,
+              "accuracy": 1.0
+            },
+            {
+              "lower": 0.6,
+              "n": 12,
+              "confidence": 0.6308228632361549,
+              "accuracy": 0.5833333333333334
+            }
+          ]
+        },
+        "method": "Played games only; last 20 prior games with Beta(1,1) smoothing. Date-grouped 60/20/20, temperature selected on validation."
+      }
+    },
+    {
+      "player": "Devin Booker",
+      "player_id": "3136193",
+      "stat": "assists",
+      "threshold": 4,
+      "backtest": {
+        "status": "provisional",
+        "model": "nba-beta-binomial-v1",
+        "temperature": 1.5,
+        "validation_start": "2026-02-15T22:00:00+00:00",
+        "test_start": "2026-03-23T01:00:00+00:00",
+        "validation": {
+          "n": 15,
+          "accuracy": 0.6,
+          "log_loss": 0.7495143754485967,
+          "brier": 0.5463435693964388,
+          "ece": 0.16439093040369743,
+          "calibration_bins": [
+            {
+              "lower": 0.5,
+              "n": 2,
+              "confidence": 0.5922023267046399,
+              "accuracy": 1.0
+            },
+            {
+              "lower": 0.6,
+              "n": 10,
+              "confidence": 0.6413168217474114,
+              "accuracy": 0.6
+            },
+            {
+              "lower": 0.7,
+              "n": 3,
+              "confidence": 0.7457001306635421,
+              "accuracy": 0.3333333333333333
+            }
+          ]
+        },
+        "test": {
+          "n": 15,
+          "accuracy": 0.8666666666666667,
+          "log_loss": 0.545005441997657,
+          "brier": 0.3540010982622494,
+          "ece": 0.2892882415112076,
+          "calibration_bins": [
+            {
+              "lower": 0.5,
+              "n": 3,
+              "confidence": 0.5922023267046399,
+              "accuracy": 1.0
+            },
+            {
+              "lower": 0.6,
+              "n": 7,
+              "confidence": 0.648861832518039,
+              "accuracy": 1.0
+            },
+            {
+              "lower": 0.7,
+              "n": 5,
+              "confidence": 0.7315926860816612,
+              "accuracy": 0.6
+            }
+          ]
+        },
+        "method": "Played games only; last 20 prior games with Beta(1,1) smoothing. Date-grouped 60/20/20, temperature selected on validation."
+      }
+    },
+    {
+      "player": "Devin Booker",
+      "player_id": "3136193",
+      "stat": "points",
+      "threshold": 20,
+      "backtest": {
+        "status": "provisional",
+        "model": "nba-beta-binomial-v1",
+        "temperature": 1.5,
+        "validation_start": "2026-02-15T22:00:00+00:00",
+        "test_start": "2026-03-23T01:00:00+00:00",
+        "validation": {
+          "n": 15,
+          "accuracy": 0.6,
+          "log_loss": 0.7608260442788789,
+          "brier": 0.5612343812175022,
+          "ece": 0.38756068146295286,
+          "calibration_bins": [
+            {
+              "lower": 0.5,
+              "n": 9,
+              "confidence": 0.5713890133909321,
+              "accuracy": 0.8888888888888888
+            },
+            {
+              "lower": 0.6,
+              "n": 5,
+              "confidence": 0.6448637312762042,
+              "accuracy": 0.2
+            },
+            {
+              "lower": 0.7,
+              "n": 1,
+              "confidence": 0.7315926860816612,
+              "accuracy": 0.0
+            }
+          ]
+        },
+        "test": {
+          "n": 15,
+          "accuracy": 0.9333333333333333,
+          "log_loss": 0.4758986867209757,
+          "brier": 0.2891337165594379,
+          "ece": 0.3254417134889957,
+          "calibration_bins": [
+            {
+              "lower": 0.5,
+              "n": 5,
+              "confidence": 0.5922023267046399,
+              "accuracy": 1.0
+            },
+            {
+              "lower": 0.6,
+              "n": 3,
+              "confidence": 0.6585332793413784,
+              "accuracy": 1.0
+            },
+            {
+              "lower": 0.7,
+              "n": 5,
+              "confidence": 0.7654505530781754,
+              "accuracy": 1.0
+            },
+            {
+              "lower": 0.8,
+              "n": 2,
+              "confidence": 0.8227449696365736,
+              "accuracy": 0.5
+            }
+          ]
+        },
+        "method": "Played games only; last 20 prior games with Beta(1,1) smoothing. Date-grouped 60/20/20, temperature selected on validation."
+      }
+    },
+    {
+      "player": "Miles Bridges",
+      "player_id": "4066383",
+      "stat": "rebounds",
+      "threshold": 6,
+      "backtest": {
+        "status": "provisional",
+        "model": "nba-beta-binomial-v1",
+        "temperature": 1.5,
+        "validation_start": "2026-02-02T20:00:00+00:00",
+        "test_start": "2026-03-24T23:00:00+00:00",
+        "validation": {
+          "n": 17,
+          "accuracy": 0.5294117647058824,
+          "log_loss": 0.7197058216064687,
+          "brier": 0.5262826588595313,
+          "ece": 0.00651263049727091,
+          "calibration_bins": [
+            {
+              "lower": 0.5,
+              "n": 17,
+              "confidence": 0.5359243952031533,
+              "accuracy": 0.5294117647058824
+            }
+          ]
+        },
+        "test": {
+          "n": 17,
+          "accuracy": 0.4117647058823529,
+          "log_loss": 0.7073889238712122,
+          "brier": 0.5140602501953292,
+          "ece": 0.11870270350910272,
+          "calibration_bins": [
+            {
+              "lower": 0.5,
+              "n": 17,
+              "confidence": 0.5304674093914556,
+              "accuracy": 0.4117647058823529
+            }
+          ]
+        },
+        "method": "Played games only; last 20 prior games with Beta(1,1) smoothing. Date-grouped 60/20/20, temperature selected on validation."
+      }
+    },
+    {
+      "player": "Miles Bridges",
+      "player_id": "4066383",
+      "stat": "threes",
+      "threshold": 3,
+      "backtest": {
+        "status": "provisional",
+        "model": "nba-beta-binomial-v1",
+        "temperature": 0.8,
+        "validation_start": "2026-02-02T20:00:00+00:00",
+        "test_start": "2026-03-24T23:00:00+00:00",
+        "validation": {
+          "n": 17,
+          "accuracy": 0.7647058823529411,
+          "log_loss": 0.5855222895398206,
+          "brier": 0.39116250666235225,
+          "ece": 0.12659544935265643,
+          "calibration_bins": [
+            {
+              "lower": 0.6,
+              "n": 8,
+              "confidence": 0.6542941021410714,
+              "accuracy": 0.75
+            },
+            {
+              "lower": 0.7,
+              "n": 7,
+              "confidence": 0.7510650031849634,
+              "accuracy": 0.8571428571428571
+            },
+            {
+              "lower": 0.8,
+              "n": 2,
+              "confidence": 0.8219652392092374,
+              "accuracy": 0.5
+            }
+          ]
+        },
+        "test": {
+          "n": 17,
+          "accuracy": 0.7058823529411765,
+          "log_loss": 0.6494519275878625,
+          "brier": 0.4423676175985493,
+          "ece": 0.08716552009854898,
+          "calibration_bins": [
+            {
+              "lower": 0.7,
+              "n": 11,
+              "confidence": 0.7731241279204543,
+              "accuracy": 0.7272727272727273
+            },
+            {
+              "lower": 0.8,
+              "n": 6,
+              "confidence": 0.8295747390917226,
+              "accuracy": 0.6666666666666666
+            }
+          ]
+        },
+        "method": "Played games only; last 20 prior games with Beta(1,1) smoothing. Date-grouped 60/20/20, temperature selected on validation."
+      }
+    },
+    {
+      "player": "Miles Bridges",
+      "player_id": "4066383",
+      "stat": "assists",
+      "threshold": 4,
+      "backtest": {
+        "status": "provisional",
+        "model": "nba-beta-binomial-v1",
+        "temperature": 0.8,
+        "validation_start": "2026-02-02T20:00:00+00:00",
+        "test_start": "2026-03-24T23:00:00+00:00",
+        "validation": {
+          "n": 17,
+          "accuracy": 0.7058823529411765,
+          "log_loss": 0.6221682171949302,
+          "brier": 0.4311889880286307,
+          "ece": 0.13782982981665198,
+          "calibration_bins": [
+            {
+              "lower": 0.5,
+              "n": 4,
+              "confidence": 0.5567301550939158,
+              "accuracy": 1.0
+            },
+            {
+              "lower": 0.6,
+              "n": 10,
+              "confidence": 0.640506921664582,
+              "accuracy": 0.6
+            },
+            {
+              "lower": 0.7,
+              "n": 3,
+              "confidence": 0.7216528368709755,
+              "accuracy": 0.6666666666666666
+            }
+          ]
+        },
+        "test": {
+          "n": 17,
+          "accuracy": 0.7058823529411765,
+          "log_loss": 0.6626583378874455,
+          "brier": 0.4548756092770803,
+          "ece": 0.16410737227533612,
+          "calibration_bins": [
+            {
+              "lower": 0.6,
+              "n": 1,
+              "confidence": 0.6680812826175608,
+              "accuracy": 1.0
+            },
+            {
+              "lower": 0.7,
+              "n": 10,
+              "confidence": 0.747388482395715,
+              "accuracy": 0.8
+            },
+            {
+              "lower": 0.8,
+              "n": 6,
+              "confidence": 0.8219652392092374,
+              "accuracy": 0.5
+            }
+          ]
+        },
+        "method": "Played games only; last 20 prior games with Beta(1,1) smoothing. Date-grouped 60/20/20, temperature selected on validation."
+      }
+    },
+    {
+      "player": "Miles Bridges",
+      "player_id": "4066383",
+      "stat": "points",
+      "threshold": 20,
+      "backtest": {
+        "status": "provisional",
+        "model": "nba-beta-binomial-v1",
+        "temperature": 0.8,
+        "validation_start": "2026-02-02T20:00:00+00:00",
+        "test_start": "2026-03-24T23:00:00+00:00",
+        "validation": {
+          "n": 17,
+          "accuracy": 0.8235294117647058,
+          "log_loss": 0.49167134089503317,
+          "brier": 0.3059241263949036,
+          "ece": 0.05591581095814671,
+          "calibration_bins": [
+            {
+              "lower": 0.7,
+              "n": 7,
+              "confidence": 0.7657710863419573,
+              "accuracy": 0.8571428571428571
+            },
+            {
+              "lower": 0.8,
+              "n": 10,
+              "confidence": 0.8310966390682196,
+              "accuracy": 0.8
+            }
+          ]
+        },
+        "test": {
+          "n": 17,
+          "accuracy": 0.7647058823529411,
+          "log_loss": 0.5642958903253149,
+          "brier": 0.36939424958927614,
+          "ece": 0.07031328464963807,
+          "calibration_bins": [
+            {
+              "lower": 0.7,
+              "n": 2,
+              "confidence": 0.7731241279204543,
+              "accuracy": 0.5
+            },
+            {
+              "lower": 0.8,
+              "n": 15,
+              "confidence": 0.843271838880196,
+              "accuracy": 0.8
+            }
+          ]
+        },
+        "method": "Played games only; last 20 prior games with Beta(1,1) smoothing. Date-grouped 60/20/20, temperature selected on validation."
+      }
+    },
+    {
+      "player": "Franz Wagner",
+      "player_id": "4566434",
+      "stat": "rebounds",
+      "threshold": 6,
+      "backtest": {
+        "status": "provisional",
+        "model": "nba-beta-binomial-v1",
+        "temperature": 1.5,
+        "validation_start": "2026-01-15T19:00:00+00:00",
+        "test_start": "2026-04-11T00:00:00+00:00",
+        "validation": {
+          "n": 8,
+          "accuracy": 0.375,
+          "log_loss": 0.755929909080261,
+          "brier": 0.5622376839569492,
+          "ece": 0.18240885428363052,
+          "calibration_bins": [
+            {
+              "lower": 0.5,
+              "n": 8,
+              "confidence": 0.5574088542836305,
+              "accuracy": 0.375
+            }
+          ]
+        },
+        "test": {
+          "n": 9,
+          "accuracy": 0.5555555555555556,
+          "log_loss": 0.6931125266758261,
+          "brier": 0.4998847870727425,
+          "ece": 0.07210175141354982,
+          "calibration_bins": [
+            {
+              "lower": 0.5,
+              "n": 6,
+              "confidence": 0.5869989983762129,
+              "accuracy": 0.5
+            },
+            {
+              "lower": 0.6,
+              "n": 3,
+              "confidence": 0.624359409178443,
+              "accuracy": 0.6666666666666666
+            }
+          ]
+        },
+        "method": "Played games only; last 20 prior games with Beta(1,1) smoothing. Date-grouped 60/20/20, temperature selected on validation."
+      }
+    },
+    {
+      "player": "Franz Wagner",
+      "player_id": "4566434",
+      "stat": "threes",
+      "threshold": 3,
+      "backtest": {
+        "status": "provisional",
+        "model": "nba-beta-binomial-v1",
+        "temperature": 0.8,
+        "validation_start": "2026-01-15T19:00:00+00:00",
+        "test_start": "2026-04-11T00:00:00+00:00",
+        "validation": {
+          "n": 8,
+          "accuracy": 0.875,
+          "log_loss": 0.39362390377566764,
+          "brier": 0.22677398204425728,
+          "ece": 0.11474369484191538,
+          "calibration_bins": [
+            {
+              "lower": 0.7,
+              "n": 8,
+              "confidence": 0.7602563051580846,
+              "accuracy": 0.875
+            }
+          ]
+        },
+        "test": {
+          "n": 9,
+          "accuracy": 0.8888888888888888,
+          "log_loss": 0.32187054279780447,
+          "brier": 0.1809729319130443,
+          "ece": 0.1788737315774002,
+          "calibration_bins": [
+            {
+              "lower": 0.7,
+              "n": 2,
+              "confidence": 0.7731241279204543,
+              "accuracy": 0.5
+            },
+            {
+              "lower": 0.8,
+              "n": 7,
+              "confidence": 0.8480549530920438,
+              "accuracy": 1.0
+            }
+          ]
+        },
+        "method": "Played games only; last 20 prior games with Beta(1,1) smoothing. Date-grouped 60/20/20, temperature selected on validation."
+      }
+    },
+    {
+      "player": "Franz Wagner",
+      "player_id": "4566434",
+      "stat": "assists",
+      "threshold": 4,
+      "backtest": {
+        "status": "provisional",
+        "model": "nba-beta-binomial-v1",
+        "temperature": 0.8,
+        "validation_start": "2026-01-15T19:00:00+00:00",
+        "test_start": "2026-04-11T00:00:00+00:00",
+        "validation": {
+          "n": 8,
+          "accuracy": 0.875,
+          "log_loss": 0.5673276493944119,
+          "brier": 0.3764283818166271,
+          "ece": 0.2903003525612068,
+          "calibration_bins": [
+            {
+              "lower": 0.5,
+              "n": 5,
+              "confidence": 0.5567301550939158,
+              "accuracy": 0.8
+            },
+            {
+              "lower": 0.6,
+              "n": 3,
+              "confidence": 0.6313154680135891,
+              "accuracy": 1.0
+            }
+          ]
+        },
+        "test": {
+          "n": 9,
+          "accuracy": 0.1111111111111111,
+          "log_loss": 1.0487404486835237,
+          "brier": 0.8314213965434992,
+          "ece": 0.5679988002435091,
+          "calibration_bins": [
+            {
+              "lower": 0.5,
+              "n": 1,
+              "confidence": 0.5567301550939158,
+              "accuracy": 0.0
+            },
+            {
+              "lower": 0.6,
+              "n": 4,
+              "confidence": 0.6542941021410714,
+              "accuracy": 0.0
+            },
+            {
+              "lower": 0.7,
+              "n": 4,
+              "confidence": 0.7345206596333452,
+              "accuracy": 0.25
+            }
+          ]
+        },
+        "method": "Played games only; last 20 prior games with Beta(1,1) smoothing. Date-grouped 60/20/20, temperature selected on validation."
+      }
+    },
+    {
+      "player": "Franz Wagner",
+      "player_id": "4566434",
+      "stat": "points",
+      "threshold": 20,
+      "backtest": {
+        "status": "provisional",
+        "model": "nba-beta-binomial-v1",
+        "temperature": 1.5,
+        "validation_start": "2026-01-15T19:00:00+00:00",
+        "test_start": "2026-04-11T00:00:00+00:00",
+        "validation": {
+          "n": 8,
+          "accuracy": 0.25,
+          "log_loss": 0.8421511534495744,
+          "brier": 0.6460037235086243,
+          "ece": 0.3158452108092007,
+          "calibration_bins": [
+            {
+              "lower": 0.5,
+              "n": 6,
+              "confidence": 0.54075276841938,
+              "accuracy": 0.3333333333333333
+            },
+            {
+              "lower": 0.6,
+              "n": 2,
+              "confidence": 0.6411225379786628,
+              "accuracy": 0.0
+            }
+          ]
+        },
+        "test": {
+          "n": 9,
+          "accuracy": 0.3333333333333333,
+          "log_loss": 0.7292926491588705,
+          "brier": 0.536043909008358,
+          "ece": 0.19704770545982958,
+          "calibration_bins": [
+            {
+              "lower": 0.5,
+              "n": 9,
+              "confidence": 0.5303810387931629,
+              "accuracy": 0.3333333333333333
+            }
+          ]
+        },
+        "method": "Played games only; last 20 prior games with Beta(1,1) smoothing. Date-grouped 60/20/20, temperature selected on validation."
+      }
+    },
+    {
+      "player": "Wendell Carter Jr.",
+      "player_id": "4277847",
+      "stat": "rebounds",
+      "threshold": 6,
+      "backtest": {
+        "status": "provisional",
+        "model": "nba-beta-binomial-v1",
+        "temperature": 1.5,
+        "validation_start": "2026-02-20T03:00:00+00:00",
+        "test_start": "2026-03-26T23:00:00+00:00",
+        "validation": {
+          "n": 17,
+          "accuracy": 0.7058823529411765,
+          "log_loss": 0.629603928967207,
+          "brier": 0.43488975879731784,
+          "ece": 0.23224870192623812,
+          "calibration_bins": [
+            {
+              "lower": 0.6,
+              "n": 13,
+              "confidence": 0.6906263701215843,
+              "accuracy": 0.8461538461538461
+            },
+            {
+              "lower": 0.7,
+              "n": 4,
+              "confidence": 0.7315926860816612,
+              "accuracy": 0.25
+            }
+          ]
+        },
+        "test": {
+          "n": 17,
+          "accuracy": 0.8235294117647058,
+          "log_loss": 0.602206721329226,
+          "brier": 0.4098453733997412,
+          "ece": 0.22332401196214297,
+          "calibration_bins": [
+            {
+              "lower": 0.5,
+              "n": 10,
+              "confidence": 0.576592341719359,
+              "accuracy": 0.9
+            },
+            {
+              "lower": 0.6,
+              "n": 7,
+              "confidence": 0.6339383399214257,
+              "accuracy": 0.7142857142857143
+            }
+          ]
+        },
+        "method": "Played games only; last 20 prior games with Beta(1,1) smoothing. Date-grouped 60/20/20, temperature selected on validation."
+      }
+    },
+    {
+      "player": "Wendell Carter Jr.",
+      "player_id": "4277847",
+      "stat": "threes",
+      "threshold": 3,
+      "backtest": {
+        "status": "provisional",
+        "model": "nba-beta-binomial-v1",
+        "temperature": 0.8,
+        "validation_start": "2026-02-20T03:00:00+00:00",
+        "test_start": "2026-03-26T23:00:00+00:00",
+        "validation": {
+          "n": 17,
+          "accuracy": 1.0,
+          "log_loss": 0.03931739939287775,
+          "brier": 0.0034469267259750642,
+          "ece": 0.03842628247369484,
+          "calibration_bins": [
+            {
+              "lower": 0.9,
+              "n": 17,
+              "confidence": 0.9615737175263052,
+              "accuracy": 1.0
+            }
+          ]
+        },
+        "test": {
+          "n": 17,
+          "accuracy": 0.9411764705882353,
+          "log_loss": 0.2554831044849571,
+          "brier": 0.11486278530259873,
+          "ece": 0.027804213302233594,
+          "calibration_bins": [
+            {
+              "lower": 0.9,
+              "n": 17,
+              "confidence": 0.9689806838904689,
+              "accuracy": 0.9411764705882353
+            }
+          ]
+        },
+        "method": "Played games only; last 20 prior games with Beta(1,1) smoothing. Date-grouped 60/20/20, temperature selected on validation."
+      }
+    },
+    {
+      "player": "Wendell Carter Jr.",
+      "player_id": "4277847",
+      "stat": "assists",
+      "threshold": 4,
+      "backtest": {
+        "status": "provisional",
+        "model": "nba-beta-binomial-v1",
+        "temperature": 1,
+        "validation_start": "2026-02-20T03:00:00+00:00",
+        "test_start": "2026-03-26T23:00:00+00:00",
+        "validation": {
+          "n": 17,
+          "accuracy": 0.9411764705882353,
+          "log_loss": 0.2835987357516303,
+          "brier": 0.12761302868254742,
+          "ece": 0.040106951871657776,
+          "calibration_bins": [
+            {
+              "lower": 0.8,
+              "n": 4,
+              "confidence": 0.8636363636363636,
+              "accuracy": 1.0
+            },
+            {
+              "lower": 0.9,
+              "n": 13,
+              "confidence": 0.9125874125874126,
+              "accuracy": 0.9230769230769231
+            }
+          ]
+        },
+        "test": {
+          "n": 17,
+          "accuracy": 1.0,
+          "log_loss": 0.08383014117622323,
+          "brier": 0.013612056392805062,
+          "ece": 0.0802139037433155,
+          "calibration_bins": [
+            {
+              "lower": 0.9,
+              "n": 17,
+              "confidence": 0.9197860962566845,
+              "accuracy": 1.0
+            }
+          ]
+        },
+        "method": "Played games only; last 20 prior games with Beta(1,1) smoothing. Date-grouped 60/20/20, temperature selected on validation."
+      }
+    },
+    {
+      "player": "Wendell Carter Jr.",
+      "player_id": "4277847",
+      "stat": "points",
+      "threshold": 20,
+      "backtest": {
+        "status": "provisional",
+        "model": "nba-beta-binomial-v1",
+        "temperature": 0.8,
+        "validation_start": "2026-02-20T03:00:00+00:00",
+        "test_start": "2026-03-26T23:00:00+00:00",
+        "validation": {
+          "n": 17,
+          "accuracy": 0.9411764705882353,
+          "log_loss": 0.22905990790872485,
+          "brier": 0.11303976672258914,
+          "ece": 0.030043221467817696,
+          "calibration_bins": [
+            {
+              "lower": 0.8,
+              "n": 2,
+              "confidence": 0.8676222385041488,
+              "accuracy": 1.0
+            },
+            {
+              "lower": 0.9,
+              "n": 15,
+              "confidence": 0.9169347172025868,
+              "accuracy": 0.9333333333333333
+            }
+          ]
+        },
+        "test": {
+          "n": 17,
+          "accuracy": 0.7647058823529411,
+          "log_loss": 0.6787643889239812,
+          "brier": 0.41262329666286446,
+          "ece": 0.14682768282493736,
+          "calibration_bins": [
+            {
+              "lower": 0.8,
+              "n": 5,
+              "confidence": 0.8493594387861843,
+              "accuracy": 0.8
+            },
+            {
+              "lower": 0.9,
+              "n": 12,
+              "confidence": 0.9374394511744178,
+              "accuracy": 0.75
+            }
+          ]
+        },
+        "method": "Played games only; last 20 prior games with Beta(1,1) smoothing. Date-grouped 60/20/20, temperature selected on validation."
+      }
+    },
+    {
+      "player": "Stephen Curry",
+      "player_id": "3975",
+      "stat": "rebounds",
+      "threshold": 6,
+      "backtest": {
+        "status": "provisional",
+        "model": "nba-beta-binomial-v1",
+        "temperature": 0.8,
+        "validation_start": "2026-01-12T01:30:00+00:00",
+        "test_start": "2026-04-06T02:00:00+00:00",
+        "validation": {
+          "n": 10,
+          "accuracy": 1.0,
+          "log_loss": 0.17983968146552712,
+          "brier": 0.0548892495129452,
+          "ece": 0.1643376610022893,
+          "calibration_bins": [
+            {
+              "lower": 0.8,
+              "n": 10,
+              "confidence": 0.8356623389977107,
+              "accuracy": 1.0
+            }
+          ]
+        },
+        "test": {
+          "n": 10,
+          "accuracy": 0.7,
+          "log_loss": 0.8368230443814921,
+          "brier": 0.5213251419700626,
+          "ece": 0.2429527817712219,
+          "calibration_bins": [
+            {
+              "lower": 0.8,
+              "n": 1,
+              "confidence": 0.8676222385041488,
+              "accuracy": 1.0
+            },
+            {
+              "lower": 0.9,
+              "n": 9,
+              "confidence": 0.9219055618018186,
+              "accuracy": 0.6666666666666666
+            }
+          ]
+        },
+        "method": "Played games only; last 20 prior games with Beta(1,1) smoothing. Date-grouped 60/20/20, temperature selected on validation."
+      }
+    },
+    {
+      "player": "Stephen Curry",
+      "player_id": "3975",
+      "stat": "threes",
+      "threshold": 3,
+      "backtest": {
+        "status": "provisional",
+        "model": "nba-beta-binomial-v1",
+        "temperature": 1.5,
+        "validation_start": "2026-01-12T01:30:00+00:00",
+        "test_start": "2026-04-06T02:00:00+00:00",
+        "validation": {
+          "n": 10,
+          "accuracy": 0.7,
+          "log_loss": 0.6367601038858484,
+          "brier": 0.44292868862221174,
+          "ece": 0.034826230394783164,
+          "calibration_bins": [
+            {
+              "lower": 0.6,
+              "n": 10,
+              "confidence": 0.6651737696052168,
+              "accuracy": 0.7
+            }
+          ]
+        },
+        "test": {
+          "n": 10,
+          "accuracy": 0.8,
+          "log_loss": 0.5556388625769544,
+          "brier": 0.3657573285958803,
+          "ece": 0.1243797855771539,
+          "calibration_bins": [
+            {
+              "lower": 0.6,
+              "n": 10,
+              "confidence": 0.6756202144228461,
+              "accuracy": 0.8
+            }
+          ]
+        },
+        "method": "Played games only; last 20 prior games with Beta(1,1) smoothing. Date-grouped 60/20/20, temperature selected on validation."
+      }
+    },
+    {
+      "player": "Stephen Curry",
+      "player_id": "3975",
+      "stat": "assists",
+      "threshold": 4,
+      "backtest": {
+        "status": "provisional",
+        "model": "nba-beta-binomial-v1",
+        "temperature": 1.5,
+        "validation_start": "2026-01-12T01:30:00+00:00",
+        "test_start": "2026-04-06T02:00:00+00:00",
+        "validation": {
+          "n": 10,
+          "accuracy": 0.6,
+          "log_loss": 0.7474264018623435,
+          "brier": 0.54054420904565,
+          "ece": 0.2635321299502242,
+          "calibration_bins": [
+            {
+              "lower": 0.6,
+              "n": 2,
+              "confidence": 0.6933547620668095,
+              "accuracy": 1.0
+            },
+            {
+              "lower": 0.7,
+              "n": 8,
+              "confidence": 0.7527538529544826,
+              "accuracy": 0.5
+            }
+          ]
+        },
+        "test": {
+          "n": 10,
+          "accuracy": 0.6,
+          "log_loss": 0.7173822676384343,
+          "brier": 0.521932915760339,
+          "ece": 0.2459488543258313,
+          "calibration_bins": [
+            {
+              "lower": 0.5,
+              "n": 5,
+              "confidence": 0.5734703447223028,
+              "accuracy": 0.8
+            },
+            {
+              "lower": 0.6,
+              "n": 5,
+              "confidence": 0.6653680533739654,
+              "accuracy": 0.4
+            }
+          ]
+        },
+        "method": "Played games only; last 20 prior games with Beta(1,1) smoothing. Date-grouped 60/20/20, temperature selected on validation."
+      }
+    },
+    {
+      "player": "Stephen Curry",
+      "player_id": "3975",
+      "stat": "points",
+      "threshold": 20,
+      "backtest": {
+        "status": "provisional",
+        "model": "nba-beta-binomial-v1",
+        "temperature": 1.5,
+        "validation_start": "2026-01-12T01:30:00+00:00",
+        "test_start": "2026-04-06T02:00:00+00:00",
+        "validation": {
+          "n": 10,
+          "accuracy": 0.6,
+          "log_loss": 0.7291119627651576,
+          "brier": 0.5284632771721791,
+          "ece": 0.1552166457817391,
+          "calibration_bins": [
+            {
+              "lower": 0.6,
+              "n": 7,
+              "confidence": 0.6632302286325132,
+              "accuracy": 0.7142857142857143
+            },
+            {
+              "lower": 0.7,
+              "n": 3,
+              "confidence": 0.7315926860816612,
+              "accuracy": 0.3333333333333333
+            }
+          ]
+        },
+        "test": {
+          "n": 10,
+          "accuracy": 0.8,
+          "log_loss": 0.5918091256313606,
+          "brier": 0.39906533057805993,
+          "ece": 0.15848889448383985,
+          "calibration_bins": [
+            {
+              "lower": 0.6,
+              "n": 10,
+              "confidence": 0.6415111055161602,
+              "accuracy": 0.8
+            }
+          ]
+        },
+        "method": "Played games only; last 20 prior games with Beta(1,1) smoothing. Date-grouped 60/20/20, temperature selected on validation."
+      }
+    },
+    {
+      "player": "Draymond Green",
+      "player_id": "6589",
+      "stat": "rebounds",
+      "threshold": 6,
+      "backtest": {
+        "status": "provisional",
+        "model": "nba-beta-binomial-v1",
+        "temperature": 1.5,
+        "validation_start": "2026-02-10T03:00:00+00:00",
+        "test_start": "2026-03-26T02:00:00+00:00",
+        "validation": {
+          "n": 15,
+          "accuracy": 0.5333333333333333,
+          "log_loss": 0.7197607023328243,
+          "brier": 0.5261169975584179,
+          "ece": 0.0319291227794799,
+          "calibration_bins": [
+            {
+              "lower": 0.5,
+              "n": 15,
+              "confidence": 0.5652624561128132,
+              "accuracy": 0.5333333333333333
+            }
+          ]
+        },
+        "test": {
+          "n": 15,
+          "accuracy": 0.7333333333333333,
+          "log_loss": 0.6529206898573069,
+          "brier": 0.45993439447677353,
+          "ece": 0.17215524873926602,
+          "calibration_bins": [
+            {
+              "lower": 0.5,
+              "n": 15,
+              "confidence": 0.5611780845940673,
+              "accuracy": 0.7333333333333333
+            }
+          ]
+        },
+        "method": "Played games only; last 20 prior games with Beta(1,1) smoothing. Date-grouped 60/20/20, temperature selected on validation."
+      }
+    },
+    {
+      "player": "Draymond Green",
+      "player_id": "6589",
+      "stat": "threes",
+      "threshold": 3,
+      "backtest": {
+        "status": "provisional",
+        "model": "nba-beta-binomial-v1",
+        "temperature": 1.2,
+        "validation_start": "2026-02-10T03:00:00+00:00",
+        "test_start": "2026-03-26T02:00:00+00:00",
+        "validation": {
+          "n": 15,
+          "accuracy": 0.7333333333333333,
+          "log_loss": 0.6031138410287278,
+          "brier": 0.41031532138095966,
+          "ece": 0.19471552243093576,
+          "calibration_bins": [
+            {
+              "lower": 0.6,
+              "n": 12,
+              "confidence": 0.6903396332610535,
+              "accuracy": 0.8333333333333334
+            },
+            {
+              "lower": 0.7,
+              "n": 3,
+              "confidence": 0.7349361451988926,
+              "accuracy": 0.3333333333333333
+            }
+          ]
+        },
+        "test": {
+          "n": 15,
+          "accuracy": 0.9333333333333333,
+          "log_loss": 0.3837940344262725,
+          "brier": 0.21016126161286264,
+          "ece": 0.203673269782142,
+          "calibration_bins": [
+            {
+              "lower": 0.6,
+              "n": 4,
+              "confidence": 0.6936751677757378,
+              "accuracy": 1.0
+            },
+            {
+              "lower": 0.7,
+              "n": 11,
+              "confidence": 0.7427454801968107,
+              "accuracy": 0.9090909090909091
+            }
+          ]
+        },
+        "method": "Played games only; last 20 prior games with Beta(1,1) smoothing. Date-grouped 60/20/20, temperature selected on validation."
+      }
+    },
+    {
+      "player": "Draymond Green",
+      "player_id": "6589",
+      "stat": "assists",
+      "threshold": 4,
+      "backtest": {
+        "status": "provisional",
+        "model": "nba-beta-binomial-v1",
+        "temperature": 0.8,
+        "validation_start": "2026-02-10T03:00:00+00:00",
+        "test_start": "2026-03-26T02:00:00+00:00",
+        "validation": {
+          "n": 15,
+          "accuracy": 0.8666666666666667,
+          "log_loss": 0.4058910961373739,
+          "brier": 0.23850922491403875,
+          "ece": 0.17807714293170154,
+          "calibration_bins": [
+            {
+              "lower": 0.6,
+              "n": 5,
+              "confidence": 0.6680812826175608,
+              "accuracy": 0.6
+            },
+            {
+              "lower": 0.7,
+              "n": 6,
+              "confidence": 0.730231385379222,
+              "accuracy": 1.0
+            },
+            {
+              "lower": 0.8,
+              "n": 4,
+              "confidence": 0.8219652392092373,
+              "accuracy": 1.0
+            }
+          ]
+        },
+        "test": {
+          "n": 15,
+          "accuracy": 0.8,
+          "log_loss": 0.5075845016559726,
+          "brier": 0.3238607312667501,
+          "ece": 0.12288042200870089,
+          "calibration_bins": [
+            {
+              "lower": 0.7,
+              "n": 2,
+              "confidence": 0.7731241279204543,
+              "accuracy": 1.0
+            },
+            {
+              "lower": 0.8,
+              "n": 6,
+              "confidence": 0.8371842389742078,
+              "accuracy": 0.6666666666666666
+            },
+            {
+              "lower": 0.9,
+              "n": 7,
+              "confidence": 0.9094784503037392,
+              "accuracy": 0.8571428571428571
+            }
+          ]
+        },
+        "method": "Played games only; last 20 prior games with Beta(1,1) smoothing. Date-grouped 60/20/20, temperature selected on validation."
+      }
+    },
+    {
+      "player": "Draymond Green",
+      "player_id": "6589",
+      "stat": "points",
+      "threshold": 20,
+      "backtest": {
+        "status": "provisional",
+        "model": "nba-beta-binomial-v1",
+        "temperature": 0.8,
+        "validation_start": "2026-02-10T03:00:00+00:00",
+        "test_start": "2026-03-26T02:00:00+00:00",
+        "validation": {
+          "n": 15,
+          "accuracy": 1.0,
+          "log_loss": 0.053524620506313264,
+          "brier": 0.006153877235752036,
+          "ece": 0.05191513839171502,
+          "calibration_bins": [
+            {
+              "lower": 0.9,
+              "n": 15,
+              "confidence": 0.948084861608285,
+              "accuracy": 1.0
+            }
+          ]
+        },
+        "test": {
+          "n": 15,
+          "accuracy": 1.0,
+          "log_loss": 0.022000861961990095,
+          "brier": 0.0009470481344922665,
+          "ece": 0.021760608154326344,
+          "calibration_bins": [
+            {
+              "lower": 0.9,
+              "n": 15,
+              "confidence": 0.9782393918456737,
+              "accuracy": 1.0
+            }
+          ]
+        },
+        "method": "Played games only; last 20 prior games with Beta(1,1) smoothing. Date-grouped 60/20/20, temperature selected on validation."
+      }
+    },
+    {
+      "player": "Yaxel Lendeborg",
+      "player_id": "5175737",
+      "stat": "rebounds",
+      "threshold": 6,
+      "backtest": {
+        "status": "unavailable",
+        "reason": "Need 30 played games",
+        "n": 8
+      }
+    },
+    {
+      "player": "Yaxel Lendeborg",
+      "player_id": "5175737",
+      "stat": "threes",
+      "threshold": 3,
+      "backtest": {
+        "status": "unavailable",
+        "reason": "Need 30 played games",
+        "n": 8
+      }
+    },
+    {
+      "player": "Yaxel Lendeborg",
+      "player_id": "5175737",
+      "stat": "assists",
+      "threshold": 4,
+      "backtest": {
+        "status": "unavailable",
+        "reason": "Need 30 played games",
+        "n": 8
+      }
+    },
+    {
+      "player": "Yaxel Lendeborg",
+      "player_id": "5175737",
+      "stat": "points",
+      "threshold": 20,
+      "backtest": {
+        "status": "unavailable",
+        "reason": "Need 30 played games",
+        "n": 8
+      }
+    },
+    {
+      "player": "Giannis Antetokounmpo",
+      "player_id": "3032977",
+      "stat": "rebounds",
+      "threshold": 6,
+      "backtest": {
+        "status": "provisional",
+        "model": "nba-beta-binomial-v1",
+        "temperature": 1.2,
+        "validation_start": "2026-01-16T01:00:00+00:00",
+        "test_start": "2026-03-15T19:30:00+00:00",
+        "validation": {
+          "n": 9,
+          "accuracy": 0.7777777777777778,
+          "log_loss": 0.560659687193025,
+          "brier": 0.36902845924218813,
+          "ece": 0.042653814238285785,
+          "calibration_bins": [
+            {
+              "lower": 0.6,
+              "n": 1,
+              "confidence": 0.693675167775738,
+              "accuracy": 1.0
+            },
+            {
+              "lower": 0.7,
+              "n": 8,
+              "confidence": 0.7403050630099612,
+              "accuracy": 0.75
+            }
+          ]
+        },
+        "test": {
+          "n": 9,
+          "accuracy": 1.0,
+          "log_loss": 0.2323403015833174,
+          "brier": 0.08788323265796623,
+          "ece": 0.20648291958259601,
+          "calibration_bins": [
+            {
+              "lower": 0.7,
+              "n": 4,
+              "confidence": 0.7564118164431675,
+              "accuracy": 1.0
+            },
+            {
+              "lower": 0.8,
+              "n": 5,
+              "confidence": 0.8232012915967932,
+              "accuracy": 1.0
+            }
+          ]
+        },
+        "method": "Played games only; last 20 prior games with Beta(1,1) smoothing. Date-grouped 60/20/20, temperature selected on validation."
+      }
+    },
+    {
+      "player": "Giannis Antetokounmpo",
+      "player_id": "3032977",
+      "stat": "threes",
+      "threshold": 3,
+      "backtest": {
+        "status": "provisional",
+        "model": "nba-beta-binomial-v1",
+        "temperature": 0.8,
+        "validation_start": "2026-01-16T01:00:00+00:00",
+        "test_start": "2026-03-15T19:30:00+00:00",
+        "validation": {
+          "n": 9,
+          "accuracy": 1.0,
+          "log_loss": 0.022000861961990095,
+          "brier": 0.0009470481344922665,
+          "ece": 0.021760608154326344,
+          "calibration_bins": [
+            {
+              "lower": 0.9,
+              "n": 9,
+              "confidence": 0.9782393918456737,
+              "accuracy": 1.0
+            }
+          ]
+        },
+        "test": {
+          "n": 9,
+          "accuracy": 1.0,
+          "log_loss": 0.022000861961990095,
+          "brier": 0.0009470481344922665,
+          "ece": 0.021760608154326344,
+          "calibration_bins": [
+            {
+              "lower": 0.9,
+              "n": 9,
+              "confidence": 0.9782393918456737,
+              "accuracy": 1.0
+            }
+          ]
+        },
+        "method": "Played games only; last 20 prior games with Beta(1,1) smoothing. Date-grouped 60/20/20, temperature selected on validation."
+      }
+    },
+    {
+      "player": "Giannis Antetokounmpo",
+      "player_id": "3032977",
+      "stat": "assists",
+      "threshold": 4,
+      "backtest": {
+        "status": "provisional",
+        "model": "nba-beta-binomial-v1",
+        "temperature": 1.5,
+        "validation_start": "2026-01-16T01:00:00+00:00",
+        "test_start": "2026-03-15T19:30:00+00:00",
+        "validation": {
+          "n": 9,
+          "accuracy": 0.5555555555555556,
+          "log_loss": 0.6847736928635426,
+          "brier": 0.49160770905745743,
+          "ece": 0.0403239039243115,
+          "calibration_bins": [
+            {
+              "lower": 0.5,
+              "n": 7,
+              "confidence": 0.5877423309945596,
+              "accuracy": 0.5714285714285714
+            },
+            {
+              "lower": 0.6,
+              "n": 2,
+              "confidence": 0.6243594091784429,
+              "accuracy": 0.5
+            }
+          ]
+        },
+        "test": {
+          "n": 9,
+          "accuracy": 0.6666666666666666,
+          "log_loss": 0.6641401214535131,
+          "brier": 0.4710338322579942,
+          "ece": 0.09180876772344992,
+          "calibration_bins": [
+            {
+              "lower": 0.5,
+              "n": 9,
+              "confidence": 0.5748578989432167,
+              "accuracy": 0.6666666666666666
+            }
+          ]
+        },
+        "method": "Played games only; last 20 prior games with Beta(1,1) smoothing. Date-grouped 60/20/20, temperature selected on validation."
+      }
+    },
+    {
+      "player": "Giannis Antetokounmpo",
+      "player_id": "3032977",
+      "stat": "points",
+      "threshold": 20,
+      "backtest": {
+        "status": "provisional",
+        "model": "nba-beta-binomial-v1",
+        "temperature": 1.5,
+        "validation_start": "2026-01-16T01:00:00+00:00",
+        "test_start": "2026-03-15T19:30:00+00:00",
+        "validation": {
+          "n": 9,
+          "accuracy": 0.7777777777777778,
+          "log_loss": 0.5538557135757888,
+          "brier": 0.36457582558902935,
+          "ece": 0.0957118088527708,
+          "calibration_bins": [
+            {
+              "lower": 0.6,
+              "n": 2,
+              "confidence": 0.6933547620668095,
+              "accuracy": 1.0
+            },
+            {
+              "lower": 0.7,
+              "n": 7,
+              "confidence": 0.749730829115508,
+              "accuracy": 0.7142857142857143
+            }
+          ]
+        },
+        "test": {
+          "n": 9,
+          "accuracy": 0.8888888888888888,
+          "log_loss": 0.4367618949487846,
+          "brier": 0.2565236176284419,
+          "ece": 0.1478912397526404,
+          "calibration_bins": [
+            {
+              "lower": 0.7,
+              "n": 9,
+              "confidence": 0.7409976491362484,
+              "accuracy": 0.8888888888888888
+            }
+          ]
+        },
+        "method": "Played games only; last 20 prior games with Beta(1,1) smoothing. Date-grouped 60/20/20, temperature selected on validation."
+      }
+    },
+    {
+      "player": "Davion Mitchell",
+      "player_id": "4278053",
+      "stat": "rebounds",
+      "threshold": 6,
+      "backtest": {
+        "status": "provisional",
+        "model": "nba-beta-binomial-v1",
+        "temperature": 1,
+        "validation_start": "2026-02-21T00:30:00+00:00",
+        "test_start": "2026-03-27T23:30:00+00:00",
+        "validation": {
+          "n": 16,
+          "accuracy": 0.875,
+          "log_loss": 0.4129843541792741,
+          "brier": 0.2350206611570248,
+          "ece": 0.11931818181818193,
+          "calibration_bins": [
+            {
+              "lower": 0.8,
+              "n": 14,
+              "confidence": 0.8506493506493505,
+              "accuracy": 0.9285714285714286
+            },
+            {
+              "lower": 0.9,
+              "n": 2,
+              "confidence": 0.9090909090909091,
+              "accuracy": 0.5
+            }
+          ]
+        },
+        "test": {
+          "n": 16,
+          "accuracy": 0.9375,
+          "log_loss": 0.30177843229678075,
+          "brier": 0.13713842975206614,
+          "ece": 0.059659090909090925,
+          "calibration_bins": [
+            {
+              "lower": 0.8,
+              "n": 6,
+              "confidence": 0.8636363636363636,
+              "accuracy": 1.0
+            },
+            {
+              "lower": 0.9,
+              "n": 10,
+              "confidence": 0.9136363636363637,
+              "accuracy": 0.9
+            }
+          ]
+        },
+        "method": "Played games only; last 20 prior games with Beta(1,1) smoothing. Date-grouped 60/20/20, temperature selected on validation."
+      }
+    },
+    {
+      "player": "Davion Mitchell",
+      "player_id": "4278053",
+      "stat": "threes",
+      "threshold": 3,
+      "backtest": {
+        "status": "provisional",
+        "model": "nba-beta-binomial-v1",
+        "temperature": 1,
+        "validation_start": "2026-02-21T00:30:00+00:00",
+        "test_start": "2026-03-27T23:30:00+00:00",
+        "validation": {
+          "n": 16,
+          "accuracy": 0.8125,
+          "log_loss": 0.49697481081768974,
+          "brier": 0.31404958677685946,
+          "ece": 0.10795454545454533,
+          "calibration_bins": [
+            {
+              "lower": 0.7,
+              "n": 4,
+              "confidence": 0.7727272727272727,
+              "accuracy": 1.0
+            },
+            {
+              "lower": 0.8,
+              "n": 12,
+              "confidence": 0.818181818181818,
+              "accuracy": 0.75
+            }
+          ]
+        },
+        "test": {
+          "n": 16,
+          "accuracy": 0.6875,
+          "log_loss": 0.624703683308972,
+          "brier": 0.43259297520661155,
+          "ece": 0.11647727272727275,
+          "calibration_bins": [
+            {
+              "lower": 0.6,
+              "n": 1,
+              "confidence": 0.6818181818181819,
+              "accuracy": 1.0
+            },
+            {
+              "lower": 0.7,
+              "n": 11,
+              "confidence": 0.7520661157024794,
+              "accuracy": 0.6363636363636364
+            },
+            {
+              "lower": 0.8,
+              "n": 4,
+              "confidence": 0.8181818181818181,
+              "accuracy": 0.75
+            }
+          ]
+        },
+        "method": "Played games only; last 20 prior games with Beta(1,1) smoothing. Date-grouped 60/20/20, temperature selected on validation."
+      }
+    },
+    {
+      "player": "Davion Mitchell",
+      "player_id": "4278053",
+      "stat": "assists",
+      "threshold": 4,
+      "backtest": {
+        "status": "provisional",
+        "model": "nba-beta-binomial-v1",
+        "temperature": 1.2,
+        "validation_start": "2026-02-21T00:30:00+00:00",
+        "test_start": "2026-03-27T23:30:00+00:00",
+        "validation": {
+          "n": 16,
+          "accuracy": 0.8125,
+          "log_loss": 0.5288565925964975,
+          "brier": 0.337433445657078,
+          "ece": 0.1339087398728963,
+          "calibration_bins": [
+            {
+              "lower": 0.7,
+              "n": 14,
+              "confidence": 0.7502759103733746,
+              "accuracy": 0.8571428571428571
+            },
+            {
+              "lower": 0.8,
+              "n": 2,
+              "confidence": 0.8232012915967931,
+              "accuracy": 0.5
+            }
+          ]
+        },
+        "test": {
+          "n": 16,
+          "accuracy": 0.875,
+          "log_loss": 0.4434082295923781,
+          "brier": 0.26237426721572665,
+          "ece": 0.21328731445102855,
+          "calibration_bins": [
+            {
+              "lower": 0.7,
+              "n": 15,
+              "confidence": 0.7607069506920224,
+              "accuracy": 0.9333333333333333
+            },
+            {
+              "lower": 0.8,
+              "n": 1,
+              "confidence": 0.8232012915967931,
+              "accuracy": 0.0
+            }
+          ]
+        },
+        "method": "Played games only; last 20 prior games with Beta(1,1) smoothing. Date-grouped 60/20/20, temperature selected on validation."
+      }
+    },
+    {
+      "player": "Davion Mitchell",
+      "player_id": "4278053",
+      "stat": "points",
+      "threshold": 20,
+      "backtest": {
+        "status": "provisional",
+        "model": "nba-beta-binomial-v1",
+        "temperature": 0.8,
+        "validation_start": "2026-02-21T00:30:00+00:00",
+        "test_start": "2026-03-27T23:30:00+00:00",
+        "validation": {
+          "n": 16,
+          "accuracy": 1.0,
+          "log_loss": 0.022000861961990095,
+          "brier": 0.0009470481344922665,
+          "ece": 0.021760608154326344,
+          "calibration_bins": [
+            {
+              "lower": 0.9,
+              "n": 16,
+              "confidence": 0.9782393918456737,
+              "accuracy": 1.0
+            }
+          ]
+        },
+        "test": {
+          "n": 16,
+          "accuracy": 0.8125,
+          "log_loss": 0.6328137382523711,
+          "brier": 0.34612257896013643,
+          "ece": 0.18620409732848006,
+          "calibration_bins": [
+            {
+              "lower": 0.8,
+              "n": 4,
+              "confidence": 0.8676222385041488,
+              "accuracy": 1.0
+            },
+            {
+              "lower": 0.9,
+              "n": 12,
+              "confidence": 0.9541462092726897,
+              "accuracy": 0.75
+            }
+          ]
+        },
+        "method": "Played games only; last 20 prior games with Beta(1,1) smoothing. Date-grouped 60/20/20, temperature selected on validation."
+      }
+    }
+  ],
+  "sources": {
+    "epl": {
+      "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/master/data/ENG_1_premier-league/results_2627.csv",
+      "sha256": "6afecb11e2b113120e99ba3c09f338ce9f7f0fe1348b96c36375a4d4b71e50a7",
+      "rows": 90,
+      "labelled_before_cutoff": 90,
+      "excluded": 0,
+      "retrieved_utc": "2026-11-05T16:37:44.973759+00:00"
+    },
+    "la_liga": {
+      "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/master/data/ESP_1_la-liga/results_2627.csv",
+      "sha256": "e268fc5a4acc2e8a64719191cf0e8f8b2798c84b881af97c674a14b7ceae1bcd",
+      "rows": 109,
+      "labelled_before_cutoff": 109,
+      "excluded": 0,
+      "retrieved_utc": "2026-11-05T16:37:45.017081+00:00"
+    },
+    "bundesliga": {
+      "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/master/data/GER_1_bundesliga/results_2627.csv",
+      "sha256": "3b68075ee8842f88e27379cef650ee091caf95cd25511be40ebe51973dc84d2e",
+      "rows": 72,
+      "labelled_before_cutoff": 72,
+      "excluded": 0,
+      "retrieved_utc": "2026-11-05T16:37:45.072159+00:00"
+    },
+    "serie_a": {
+      "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/master/data/ITA_1_serie-a/results_2627.csv",
+      "sha256": "5cb71c92897e2804f3424a247c5c17372dc4eb7c7570cfd8c3fcfd5b5d8bfcf2",
+      "rows": 100,
+      "labelled_before_cutoff": 100,
+      "excluded": 0,
+      "retrieved_utc": "2026-11-05T16:37:45.094292+00:00"
+    },
+    "ligue_1": {
+      "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/master/data/FRA_1_ligue-1/results_2627.csv",
+      "sha256": "a80c4d63d6a26f9ab5617cb98c67f2b5d2dd9a8306c56838ee99ec04bc8888af",
+      "rows": 81,
+      "labelled_before_cutoff": 81,
+      "excluded": 0,
+      "retrieved_utc": "2026-11-05T16:37:45.126991+00:00"
+    },
+    "ucl": {
+      "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/master/data/UEFA_1_champions-league/results_2627.csv",
+      "sha256": "248fdb0150b0898f0b8dc91176463d5a251f2fa9b8748dd801343786bbc2d88a",
+      "rows": 72,
+      "labelled_before_cutoff": 0,
+      "excluded": 72,
+      "retrieved_utc": "2026-11-05T16:37:45.152340+00:00"
+    },
+    "uel": {
+      "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/master/data/UEFA_1_europa-league/results_2627.csv",
+      "sha256": "a0f8c345ce764e1fcabbcc2ef65f376ac889e16868f30631b2698b1d83689b36",
+      "rows": 55,
+      "labelled_before_cutoff": 0,
+      "excluded": 55,
+      "retrieved_utc": "2026-11-05T16:37:45.152713+00:00"
+    },
+    "uecl": {
+      "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/master/data/UEFA_1_conference-league/results_2627.csv",
+      "sha256": "0c9bba9bbdfe99be905b03bf1ecd4fc3c2c2b0a6890a2eee30d7b9d824173b48",
+      "rows": 36,
+      "labelled_before_cutoff": 0,
+      "excluded": 36,
+      "retrieved_utc": "2026-11-05T16:37:45.153052+00:00"
+    }
+  },
+  "errors": {},
+  "disclaimer": "Provisional research baselines; no profitability or betting edge established. Backtests are retrospective and conditional on source accuracy."
+}

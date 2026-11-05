@@ -1,0 +1,2512 @@
+{
+  "schema_version": 1,
+  "date": "20261105",
+  "generated_utc": "2026-11-05T16:37:17.773351+00:00",
+  "status": "ok",
+  "source": "ESPN unofficial; open-matchday",
+  "games": [
+    {
+      "source": "ESPN (unofficial)",
+      "league": "nba",
+      "id": "401909936",
+      "date_utc": "2026-11-06T02:00Z",
+      "status": "STATUS_SCHEDULED",
+      "state": "pre",
+      "completed": false,
+      "clock": "0.0",
+      "period": 0,
+      "home": {
+        "id": "21",
+        "name": "Phoenix Suns",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "overall: 1-5",
+          "Home: 1-2",
+          "Road: 0-3"
+        ]
+      },
+      "away": {
+        "id": "19",
+        "name": "Orlando Magic",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "overall: 2-5",
+          "Home: 0-4",
+          "Road: 2-1"
+        ]
+      },
+      "halftime": null,
+      "source_url": "https://www.espn.com/nba/game/_/gameId/401909936",
+      "detail_url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909936"
+    },
+    {
+      "source": "ESPN (unofficial)",
+      "league": "nba",
+      "id": "401909937",
+      "date_utc": "2026-11-06T03:00Z",
+      "status": "STATUS_SCHEDULED",
+      "state": "pre",
+      "completed": false,
+      "clock": "0.0",
+      "period": 0,
+      "home": {
+        "id": "9",
+        "name": "Golden State Warriors",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "overall: 5-3",
+          "Home: 3-1",
+          "Road: 2-2"
+        ]
+      },
+      "away": {
+        "id": "14",
+        "name": "Miami Heat",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "overall: 3-5",
+          "Home: 1-3",
+          "Road: 2-2"
+        ]
+      },
+      "halftime": null,
+      "source_url": "https://www.espn.com/nba/game/_/gameId/401909937",
+      "detail_url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909937"
+    },
+    {
+      "source": "ESPN (unofficial)",
+      "league": "uel",
+      "id": "401915534",
+      "date_utc": "2026-11-05T17:45Z",
+      "status": "STATUS_SCHEDULED",
+      "state": "pre",
+      "completed": false,
+      "clock": "0'",
+      "period": null,
+      "home": {
+        "id": "103",
+        "name": "AC Milan",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 1-0-2"
+        ]
+      },
+      "away": {
+        "id": "622",
+        "name": "Ferencvaros",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 3-0-0"
+        ]
+      },
+      "halftime": null,
+      "source_url": "https://www.espn.com/soccer/game/_/gameId/401915534",
+      "detail_url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa/summary?event=401915534",
+      "research": {
+        "status": "WATCH",
+        "reason": "Insufficient verified HT history"
+      }
+    },
+    {
+      "source": "ESPN (unofficial)",
+      "league": "uel",
+      "id": "401915538",
+      "date_utc": "2026-11-05T17:45Z",
+      "status": "STATUS_SCHEDULED",
+      "state": "pre",
+      "completed": false,
+      "clock": "0'",
+      "period": null,
+      "home": {
+        "id": "441",
+        "name": "Anderlecht",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 1-0-2"
+        ]
+      },
+      "away": {
+        "id": "2790",
+        "name": "RB Salzburg",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 1-1-1"
+        ]
+      },
+      "halftime": null,
+      "source_url": "https://www.espn.com/soccer/game/_/gameId/401915538",
+      "detail_url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa/summary?event=401915538",
+      "research": {
+        "status": "WATCH",
+        "reason": "Insufficient verified HT history"
+      }
+    },
+    {
+      "source": "ESPN (unofficial)",
+      "league": "uel",
+      "id": "401915526",
+      "date_utc": "2026-11-05T17:45Z",
+      "status": "STATUS_SCHEDULED",
+      "state": "pre",
+      "completed": false,
+      "clock": "0'",
+      "period": null,
+      "home": {
+        "id": "384",
+        "name": "Crystal Palace",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 1-1-1"
+        ]
+      },
+      "away": {
+        "id": "7911",
+        "name": "TSG Hoffenheim",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 1-0-2"
+        ]
+      },
+      "halftime": null,
+      "source_url": "https://www.espn.com/soccer/game/_/gameId/401915526",
+      "detail_url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa/summary?event=401915526",
+      "research": {
+        "status": "WATCH",
+        "reason": "Insufficient verified HT history"
+      }
+    },
+    {
+      "source": "ESPN (unofficial)",
+      "league": "uel",
+      "id": "401915536",
+      "date_utc": "2026-11-05T17:45Z",
+      "status": "STATUS_SCHEDULED",
+      "state": "pre",
+      "completed": false,
+      "clock": "0'",
+      "period": null,
+      "home": {
+        "id": "490",
+        "name": "Levski Sofia",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 1-1-1"
+        ]
+      },
+      "away": {
+        "id": "11505",
+        "name": "Jagiellonia Bialystok",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 1-0-2"
+        ]
+      },
+      "halftime": null,
+      "source_url": "https://www.espn.com/soccer/game/_/gameId/401915536",
+      "detail_url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa/summary?event=401915536",
+      "research": {
+        "status": "WATCH",
+        "reason": "Insufficient verified HT history"
+      }
+    },
+    {
+      "source": "ESPN (unofficial)",
+      "league": "uel",
+      "id": "401915527",
+      "date_utc": "2026-11-05T17:45Z",
+      "status": "STATUS_SCHEDULED",
+      "state": "pre",
+      "completed": false,
+      "clock": "0'",
+      "period": null,
+      "home": {
+        "id": "987",
+        "name": "Lillestrom",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 0-1-2"
+        ]
+      },
+      "away": {
+        "id": "11706",
+        "name": "Viktoria Plzen",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 0-0-3"
+        ]
+      },
+      "halftime": null,
+      "source_url": "https://www.espn.com/soccer/game/_/gameId/401915527",
+      "detail_url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa/summary?event=401915527",
+      "research": {
+        "status": "WATCH",
+        "reason": "Insufficient verified HT history"
+      }
+    },
+    {
+      "source": "ESPN (unofficial)",
+      "league": "uel",
+      "id": "401915535",
+      "date_utc": "2026-11-05T17:45Z",
+      "status": "STATUS_SCHEDULED",
+      "state": "pre",
+      "completed": false,
+      "clock": "0'",
+      "period": null,
+      "home": {
+        "id": "147",
+        "name": "NEC Nijmegen",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 1-1-1"
+        ]
+      },
+      "away": {
+        "id": "617",
+        "name": "Omonia Nicosia",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 2-0-1"
+        ]
+      },
+      "halftime": null,
+      "source_url": "https://www.espn.com/soccer/game/_/gameId/401915535",
+      "detail_url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa/summary?event=401915535",
+      "research": {
+        "status": "WATCH",
+        "reason": "Insufficient verified HT history"
+      }
+    },
+    {
+      "source": "ESPN (unofficial)",
+      "league": "uel",
+      "id": "401915537",
+      "date_utc": "2026-11-05T17:45Z",
+      "status": "STATUS_SCHEDULED",
+      "state": "pre",
+      "completed": false,
+      "clock": "0'",
+      "period": null,
+      "home": {
+        "id": "89",
+        "name": "Real Sociedad",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 1-1-1"
+        ]
+      },
+      "away": {
+        "id": "167",
+        "name": "Lyon",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 2-0-1"
+        ]
+      },
+      "halftime": null,
+      "source_url": "https://www.espn.com/soccer/game/_/gameId/401915537",
+      "detail_url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa/summary?event=401915537",
+      "research": {
+        "status": "WATCH",
+        "reason": "Insufficient verified HT history"
+      }
+    },
+    {
+      "source": "ESPN (unofficial)",
+      "league": "uel",
+      "id": "401915528",
+      "date_utc": "2026-11-05T17:45Z",
+      "status": "STATUS_SCHEDULED",
+      "state": "pre",
+      "completed": false,
+      "clock": "0'",
+      "period": null,
+      "home": {
+        "id": "433",
+        "name": "Sparta Prague",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 1-1-1"
+        ]
+      },
+      "away": {
+        "id": "349",
+        "name": "AFC Bournemouth",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 3-0-0"
+        ]
+      },
+      "halftime": null,
+      "source_url": "https://www.espn.com/soccer/game/_/gameId/401915528",
+      "detail_url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa/summary?event=401915528",
+      "research": {
+        "status": "WATCH",
+        "reason": "Insufficient verified HT history"
+      }
+    },
+    {
+      "source": "ESPN (unofficial)",
+      "league": "uel",
+      "id": "401915529",
+      "date_utc": "2026-11-05T20:00Z",
+      "status": "STATUS_SCHEDULED",
+      "state": "pre",
+      "completed": false,
+      "clock": "0'",
+      "period": null,
+      "home": {
+        "id": "140",
+        "name": "AZ Alkmaar",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 2-0-1"
+        ]
+      },
+      "away": {
+        "id": "111",
+        "name": "Juventus",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 2-1-0"
+        ]
+      },
+      "halftime": null,
+      "source_url": "https://www.espn.com/soccer/game/_/gameId/401915529",
+      "detail_url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa/summary?event=401915529",
+      "research": {
+        "status": "WATCH",
+        "reason": "Insufficient verified HT history"
+      }
+    },
+    {
+      "source": "ESPN (unofficial)",
+      "league": "uel",
+      "id": "401915533",
+      "date_utc": "2026-11-05T20:00Z",
+      "status": "STATUS_SCHEDULED",
+      "state": "pre",
+      "completed": false,
+      "clock": "0'",
+      "period": null,
+      "home": {
+        "id": "131",
+        "name": "Bayer Leverkusen",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 3-0-0"
+        ]
+      },
+      "away": {
+        "id": "176",
+        "name": "Marseille",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 0-0-3"
+        ]
+      },
+      "halftime": null,
+      "source_url": "https://www.espn.com/soccer/game/_/gameId/401915533",
+      "detail_url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa/summary?event=401915533",
+      "research": {
+        "status": "WATCH",
+        "reason": "Insufficient verified HT history"
+      }
+    },
+    {
+      "source": "ESPN (unofficial)",
+      "league": "uel",
+      "id": "401915525",
+      "date_utc": "2026-11-05T20:00Z",
+      "status": "STATUS_SCHEDULED",
+      "state": "pre",
+      "completed": false,
+      "clock": "0'",
+      "period": null,
+      "home": {
+        "id": "1929",
+        "name": "Benfica",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 3-0-0"
+        ]
+      },
+      "away": {
+        "id": "2990",
+        "name": "Lech Poznan",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 0-1-2"
+        ]
+      },
+      "halftime": null,
+      "source_url": "https://www.espn.com/soccer/game/_/gameId/401915525",
+      "detail_url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa/summary?event=401915525",
+      "research": {
+        "status": "WATCH",
+        "reason": "Insufficient verified HT history"
+      }
+    },
+    {
+      "source": "ESPN (unofficial)",
+      "league": "uel",
+      "id": "401915531",
+      "date_utc": "2026-11-05T20:00Z",
+      "status": "STATUS_SCHEDULED",
+      "state": "pre",
+      "completed": false,
+      "clock": "0'",
+      "period": null,
+      "home": {
+        "id": "85",
+        "name": "Celta Vigo",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 1-0-2"
+        ]
+      },
+      "away": {
+        "id": "5807",
+        "name": "Union St.-Gilloise",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 2-1-0"
+        ]
+      },
+      "halftime": null,
+      "source_url": "https://www.espn.com/soccer/game/_/gameId/401915531",
+      "detail_url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa/summary?event=401915531",
+      "research": {
+        "status": "WATCH",
+        "reason": "Insufficient verified HT history"
+      }
+    },
+    {
+      "source": "ESPN (unofficial)",
+      "league": "uel",
+      "id": "401915522",
+      "date_utc": "2026-11-05T20:00Z",
+      "status": "STATUS_SCHEDULED",
+      "state": "pre",
+      "completed": false,
+      "clock": "0'",
+      "period": null,
+      "home": {
+        "id": "256",
+        "name": "Celtic",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 0-0-3"
+        ]
+      },
+      "away": {
+        "id": "1895",
+        "name": "Besiktas",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 2-1-0"
+        ]
+      },
+      "halftime": null,
+      "source_url": "https://www.espn.com/soccer/game/_/gameId/401915522",
+      "detail_url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa/summary?event=401915522",
+      "research": {
+        "status": "WATCH",
+        "reason": "Insufficient verified HT history"
+      }
+    },
+    {
+      "source": "ESPN (unofficial)",
+      "league": "uel",
+      "id": "401915532",
+      "date_utc": "2026-11-05T20:00Z",
+      "status": "STATUS_SCHEDULED",
+      "state": "pre",
+      "completed": false,
+      "clock": "0'",
+      "period": null,
+      "home": {
+        "id": "13083",
+        "name": "Hapoel Be'er",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 0-1-2"
+        ]
+      },
+      "away": {
+        "id": "1010",
+        "name": "OFI Crete",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 1-0-2"
+        ]
+      },
+      "halftime": null,
+      "source_url": "https://www.espn.com/soccer/game/_/gameId/401915532",
+      "detail_url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa/summary?event=401915532",
+      "research": {
+        "status": "WATCH",
+        "reason": "Insufficient verified HT history"
+      }
+    },
+    {
+      "source": "ESPN (unofficial)",
+      "league": "uel",
+      "id": "401915524",
+      "date_utc": "2026-11-05T20:00Z",
+      "status": "STATUS_SCHEDULED",
+      "state": "pre",
+      "completed": false,
+      "clock": "0'",
+      "period": null,
+      "home": {
+        "id": "3746",
+        "name": "SK Sturm Graz",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 1-1-1"
+        ]
+      },
+      "away": {
+        "id": "3362",
+        "name": "NK Celje",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 0-1-2"
+        ]
+      },
+      "halftime": null,
+      "source_url": "https://www.espn.com/soccer/game/_/gameId/401915524",
+      "detail_url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa/summary?event=401915524",
+      "research": {
+        "status": "WATCH",
+        "reason": "Insufficient verified HT history"
+      }
+    },
+    {
+      "source": "ESPN (unofficial)",
+      "league": "uel",
+      "id": "401915523",
+      "date_utc": "2026-11-05T20:00Z",
+      "status": "STATUS_SCHEDULED",
+      "state": "pre",
+      "completed": false,
+      "clock": "0'",
+      "period": null,
+      "home": {
+        "id": "366",
+        "name": "Sunderland",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 2-1-0"
+        ]
+      },
+      "away": {
+        "id": "597",
+        "name": "Dinamo Zagreb",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 1-1-1"
+        ]
+      },
+      "halftime": null,
+      "source_url": "https://www.espn.com/soccer/game/_/gameId/401915523",
+      "detail_url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa/summary?event=401915523",
+      "research": {
+        "status": "WATCH",
+        "reason": "Insufficient verified HT history"
+      }
+    },
+    {
+      "source": "ESPN (unofficial)",
+      "league": "uel",
+      "id": "401915530",
+      "date_utc": "2026-11-05T20:00Z",
+      "status": "STATUS_SCHEDULED",
+      "state": "pre",
+      "completed": false,
+      "clock": "0'",
+      "period": null,
+      "home": {
+        "id": "21615",
+        "name": "Torreense",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 1-0-2"
+        ]
+      },
+      "away": {
+        "id": "20024",
+        "name": "Ararat-Armenia",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 0-0-3"
+        ]
+      },
+      "halftime": null,
+      "source_url": "https://www.espn.com/soccer/game/_/gameId/401915530",
+      "detail_url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa/summary?event=401915530",
+      "research": {
+        "status": "WATCH",
+        "reason": "Insufficient verified HT history"
+      }
+    },
+    {
+      "source": "ESPN (unofficial)",
+      "league": "uecl",
+      "id": "401915831",
+      "date_utc": "2026-11-05T17:45Z",
+      "status": "STATUS_SCHEDULED",
+      "state": "pre",
+      "completed": false,
+      "clock": "0'",
+      "period": null,
+      "home": {
+        "id": "7853",
+        "name": "AGF",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 0-1-1"
+        ]
+      },
+      "away": {
+        "id": "2994",
+        "name": "Braga",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 1-0-1"
+        ]
+      },
+      "halftime": null,
+      "source_url": "https://www.espn.com/soccer/game/_/gameId/401915831",
+      "detail_url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa.conf/summary?event=401915831",
+      "research": {
+        "status": "WATCH",
+        "reason": "Insufficient verified HT history"
+      }
+    },
+    {
+      "source": "ESPN (unofficial)",
+      "league": "uecl",
+      "id": "401915830",
+      "date_utc": "2026-11-05T17:45Z",
+      "status": "STATUS_SCHEDULED",
+      "state": "pre",
+      "completed": false,
+      "clock": "0'",
+      "period": null,
+      "home": {
+        "id": "105",
+        "name": "Atalanta",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 1-0-1"
+        ]
+      },
+      "away": {
+        "id": "2528",
+        "name": "Kairat Almaty",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 0-1-1"
+        ]
+      },
+      "halftime": null,
+      "source_url": "https://www.espn.com/soccer/game/_/gameId/401915830",
+      "detail_url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa.conf/summary?event=401915830",
+      "research": {
+        "status": "WATCH",
+        "reason": "Insufficient verified HT history"
+      }
+    },
+    {
+      "source": "ESPN (unofficial)",
+      "league": "uecl",
+      "id": "401915829",
+      "date_utc": "2026-11-05T17:45Z",
+      "status": "STATUS_SCHEDULED",
+      "state": "pre",
+      "completed": false,
+      "clock": "0'",
+      "period": null,
+      "home": {
+        "id": "572",
+        "name": "FC Midtjylland",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 0-1-1"
+        ]
+      },
+      "away": {
+        "id": "139",
+        "name": "Ajax Amsterdam",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 1-0-1"
+        ]
+      },
+      "halftime": null,
+      "source_url": "https://www.espn.com/soccer/game/_/gameId/401915829",
+      "detail_url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa.conf/summary?event=401915829",
+      "research": {
+        "status": "WATCH",
+        "reason": "Insufficient verified HT history"
+      }
+    },
+    {
+      "source": "ESPN (unofficial)",
+      "league": "uecl",
+      "id": "401915828",
+      "date_utc": "2026-11-05T17:45Z",
+      "status": "STATUS_SCHEDULED",
+      "state": "pre",
+      "completed": false,
+      "clock": "0'",
+      "period": null,
+      "home": {
+        "id": "3024",
+        "name": "FC Thun",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 0-0-2"
+        ]
+      },
+      "away": {
+        "id": "262",
+        "name": "Heart of Midlothian",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 0-1-1"
+        ]
+      },
+      "halftime": null,
+      "source_url": "https://www.espn.com/soccer/game/_/gameId/401915828",
+      "detail_url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa.conf/summary?event=401915828",
+      "research": {
+        "status": "WATCH",
+        "reason": "Insufficient verified HT history"
+      }
+    },
+    {
+      "source": "ESPN (unofficial)",
+      "league": "uecl",
+      "id": "401915826",
+      "date_utc": "2026-11-05T17:45Z",
+      "status": "STATUS_SCHEDULED",
+      "state": "pre",
+      "completed": false,
+      "clock": "0'",
+      "period": null,
+      "home": {
+        "id": "8169",
+        "name": "KuPS Kuopio",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 0-0-2"
+        ]
+      },
+      "away": {
+        "id": "3611",
+        "name": "KAA Gent",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 1-0-1"
+        ]
+      },
+      "halftime": null,
+      "source_url": "https://www.espn.com/soccer/game/_/gameId/401915826",
+      "detail_url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa.conf/summary?event=401915826",
+      "research": {
+        "status": "WATCH",
+        "reason": "Insufficient verified HT history"
+      }
+    },
+    {
+      "source": "ESPN (unofficial)",
+      "league": "uecl",
+      "id": "401915742",
+      "date_utc": "2026-11-05T17:45Z",
+      "status": "STATUS_SCHEDULED",
+      "state": "pre",
+      "completed": false,
+      "clock": "0'",
+      "period": null,
+      "home": {
+        "id": "17856",
+        "name": "Lincoln Red Imps",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 0-0-2"
+        ]
+      },
+      "away": {
+        "id": "489",
+        "name": "Hajduk Split",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 2-0-0"
+        ]
+      },
+      "halftime": null,
+      "source_url": "https://www.espn.com/soccer/game/_/gameId/401915742",
+      "detail_url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa.conf/summary?event=401915742",
+      "research": {
+        "status": "WATCH",
+        "reason": "Insufficient verified HT history"
+      }
+    },
+    {
+      "source": "ESPN (unofficial)",
+      "league": "uecl",
+      "id": "401915741",
+      "date_utc": "2026-11-05T17:45Z",
+      "status": "STATUS_SCHEDULED",
+      "state": "pre",
+      "completed": false,
+      "clock": "0'",
+      "period": null,
+      "home": {
+        "id": "20301",
+        "name": "Mjällby AIF",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 1-1-0"
+        ]
+      },
+      "away": {
+        "id": "20710",
+        "name": "Borac Banja Luka",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 1-0-1"
+        ]
+      },
+      "halftime": null,
+      "source_url": "https://www.espn.com/soccer/game/_/gameId/401915741",
+      "detail_url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa.conf/summary?event=401915741",
+      "research": {
+        "status": "WATCH",
+        "reason": "Insufficient verified HT history"
+      }
+    },
+    {
+      "source": "ESPN (unofficial)",
+      "league": "uecl",
+      "id": "401915827",
+      "date_utc": "2026-11-05T17:45Z",
+      "status": "STATUS_SCHEDULED",
+      "state": "pre",
+      "completed": false,
+      "clock": "0'",
+      "period": null,
+      "home": {
+        "id": "2290",
+        "name": "Red Star Belgrade",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 0-1-1"
+        ]
+      },
+      "away": {
+        "id": "20703",
+        "name": "Inter D'Escaldes",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 0-0-2"
+        ]
+      },
+      "halftime": null,
+      "source_url": "https://www.espn.com/soccer/game/_/gameId/401915827",
+      "detail_url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa.conf/summary?event=401915827",
+      "research": {
+        "status": "WATCH",
+        "reason": "Insufficient verified HT history"
+      }
+    },
+    {
+      "source": "ESPN (unofficial)",
+      "league": "uecl",
+      "id": "401915825",
+      "date_utc": "2026-11-05T17:45Z",
+      "status": "STATUS_SCHEDULED",
+      "state": "pre",
+      "completed": false,
+      "clock": "0'",
+      "period": null,
+      "home": {
+        "id": "997",
+        "name": "Trabzonspor",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 2-0-0"
+        ]
+      },
+      "away": {
+        "id": "126",
+        "name": "SC Freiburg",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 1-0-1"
+        ]
+      },
+      "halftime": null,
+      "source_url": "https://www.espn.com/soccer/game/_/gameId/401915825",
+      "detail_url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa.conf/summary?event=401915825",
+      "research": {
+        "status": "WATCH",
+        "reason": "Insufficient verified HT history"
+      }
+    },
+    {
+      "source": "ESPN (unofficial)",
+      "league": "uecl",
+      "id": "401915824",
+      "date_utc": "2026-11-05T20:00Z",
+      "status": "STATUS_SCHEDULED",
+      "state": "pre",
+      "completed": false,
+      "clock": "0'",
+      "period": null,
+      "home": {
+        "id": "174",
+        "name": "AS Monaco",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 2-0-0"
+        ]
+      },
+      "away": {
+        "id": "3101",
+        "name": "FC Nordsjælland",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 0-2-0"
+        ]
+      },
+      "halftime": null,
+      "source_url": "https://www.espn.com/soccer/game/_/gameId/401915824",
+      "detail_url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa.conf/summary?event=401915824",
+      "research": {
+        "status": "WATCH",
+        "reason": "Insufficient verified HT history"
+      }
+    },
+    {
+      "source": "ESPN (unofficial)",
+      "league": "uecl",
+      "id": "401915817",
+      "date_utc": "2026-11-05T20:00Z",
+      "status": "STATUS_SCHEDULED",
+      "state": "pre",
+      "completed": false,
+      "clock": "0'",
+      "period": null,
+      "home": {
+        "id": "8089",
+        "name": "CSU Craiova",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 1-1-0"
+        ]
+      },
+      "away": {
+        "id": "21943",
+        "name": "Egnatia",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 0-2-0"
+        ]
+      },
+      "halftime": null,
+      "source_url": "https://www.espn.com/soccer/game/_/gameId/401915817",
+      "detail_url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa.conf/summary?event=401915817",
+      "research": {
+        "status": "WATCH",
+        "reason": "Insufficient verified HT history"
+      }
+    },
+    {
+      "source": "ESPN (unofficial)",
+      "league": "uecl",
+      "id": "401915740",
+      "date_utc": "2026-11-05T20:00Z",
+      "status": "STATUS_SCHEDULED",
+      "state": "pre",
+      "completed": false,
+      "clock": "0'",
+      "period": null,
+      "home": {
+        "id": "909",
+        "name": "F.C. København",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 1-1-0"
+        ]
+      },
+      "away": {
+        "id": "20025",
+        "name": "Iberia 1999",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 0-1-1"
+        ]
+      },
+      "halftime": null,
+      "source_url": "https://www.espn.com/soccer/game/_/gameId/401915740",
+      "detail_url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa.conf/summary?event=401915740",
+      "research": {
+        "status": "WATCH",
+        "reason": "Insufficient verified HT history"
+      }
+    },
+    {
+      "source": "ESPN (unofficial)",
+      "league": "uecl",
+      "id": "401915823",
+      "date_utc": "2026-11-05T20:00Z",
+      "status": "STATUS_SCHEDULED",
+      "state": "pre",
+      "completed": false,
+      "clock": "0'",
+      "period": null,
+      "home": {
+        "id": "7672",
+        "name": "FC Lugano",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 2-0-0"
+        ]
+      },
+      "away": {
+        "id": "20028",
+        "name": "Kauno Zalgiris",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 0-0-2"
+        ]
+      },
+      "halftime": null,
+      "source_url": "https://www.espn.com/soccer/game/_/gameId/401915823",
+      "detail_url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa.conf/summary?event=401915823",
+      "research": {
+        "status": "WATCH",
+        "reason": "Insufficient verified HT history"
+      }
+    },
+    {
+      "source": "ESPN (unofficial)",
+      "league": "uecl",
+      "id": "401915822",
+      "date_utc": "2026-11-05T20:00Z",
+      "status": "STATUS_SCHEDULED",
+      "state": "pre",
+      "completed": false,
+      "clock": "0'",
+      "period": null,
+      "home": {
+        "id": "152",
+        "name": "FC Twente",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 2-0-0"
+        ]
+      },
+      "away": {
+        "id": "22281",
+        "name": "Pafos",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 0-1-1"
+        ]
+      },
+      "halftime": null,
+      "source_url": "https://www.espn.com/soccer/game/_/gameId/401915822",
+      "detail_url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa.conf/summary?event=401915822",
+      "research": {
+        "status": "WATCH",
+        "reason": "Insufficient verified HT history"
+      }
+    },
+    {
+      "source": "ESPN (unofficial)",
+      "league": "uecl",
+      "id": "401915821",
+      "date_utc": "2026-11-05T20:00Z",
+      "status": "STATUS_SCHEDULED",
+      "state": "pre",
+      "completed": false,
+      "clock": "0'",
+      "period": null,
+      "home": {
+        "id": "2922",
+        "name": "Getafe",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 0-1-1"
+        ]
+      },
+      "away": {
+        "id": "331",
+        "name": "Brighton & Hove Albion",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 1-1-0"
+        ]
+      },
+      "halftime": null,
+      "source_url": "https://www.espn.com/soccer/game/_/gameId/401915821",
+      "detail_url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa.conf/summary?event=401915821",
+      "research": {
+        "status": "WATCH",
+        "reason": "Insufficient verified HT history"
+      }
+    },
+    {
+      "source": "ESPN (unofficial)",
+      "league": "uecl",
+      "id": "401915819",
+      "date_utc": "2026-11-05T20:00Z",
+      "status": "STATUS_SCHEDULED",
+      "state": "pre",
+      "completed": false,
+      "clock": "0'",
+      "period": null,
+      "home": {
+        "id": "443",
+        "name": "Panathinaikos",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 2-0-0"
+        ]
+      },
+      "away": {
+        "id": "10834",
+        "name": "CSKA Sofia",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 0-1-1"
+        ]
+      },
+      "halftime": null,
+      "source_url": "https://www.espn.com/soccer/game/_/gameId/401915819",
+      "detail_url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa.conf/summary?event=401915819",
+      "research": {
+        "status": "WATCH",
+        "reason": "Insufficient verified HT history"
+      }
+    },
+    {
+      "source": "ESPN (unofficial)",
+      "league": "uecl",
+      "id": "401915818",
+      "date_utc": "2026-11-05T20:00Z",
+      "status": "STATUS_SCHEDULED",
+      "state": "pre",
+      "completed": false,
+      "clock": "0'",
+      "period": null,
+      "home": {
+        "id": "19246",
+        "name": "Riga FC",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 0-2-0"
+        ]
+      },
+      "away": {
+        "id": "7922",
+        "name": "Jablonec",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 0-1-1"
+        ]
+      },
+      "halftime": null,
+      "source_url": "https://www.espn.com/soccer/game/_/gameId/401915818",
+      "detail_url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa.conf/summary?event=401915818",
+      "research": {
+        "status": "WATCH",
+        "reason": "Insufficient verified HT history"
+      }
+    },
+    {
+      "source": "ESPN (unofficial)",
+      "league": "uecl",
+      "id": "401915820",
+      "date_utc": "2026-11-05T20:00Z",
+      "status": "STATUS_SCHEDULED",
+      "state": "pre",
+      "completed": false,
+      "clock": "0'",
+      "period": null,
+      "home": {
+        "id": "936",
+        "name": "Sint-Truidense",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 2-0-0"
+        ]
+      },
+      "away": {
+        "id": "620",
+        "name": "SK Brann",
+        "score": null,
+        "period_scores": [],
+        "records": [
+          "All Splits: 2-0-0"
+        ]
+      },
+      "halftime": null,
+      "source_url": "https://www.espn.com/soccer/game/_/gameId/401915820",
+      "detail_url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa.conf/summary?event=401915820",
+      "research": {
+        "status": "WATCH",
+        "reason": "Insufficient verified HT history"
+      }
+    }
+  ],
+  "errors": {},
+  "counts": {
+    "epl": 0,
+    "la_liga": 0,
+    "nba": 2,
+    "ligue_1": 0,
+    "serie_a": 0,
+    "bundesliga": 0,
+    "ucl": 0,
+    "uel": 17,
+    "uecl": 18
+  },
+  "predictions": [],
+  "nba_props": [
+    {
+      "probability": 0.17679870840320686,
+      "hits": 2,
+      "sample": 20,
+      "empirical_hit_rate": 0.1,
+      "wilson95": [
+        0.027865893984153206,
+        0.30103820641179335
+      ],
+      "avg_minutes_last5": 35.6,
+      "avg_minutes_sample": 34.25,
+      "training_through": "2026-11-05T02:00:00+00:00",
+      "player": "Devin Booker",
+      "player_id": "3136193",
+      "game_id": "401909936",
+      "game_date": "2026-11-06T02:00Z",
+      "stat": "rebounds",
+      "threshold": 6,
+      "injury": {
+        "status": "Not listed in fetched report; availability unconfirmed",
+        "updated": null
+      },
+      "opponent_sample": 1,
+      "opponent_hits": 0,
+      "status": "RESEARCH / PROVISIONAL",
+      "model_version": "nba-beta-binomial-v1",
+      "backtest_n": 15,
+      "source_urls": [
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/3136193/gamelog?season=2026",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/3136193/gamelog?season=2027"
+      ],
+      "generated_utc": "2026-11-05T16:37:17.773351+00:00",
+      "odds": null,
+      "edge": null,
+      "caveat": "Conditional on playing. Minutes, injury and opponent context shown, not causally adjusted. Thresholds are research queries, not bookmaker lines."
+    },
+    {
+      "probability": 0.30632483222426216,
+      "hits": 5,
+      "sample": 20,
+      "empirical_hit_rate": 0.25,
+      "wilson95": [
+        0.11186005278940309,
+        0.4687050099580636
+      ],
+      "avg_minutes_last5": 35.6,
+      "avg_minutes_sample": 34.25,
+      "training_through": "2026-11-05T02:00:00+00:00",
+      "player": "Devin Booker",
+      "player_id": "3136193",
+      "game_id": "401909936",
+      "game_date": "2026-11-06T02:00Z",
+      "stat": "threes",
+      "threshold": 3,
+      "injury": {
+        "status": "Not listed in fetched report; availability unconfirmed",
+        "updated": null
+      },
+      "opponent_sample": 1,
+      "opponent_hits": 0,
+      "status": "RESEARCH / PROVISIONAL",
+      "model_version": "nba-beta-binomial-v1",
+      "backtest_n": 15,
+      "source_urls": [
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/3136193/gamelog?season=2026",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/3136193/gamelog?season=2027"
+      ],
+      "generated_utc": "2026-11-05T16:37:17.773351+00:00",
+      "odds": null,
+      "edge": null,
+      "caveat": "Conditional on playing. Minutes, injury and opponent context shown, not causally adjusted. Thresholds are research queries, not bookmaker lines."
+    },
+    {
+      "probability": 0.6933547620668095,
+      "hits": 16,
+      "sample": 20,
+      "empirical_hit_rate": 0.8,
+      "wilson95": [
+        0.5839782779742401,
+        0.9193436467288
+      ],
+      "avg_minutes_last5": 35.6,
+      "avg_minutes_sample": 34.25,
+      "training_through": "2026-11-05T02:00:00+00:00",
+      "player": "Devin Booker",
+      "player_id": "3136193",
+      "game_id": "401909936",
+      "game_date": "2026-11-06T02:00Z",
+      "stat": "assists",
+      "threshold": 4,
+      "injury": {
+        "status": "Not listed in fetched report; availability unconfirmed",
+        "updated": null
+      },
+      "opponent_sample": 1,
+      "opponent_hits": 1,
+      "status": "RESEARCH / PROVISIONAL",
+      "model_version": "nba-beta-binomial-v1",
+      "backtest_n": 15,
+      "source_urls": [
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/3136193/gamelog?season=2026",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/3136193/gamelog?season=2027"
+      ],
+      "generated_utc": "2026-11-05T16:37:17.773351+00:00",
+      "odds": null,
+      "edge": null,
+      "caveat": "Conditional on playing. Minutes, injury and opponent context shown, not causally adjusted. Thresholds are research queries, not bookmaker lines."
+    },
+    {
+      "probability": 0.7739150198273039,
+      "hits": 18,
+      "sample": 20,
+      "empirical_hit_rate": 0.9,
+      "wilson95": [
+        0.6989617935882066,
+        0.9721341060158468
+      ],
+      "avg_minutes_last5": 35.6,
+      "avg_minutes_sample": 34.25,
+      "training_through": "2026-11-05T02:00:00+00:00",
+      "player": "Devin Booker",
+      "player_id": "3136193",
+      "game_id": "401909936",
+      "game_date": "2026-11-06T02:00Z",
+      "stat": "points",
+      "threshold": 20,
+      "injury": {
+        "status": "Not listed in fetched report; availability unconfirmed",
+        "updated": null
+      },
+      "opponent_sample": 1,
+      "opponent_hits": 1,
+      "status": "RESEARCH / PROVISIONAL",
+      "model_version": "nba-beta-binomial-v1",
+      "backtest_n": 15,
+      "source_urls": [
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/3136193/gamelog?season=2026",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/3136193/gamelog?season=2027"
+      ],
+      "generated_utc": "2026-11-05T16:37:17.773351+00:00",
+      "odds": null,
+      "edge": null,
+      "caveat": "Conditional on playing. Minutes, injury and opponent context shown, not causally adjusted. Thresholds are research queries, not bookmaker lines."
+    },
+    {
+      "probability": 0.5609823567340781,
+      "hits": 12,
+      "sample": 20,
+      "empirical_hit_rate": 0.6,
+      "wilson95": [
+        0.3865779423152061,
+        0.7811960325858074
+      ],
+      "avg_minutes_last5": 33.6,
+      "avg_minutes_sample": 29.15,
+      "training_through": "2026-11-05T02:00:00+00:00",
+      "player": "Miles Bridges",
+      "player_id": "4066383",
+      "game_id": "401909936",
+      "game_date": "2026-11-06T02:00Z",
+      "stat": "rebounds",
+      "threshold": 6,
+      "injury": {
+        "status": "Not listed in fetched report; availability unconfirmed",
+        "updated": null
+      },
+      "opponent_sample": 4,
+      "opponent_hits": 2,
+      "status": "RESEARCH / PROVISIONAL",
+      "model_version": "nba-beta-binomial-v1",
+      "backtest_n": 17,
+      "source_urls": [
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4066383/gamelog?season=2026",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4066383/gamelog?season=2027"
+      ],
+      "generated_utc": "2026-11-05T16:37:17.773351+00:00",
+      "odds": null,
+      "edge": null,
+      "caveat": "Conditional on playing. Minutes, injury and opponent context shown, not causally adjusted. Thresholds are research queries, not bookmaker lines."
+    },
+    {
+      "probability": 0.22687587207954574,
+      "hits": 5,
+      "sample": 20,
+      "empirical_hit_rate": 0.25,
+      "wilson95": [
+        0.11186005278940309,
+        0.4687050099580636
+      ],
+      "avg_minutes_last5": 33.6,
+      "avg_minutes_sample": 29.15,
+      "training_through": "2026-11-05T02:00:00+00:00",
+      "player": "Miles Bridges",
+      "player_id": "4066383",
+      "game_id": "401909936",
+      "game_date": "2026-11-06T02:00Z",
+      "stat": "threes",
+      "threshold": 3,
+      "injury": {
+        "status": "Not listed in fetched report; availability unconfirmed",
+        "updated": null
+      },
+      "opponent_sample": 4,
+      "opponent_hits": 1,
+      "status": "RESEARCH / PROVISIONAL",
+      "model_version": "nba-beta-binomial-v1",
+      "backtest_n": 17,
+      "source_urls": [
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4066383/gamelog?season=2026",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4066383/gamelog?season=2027"
+      ],
+      "generated_utc": "2026-11-05T16:37:17.773351+00:00",
+      "odds": null,
+      "edge": null,
+      "caveat": "Conditional on playing. Minutes, injury and opponent context shown, not causally adjusted. Thresholds are research queries, not bookmaker lines."
+    },
+    {
+      "probability": 0.22687587207954574,
+      "hits": 5,
+      "sample": 20,
+      "empirical_hit_rate": 0.25,
+      "wilson95": [
+        0.11186005278940309,
+        0.4687050099580636
+      ],
+      "avg_minutes_last5": 33.6,
+      "avg_minutes_sample": 29.15,
+      "training_through": "2026-11-05T02:00:00+00:00",
+      "player": "Miles Bridges",
+      "player_id": "4066383",
+      "game_id": "401909936",
+      "game_date": "2026-11-06T02:00Z",
+      "stat": "assists",
+      "threshold": 4,
+      "injury": {
+        "status": "Not listed in fetched report; availability unconfirmed",
+        "updated": null
+      },
+      "opponent_sample": 4,
+      "opponent_hits": 1,
+      "status": "RESEARCH / PROVISIONAL",
+      "model_version": "nba-beta-binomial-v1",
+      "backtest_n": 17,
+      "source_urls": [
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4066383/gamelog?season=2026",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4066383/gamelog?season=2027"
+      ],
+      "generated_utc": "2026-11-05T16:37:17.773351+00:00",
+      "odds": null,
+      "edge": null,
+      "caveat": "Conditional on playing. Minutes, injury and opponent context shown, not causally adjusted. Thresholds are research queries, not bookmaker lines."
+    },
+    {
+      "probability": 0.1780347607907627,
+      "hits": 4,
+      "sample": 20,
+      "empirical_hit_rate": 0.2,
+      "wilson95": [
+        0.08065635327120002,
+        0.41602172202575993
+      ],
+      "avg_minutes_last5": 33.6,
+      "avg_minutes_sample": 29.15,
+      "training_through": "2026-11-05T02:00:00+00:00",
+      "player": "Miles Bridges",
+      "player_id": "4066383",
+      "game_id": "401909936",
+      "game_date": "2026-11-06T02:00Z",
+      "stat": "points",
+      "threshold": 20,
+      "injury": {
+        "status": "Not listed in fetched report; availability unconfirmed",
+        "updated": null
+      },
+      "opponent_sample": 4,
+      "opponent_hits": 0,
+      "status": "RESEARCH / PROVISIONAL",
+      "model_version": "nba-beta-binomial-v1",
+      "backtest_n": 17,
+      "source_urls": [
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4066383/gamelog?season=2026",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4066383/gamelog?season=2027"
+      ],
+      "generated_utc": "2026-11-05T16:37:17.773351+00:00",
+      "odds": null,
+      "edge": null,
+      "caveat": "Conditional on playing. Minutes, injury and opponent context shown, not causally adjusted. Thresholds are research queries, not bookmaker lines."
+    },
+    {
+      "probability": 0.3421143332211173,
+      "hits": 5,
+      "sample": 20,
+      "empirical_hit_rate": 0.25,
+      "wilson95": [
+        0.11186005278940309,
+        0.4687050099580636
+      ],
+      "avg_minutes_last5": 37.6,
+      "avg_minutes_sample": 27.3,
+      "training_through": "2026-11-03T00:30:00+00:00",
+      "player": "Franz Wagner",
+      "player_id": "4566434",
+      "game_id": "401909936",
+      "game_date": "2026-11-06T02:00Z",
+      "stat": "rebounds",
+      "threshold": 6,
+      "injury": {
+        "status": "Not listed in fetched report; availability unconfirmed",
+        "updated": null
+      },
+      "opponent_sample": 0,
+      "opponent_hits": 0,
+      "status": "RESEARCH / PROVISIONAL",
+      "model_version": "nba-beta-binomial-v1",
+      "backtest_n": 9,
+      "source_urls": [
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4566434/gamelog?season=2026",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4566434/gamelog?season=2027"
+      ],
+      "generated_utc": "2026-11-05T16:37:17.773351+00:00",
+      "odds": null,
+      "edge": null,
+      "caveat": "Conditional on playing. Minutes, injury and opponent context shown, not causally adjusted. Thresholds are research queries, not bookmaker lines."
+    },
+    {
+      "probability": 0.13237776149585118,
+      "hits": 3,
+      "sample": 20,
+      "empirical_hit_rate": 0.15,
+      "wilson95": [
+        0.05236779195949584,
+        0.36042329588695743
+      ],
+      "avg_minutes_last5": 37.6,
+      "avg_minutes_sample": 27.3,
+      "training_through": "2026-11-03T00:30:00+00:00",
+      "player": "Franz Wagner",
+      "player_id": "4566434",
+      "game_id": "401909936",
+      "game_date": "2026-11-06T02:00Z",
+      "stat": "threes",
+      "threshold": 3,
+      "injury": {
+        "status": "Not listed in fetched report; availability unconfirmed",
+        "updated": null
+      },
+      "opponent_sample": 0,
+      "opponent_hits": 0,
+      "status": "RESEARCH / PROVISIONAL",
+      "model_version": "nba-beta-binomial-v1",
+      "backtest_n": 9,
+      "source_urls": [
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4566434/gamelog?season=2026",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4566434/gamelog?season=2027"
+      ],
+      "generated_utc": "2026-11-05T16:37:17.773351+00:00",
+      "odds": null,
+      "edge": null,
+      "caveat": "Conditional on playing. Minutes, injury and opponent context shown, not causally adjusted. Thresholds are research queries, not bookmaker lines."
+    },
+    {
+      "probability": 0.5,
+      "hits": 10,
+      "sample": 20,
+      "empirical_hit_rate": 0.5,
+      "wilson95": [
+        0.2992949144298199,
+        0.7007050855701801
+      ],
+      "avg_minutes_last5": 37.6,
+      "avg_minutes_sample": 27.3,
+      "training_through": "2026-11-03T00:30:00+00:00",
+      "player": "Franz Wagner",
+      "player_id": "4566434",
+      "game_id": "401909936",
+      "game_date": "2026-11-06T02:00Z",
+      "stat": "assists",
+      "threshold": 4,
+      "injury": {
+        "status": "Not listed in fetched report; availability unconfirmed",
+        "updated": null
+      },
+      "opponent_sample": 0,
+      "opponent_hits": 0,
+      "status": "RESEARCH / PROVISIONAL",
+      "model_version": "nba-beta-binomial-v1",
+      "backtest_n": 9,
+      "source_urls": [
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4566434/gamelog?season=2026",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4566434/gamelog?season=2027"
+      ],
+      "generated_utc": "2026-11-05T16:37:17.773351+00:00",
+      "odds": null,
+      "edge": null,
+      "caveat": "Conditional on playing. Minutes, injury and opponent context shown, not causally adjusted. Thresholds are research queries, not bookmaker lines."
+    },
+    {
+      "probability": 0.43901764326592185,
+      "hits": 8,
+      "sample": 20,
+      "empirical_hit_rate": 0.4,
+      "wilson95": [
+        0.21880396741419272,
+        0.613422057684794
+      ],
+      "avg_minutes_last5": 37.6,
+      "avg_minutes_sample": 27.3,
+      "training_through": "2026-11-03T00:30:00+00:00",
+      "player": "Franz Wagner",
+      "player_id": "4566434",
+      "game_id": "401909936",
+      "game_date": "2026-11-06T02:00Z",
+      "stat": "points",
+      "threshold": 20,
+      "injury": {
+        "status": "Not listed in fetched report; availability unconfirmed",
+        "updated": null
+      },
+      "opponent_sample": 0,
+      "opponent_hits": 0,
+      "status": "RESEARCH / PROVISIONAL",
+      "model_version": "nba-beta-binomial-v1",
+      "backtest_n": 9,
+      "source_urls": [
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4566434/gamelog?season=2026",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4566434/gamelog?season=2027"
+      ],
+      "generated_utc": "2026-11-05T16:37:17.773351+00:00",
+      "odds": null,
+      "edge": null,
+      "caveat": "Conditional on playing. Minutes, injury and opponent context shown, not causally adjusted. Thresholds are research queries, not bookmaker lines."
+    },
+    {
+      "probability": 0.6578856667788827,
+      "hits": 15,
+      "sample": 20,
+      "empirical_hit_rate": 0.75,
+      "wilson95": [
+        0.5312949900419365,
+        0.888139947210597
+      ],
+      "avg_minutes_last5": 33.4,
+      "avg_minutes_sample": 29.45,
+      "training_through": "2026-11-03T00:30:00+00:00",
+      "player": "Wendell Carter Jr.",
+      "player_id": "4277847",
+      "game_id": "401909936",
+      "game_date": "2026-11-06T02:00Z",
+      "stat": "rebounds",
+      "threshold": 6,
+      "injury": {
+        "status": "Not listed in fetched report; availability unconfirmed",
+        "updated": null
+      },
+      "opponent_sample": 2,
+      "opponent_hits": 2,
+      "status": "RESEARCH / PROVISIONAL",
+      "model_version": "nba-beta-binomial-v1",
+      "backtest_n": 17,
+      "source_urls": [
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4277847/gamelog?season=2026",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4277847/gamelog?season=2027"
+      ],
+      "generated_utc": "2026-11-05T16:37:17.773351+00:00",
+      "odds": null,
+      "edge": null,
+      "caveat": "Conditional on playing. Minutes, injury and opponent context shown, not causally adjusted. Thresholds are research queries, not bookmaker lines."
+    },
+    {
+      "probability": 0.05324021520202245,
+      "hits": 1,
+      "sample": 20,
+      "empirical_hit_rate": 0.05,
+      "wilson95": [
+        0.008881219432873136,
+        0.23613589351256675
+      ],
+      "avg_minutes_last5": 33.4,
+      "avg_minutes_sample": 29.45,
+      "training_through": "2026-11-03T00:30:00+00:00",
+      "player": "Wendell Carter Jr.",
+      "player_id": "4277847",
+      "game_id": "401909936",
+      "game_date": "2026-11-06T02:00Z",
+      "stat": "threes",
+      "threshold": 3,
+      "injury": {
+        "status": "Not listed in fetched report; availability unconfirmed",
+        "updated": null
+      },
+      "opponent_sample": 2,
+      "opponent_hits": 0,
+      "status": "RESEARCH / PROVISIONAL",
+      "model_version": "nba-beta-binomial-v1",
+      "backtest_n": 17,
+      "source_urls": [
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4277847/gamelog?season=2026",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4277847/gamelog?season=2027"
+      ],
+      "generated_utc": "2026-11-05T16:37:17.773351+00:00",
+      "odds": null,
+      "edge": null,
+      "caveat": "Conditional on playing. Minutes, injury and opponent context shown, not causally adjusted. Thresholds are research queries, not bookmaker lines."
+    },
+    {
+      "probability": 0.045454545454545456,
+      "hits": 0,
+      "sample": 20,
+      "empirical_hit_rate": 0.0,
+      "wilson95": [
+        0,
+        0.16113012549493322
+      ],
+      "avg_minutes_last5": 33.4,
+      "avg_minutes_sample": 29.45,
+      "training_through": "2026-11-03T00:30:00+00:00",
+      "player": "Wendell Carter Jr.",
+      "player_id": "4277847",
+      "game_id": "401909936",
+      "game_date": "2026-11-06T02:00Z",
+      "stat": "assists",
+      "threshold": 4,
+      "injury": {
+        "status": "Not listed in fetched report; availability unconfirmed",
+        "updated": null
+      },
+      "opponent_sample": 2,
+      "opponent_hits": 0,
+      "status": "RESEARCH / PROVISIONAL",
+      "model_version": "nba-beta-binomial-v1",
+      "backtest_n": 17,
+      "source_urls": [
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4277847/gamelog?season=2026",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4277847/gamelog?season=2027"
+      ],
+      "generated_utc": "2026-11-05T16:37:17.773351+00:00",
+      "odds": null,
+      "edge": null,
+      "caveat": "Conditional on playing. Minutes, injury and opponent context shown, not causally adjusted. Thresholds are research queries, not bookmaker lines."
+    },
+    {
+      "probability": 0.1780347607907627,
+      "hits": 4,
+      "sample": 20,
+      "empirical_hit_rate": 0.2,
+      "wilson95": [
+        0.08065635327120002,
+        0.41602172202575993
+      ],
+      "avg_minutes_last5": 33.4,
+      "avg_minutes_sample": 29.45,
+      "training_through": "2026-11-03T00:30:00+00:00",
+      "player": "Wendell Carter Jr.",
+      "player_id": "4277847",
+      "game_id": "401909936",
+      "game_date": "2026-11-06T02:00Z",
+      "stat": "points",
+      "threshold": 20,
+      "injury": {
+        "status": "Not listed in fetched report; availability unconfirmed",
+        "updated": null
+      },
+      "opponent_sample": 2,
+      "opponent_hits": 0,
+      "status": "RESEARCH / PROVISIONAL",
+      "model_version": "nba-beta-binomial-v1",
+      "backtest_n": 17,
+      "source_urls": [
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4277847/gamelog?season=2026",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4277847/gamelog?season=2027"
+      ],
+      "generated_utc": "2026-11-05T16:37:17.773351+00:00",
+      "odds": null,
+      "edge": null,
+      "caveat": "Conditional on playing. Minutes, injury and opponent context shown, not causally adjusted. Thresholds are research queries, not bookmaker lines."
+    },
+    {
+      "probability": 0.13237776149585118,
+      "hits": 3,
+      "sample": 20,
+      "empirical_hit_rate": 0.15,
+      "wilson95": [
+        0.05236779195949584,
+        0.36042329588695743
+      ],
+      "avg_minutes_last5": 30.6,
+      "avg_minutes_sample": 28.55,
+      "training_through": "2026-11-03T03:00:00+00:00",
+      "player": "Stephen Curry",
+      "player_id": "3975",
+      "game_id": "401909937",
+      "game_date": "2026-11-06T03:00Z",
+      "stat": "rebounds",
+      "threshold": 6,
+      "injury": {
+        "status": "Not listed in fetched report; availability unconfirmed",
+        "updated": null
+      },
+      "opponent_sample": 1,
+      "opponent_hits": 0,
+      "status": "RESEARCH / PROVISIONAL",
+      "model_version": "nba-beta-binomial-v1",
+      "backtest_n": 10,
+      "source_urls": [
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/3975/gamelog?season=2026",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/3975/gamelog?season=2027"
+      ],
+      "generated_utc": "2026-11-05T16:37:17.773351+00:00",
+      "odds": null,
+      "edge": null,
+      "caveat": "Conditional on playing. Minutes, injury and opponent context shown, not causally adjusted. Thresholds are research queries, not bookmaker lines."
+    },
+    {
+      "probability": 0.6578856667788827,
+      "hits": 15,
+      "sample": 20,
+      "empirical_hit_rate": 0.75,
+      "wilson95": [
+        0.5312949900419365,
+        0.888139947210597
+      ],
+      "avg_minutes_last5": 30.6,
+      "avg_minutes_sample": 28.55,
+      "training_through": "2026-11-03T03:00:00+00:00",
+      "player": "Stephen Curry",
+      "player_id": "3975",
+      "game_id": "401909937",
+      "game_date": "2026-11-06T03:00Z",
+      "stat": "threes",
+      "threshold": 3,
+      "injury": {
+        "status": "Not listed in fetched report; availability unconfirmed",
+        "updated": null
+      },
+      "opponent_sample": 1,
+      "opponent_hits": 1,
+      "status": "RESEARCH / PROVISIONAL",
+      "model_version": "nba-beta-binomial-v1",
+      "backtest_n": 10,
+      "source_urls": [
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/3975/gamelog?season=2026",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/3975/gamelog?season=2027"
+      ],
+      "generated_utc": "2026-11-05T16:37:17.773351+00:00",
+      "odds": null,
+      "edge": null,
+      "caveat": "Conditional on playing. Minutes, injury and opponent context shown, not causally adjusted. Thresholds are research queries, not bookmaker lines."
+    },
+    {
+      "probability": 0.5609823567340781,
+      "hits": 12,
+      "sample": 20,
+      "empirical_hit_rate": 0.6,
+      "wilson95": [
+        0.3865779423152061,
+        0.7811960325858074
+      ],
+      "avg_minutes_last5": 30.6,
+      "avg_minutes_sample": 28.55,
+      "training_through": "2026-11-03T03:00:00+00:00",
+      "player": "Stephen Curry",
+      "player_id": "3975",
+      "game_id": "401909937",
+      "game_date": "2026-11-06T03:00Z",
+      "stat": "assists",
+      "threshold": 4,
+      "injury": {
+        "status": "Not listed in fetched report; availability unconfirmed",
+        "updated": null
+      },
+      "opponent_sample": 1,
+      "opponent_hits": 1,
+      "status": "RESEARCH / PROVISIONAL",
+      "model_version": "nba-beta-binomial-v1",
+      "backtest_n": 10,
+      "source_urls": [
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/3975/gamelog?season=2026",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/3975/gamelog?season=2027"
+      ],
+      "generated_utc": "2026-11-05T16:37:17.773351+00:00",
+      "odds": null,
+      "edge": null,
+      "caveat": "Conditional on playing. Minutes, injury and opponent context shown, not causally adjusted. Thresholds are research queries, not bookmaker lines."
+    },
+    {
+      "probability": 0.6243594091784429,
+      "hits": 14,
+      "sample": 20,
+      "empirical_hit_rate": 0.7,
+      "wilson95": [
+        0.4810232237710206,
+        0.854524726031006
+      ],
+      "avg_minutes_last5": 30.6,
+      "avg_minutes_sample": 28.55,
+      "training_through": "2026-11-03T03:00:00+00:00",
+      "player": "Stephen Curry",
+      "player_id": "3975",
+      "game_id": "401909937",
+      "game_date": "2026-11-06T03:00Z",
+      "stat": "points",
+      "threshold": 20,
+      "injury": {
+        "status": "Not listed in fetched report; availability unconfirmed",
+        "updated": null
+      },
+      "opponent_sample": 1,
+      "opponent_hits": 0,
+      "status": "RESEARCH / PROVISIONAL",
+      "model_version": "nba-beta-binomial-v1",
+      "backtest_n": 10,
+      "source_urls": [
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/3975/gamelog?season=2026",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/3975/gamelog?season=2027"
+      ],
+      "generated_utc": "2026-11-05T16:37:17.773351+00:00",
+      "odds": null,
+      "edge": null,
+      "caveat": "Conditional on playing. Minutes, injury and opponent context shown, not causally adjusted. Thresholds are research queries, not bookmaker lines."
+    },
+    {
+      "probability": 0.4077976732953601,
+      "hits": 7,
+      "sample": 20,
+      "empirical_hit_rate": 0.35,
+      "wilson95": [
+        0.18118954786794464,
+        0.5671494897805354
+      ],
+      "avg_minutes_last5": 27.8,
+      "avg_minutes_sample": 28.3,
+      "training_through": "2026-11-03T03:00:00+00:00",
+      "player": "Draymond Green",
+      "player_id": "6589",
+      "game_id": "401909937",
+      "game_date": "2026-11-06T03:00Z",
+      "stat": "rebounds",
+      "threshold": 6,
+      "injury": {
+        "status": "Not listed in fetched report; availability unconfirmed",
+        "updated": null
+      },
+      "opponent_sample": 0,
+      "opponent_hits": 0,
+      "status": "RESEARCH / PROVISIONAL",
+      "model_version": "nba-beta-binomial-v1",
+      "backtest_n": 15,
+      "source_urls": [
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/6589/gamelog?season=2026",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/6589/gamelog?season=2027"
+      ],
+      "generated_utc": "2026-11-05T16:37:17.773351+00:00",
+      "odds": null,
+      "edge": null,
+      "caveat": "Conditional on playing. Minutes, injury and opponent context shown, not causally adjusted. Thresholds are research queries, not bookmaker lines."
+    },
+    {
+      "probability": 0.17679870840320686,
+      "hits": 2,
+      "sample": 20,
+      "empirical_hit_rate": 0.1,
+      "wilson95": [
+        0.027865893984153206,
+        0.30103820641179335
+      ],
+      "avg_minutes_last5": 27.8,
+      "avg_minutes_sample": 28.3,
+      "training_through": "2026-11-03T03:00:00+00:00",
+      "player": "Draymond Green",
+      "player_id": "6589",
+      "game_id": "401909937",
+      "game_date": "2026-11-06T03:00Z",
+      "stat": "threes",
+      "threshold": 3,
+      "injury": {
+        "status": "Not listed in fetched report; availability unconfirmed",
+        "updated": null
+      },
+      "opponent_sample": 0,
+      "opponent_hits": 0,
+      "status": "RESEARCH / PROVISIONAL",
+      "model_version": "nba-beta-binomial-v1",
+      "backtest_n": 15,
+      "source_urls": [
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/6589/gamelog?season=2026",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/6589/gamelog?season=2027"
+      ],
+      "generated_utc": "2026-11-05T16:37:17.773351+00:00",
+      "odds": null,
+      "edge": null,
+      "caveat": "Conditional on playing. Minutes, injury and opponent context shown, not causally adjusted. Thresholds are research queries, not bookmaker lines."
+    },
+    {
+      "probability": 0.8676222385041489,
+      "hits": 17,
+      "sample": 20,
+      "empirical_hit_rate": 0.85,
+      "wilson95": [
+        0.6395767041130426,
+        0.9476322080405041
+      ],
+      "avg_minutes_last5": 27.8,
+      "avg_minutes_sample": 28.3,
+      "training_through": "2026-11-03T03:00:00+00:00",
+      "player": "Draymond Green",
+      "player_id": "6589",
+      "game_id": "401909937",
+      "game_date": "2026-11-06T03:00Z",
+      "stat": "assists",
+      "threshold": 4,
+      "injury": {
+        "status": "Not listed in fetched report; availability unconfirmed",
+        "updated": null
+      },
+      "opponent_sample": 0,
+      "opponent_hits": 0,
+      "status": "RESEARCH / PROVISIONAL",
+      "model_version": "nba-beta-binomial-v1",
+      "backtest_n": 15,
+      "source_urls": [
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/6589/gamelog?season=2026",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/6589/gamelog?season=2027"
+      ],
+      "generated_utc": "2026-11-05T16:37:17.773351+00:00",
+      "odds": null,
+      "edge": null,
+      "caveat": "Conditional on playing. Minutes, injury and opponent context shown, not causally adjusted. Thresholds are research queries, not bookmaker lines."
+    },
+    {
+      "probability": 0.021760608154326302,
+      "hits": 0,
+      "sample": 20,
+      "empirical_hit_rate": 0.0,
+      "wilson95": [
+        0,
+        0.16113012549493322
+      ],
+      "avg_minutes_last5": 27.8,
+      "avg_minutes_sample": 28.3,
+      "training_through": "2026-11-03T03:00:00+00:00",
+      "player": "Draymond Green",
+      "player_id": "6589",
+      "game_id": "401909937",
+      "game_date": "2026-11-06T03:00Z",
+      "stat": "points",
+      "threshold": 20,
+      "injury": {
+        "status": "Not listed in fetched report; availability unconfirmed",
+        "updated": null
+      },
+      "opponent_sample": 0,
+      "opponent_hits": 0,
+      "status": "RESEARCH / PROVISIONAL",
+      "model_version": "nba-beta-binomial-v1",
+      "backtest_n": 15,
+      "source_urls": [
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/6589/gamelog?season=2026",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/6589/gamelog?season=2027"
+      ],
+      "generated_utc": "2026-11-05T16:37:17.773351+00:00",
+      "odds": null,
+      "edge": null,
+      "caveat": "Conditional on playing. Minutes, injury and opponent context shown, not causally adjusted. Thresholds are research queries, not bookmaker lines."
+    },
+    {
+      "probability": 0.8232012915967931,
+      "hits": 18,
+      "sample": 20,
+      "empirical_hit_rate": 0.9,
+      "wilson95": [
+        0.6989617935882066,
+        0.9721341060158468
+      ],
+      "avg_minutes_last5": 35.2,
+      "avg_minutes_sample": 30.25,
+      "training_through": "2026-11-05T03:30:00+00:00",
+      "player": "Giannis Antetokounmpo",
+      "player_id": "3032977",
+      "game_id": "401909937",
+      "game_date": "2026-11-06T03:00Z",
+      "stat": "rebounds",
+      "threshold": 6,
+      "injury": {
+        "status": "Not listed in fetched report; availability unconfirmed",
+        "updated": null
+      },
+      "opponent_sample": 1,
+      "opponent_hits": 1,
+      "status": "RESEARCH / PROVISIONAL",
+      "model_version": "nba-beta-binomial-v1",
+      "backtest_n": 9,
+      "source_urls": [
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/3032977/gamelog?season=2026",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/3032977/gamelog?season=2027"
+      ],
+      "generated_utc": "2026-11-05T16:37:17.773351+00:00",
+      "odds": null,
+      "edge": null,
+      "caveat": "Conditional on playing. Minutes, injury and opponent context shown, not causally adjusted. Thresholds are research queries, not bookmaker lines."
+    },
+    {
+      "probability": 0.021760608154326302,
+      "hits": 0,
+      "sample": 20,
+      "empirical_hit_rate": 0.0,
+      "wilson95": [
+        0,
+        0.16113012549493322
+      ],
+      "avg_minutes_last5": 35.2,
+      "avg_minutes_sample": 30.25,
+      "training_through": "2026-11-05T03:30:00+00:00",
+      "player": "Giannis Antetokounmpo",
+      "player_id": "3032977",
+      "game_id": "401909937",
+      "game_date": "2026-11-06T03:00Z",
+      "stat": "threes",
+      "threshold": 3,
+      "injury": {
+        "status": "Not listed in fetched report; availability unconfirmed",
+        "updated": null
+      },
+      "opponent_sample": 1,
+      "opponent_hits": 0,
+      "status": "RESEARCH / PROVISIONAL",
+      "model_version": "nba-beta-binomial-v1",
+      "backtest_n": 9,
+      "source_urls": [
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/3032977/gamelog?season=2026",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/3032977/gamelog?season=2027"
+      ],
+      "generated_utc": "2026-11-05T16:37:17.773351+00:00",
+      "odds": null,
+      "edge": null,
+      "caveat": "Conditional on playing. Minutes, injury and opponent context shown, not causally adjusted. Thresholds are research queries, not bookmaker lines."
+    },
+    {
+      "probability": 0.5922023267046399,
+      "hits": 13,
+      "sample": 20,
+      "empirical_hit_rate": 0.65,
+      "wilson95": [
+        0.43285051021946463,
+        0.8188104521320554
+      ],
+      "avg_minutes_last5": 35.2,
+      "avg_minutes_sample": 30.25,
+      "training_through": "2026-11-05T03:30:00+00:00",
+      "player": "Giannis Antetokounmpo",
+      "player_id": "3032977",
+      "game_id": "401909937",
+      "game_date": "2026-11-06T03:00Z",
+      "stat": "assists",
+      "threshold": 4,
+      "injury": {
+        "status": "Not listed in fetched report; availability unconfirmed",
+        "updated": null
+      },
+      "opponent_sample": 1,
+      "opponent_hits": 1,
+      "status": "RESEARCH / PROVISIONAL",
+      "model_version": "nba-beta-binomial-v1",
+      "backtest_n": 9,
+      "source_urls": [
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/3032977/gamelog?season=2026",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/3032977/gamelog?season=2027"
+      ],
+      "generated_utc": "2026-11-05T16:37:17.773351+00:00",
+      "odds": null,
+      "edge": null,
+      "caveat": "Conditional on playing. Minutes, injury and opponent context shown, not causally adjusted. Thresholds are research queries, not bookmaker lines."
+    },
+    {
+      "probability": 0.7315926860816612,
+      "hits": 17,
+      "sample": 20,
+      "empirical_hit_rate": 0.85,
+      "wilson95": [
+        0.6395767041130426,
+        0.9476322080405041
+      ],
+      "avg_minutes_last5": 35.2,
+      "avg_minutes_sample": 30.25,
+      "training_through": "2026-11-05T03:30:00+00:00",
+      "player": "Giannis Antetokounmpo",
+      "player_id": "3032977",
+      "game_id": "401909937",
+      "game_date": "2026-11-06T03:00Z",
+      "stat": "points",
+      "threshold": 20,
+      "injury": {
+        "status": "Not listed in fetched report; availability unconfirmed",
+        "updated": null
+      },
+      "opponent_sample": 1,
+      "opponent_hits": 1,
+      "status": "RESEARCH / PROVISIONAL",
+      "model_version": "nba-beta-binomial-v1",
+      "backtest_n": 9,
+      "source_urls": [
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/3032977/gamelog?season=2026",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/3032977/gamelog?season=2027"
+      ],
+      "generated_utc": "2026-11-05T16:37:17.773351+00:00",
+      "odds": null,
+      "edge": null,
+      "caveat": "Conditional on playing. Minutes, injury and opponent context shown, not causally adjusted. Thresholds are research queries, not bookmaker lines."
+    },
+    {
+      "probability": 0.09090909090909091,
+      "hits": 1,
+      "sample": 20,
+      "empirical_hit_rate": 0.05,
+      "wilson95": [
+        0.008881219432873136,
+        0.23613589351256675
+      ],
+      "avg_minutes_last5": 34.8,
+      "avg_minutes_sample": 32.05,
+      "training_through": "2026-11-05T03:30:00+00:00",
+      "player": "Davion Mitchell",
+      "player_id": "4278053",
+      "game_id": "401909937",
+      "game_date": "2026-11-06T03:00Z",
+      "stat": "rebounds",
+      "threshold": 6,
+      "injury": {
+        "status": "Not listed in fetched report; availability unconfirmed",
+        "updated": null
+      },
+      "opponent_sample": 2,
+      "opponent_hits": 1,
+      "status": "RESEARCH / PROVISIONAL",
+      "model_version": "nba-beta-binomial-v1",
+      "backtest_n": 16,
+      "source_urls": [
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4278053/gamelog?season=2026",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4278053/gamelog?season=2027"
+      ],
+      "generated_utc": "2026-11-05T16:37:17.773351+00:00",
+      "odds": null,
+      "edge": null,
+      "caveat": "Conditional on playing. Minutes, injury and opponent context shown, not causally adjusted. Thresholds are research queries, not bookmaker lines."
+    },
+    {
+      "probability": 0.3181818181818182,
+      "hits": 6,
+      "sample": 20,
+      "empirical_hit_rate": 0.3,
+      "wilson95": [
+        0.1454752739689939,
+        0.5189767762289794
+      ],
+      "avg_minutes_last5": 34.8,
+      "avg_minutes_sample": 32.05,
+      "training_through": "2026-11-05T03:30:00+00:00",
+      "player": "Davion Mitchell",
+      "player_id": "4278053",
+      "game_id": "401909937",
+      "game_date": "2026-11-06T03:00Z",
+      "stat": "threes",
+      "threshold": 3,
+      "injury": {
+        "status": "Not listed in fetched report; availability unconfirmed",
+        "updated": null
+      },
+      "opponent_sample": 2,
+      "opponent_hits": 0,
+      "status": "RESEARCH / PROVISIONAL",
+      "model_version": "nba-beta-binomial-v1",
+      "backtest_n": 16,
+      "source_urls": [
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4278053/gamelog?season=2026",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4278053/gamelog?season=2027"
+      ],
+      "generated_utc": "2026-11-05T16:37:17.773351+00:00",
+      "odds": null,
+      "edge": null,
+      "caveat": "Conditional on playing. Minutes, injury and opponent context shown, not causally adjusted. Thresholds are research queries, not bookmaker lines."
+    },
+    {
+      "probability": 0.7349361451988925,
+      "hits": 16,
+      "sample": 20,
+      "empirical_hit_rate": 0.8,
+      "wilson95": [
+        0.5839782779742401,
+        0.9193436467288
+      ],
+      "avg_minutes_last5": 34.8,
+      "avg_minutes_sample": 32.05,
+      "training_through": "2026-11-05T03:30:00+00:00",
+      "player": "Davion Mitchell",
+      "player_id": "4278053",
+      "game_id": "401909937",
+      "game_date": "2026-11-06T03:00Z",
+      "stat": "assists",
+      "threshold": 4,
+      "injury": {
+        "status": "Not listed in fetched report; availability unconfirmed",
+        "updated": null
+      },
+      "opponent_sample": 2,
+      "opponent_hits": 1,
+      "status": "RESEARCH / PROVISIONAL",
+      "model_version": "nba-beta-binomial-v1",
+      "backtest_n": 16,
+      "source_urls": [
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4278053/gamelog?season=2026",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4278053/gamelog?season=2027"
+      ],
+      "generated_utc": "2026-11-05T16:37:17.773351+00:00",
+      "odds": null,
+      "edge": null,
+      "caveat": "Conditional on playing. Minutes, injury and opponent context shown, not causally adjusted. Thresholds are research queries, not bookmaker lines."
+    },
+    {
+      "probability": 0.13237776149585118,
+      "hits": 3,
+      "sample": 20,
+      "empirical_hit_rate": 0.15,
+      "wilson95": [
+        0.05236779195949584,
+        0.36042329588695743
+      ],
+      "avg_minutes_last5": 34.8,
+      "avg_minutes_sample": 32.05,
+      "training_through": "2026-11-05T03:30:00+00:00",
+      "player": "Davion Mitchell",
+      "player_id": "4278053",
+      "game_id": "401909937",
+      "game_date": "2026-11-06T03:00Z",
+      "stat": "points",
+      "threshold": 20,
+      "injury": {
+        "status": "Not listed in fetched report; availability unconfirmed",
+        "updated": null
+      },
+      "opponent_sample": 2,
+      "opponent_hits": 0,
+      "status": "RESEARCH / PROVISIONAL",
+      "model_version": "nba-beta-binomial-v1",
+      "backtest_n": 16,
+      "source_urls": [
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4278053/gamelog?season=2026",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4278053/gamelog?season=2027"
+      ],
+      "generated_utc": "2026-11-05T16:37:17.773351+00:00",
+      "odds": null,
+      "edge": null,
+      "caveat": "Conditional on playing. Minutes, injury and opponent context shown, not causally adjusted. Thresholds are research queries, not bookmaker lines."
+    }
+  ],
+  "model_summary": {
+    "soccer_leagues": 8,
+    "nba_players": 9
+  }
+}
