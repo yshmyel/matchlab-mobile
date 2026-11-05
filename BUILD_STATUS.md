@@ -13,7 +13,7 @@
 ## Deployment
 
 GitHub repository created: https://github.com/yshmyel/matchlab-mobile
-Pages and Actions deployment verification are in progress. Do not treat this file as proof of a live deployment.
+Pages deployed successfully at https://yshmyel.github.io/matchlab-mobile/ . GitHub Actions run 42068927107 passed source expansion, tests, real public-data fetch, Pages deployment and HTTP freshness smoke checks. The live Models page rendered 32 NBA query cards. Private bound Apps Script code is installed; Google authorization and trigger verification remain pending.
 
 ## Remaining limits
 

@@ -36,14 +36,16 @@ def history(league,season,cutoff):
 
 def nba_log(player,season):
     url=f'https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/{player}/gamelog?season={season}'
-    raw=json.loads(cached(url));names=raw.get('names',[]);events=raw.get('events',{});out={}
+    raw=json.loads(cached(url,ttl=1800));names=raw.get('names',[]);events=raw.get('events',{});out={}
     for typ in raw.get('seasonTypes',[]):
         # Evaluate regular season; exclude preseason, play-in and playoffs.
         label=typ.get('displayName','').lower()
         if 'regular season' not in label or 'play' in label:continue
         for cat in typ.get('categories',[]):
             for r in cat.get('events',[]):
-                e=events.get(r.get('eventId'),{});vals=dict(zip(names,r.get('stats',[])))
+                e=events.get(r.get('eventId'),{})
+                if e.get('gameResult') not in ['W','L']:continue
+                vals=dict(zip(names,r.get('stats',[])))
                 try:
                     date=datetime.fromisoformat(e['gameDate'].replace('Z','+00:00')).astimezone(timezone.utc).isoformat()
                     minute=str(vals.get('minutes',''));parts=minute.split(':');minutes=float(parts[0])+(float(parts[1])/60 if len(parts)>1 else 0)
