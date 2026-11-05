@@ -40,3 +40,7 @@ Public `performance.json` contains retrospective tests. `prediction_log.json` pr
 The bound Apps Script in `integrations/` pulls public research and performance into separate private MatchLab tabs in your existing tracker. No private tracker data is sent to the public app. Google authorization and script installation are required before unattended synchronization works. See `integrations/SETUP.md`.
 
 Historical CSV importer retains attribution to Open Matchday (https://github.com/oladeeayo/open-matchday). Review upstream usage terms before commercial use.
+
+## Reference odds
+
+Available full-game NBA moneyline, spread and total prices are read from ESPN's summary pickcenter, with its reported bookmaker name, source link and our actual retrieval timestamp. ESPN's endpoint does not provide a quote timestamp, so these are reference snapshots, not a guarantee of current executable prices. Cached/old cards show a stale notice after 45 minutes. No full-game quote is assigned to a soccer 1H or NBA N+ market. Real's FanDuel integration has no verified public import API in this project; exact user-provided prices would need independent import and matching. No new betting edges are calculated.

@@ -5,6 +5,7 @@ from datetime import datetime,timezone,timedelta
 from zoneinfo import ZoneInfo
 from concurrent.futures import ThreadPoolExecutor,as_completed
 from research import get,scoreboard,LEAGUES,CSV_LEAGUES,OPEN_MATCHDAY
+from odds import normalize_odds
 from models import canon,soccer_predict,soccer_backtest,nba_estimate,nba_backtest
 ROOT=Path(__file__).parent;CACHE=ROOT/'.cache';DATA=ROOT/'data'
 
@@ -101,7 +102,8 @@ def main(day=None):
     nba_actuals={};nba_cards=[];players={};injuries={};nba_games=[g for g in feed['games'] if g['league']=='nba']
     for game in nba_games:
         try:
-            summary=json.loads(cached(game['detail_url'],ttl=1800))
+            summary=json.loads(get(game['detail_url']))
+            game['reference_odds']=normalize_odds(summary,datetime.now(timezone.utc).isoformat(),game['source_url'])
             for t in summary.get('injuries',[]):
                 for injury in t.get('injuries',[]):injuries[str(injury.get('athlete',{}).get('id'))]={'status':injury.get('status'),'updated':injury.get('date')}
             for t in summary.get('leaders',[]):
