@@ -1,0 +1,56 @@
+name: Agent · Grading (data-only writer)
+# Grading permission lives here: it may commit ONLY data/picks.json and
+# data/prediction_log.json, and only when a grade actually changed. No AI runs here.
+on:
+  schedule:
+    - cron: '22,52 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: matchlab-grading
+  cancel-in-progress: false
+jobs:
+  grade:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+      actions: write
+      issues: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m unittest discover -s tests -p 'test_[ga]*.py' -v
+      - name: Grade completed games
+        id: grade
+        run: |
+          python scripts/grade_now.py | tee .agent-grade.log
+          echo "count=$(head -1 .agent-grade.log | cut -d' ' -f1)" >> "$GITHUB_OUTPUT"
+      - name: Guard — only the two data files may change
+        run: |
+          bad=$(git status --porcelain | awk '{print $2}' | grep -vE '^(data/picks\.json|data/prediction_log\.json|\.agent/?.*|\.agent-grade\.log)$' || true)
+          if [ -n "$bad" ]; then echo "Refusing: unexpected changes: $bad"; exit 1; fi
+      - name: Commit and request a redeploy
+        if: steps.grade.outputs.count != '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/picks.json data/prediction_log.json
+          git commit -m "Grade ${{ steps.grade.outputs.count }} completed research records"
+          for i in 1 2 3; do
+            if git pull --rebase -q origin main && git push -q origin HEAD:main; then pushed=1; break; fi
+            git rebase --abort 2>/dev/null || true; sleep 5
+          done
+          [ -n "$pushed" ] || { echo "Could not push after 3 attempts (a deploy run likely wrote the same file); next run retries."; exit 0; }
+          gh workflow run pages.yml --repo "$GITHUB_REPOSITORY" --ref main
+          n=$(gh issue list --repo "$GITHUB_REPOSITORY" --label agent-bus --state open --json number -q '.[0].number')
+          if [ -n "$n" ]; then
+            { echo "<!-- agent:checks kind:grading -->"; echo "## ✅ Grading — ${{ steps.grade.outputs.count }} new grades"; echo
+              cat .agent/grading.md; echo; echo "Source: ESPN final summaries (grade_source on each row). Run $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"; } > .agent/post.md
+            gh issue comment "$n" --repo "$GITHUB_REPOSITORY" --body-file .agent/post.md
+          fi

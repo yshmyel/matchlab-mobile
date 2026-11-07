@@ -3,7 +3,7 @@
  */
 const ML_RESEARCH_HEADERS=['Key','Generated UTC','Sport','Game / Player','Market','Selection','Probability','Model','Grade','Actual','Source / Context','Updated UTC','Status','Odds'];
 const ML_PERF_HEADERS=['Sport / League','Model','Test n','Accuracy','Log loss','Brier','Baseline log loss','Status','As of'];
-function onOpen(){SpreadsheetApp.getUi().createMenu('MatchLab').addItem('Refresh public research','matchLabRefresh').addItem('Enable 30-minute updates','matchLabInstall').addItem('Disable updates','matchLabDisable').addToUi();}
+function onOpen(){SpreadsheetApp.getUi().createMenu('MatchLab').addItem('Refresh public research','matchLabRefresh').addItem('Enable 30-minute updates','matchLabInstall').addItem('Disable updates','matchLabDisable').addSeparator().addItem('Sync agent messages','matchLabAgentSync').addItem('Enable 15-minute agent bridge','matchLabAgentInstall').addItem('Disable agent bridge','matchLabAgentDisable').addToUi();}
 function matchLabInstall(){matchLabRefresh();matchLabDisable();ScriptApp.newTrigger('matchLabRefresh').timeBased().everyMinutes(30).create();mlStatus_('Enabled: 30-minute trigger; best-effort Google scheduling');}
 function matchLabDisable(){ScriptApp.getProjectTriggers().filter(t=>t.getHandlerFunction()==='matchLabRefresh').forEach(t=>ScriptApp.deleteTrigger(t));mlStatus_('Disabled');}
 function mlBook_(){const s=SpreadsheetApp.getActiveSpreadsheet();if(!s)throw Error('This script must be bound to the tracker spreadsheet.');return s;}
