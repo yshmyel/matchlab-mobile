@@ -38,7 +38,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - run: node --check app.js && node --check research_ui.js && node tests/test_app.cjs && node tests/test_sheets.cjs
+      - run: node --check app.js && node --check research_ui.js && node --check tracker.js && node tests/test_tracker.cjs && node tests/test_app.cjs && node tests/test_sheets.cjs
       - uses: actions/cache@v4
         with:
           path: .cache
@@ -52,12 +52,12 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/prediction_log.json
+          git add data/prediction_log.json data/picks.json
           if ! git diff --cached --quiet; then git commit -m 'Archive public research snapshots'; git push; fi
       - name: Stage public assets only
         run: |
           mkdir -p _site/data
-          cp index.html app.js research_ui.js sw.js manifest.webmanifest icon.svg _site/
+          cp index.html app.js research_ui.js tracker.js sw.js manifest.webmanifest icon.svg _site/
           cp -R icons _site/
           cp data/*.json _site/data/
       - uses: actions/configure-pages@v5
