@@ -1,0 +1,159 @@
+name: Agent · Audit (checks → Claude → Gemini final)
+# Scheduled: deterministic health checks every 2 hours; posts to the Agent Bus issue only
+# when the overall state changes or something FAILs (low noise, low cost).
+# Full report (manual, or label an issue `audit-request`): checks, then Claude's
+# analysis (read-only token), then Gemini's independent opinion, always posted last.
+on:
+  schedule:
+    - cron: '20 */2 * * *'
+  workflow_dispatch:
+    inputs:
+      full:
+        description: Run Claude and Gemini too (full audit report)
+        type: boolean
+        default: true
+  issues:
+    types: [labeled]
+permissions:
+  contents: read
+concurrency:
+  group: agent-audit
+  cancel-in-progress: false
+jobs:
+  checks:
+    if: github.event_name != 'issues' || github.event.label.name == 'audit-request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      issues: write
+      actions: read
+    outputs:
+      issue: ${{ steps.target.outputs.issue }}
+      full: ${{ steps.target.outputs.full }}
+      overall: ${{ steps.audit.outputs.overall }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - id: target
+        env:
+          GH_TOKEN: ${{ github.token }}
+          EVENT_ISSUE: ${{ github.event.issue.number }}
+          FULL: ${{ github.event_name == 'issues' || inputs.full == true }}
+        run: |
+          if [ -n "$EVENT_ISSUE" ]; then n=$EVENT_ISSUE; else
+            n=$(gh issue list --repo "$GITHUB_REPOSITORY" --label agent-bus --state open --json number -q '.[0].number')
+          fi
+          [ -n "$n" ] || { echo "No open issue labelled agent-bus"; exit 1; }
+          echo "issue=$n" >> "$GITHUB_OUTPUT"; echo "full=$FULL" >> "$GITHUB_OUTPUT"
+      - id: audit
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p .agent
+          set +e; python scripts/agent_audit.py --json .agent/audit.json --markdown .agent/audit.md; code=$?; set -e
+          overall=$(python -c "import json;print(json.load(open('.agent/audit.json'))['overall'])")
+          echo "overall=$overall" >> "$GITHUB_OUTPUT"
+          { echo "<!-- agent:checks kind:audit overall:$overall -->"; echo "## 🧪 MatchLab checks (deterministic)"; echo; cat .agent/audit.md;
+            echo; echo "<sub>Run $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID</sub>"; } > .agent/checks.md
+          cp .agent/checks.md .agent/1-checks.md
+      - uses: actions/upload-artifact@v4
+        with:
+          name: agent-checks
+          path: .agent/1-checks.md
+      - name: Post to the shared bus (on change, FAIL, or full report)
+        env:
+          GH_TOKEN: ${{ github.token }}
+          N: ${{ steps.target.outputs.issue }}
+          FULL: ${{ steps.target.outputs.full }}
+          OVERALL: ${{ steps.audit.outputs.overall }}
+        run: |
+          last=$(gh api "repos/$GITHUB_REPOSITORY/issues/$N/comments?per_page=100" --paginate \
+                 --jq '[.[] | select(.body | contains("agent:checks kind:audit"))] | last | .body // ""' | tail -n +1 \
+                 | grep -o 'overall:[A-Z]*' | tail -1 | cut -d: -f2)
+          if [ "$FULL" = true ] || [ "$OVERALL" = FAIL ] || [ "$OVERALL" != "$last" ]; then
+            gh issue comment "$N" --repo "$GITHUB_REPOSITORY" --body-file .agent/checks.md
+          else echo "State unchanged ($OVERALL); not posting."; fi
+      - name: Mark the run failed on FAIL (GitHub notifies the owner)
+        if: steps.audit.outputs.overall == 'FAIL'
+        run: exit 1
+
+  claude:
+    needs: checks
+    if: always() && needs.checks.outputs.full == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: read
+      issues: write
+      id-token: write
+    steps:
+      - id: auth
+        env:
+          A: ${{ secrets.ANTHROPIC_API_KEY }}
+          O: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+        run: if [ -n "$A$O" ]; then echo ok=true >> "$GITHUB_OUTPUT"; else echo ok=false >> "$GITHUB_OUTPUT"; fi
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Context for Claude
+        env:
+          GH_TOKEN: ${{ github.token }}
+          N: ${{ needs.checks.outputs.issue }}
+        run: |
+          mkdir -p .agent
+          gh issue view "$N" --repo "$GITHUB_REPOSITORY" --comments | tail -c 60000 > .agent/thread.md
+          python scripts/agent_audit.py --json .agent/audit.json --markdown .agent/audit.md || true
+      - name: Claude analysis (read-only GitHub token; writes a report file only)
+        if: steps.auth.outputs.ok == 'true'
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          github_token: ${{ github.token }}
+          claude_args: |
+            --max-turns 25
+            --allowedTools "Read,Glob,Grep,Write,Bash(python scripts/agent_audit.py:*),Bash(python -m unittest:*),WebFetch"
+          prompt: |
+            You are the Claude agent in the MatchLab full audit. Read AGENTS.md first.
+            Inputs: .agent/audit.md, .agent/audit.json (deterministic checks), .agent/thread.md (shared bus thread,
+            including ChatGPT/Codex and user messages). Investigate each WARN/FAIL: find the root cause in the code or
+            data, verify any result against the ESPN summary URL, and propose the minimal fix. Do NOT change files
+            outside .agent/. Write your report to .agent/2-claude.md starting with the line
+            <!-- agent:claude kind:audit --> then "## 🟠 Claude — audit analysis". Sections: Findings (with evidence
+            links), Root causes, Proposed fixes (say which need a PR), Could not verify.
+      - name: Placeholder when Claude is not authorized
+        if: steps.auth.outputs.ok != 'true' || hashFiles('.agent/2-claude.md') == ''
+        env:
+          OK: ${{ steps.auth.outputs.ok }}
+        run: |
+          mkdir -p .agent
+          { echo "<!-- agent:claude kind:status -->"; echo "## 🟠 Claude — audit analysis"; echo
+            if [ "$OK" != true ]; then echo "**Claude agent: not authorized yet** (no ANTHROPIC_API_KEY / CLAUDE_CODE_OAUTH_TOKEN secret). Claude did not run.";
+            else echo "**Claude ran but wrote no report.** See $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"; fi; } > .agent/2-claude.md
+      - name: Post Claude report
+        env:
+          GH_TOKEN: ${{ github.token }}
+          N: ${{ needs.checks.outputs.issue }}
+        run: gh issue comment "$N" --repo "$GITHUB_REPOSITORY" --body-file .agent/2-claude.md
+      - uses: actions/upload-artifact@v4
+        with:
+          name: agent-claude
+          path: .agent/2-claude.md
+
+  gemini_final:
+    needs: [checks, claude]
+    if: always() && needs.checks.outputs.full == 'true'
+    permissions:
+      contents: read
+      issues: write
+      pull-requests: write
+    uses: ./.github/workflows/gemini.yml
+    with:
+      issue: ${{ needs.checks.outputs.issue }}
+      mode: audit
+    secrets:
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}

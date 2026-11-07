@@ -10,3 +10,15 @@ assert.equal(vm.runInContext("mlShouldKick_('2026-11-07T10:00:00Z',Date.parse('2
 assert.equal(vm.runInContext("mlShouldKick_('garbage',0)",c),true);
 assert.equal(vm.runInContext("mlKick_('2026-01-01T00:00:00Z')",c),false); // no PropertiesService/token: never throws
 console.log('PASS: optional stale-feed dispatch gate');
+// Agent bridge (integrations/AgentBridge.gs) pure helpers
+const b=vm.createContext({});vm.runInContext(fs.readFileSync('integrations/AgentBridge.gs','utf8'),b);
+assert.deepEqual({...b.abAgent_('<!-- agent:gemini kind:final-review -->\nhi','x')},{agent:'gemini',kind:'final-review'});
+assert.equal(b.abAgent_('no marker','claude[bot]').agent,'claude');
+assert.equal(b.abAgent_('','yshmyel').agent,'user:yshmyel');
+assert.equal(b.abSummary_('<!-- agent:x -->\n## Title\n```\ncode\n```\n**bold**'),'Title [code] bold');
+const body=b.abInboxBody_(['','ChatGPT','Claude, Gemini','Check grades','Please verify Nov 7.']);
+assert.match(body,/^<!-- agent:chatgpt kind:message -->/);assert.match(body,/@claude @gemini$/);assert.doesNotMatch(body,/@codex/);
+assert.match(b.abInboxBody_(['','chatgpt','all','','x']),/@claude @gemini @codex$/);
+assert.equal(b.abToken_(),null); // no PropertiesService: never throws
+assert.equal(b.abSummary_('Grade serie_a:401874815 in data/prediction_log.json, see #2'),'Grade serie_a:401874815 in data/prediction_log.json, see #2');
+console.log('PASS: agent bridge author markers, summaries, routing mentions');

@@ -23,3 +23,16 @@ GitHub runs scheduled workflows on a best-effort basis and has been skipping mos
 Without the property, nothing changes. Dispatch failures never block the sheet sync. Delete the property to turn it off.
 
 Disable through MatchLab → Disable updates. This affects only this script's MatchLab refresh trigger. Real wagers, balances and original tracker grades remain outside this integration.
+
+## Optional: agent bridge (GitHub Issues ↔ Sheet)
+
+`AgentBridge.gs` mirrors every comment on the **MatchLab Agent Bus** issue into an **Agent Log**
+tab and posts rows from an **Agent Inbox** tab to GitHub. See [AGENTS.md](../AGENTS.md).
+
+1. In Extensions → Apps Script, add a file named `AgentBridge`, paste `integrations/AgentBridge.gs`,
+   and re-paste `MatchLab.gs` (its menu gained the bridge items). Save.
+2. Reading works without a token. To let the Inbox post messages, create a fine-grained token at
+   https://github.com/settings/personal-access-tokens/new limited to `yshmyel/matchlab-mobile`
+   with **Issues: Read and write** only, then add Script Property `GITHUB_AGENT_TOKEN`
+   (Project Settings → Script Properties). Never paste it into a cell.
+3. Reload the Sheet and choose MatchLab → **Enable 15-minute agent bridge**, then authorize.

@@ -1,0 +1,68 @@
+name: Agent · Claude (code changes via PR)
+# Code-modification permission lives ONLY here. Triggered by @claude from the repo
+# owner/collaborators (or a Sheet Inbox message posted with the owner's token).
+# Claude works on a claude/* branch and opens a pull request; it never pushes to main.
+on:
+  issue_comment:
+    types: [created]
+  pull_request_review_comment:
+    types: [created]
+  pull_request_review:
+    types: [submitted]
+  issues:
+    types: [opened, labeled]
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+  id-token: write
+  actions: read
+concurrency:
+  group: claude-${{ github.event.issue.number || github.event.pull_request.number }}
+  cancel-in-progress: false
+jobs:
+  claude:
+    if: >-
+      contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'),
+        github.event.comment.author_association || github.event.review.author_association || github.event.issue.author_association) &&
+      ((github.event_name == 'issue_comment' && contains(github.event.comment.body, '@claude')) ||
+       (github.event_name == 'pull_request_review_comment' && contains(github.event.comment.body, '@claude')) ||
+       (github.event_name == 'pull_request_review' && contains(github.event.review.body, '@claude')) ||
+       (github.event_name == 'issues' && github.event.action == 'opened' && contains(github.event.issue.body, '@claude')) ||
+       (github.event_name == 'issues' && github.event.action == 'labeled' && github.event.label.name == 'agent:claude'))
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Check Claude credentials are configured
+        id: auth
+        env:
+          A: ${{ secrets.ANTHROPIC_API_KEY }}
+          O: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+        run: if [ -n "$A$O" ]; then echo ok=true >> "$GITHUB_OUTPUT"; else echo ok=false >> "$GITHUB_OUTPUT"; fi
+      - name: Report missing credentials (no AI call made)
+        if: steps.auth.outputs.ok != 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          N: ${{ github.event.issue.number || github.event.pull_request.number }}
+        run: |
+          gh issue comment "$N" --repo "$GITHUB_REPOSITORY" --body "<!-- agent:claude kind:status -->
+          **Claude agent: not authorized yet.** The workflow received this request but no \`ANTHROPIC_API_KEY\` or \`CLAUDE_CODE_OAUTH_TOKEN\` secret exists, so Claude did not run.
+          Add one at https://github.com/$GITHUB_REPOSITORY/settings/secrets/actions/new and install https://github.com/apps/claude for this repository."
+      - uses: actions/checkout@v4
+        if: steps.auth.outputs.ok == 'true'
+        with:
+          fetch-depth: 20
+      - uses: actions/setup-python@v5
+        if: steps.auth.outputs.ok == 'true'
+        with:
+          python-version: '3.12'
+      - uses: anthropics/claude-code-action@v1
+        if: steps.auth.outputs.ok == 'true'
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          label_trigger: agent:claude
+          claude_args: |
+            --max-turns 40
+            --allowedTools "Bash(python -m unittest:*),Bash(python scripts/agent_audit.py:*),Bash(node:*),Bash(git:*),Bash(gh pr create:*),Bash(gh pr view:*),Bash(gh issue view:*),WebFetch"
+            --append-system-prompt "You are the Claude agent for MatchLab. Read AGENTS.md before acting and follow it exactly. Start every comment you post with the HTML marker <!-- agent:claude kind:KIND --> (KIND = finding, fix, review, status). Never push to main: commit to your claude/ branch and open a pull request with gh pr create, then link it. Never edit historical grades, past picks, bankroll data or Sheet formulas; never add betting execution; never print secrets. Run python -m unittest discover -s tests and the node checks listed in AGENTS.md before opening a PR and paste the result."
