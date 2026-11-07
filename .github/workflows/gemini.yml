@@ -6,7 +6,7 @@ on:
   issue_comment:
     types: [created]
   pull_request:
-    types: [opened, synchronize, ready_for_review]
+    types: [opened, ready_for_review]   # not on every push: saves Gemini quota; comment @gemini to re-review
   workflow_dispatch:
     inputs:
       issue:
