@@ -1516,7 +1516,10 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending"
+      "grade": "Loss",
+      "actual_value": 2,
+      "actual": 0,
+      "graded_utc": "2026-11-07T03:07:58.011329+00:00"
     },
     {
       "probability": 0.6578856667788827,
@@ -1557,7 +1560,10 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending"
+      "grade": "Win",
+      "actual_value": 4,
+      "actual": 1,
+      "graded_utc": "2026-11-07T03:07:58.011329+00:00"
     },
     {
       "probability": 0.4077976732953601,
@@ -1598,7 +1604,10 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending"
+      "grade": "Loss",
+      "actual_value": 2,
+      "actual": 0,
+      "graded_utc": "2026-11-07T03:07:58.011329+00:00"
     },
     {
       "probability": 0.5922023267046399,
@@ -1639,7 +1648,10 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending"
+      "grade": "Win",
+      "actual_value": 28,
+      "actual": 1,
+      "graded_utc": "2026-11-07T03:07:58.011329+00:00"
     },
     {
       "probability": 0.7739150198273039,
@@ -2008,7 +2020,10 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending"
+      "grade": "Loss",
+      "actual_value": 2,
+      "actual": 0,
+      "graded_utc": "2026-11-07T03:07:58.011329+00:00"
     },
     {
       "probability": 0.3181818181818182,
@@ -2049,7 +2064,10 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending"
+      "grade": "Win",
+      "actual_value": 3,
+      "actual": 1,
+      "graded_utc": "2026-11-07T03:07:58.011329+00:00"
     },
     {
       "probability": 0.9090909090909091,
@@ -2090,7 +2108,10 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending"
+      "grade": "Win",
+      "actual_value": 10,
+      "actual": 1,
+      "graded_utc": "2026-11-07T03:07:58.011329+00:00"
     },
     {
       "probability": 0.5,
@@ -2131,7 +2152,10 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending"
+      "grade": "Win",
+      "actual_value": 23,
+      "actual": 1,
+      "graded_utc": "2026-11-07T03:07:58.011329+00:00"
     },
     {
       "probability": 0.469650429656516,
@@ -2172,7 +2196,11 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending"
+      "grade": "Loss",
+      "actual": 0,
+      "actual_value": 2,
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909288",
+      "graded_utc": "2026-11-07T03:07:58.011329+00:00"
     },
     {
       "probability": 0.6578856667788827,
@@ -2213,7 +2241,11 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending"
+      "grade": "Loss",
+      "actual": 0,
+      "actual_value": 0,
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909288",
+      "graded_utc": "2026-11-07T03:07:58.011329+00:00"
     },
     {
       "probability": 0.37564059082155704,
@@ -2254,7 +2286,11 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending"
+      "grade": "Loss",
+      "actual": 0,
+      "actual_value": 1,
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909288",
+      "graded_utc": "2026-11-07T03:07:58.011329+00:00"
     },
     {
       "probability": 0.5,
@@ -2295,7 +2331,11 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending"
+      "grade": "Loss",
+      "actual": 0,
+      "actual_value": 8,
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909288",
+      "graded_utc": "2026-11-07T03:07:58.011329+00:00"
     },
     {
       "probability": 0.17679870840320686,
@@ -2664,7 +2704,10 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending"
+      "grade": "Win",
+      "actual_value": 8,
+      "actual": 1,
+      "graded_utc": "2026-11-07T03:07:58.011329+00:00"
     },
     {
       "probability": 0.36363636363636365,
@@ -2705,7 +2748,10 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending"
+      "grade": "Win",
+      "actual_value": 5,
+      "actual": 1,
+      "graded_utc": "2026-11-07T03:07:58.011329+00:00"
     },
     {
       "probability": 0.8181818181818182,
@@ -2746,7 +2792,10 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending"
+      "grade": "Win",
+      "actual_value": 9,
+      "actual": 1,
+      "graded_utc": "2026-11-07T03:07:58.011329+00:00"
     },
     {
       "probability": 0.7272727272727273,
@@ -2787,7 +2836,10 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending"
+      "grade": "Win",
+      "actual_value": 34,
+      "actual": 1,
+      "graded_utc": "2026-11-07T03:07:58.011329+00:00"
     },
     {
       "probability": 0.693675167775738,
@@ -2828,7 +2880,11 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending"
+      "grade": "Loss",
+      "actual": 0,
+      "actual_value": 3,
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909288",
+      "graded_utc": "2026-11-07T03:07:58.011329+00:00"
     },
     {
       "probability": 0.021760608154326302,
@@ -2869,7 +2925,11 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending"
+      "grade": "Loss",
+      "actual": 0,
+      "actual_value": 0,
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909288",
+      "graded_utc": "2026-11-07T03:07:58.011329+00:00"
     },
     {
       "probability": 0.0905215496962608,
@@ -2910,7 +2970,11 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending"
+      "grade": "Loss",
+      "actual": 0,
+      "actual_value": 1,
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909288",
+      "graded_utc": "2026-11-07T03:07:58.011329+00:00"
     },
     {
       "probability": 0.07329777530030686,
@@ -2951,7 +3015,11 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending"
+      "grade": "Loss",
+      "actual": 0,
+      "actual_value": 4,
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909288",
+      "graded_utc": "2026-11-07T03:07:58.011329+00:00"
     },
     {
       "probability": 0.4077976732953601,
@@ -7715,45 +7783,45 @@
       "n": 0
     },
     "nba": {
-      "n": 32,
+      "n": 52,
       "accuracy": 0.75,
-      "log_loss": 0.5496354079862263,
-      "brier": 0.3761443779256615,
-      "ece": 0.12197978998790104,
+      "log_loss": 0.5241032044979252,
+      "brier": 0.3591020183322823,
+      "ece": 0.12644615486791888,
       "calibration_bins": [
         {
           "lower": 0.5,
-          "n": 6,
-          "confidence": 0.5612252872685857,
-          "accuracy": 0.8333333333333334
+          "n": 11,
+          "confidence": 0.5529187224876616,
+          "accuracy": 0.8181818181818182
         },
         {
           "lower": 0.6,
-          "n": 7,
-          "confidence": 0.6666949315965457,
-          "accuracy": 0.5714285714285714
+          "n": 13,
+          "confidence": 0.6629886346053527,
+          "accuracy": 0.46153846153846156
         },
         {
           "lower": 0.7,
-          "n": 5,
-          "confidence": 0.7573384213897533,
-          "accuracy": 0.6
+          "n": 7,
+          "confidence": 0.748748223070603,
+          "accuracy": 0.7142857142857143
         },
         {
           "lower": 0.8,
-          "n": 9,
-          "confidence": 0.8426692563583832,
-          "accuracy": 0.7777777777777778
+          "n": 11,
+          "confidence": 0.8423492262766937,
+          "accuracy": 0.8181818181818182
         },
         {
           "lower": 0.9,
-          "n": 5,
-          "confidence": 0.9533749864251376,
+          "n": 10,
+          "confidence": 0.9468625299911377,
           "accuracy": 1.0
         }
       ]
     }
   },
-  "updated_utc": "2026-11-07T00:49:27.570037+00:00",
+  "updated_utc": "2026-11-07T03:07:58.011329+00:00",
   "grading_errors": []
 }

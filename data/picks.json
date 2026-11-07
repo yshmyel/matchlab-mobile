@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_utc": "2026-11-07T00:49:27.570037+00:00",
+  "updated_utc": "2026-11-07T03:07:58.011329+00:00",
   "picks": [
     {
       "status": "SCOUTING LEAN",
@@ -105,7 +105,14 @@
       "generated_utc": "2026-11-06T22:46:00+00:00",
       "published_utc": "2026-11-07T00:04:30.798399+00:00",
       "status": "SCOUTING LEAN",
-      "grade": "Pending"
+      "grade": "Win",
+      "actual": "home",
+      "actual_score": {
+        "home": 5,
+        "away": 2
+      },
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/summary?event=401892659",
+      "graded_utc": "2026-11-07T03:07:58.011329+00:00"
     },
     {
       "id": "20261106-nhl-minnesota",
