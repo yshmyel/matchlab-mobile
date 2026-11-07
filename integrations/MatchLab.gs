@@ -13,9 +13,18 @@ function mlFetch_(url){const r=UrlFetchApp.fetch(url,{muteHttpExceptions:true,fo
 function mlSafe_(v){if(v===null||v===undefined)return '';if(typeof v==='number')return Number.isFinite(v)?v:'';const s=String(v);return /^[=+@-]/.test(s)?"'"+s:s;}
 function mlSheet_(name,headers){const b=mlBook_();const s=b.getSheetByName(name)||b.insertSheet(name);const existing=s.getRange(1,1,1,headers.length).getValues()[0];if(existing.some(Boolean)&&existing.some((v,i)=>v!==headers[i]))throw Error('Unexpected headers in '+name+'; refusing to overwrite');s.getRange(1,1,1,headers.length).setValues([headers]);s.setFrozenRows(1);return s;}
 function mlResearchRows_(log){return log.predictions.map(p=>[p.key,p.generated_utc,p.league,p.league==='nba'?p.player:p.home+' vs '+p.away,p.market==='nplus'?p.threshold+'+ '+p.stat:'1H 1X2',p.selection,p.probability??p.probabilities?.[p.selection]??'',p.model_version,p.grade||'Pending',p.actual_value??p.actual??'',p.league==='nba'?'ESPN player logs; conditional on playing':'open-matchday reported HT; provisional model',log.updated_utc,p.status,'UNVERIFIED / blank price']);}
+// Optional: GitHub drops most scheduled runs, so this 30-minute trigger can request
+// a refresh. Only acts when Script Property GITHUB_DISPATCH_TOKEN holds a fine-grained
+// token limited to this repository with Actions: read and write. Never fails the sync.
+const ML_DISPATCH_URL='https://api.github.com/repos/yshmyel/matchlab-mobile/actions/workflows/pages.yml/dispatches';
+function mlShouldKick_(updatedUtc,now){const t=Date.parse(updatedUtc);return !Number.isFinite(t)||now-t>40*60000;}
+function mlKick_(updatedUtc){try{const token=PropertiesService.getScriptProperties().getProperty('GITHUB_DISPATCH_TOKEN');if(!token||!mlShouldKick_(updatedUtc,Date.now()))return false;
+ const r=UrlFetchApp.fetch(ML_DISPATCH_URL,{method:'post',contentType:'application/json',payload:JSON.stringify({ref:'main'}),headers:{Authorization:'Bearer '+token,Accept:'application/vnd.github+json'},muteHttpExceptions:true,followRedirects:false});
+ return r.getResponseCode()===204;}catch(e){return false;}}
 function matchLabRefresh(){const lock=LockService.getDocumentLock();if(!lock.tryLock(1000))return;try{
  const config=mlBook_().getSheetByName('MatchLab Integration');if(!config)throw Error('Missing MatchLab Integration configuration');const base=mlUrl_(config.getRange('B2').getValue());
  const log=mlFetch_(base+'data/prediction_log.json');const perf=mlFetch_(base+'data/performance.json');if(!Array.isArray(log.predictions)||!perf.soccer)throw Error('Malformed research feed');
+ mlKick_(log.updated_utc);
  if(Date.now()-Date.parse(log.updated_utc)>7200000)throw Error('Research feed is stale; keeping existing rows');
  const s=mlSheet_('MatchLab Research',ML_RESEARCH_HEADERS);const old=s.getLastRow()>1?s.getRange(2,1,s.getLastRow()-1,ML_RESEARCH_HEADERS.length).getValues():[];
  const map=new Map(old.filter(r=>r[0]).map(r=>[r[0],r]));for(const row of mlResearchRows_(log))map.set(row[0],row.map(mlSafe_));const rows=Array.from(map.values());

@@ -51,7 +51,7 @@ def nba_log(player,season):
                     date=datetime.fromisoformat(e['gameDate'].replace('Z','+00:00')).astimezone(timezone.utc).isoformat()
                     minute=str(vals.get('minutes',''));parts=minute.split(':');minutes=float(parts[0])+(float(parts[1])/60 if len(parts)>1 else 0)
                     if minutes<=0:continue
-                    record={'id':r['eventId'],'date':date,'minutes':minutes,'opponent_id':e.get('opponent',{}).get('id'),'opponent':e.get('opponent',{}).get('displayName')}
+                    record={'id':r['eventId'],'source':url,'date':date,'minutes':minutes,'opponent_id':e.get('opponent',{}).get('id'),'opponent':e.get('opponent',{}).get('displayName')}
                     for stat,name in [('rebounds','totalRebounds'),('assists','assists'),('points','points'),('threes','threePointFieldGoalsMade-threePointFieldGoalsAttempted')]:
                         v=str(vals.get(name,''));record[stat]=int(v.split('-')[0]) if re.fullmatch(r'\d+(?:-\d+)?',v) else None
                     out[record['id']]=record
@@ -172,6 +172,7 @@ def archive_predictions(feed,now,histories,nba_actuals):
             actual=next((x for x in nba_actuals.get(r['player_id'],[]) if x['id']==r['game_id']),None)
             if actual and actual.get(r['stat']) is not None:
                 r['actual_value']=actual[r['stat']];r['actual']=int(r['actual_value']>=r['threshold']);r['grade']='Win' if r['actual'] else 'Loss';r['graded_utc']=now.isoformat()
+                r['grade_source']=actual.get('source') or f"https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/{r['player_id']}/gamelog"
         else:
             history_rows=histories.get(r['league'],[]);h=mapped(r.get('home',''),history_rows);a=mapped(r.get('away',''),history_rows)
             # Dates are source-local fixture dates. Exact mapping only, no fuzzy joins.

@@ -12,4 +12,14 @@ The existing tracker now has MatchLab Integration, MatchLab Research and MatchLa
 
 The trigger pulls every 30 minutes, subject to Google's scheduling and quotas. It is not deployed as a public web app. No service-account keys, tokens, private exports, or public tracker sharing are needed. The source host is restricted to the expected MatchLab GitHub Pages URL. The script writes only its own named MatchLab tabs and validates their headers before updates. The public app never receives private sheet data. Device-local manual selections are separate from model-generated snapshots.
 
+## Optional: keep the public feed fresh
+
+GitHub runs scheduled workflows on a best-effort basis and has been skipping most of the 30-minute runs (gaps of 3–7 hours observed Nov 5–7), which leaves the feed stale and makes this sync refuse to update. To let this trigger request a refresh when the feed is older than 40 minutes:
+
+1. Re-paste the current `MatchLab.gs` into the bound Apps Script project.
+2. On GitHub, create a fine-grained personal access token limited to `yshmyel/matchlab-mobile` with only **Actions: Read and write**. Give it an expiry date.
+3. In Apps Script → Project Settings → Script Properties, add `GITHUB_DISPATCH_TOKEN` with the token value. Never put it in a sheet cell or the repository.
+
+Without the property, nothing changes. Dispatch failures never block the sheet sync. Delete the property to turn it off.
+
 Disable through MatchLab → Disable updates. This affects only this script's MatchLab refresh trigger. Real wagers, balances and original tracker grades remain outside this integration.

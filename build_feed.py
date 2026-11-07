@@ -3,7 +3,7 @@
 import argparse, json
 from datetime import datetime, timezone
 from pathlib import Path
-from research import scoreboard, LEAGUES
+from research import scoreboard, LEAGUES, pacific_date
 
 
 def build(day, leagues, output):
@@ -38,7 +38,7 @@ def build(day, leagues, output):
 
 if __name__=='__main__':
     p=argparse.ArgumentParser()
-    p.add_argument('--date',default=datetime.now(__import__('zoneinfo').ZoneInfo('America/Los_Angeles')).strftime('%Y%m%d'))
+    p.add_argument('--date',default=pacific_date(datetime.now(timezone.utc).isoformat()))
     p.add_argument('--leagues',nargs='+',default=list(LEAGUES))
     p.add_argument('--output',default='data/latest.json')
     args=p.parse_args()

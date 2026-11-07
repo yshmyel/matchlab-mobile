@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Free read-only sports data ingestion. Standard library only."""
 import argparse,csv,io,json,time,urllib.request,urllib.parse
-from datetime import datetime,timezone
+from datetime import datetime,timezone,timedelta
 from pathlib import Path
 
 ESPN='https://site.api.espn.com/apis/site/v2/sports'
@@ -48,12 +48,52 @@ def normalize_event(e, league):
             'detail_url':f'{ESPN}/{sport}/{slug}/summary?event={e.get("id")}'}
 
 
-def scoreboard(league,day):
-    sport,slug=LEAGUES[league]
-    url=f'{ESPN}/{sport}/{slug}/scoreboard?'+urllib.parse.urlencode({'dates':day,'limit':200})
-    raw=json.loads(get(url))
-    if not isinstance(raw.get('events'),list): raise ValueError('Missing events array')
-    return [normalize_event(e,league) for e in raw['events']]
+def _nth_sunday_utc(year, month, n, hour_utc):
+    first = datetime(year, month, 1, tzinfo=timezone.utc)
+    return first + timedelta(days=(6 - first.weekday()) % 7 + 7 * (n - 1), hours=hour_utc)
+
+
+def pacific_date(iso):
+    """Pacific calendar date (YYYYMMDD) for an ISO UTC timestamp, or None.
+
+    Uses zoneinfo when tz data exists; otherwise the US DST rule (second Sunday
+    of March 2 AM PST to first Sunday of November 2 AM PDT).
+    """
+    try:
+        t = datetime.fromisoformat(str(iso).replace('Z', '+00:00')).astimezone(timezone.utc)
+    except ValueError:
+        return None
+    try:
+        from zoneinfo import ZoneInfo
+        return t.astimezone(ZoneInfo('America/Los_Angeles')).strftime('%Y%m%d')
+    except Exception:
+        dst = _nth_sunday_utc(t.year, 3, 2, 10) <= t < _nth_sunday_utc(t.year, 11, 1, 9)
+        return (t - timedelta(hours=7 if dst else 8)).strftime('%Y%m%d')
+
+
+def _espn_day(league, day):
+    sport, slug = LEAGUES[league]
+    url = f'{ESPN}/{sport}/{slug}/scoreboard?' + urllib.parse.urlencode({'dates': day, 'limit': 200})
+    raw = json.loads(get(url))
+    if not isinstance(raw.get('events'), list): raise ValueError('Missing events array')
+    return [normalize_event(e, league) for e in raw['events']]
+
+
+def scoreboard(league, day):
+    """All games whose kickoff falls on Pacific date `day`.
+
+    ESPN lists games by its own (US Eastern) calendar day, so a 9 PM-midnight PT
+    start is listed under the next ESPN date. Fetch both and filter by Pacific
+    date. The next-day request is best effort; the primary day must succeed.
+    """
+    games = {g['id']: g for g in _espn_day(league, day)}
+    nxt = (datetime.strptime(day, '%Y%m%d') + timedelta(days=1)).strftime('%Y%m%d')
+    try:
+        for g in _espn_day(league, nxt):
+            games.setdefault(g['id'], g)
+    except Exception:
+        pass
+    return [g for g in games.values() if pacific_date(g.get('date_utc')) == day]
 
 def historical(league,season):
     folder=CSV_LEAGUES[league];url=f'{OPEN_MATCHDAY}/{folder}/results_{season}.csv'
