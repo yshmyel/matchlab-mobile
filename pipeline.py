@@ -95,7 +95,7 @@ def main(day=None):
             g['research']={'status':'WATCH','reason':'Pregame cutoff passed; no new prediction generated'};continue
         p=soccer_predict(rows,h,a,iso,model['shrink'],model['temperature'])
         if p and min(p['team_samples'].values())>=3:
-            p.pop('baseline',None);p.update({'id':g['id'],'league':g['league'],'market':'1h','status':'PREDICTION / PROVISIONAL','generated_utc':now.isoformat(),'kickoff':g['date_utc'],'model_version':'ht-poisson-shrink-v1','odds':None,'edge':None,'risk':'HIGH' if max(p['probabilities'].values())<.55 else 'MODERATE','selection':max(p['probabilities'],key=p['probabilities'].get)})
+            p.pop('baseline',None);p.update({'id':g['id'],'league':g['league'],'market':'1h','status':'PREDICTION / PROVISIONAL','generated_utc':now.isoformat(),'kickoff':g['date_utc'],'model_version':'ht-poisson-shrink-v1','odds':None,'edge':None,'value_status':'RESEARCH ONLY','risk':'HIGH' if max(p['probabilities'].values())<.55 else 'MODERATE','selection':max(p['probabilities'],key=p['probabilities'].get)})
             g['research']=p;feed['predictions'].append(p)
         else:g['research']={'status':'WATCH','reason':'Fewer than 3 prior matches for a team'}
     # Current scoreboards may omit HT scores. Keep unknown rather than deriving from incomplete goal lists.
@@ -141,7 +141,7 @@ def main(day=None):
                 status=injuries.get(pid,{'status':'Not listed in fetched report; availability unconfirmed','updated':None})
                 pre=player['state']=='pre' and datetime.fromisoformat(player['game_date'].replace('Z','+00:00'))>now
                 nba_cards.append(dict(est,player=player['name'],player_id=pid,game_id=player['game_id'],game_date=player['game_date'],stat=stat,threshold=n,injury=status,
-                    opponent_sample=len(opp),opponent_hits=sum(r[stat]>=n for r in opp),status='RESEARCH / PROVISIONAL' if pre else 'WATCH / GAME STARTED',model_version='nba-beta-binomial-v1',backtest_n=m.get('test',{}).get('n',0),source_urls=urls,generated_utc=now.isoformat(),odds=None,edge=None,
+                    opponent_sample=len(opp),opponent_hits=sum(r[stat]>=n for r in opp),status='RESEARCH / PROVISIONAL' if pre else 'WATCH / GAME STARTED',model_version='nba-beta-binomial-v1',backtest_n=m.get('test',{}).get('n',0),source_urls=urls,generated_utc=now.isoformat(),odds=None,edge=None,value_status='RESEARCH ONLY',
                     caveat='Conditional on playing. Minutes, injury and opponent context shown, not causally adjusted. Thresholds are research queries, not bookmaker lines.'))
         except Exception as e:report['errors']['player_'+pid]=str(e)[:200]
     feed['player_availability']=injuries;feed['nba_props']=nba_cards;feed['model_summary']={'soccer_leagues':len(report['soccer']),'nba_players':len(players)}

@@ -18,7 +18,7 @@ FILES = [('picks.json', 'picks'), ('prediction_log.json', 'predictions')]
 
 def grades(path, field):
     rows = json.loads(path.read_text(encoding='utf-8')).get(field, []) if path.exists() else []
-    return {str(r.get('id') or r.get('key')): r.get('grade') for r in rows}
+    return {str(r.get('key') or r.get('id')): r.get('grade') for r in rows}
 
 
 def main(data=ROOT / 'data', now=None):
