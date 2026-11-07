@@ -1,7 +1,10 @@
 name: Agent · Gemini (independent final reviewer, read-only)
-# Gemini never gets write access to code or data. It reads the repository, the other
-# agents' findings and public sources, then a separate step posts its report. When
-# called from the full audit it runs after every other job, so its opinion is last.
+# Gemini never gets write access to code or data. Two jobs keep the boundary hard:
+#   review: read-only token, no persisted git credentials, read-only Gemini tools.
+#           Its only output is a Markdown report artifact (the audit channel).
+#   post:   holds issues/pull-requests write, never runs Gemini, and only posts
+#           that report as a marked comment.
+# When called from the full audit it runs after every other job, so its opinion is last.
 on:
   issue_comment:
     types: [created]
@@ -26,7 +29,7 @@ on:
 permissions:
   contents: read
 jobs:
-  gemini:
+  review:
     if: >-
       github.event_name == 'workflow_dispatch' || github.event_name == 'workflow_call' || inputs.mode == 'audit' ||
       (github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository && !github.event.pull_request.draft) ||
@@ -36,8 +39,10 @@ jobs:
     timeout-minutes: 20
     permissions:
       contents: read
-      issues: write
-      pull-requests: write
+      issues: read
+      pull-requests: read
+    outputs:
+      ok: ${{ steps.auth.outputs.ok }}
     env:
       N: ${{ inputs.issue || github.event.issue.number || github.event.pull_request.number }}
       MODE: ${{ inputs.mode || (github.event.pull_request && 'pr') || (github.event.issue.pull_request && 'pr') || 'issue' }}
@@ -45,15 +50,27 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 50
-      - name: Collect read-only context for Gemini
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Collect shared evidence (same files every agent reads)
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          mkdir -p .agent
+          mkdir -p .agent/evidence
           gh issue view "$N" --repo "$GITHUB_REPOSITORY" --comments > .agent/thread.md 2>/dev/null \
             || gh pr view "$N" --repo "$GITHUB_REPOSITORY" --comments > .agent/thread.md
           if [ "$MODE" = pr ]; then gh pr diff "$N" --repo "$GITHUB_REPOSITORY" | head -c 200000 > .agent/pr.diff || true; fi
           python scripts/agent_audit.py --json .agent/audit.json --markdown .agent/audit.md || true
+          # Read-only: dataset accounting, integrity, overdue Pending and live re-verification of settled grades.
+          python scripts/reconcile.py --verify --json .agent/evidence/reconciliation.json \
+            --markdown .agent/evidence/reconciliation.md > /dev/null || true
+          # Dry-run grading on a copy: which Pending rows would settle now, from which source.
+          cp -R data .agent/evidence/data-dryrun
+          python -c "import json,sys;sys.path.insert(0,'.');from datetime import datetime,timezone;from grading import grade_files;print(json.dumps(grade_files('.agent/evidence/data-dryrun',datetime.now(timezone.utc)),indent=2))" \
+            > .agent/evidence/grading-dryrun.json || true
+          rm -rf .agent/evidence/data-dryrun
       - name: Fetch earlier agents' reports from the calling audit
         if: inputs.mode == 'audit'
         uses: actions/download-artifact@v4
@@ -70,6 +87,7 @@ jobs:
       - name: Gemini independent review (no GitHub token, read-only tools)
         id: gemini
         if: steps.auth.outputs.ok == 'true'
+        continue-on-error: true
         uses: google-github-actions/run-gemini-cli@v0
         env:
           # Headless CI needs an explicitly trusted workspace; tools stay limited to the read-only list below.
@@ -82,28 +100,70 @@ jobs:
           prompt: |
             You are Gemini, the independent FINAL reviewer for MatchLab, a sports research tracker
             (never a betting bot). Read AGENTS.md first. Mode: ${{ env.MODE }}. Thread: .agent/thread.md.
-            Deterministic checks: .agent/audit.md and .agent/audit.json. PR diff (if any): .agent/pr.diff.
+            Shared evidence (the same verified data Claude and ChatGPT use):
+            .agent/evidence/reconciliation.md and .json, .agent/evidence/grading-dryrun.json,
+            data/picks.json, data/prediction_log.json, .agent/audit.md. PR diff (if any): .agent/pr.diff.
             Earlier agents' reports (if any): .agent/prior/*.md.
 
             Form your OWN judgement; do not defer to Claude, ChatGPT/Codex or the checks.
-            - Verify claims against primary sources: fetch ESPN summary URLs
-              (https://site.api.espn.com/apis/site/v2/sports/<sport>/<league>/summary?event=<id>) for any
-              grade, final score, halftime score or fixture you assess. Quote the source URL for each verdict.
-            - Grading: confirm full-game vs halftime markets, PASS never graded as win, cashouts separate,
-              missing results stay Pending (never Loss), pushes on exact totals.
-            - Code (pr mode): correctness, test coverage, security (no secrets client-side, no betting
-              execution), and that historical records in data/ were not rewritten.
-            - Say explicitly where you AGREE and DISAGREE with each earlier agent, and what you could not verify.
+            Fetch ESPN summary URLs (https://site.api.espn.com/apis/site/v2/sports/<sport>/<league>/summary?event=<id>)
+            yourself and quote the source URL for each verdict. Spot-check at least five settled grades and
+            every grade in grading-dryrun.json.
+            Assess:
+            1. Grading quality: soccer 1H settles on the halftime (period 1) score, NBA N+ and NHL
+               moneyline/totals on the final; exact-line totals are Push; DNP is never a Loss; a
+               PASS is never graded and no existing selection was converted to PASS; missing
+               results stay Pending; no record was removed, duplicated or regraded.
+            2. Data discrepancies: whether the model archive (prediction_log) vs editorial
+               shortlist (picks) counts are explained by intentional filtering or by missing
+               data; overdue Pending rows; any grade that disagrees with its source.
+            3. Value labelling: research without a verified sportsbook price must be RESEARCH ONLY.
+            4. Code (pr mode): correctness, test coverage, security (no secrets client-side, no betting
+               execution), and that historical records in data/ were not rewritten.
+            5. Remaining risks, ranked.
+            Say explicitly where you AGREE and DISAGREE with each earlier agent, and what you could not verify.
             Output ONLY a Markdown report with sections: Verdict (one line: APPROVE / CONCERNS / BLOCK),
-            Independent verification, Agreement with other agents, Disagreements, Unverified, Recommended actions.
-      - name: Post Gemini report (separate step holds the write token)
+            Grading quality, Data discrepancies, Independent verification, Agreement with other agents,
+            Disagreements, Unverified, Remaining risks, Recommended actions.
+      - name: Save report for the posting job
         if: always()
         env:
-          GH_TOKEN: ${{ github.token }}
-          OK: ${{ steps.auth.outputs.ok }}
           REPORT: ${{ steps.gemini.outputs.summary }}
           ERR: ${{ steps.gemini.outputs.error }}
         run: |
+          mkdir -p .agent/out
+          printf '%s\n' "$REPORT" > .agent/out/report.md
+          printf '%s\n' "$ERR" | head -c 4000 > .agent/out/error.txt
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: gemini-review-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            .agent/out
+            .agent/evidence
+          retention-days: 14
+  post:
+    needs: review
+    if: always() && needs.review.result != 'skipped'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      issues: write
+      pull-requests: write
+    env:
+      N: ${{ inputs.issue || github.event.issue.number || github.event.pull_request.number }}
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: gemini-review-${{ github.run_id }}-${{ github.run_attempt }}
+          path: .agent
+        continue-on-error: true
+      - name: Post Gemini report (this job never runs Gemini)
+        env:
+          GH_TOKEN: ${{ github.token }}
+          OK: ${{ needs.review.outputs.ok }}
+        run: |
+          RUN="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
           {
             echo "<!-- agent:gemini kind:final-review -->"
             echo "## 🔷 Gemini — independent final review"
@@ -111,12 +171,12 @@ jobs:
             if [ "$OK" != true ]; then
               echo "**Gemini agent: not authorized yet.** No \`GEMINI_API_KEY\` secret exists, so Gemini did not run."
               echo "Create a key at https://aistudio.google.com/apikey and add it at https://github.com/$GITHUB_REPOSITORY/settings/secrets/actions/new"
-            elif [ -n "$REPORT" ]; then
-              printf '%s\n' "$REPORT"
+            elif [ -s .agent/out/report.md ] && grep -q '[^[:space:]]' .agent/out/report.md; then
+              head -c 60000 .agent/out/report.md
             else
-              echo "**Gemini ran but returned no report.** Error: ${ERR:-none reported}. Run: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+              echo "**Gemini ran but returned no report.** Error: $(head -c 1500 .agent/out/error.txt 2>/dev/null || echo none reported). Run: $RUN"
             fi
             echo
-            echo "<sub>Read-only reviewer · run $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID</sub>"
-          } > .agent/gemini.md
-          gh issue comment "$N" --repo "$GITHUB_REPOSITORY" --body-file .agent/gemini.md
+            echo "<sub>Read-only reviewer · evidence bundle attached to run $RUN</sub>"
+          } > gemini.md
+          gh issue comment "$N" --repo "$GITHUB_REPOSITORY" --body-file gemini.md
