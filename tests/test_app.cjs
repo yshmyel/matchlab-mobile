@@ -26,9 +26,28 @@ assert.equal((el('nbaSlateGames').innerHTML.match(/data-nba-game=/g)||[]).length
 run("$('search').value='Visible';captureFilters();setView('history');setSport('nhl');$('search').value='Other sport';captureFilters();setView('today')");
 assert.equal(run('sport'),'nba');assert.equal(el('search').value,'Visible');
 assert.match(el('shortlist').innerHTML,/Visible started pick/);
-// Final picks remain on the dated Today card as well.
-run("entries[0].completed=true;publicPicks[0].grade='Win';draw()");
-assert.match(el('shortlist').innerHTML,/FINAL/);assert.match(el('shortlist').innerHTML,/Visible started pick/);
+// Unpriced picks are labelled RESEARCH ONLY.
+assert.match(el('shortlist').innerHTML,/RESEARCH ONLY/);
+// Completed picks leave the active Today view but remain in History with their grade.
+run("entries[0].completed=true;publicPicks[0].grade='Win';publicPicks[0].game_date=new Date(Date.now()-3600e3).toISOString();draw()");
+assert.doesNotMatch(el('shortlist').innerHTML,/Visible started pick/);
+assert.match(el('coverage').textContent,/1 completed pick has moved to History/);
+run("$('historyDate').value='';$('historyType').value='all';$('historyGrade').value='all';$('search').value='';drawHistory()");
+assert.match(el('historyRows').innerHTML,/Visible started pick/);assert.match(el('historyRows').innerHTML,/Win/);
+// A soccer 1H pick settles at halftime, before the match is final.
+run("entries.push({id:'ht',league:'epl',date_utc:new Date().toISOString(),state:'in',completed:false,home:{name:'H'},away:{name:'A'}})");
+assert.equal(run("activePicks([{id:'s',league:'epl',game_id:'ht',market:'1h',grade:'Loss',game_date:new Date().toISOString()}],pacific(Date.now())).length"),0);
+assert.equal(run("activePicks([{id:'s',league:'epl',game_id:'ht',market:'1h',grade:'Pending',game_date:new Date().toISOString()}],pacific(Date.now())).length"),1);
+// Pacific midnight rollover: views on the old day advance, custom dates are kept,
+// and a game that started before midnight stays active until it settles.
+run(`slateToday='2026-11-07';$('date').value='2026-11-07';viewFilters.history={sport:'all',date:'2026-11-01',query:''};viewFilters.scores={sport:'all',date:'2026-11-07',query:''}`);
+assert.equal(run("rollover(Date.parse('2026-11-08T08:05:00Z'))"),true);
+assert.equal(el('date').value,'2026-11-08');assert.equal(run('viewFilters.scores.date'),'2026-11-08');assert.equal(run('viewFilters.history.date'),'2026-11-01');
+assert.equal(run("rollover(Date.parse('2026-11-08T08:06:00Z'))"),false);
+assert.equal(run("activePicks([{id:'late',league:'nhl',game_id:'x',market:'ft',grade:'Pending',game_date:'2026-11-08T06:30:00Z'}],'2026-11-08',Date.parse('2026-11-08T08:05:00Z')).length"),1);
+assert.equal(run("activePicks([{id:'old',league:'nhl',game_id:'x',market:'ft',grade:'Pending',game_date:'2026-11-06T03:00:00Z'}],'2026-11-08',Date.parse('2026-11-08T08:05:00Z')).length"),0);
+run("slateToday=pacific(Date.now())");
+console.log('PASS: settled picks move to History, 1H settles at halftime, Pacific midnight rollover');
 // Raw model thresholds do not disappear at tipoff.
 run("renderProps([{player:'Saved player',player_id:'1',game_id:'1',league:'nba',game_date:entries[1].date_utc,threshold:20,stat:'points',injury:{status:'Unconfirmed'},grade:'Pending'}])");
 assert.match(el('props').innerHTML,/Saved player/);assert.match(el('props').innerHTML,/LIVE/);
