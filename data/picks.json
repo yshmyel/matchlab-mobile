@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_utc": "2026-11-07T20:48:21.927363+00:00",
+  "updated_utc": "2026-11-07T22:48:50.193158+00:00",
   "picks": [
     {
       "status": "SCOUTING LEAN",
@@ -415,9 +415,17 @@
       "confidence": "MODERATE",
       "generated_utc": "2026-11-07T16:19:56.540988+00:00",
       "published_utc": "2026-11-07T16:19:56.540988+00:00",
-      "grade": "Pending",
+      "grade": "Win",
       "value_status": "RESEARCH ONLY",
-      "placement": "UNPLACED RESEARCH"
+      "placement": "UNPLACED RESEARCH",
+      "actual": "away",
+      "actual_score": {
+        "home": 0,
+        "away": 2
+      },
+      "result_basis": "halftime_score",
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/summary?event=401882808",
+      "graded_utc": "2026-11-07T22:48:50.193158+00:00"
     },
     {
       "id": "20261107-ligue_1-401876407-1h",
@@ -453,9 +461,17 @@
       "confidence": "MODERATE",
       "generated_utc": "2026-11-07T16:19:56.540988+00:00",
       "published_utc": "2026-11-07T16:19:56.540988+00:00",
-      "grade": "Pending",
+      "grade": "Win",
       "value_status": "RESEARCH ONLY",
-      "placement": "UNPLACED RESEARCH"
+      "placement": "UNPLACED RESEARCH",
+      "actual": "home",
+      "actual_score": {
+        "home": 1,
+        "away": 0
+      },
+      "result_basis": "halftime_score",
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fra.1/summary?event=401876407",
+      "graded_utc": "2026-11-07T22:48:50.193158+00:00"
     },
     {
       "id": "20261107-la_liga-401882811-1h",
