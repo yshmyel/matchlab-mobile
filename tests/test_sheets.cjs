@@ -22,3 +22,15 @@ assert.match(b.abInboxBody_(['','chatgpt','all','','x']),/@claude @gemini @codex
 assert.equal(b.abToken_(),null); // no PropertiesService: never throws
 assert.equal(b.abSummary_('Grade serie_a:401874815 in data/prediction_log.json, see #2'),'Grade serie_a:401874815 in data/prediction_log.json, see #2');
 console.log('PASS: agent bridge author markers, summaries, routing mentions');
+// Freshness, market labels, editorial picks tab and no-regress merge.
+const m=vm.createContext({});vm.runInContext(fs.readFileSync('integrations/MatchLab.gs','utf8'),m);
+const now=Date.parse('2026-11-07T18:00:00Z');
+assert.equal(m.mlFresh_('2026-11-07T17:30:00Z',now,7200000),true);
+for(const bad of ['garbage',undefined,null,'2026-11-07T15:00:00Z','2026-11-07T19:00:00Z'])assert.equal(m.mlFresh_(bad,now,7200000),false,String(bad));
+assert.equal(m.mlMarket_({market:'ft'}),'Full-game ML (incl. OT/SO)');assert.equal(m.mlMarket_({market:'total',line:6.5}),'Full-game total 6.5');
+assert.equal(m.mlMarket_({market:'1h'}),'1H 1X2');assert.equal(m.mlMarket_({market:'pass'}),'PASS (no selection)');
+const prow=m.mlPickRows_({updated_utc:'u',picks:[{id:'p',league:'nhl',game_date:'2026-11-08T03:00:00Z',market:'pass',grade:'Not applicable',official_result:{final_score:{home:5,away:3}}}]})[0];
+assert.equal(prow.length,m.ML_PICK_HEADERS?.length??16);assert.equal(prow[2],'2026-11-07');assert.equal(prow[8],'RESEARCH ONLY · no verified price');assert.equal(prow[9],'Not applicable');assert.equal(prow[10],'Official 3–5');
+const merged=m.mlMerge_([['a','x','Win'],['b','x','Pending'],['a','dup','Win']],[['a','new','Pending'],['b','new','Loss'],['c','new','Pending']],2);
+assert.equal(merged.map(r=>r.join('|')).join(','),'a|dup|Win,b|new|Loss,c|new|Pending');
+console.log('PASS: strict feed freshness, market labels, editorial picks tab, settled rows never regress, duplicate keys collapse');

@@ -30,12 +30,24 @@ NAME is `claude`, `gemini`, `codex`, `chatgpt`, `checks` or `user`. KIND is `fin
 | **Grading** (`scripts/grade_now.py`) | `grade.yml`, every 30 min | Commit `data/picks.json` and `data/prediction_log.json`, only when a grade changed | Touch any other file; regrade a graded row; turn a missing result into a loss |
 | **Claude** | `claude.yml` on `@claude` / label `agent:claude` from the owner | Edit code on a `claude/*` branch and open a PR; comment | Push to main; rewrite history, past picks, bankroll or Sheet formulas |
 | **Claude (audit)** | `agent-audit.yml` full report | Read and analyse; write a report file | Change files (read-only token) |
-| **Gemini** | `gemini.yml`: every same-repo PR, `@gemini`, and last job of a full audit | Read repo and public sources; its report is posted by a separate step | Any write access; no GitHub token is given to Gemini |
+| **Gemini** | `gemini.yml`: every same-repo PR, `@gemini`, and last job of a full audit | Read the repo, public sources and the shared evidence bundle; return one Markdown report, which a separate job posts | Any write access. The review job has a read-only token, no persisted git credentials and read-only tools; only the `post` job can comment, and it never runs Gemini |
 | **ChatGPT / Codex** | ChatGPT routines (Sheet) and Codex (`@codex` on PRs/issues when the Codex GitHub connector is enabled) | Read the bus/Agent Log; write to Agent Inbox; review PRs | Merge; enable betting |
 
-**Gemini is the final reviewer.** In a full audit its job depends on every other job, so its
+**Gemini is currently disabled.** `gemini.yml` runs only when the repository variable `GEMINI_ENABLED` is `true`; until then no agent should wait for a Gemini verdict.
+
+**Gemini is the final reviewer when enabled.** In a full audit its job depends on every other job, so its
 report is always the last comment. On PRs it reviews after Claude opens them. A PR with a
 Gemini verdict of `BLOCK` must not be merged until the concern is resolved.
+
+## Shared verified evidence
+
+Every agent works from the same files, never from its own copy of the facts:
+
+- `data/picks.json` (editorial shortlist) and `data/prediction_log.json` (automated model archive). They are different datasets; their sizes are expected to differ.
+- `python scripts/reconcile.py --verify --json … --markdown …` (read-only): dataset accounting, duplicates, unsourced or PASS-graded rows, overdue Pending rows, and a live re-check of every settled grade against its cited ESPN source. Exit code 1 means duplicates, a graded PASS or a grade conflict.
+- Gemini runs receive this bundle in `.agent/evidence/`, plus a dry-run of the grader. The bundle is attached to each run as an artifact.
+
+Grades are written only by `grading.grade_files` (through `pipeline.py` and `scripts/grade_now.py`). It refuses any write that removes, duplicates or regrades a record, changes a selection, or converts a selection to PASS.
 
 ## Rules for every agent
 
