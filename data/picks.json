@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "updated_utc": "2026-11-07T03:07:58.011329+00:00",
+  "updated_utc": "2026-11-07T10:38:17.420821+00:00",
   "picks": [
     {
       "status": "SCOUTING LEAN",
-      "grade": "Pending",
+      "grade": "Loss",
       "price_note": "Exact N+ market price unverified. Check the offered threshold and accepted odds.",
       "generated_utc": "2026-11-07T00:04:30.798399+00:00",
       "published_utc": "2026-11-07T00:04:30.798399+00:00",
@@ -28,11 +28,15 @@
         "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909289",
         "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4431678/gamelog?season=2027",
         "https://www.nba.com/sixers/news/sixers-at-cavaliers-nba-cup-preview-injury-report-and-how-to-watch-11-6-2026"
-      ]
+      ],
+      "actual": 0,
+      "actual_value": 17,
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909289",
+      "graded_utc": "2026-11-07T10:38:17.420821+00:00"
     },
     {
       "status": "SCOUTING LEAN",
-      "grade": "Pending",
+      "grade": "Loss",
       "price_note": "Exact N+ market price unverified. Check the offered threshold and accepted odds.",
       "generated_utc": "2026-11-07T00:04:30.798399+00:00",
       "published_utc": "2026-11-07T00:04:30.798399+00:00",
@@ -55,11 +59,15 @@
       "source_urls": [
         "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909289",
         "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/3992/gamelog?season=2027"
-      ]
+      ],
+      "actual": 0,
+      "actual_value": 3,
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909289",
+      "graded_utc": "2026-11-07T10:38:17.420821+00:00"
     },
     {
       "status": "SCOUTING LEAN",
-      "grade": "Pending",
+      "grade": "Win",
       "price_note": "Exact N+ market price unverified. Check the offered threshold and accepted odds.",
       "generated_utc": "2026-11-07T00:04:30.798399+00:00",
       "published_utc": "2026-11-07T00:04:30.798399+00:00",
@@ -83,7 +91,11 @@
         "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909291",
         "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4278073/gamelog?season=2027",
         "https://www.nba.com/game/0022600029?resume=true"
-      ]
+      ],
+      "actual": 1,
+      "actual_value": 28,
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909291",
+      "graded_utc": "2026-11-07T10:38:17.420821+00:00"
     },
     {
       "id": "20261106-nhl-buffalo",
@@ -134,7 +146,14 @@
       "generated_utc": "2026-11-06T22:46:00+00:00",
       "published_utc": "2026-11-07T00:04:30.798399+00:00",
       "status": "SCOUTING LEAN",
-      "grade": "Pending"
+      "grade": "Win",
+      "actual": "home",
+      "actual_score": {
+        "home": 4,
+        "away": 1
+      },
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/summary?event=401892660",
+      "graded_utc": "2026-11-07T10:38:17.420821+00:00"
     },
     {
       "id": "20261106-nhl-anaheim-calgary",
