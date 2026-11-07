@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_utc": "2026-11-07T18:54:55.449744+00:00",
+  "updated_utc": "2026-11-07T18:56:11.112243+00:00",
   "picks": [
     {
       "status": "SCOUTING LEAN",
@@ -32,7 +32,9 @@
       "actual": 0,
       "actual_value": 17,
       "grade_source": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909289",
-      "graded_utc": "2026-11-07T10:38:17.420821+00:00"
+      "graded_utc": "2026-11-07T10:38:17.420821+00:00",
+      "value_status": "RESEARCH ONLY",
+      "placement": "UNPLACED RESEARCH"
     },
     {
       "status": "SCOUTING LEAN",
@@ -63,7 +65,9 @@
       "actual": 0,
       "actual_value": 3,
       "grade_source": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909289",
-      "graded_utc": "2026-11-07T10:38:17.420821+00:00"
+      "graded_utc": "2026-11-07T10:38:17.420821+00:00",
+      "value_status": "RESEARCH ONLY",
+      "placement": "UNPLACED RESEARCH"
     },
     {
       "status": "SCOUTING LEAN",
@@ -95,7 +99,9 @@
       "actual": 1,
       "actual_value": 28,
       "grade_source": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909291",
-      "graded_utc": "2026-11-07T10:38:17.420821+00:00"
+      "graded_utc": "2026-11-07T10:38:17.420821+00:00",
+      "value_status": "RESEARCH ONLY",
+      "placement": "UNPLACED RESEARCH"
     },
     {
       "id": "20261106-nhl-buffalo",
@@ -124,7 +130,9 @@
         "away": 2
       },
       "grade_source": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/summary?event=401892659",
-      "graded_utc": "2026-11-07T03:07:58.011329+00:00"
+      "graded_utc": "2026-11-07T03:07:58.011329+00:00",
+      "value_status": "RESEARCH ONLY",
+      "placement": "UNPLACED RESEARCH"
     },
     {
       "id": "20261106-nhl-minnesota",
@@ -153,7 +161,9 @@
         "away": 1
       },
       "grade_source": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/summary?event=401892660",
-      "graded_utc": "2026-11-07T10:38:17.420821+00:00"
+      "graded_utc": "2026-11-07T10:38:17.420821+00:00",
+      "value_status": "RESEARCH ONLY",
+      "placement": "UNPLACED RESEARCH"
     },
     {
       "id": "20261106-nhl-anaheim-calgary",
@@ -175,7 +185,17 @@
       "generated_utc": "2026-11-06T22:46:00+00:00",
       "published_utc": "2026-11-07T00:04:30.798399+00:00",
       "status": "PASS",
-      "grade": "Not applicable"
+      "grade": "Not applicable",
+      "value_status": "RESEARCH ONLY",
+      "placement": "UNPLACED RESEARCH",
+      "official_result": {
+        "final_score": {
+          "home": 3,
+          "away": 5
+        }
+      },
+      "official_result_source": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/summary?event=401892661",
+      "official_result_utc": "2026-11-07T18:56:11.112243+00:00"
     },
     {
       "id": "20261107-serie_a-401874974-1h",
@@ -211,7 +231,17 @@
       "confidence": "MODERATE",
       "generated_utc": "2026-11-07T16:19:56.540988+00:00",
       "published_utc": "2026-11-07T16:19:56.540988+00:00",
-      "grade": "Pending"
+      "grade": "Win",
+      "value_status": "RESEARCH ONLY",
+      "placement": "UNPLACED RESEARCH",
+      "actual": "draw",
+      "actual_score": {
+        "home": 0,
+        "away": 0
+      },
+      "result_basis": "halftime_score",
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/summary?event=401874974",
+      "graded_utc": "2026-11-07T18:56:11.112243+00:00"
     },
     {
       "id": "20261107-epl-401878757-1h",
@@ -247,7 +277,17 @@
       "confidence": "MODERATE",
       "generated_utc": "2026-11-07T16:19:56.540988+00:00",
       "published_utc": "2026-11-07T16:19:56.540988+00:00",
-      "grade": "Pending"
+      "grade": "Loss",
+      "value_status": "RESEARCH ONLY",
+      "placement": "UNPLACED RESEARCH",
+      "actual": "home",
+      "actual_score": {
+        "home": 2,
+        "away": 0
+      },
+      "result_basis": "halftime_score",
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/summary?event=401878757",
+      "graded_utc": "2026-11-07T18:56:11.112243+00:00"
     },
     {
       "id": "20261107-ligue_1-401876411-1h",
@@ -283,7 +323,17 @@
       "confidence": "LOW",
       "generated_utc": "2026-11-07T16:19:56.540988+00:00",
       "published_utc": "2026-11-07T16:19:56.540988+00:00",
-      "grade": "Pending"
+      "grade": "Win",
+      "value_status": "RESEARCH ONLY",
+      "placement": "UNPLACED RESEARCH",
+      "actual": "draw",
+      "actual_score": {
+        "home": 0,
+        "away": 0
+      },
+      "result_basis": "halftime_score",
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fra.1/summary?event=401876411",
+      "graded_utc": "2026-11-07T18:56:11.112243+00:00"
     },
     {
       "id": "20261107-serie_a-401874803-1h",
@@ -319,7 +369,9 @@
       "confidence": "MODERATE",
       "generated_utc": "2026-11-07T16:19:56.540988+00:00",
       "published_utc": "2026-11-07T16:19:56.540988+00:00",
-      "grade": "Pending"
+      "grade": "Pending",
+      "value_status": "RESEARCH ONLY",
+      "placement": "UNPLACED RESEARCH"
     },
     {
       "id": "20261107-la_liga-401882808-1h",
@@ -355,7 +407,9 @@
       "confidence": "MODERATE",
       "generated_utc": "2026-11-07T16:19:56.540988+00:00",
       "published_utc": "2026-11-07T16:19:56.540988+00:00",
-      "grade": "Pending"
+      "grade": "Pending",
+      "value_status": "RESEARCH ONLY",
+      "placement": "UNPLACED RESEARCH"
     },
     {
       "id": "20261107-ligue_1-401876407-1h",
@@ -391,7 +445,9 @@
       "confidence": "MODERATE",
       "generated_utc": "2026-11-07T16:19:56.540988+00:00",
       "published_utc": "2026-11-07T16:19:56.540988+00:00",
-      "grade": "Pending"
+      "grade": "Pending",
+      "value_status": "RESEARCH ONLY",
+      "placement": "UNPLACED RESEARCH"
     },
     {
       "id": "20261107-la_liga-401882811-1h",
@@ -427,7 +483,9 @@
       "confidence": "MODERATE",
       "generated_utc": "2026-11-07T16:19:56.540988+00:00",
       "published_utc": "2026-11-07T16:19:56.540988+00:00",
-      "grade": "Not applicable"
+      "grade": "Not applicable",
+      "value_status": "RESEARCH ONLY",
+      "placement": "UNPLACED RESEARCH"
     },
     {
       "id": "20261107-bundesliga-401884743-1h",
@@ -463,7 +521,9 @@
       "confidence": "MODERATE",
       "generated_utc": "2026-11-07T16:19:56.540988+00:00",
       "published_utc": "2026-11-07T16:19:56.540988+00:00",
-      "grade": "Not applicable"
+      "grade": "Not applicable",
+      "value_status": "RESEARCH ONLY",
+      "placement": "UNPLACED RESEARCH"
     },
     {
       "id": "20261107-nhl-401892663-total",
@@ -490,7 +550,9 @@
       "line": 5.5,
       "generated_utc": "2026-11-07T16:22:25.199657+00:00",
       "published_utc": "2026-11-07T16:22:25.199657+00:00",
-      "grade": "Pending"
+      "grade": "Pending",
+      "value_status": "RESEARCH ONLY",
+      "placement": "UNPLACED RESEARCH"
     },
     {
       "id": "20261107-nhl-401892668-ml",
@@ -516,7 +578,9 @@
       "confidence": "MODERATE",
       "generated_utc": "2026-11-07T16:22:25.199657+00:00",
       "published_utc": "2026-11-07T16:22:25.199657+00:00",
-      "grade": "Pending"
+      "grade": "Pending",
+      "value_status": "RESEARCH ONLY",
+      "placement": "UNPLACED RESEARCH"
     },
     {
       "id": "20261107-nhl-401892668-total",
@@ -543,7 +607,9 @@
       "line": 6.5,
       "generated_utc": "2026-11-07T16:22:25.199657+00:00",
       "published_utc": "2026-11-07T16:22:25.199657+00:00",
-      "grade": "Pending"
+      "grade": "Pending",
+      "value_status": "RESEARCH ONLY",
+      "placement": "UNPLACED RESEARCH"
     },
     {
       "id": "20261107-nhl-401892669-ml",
@@ -569,7 +635,9 @@
       "confidence": "MODERATE",
       "generated_utc": "2026-11-07T16:22:25.199657+00:00",
       "published_utc": "2026-11-07T16:22:25.199657+00:00",
-      "grade": "Pending"
+      "grade": "Pending",
+      "value_status": "RESEARCH ONLY",
+      "placement": "UNPLACED RESEARCH"
     },
     {
       "id": "20261107-nhl-401892669-total",
@@ -596,7 +664,9 @@
       "line": 6.5,
       "generated_utc": "2026-11-07T16:22:25.199657+00:00",
       "published_utc": "2026-11-07T16:22:25.199657+00:00",
-      "grade": "Pending"
+      "grade": "Pending",
+      "value_status": "RESEARCH ONLY",
+      "placement": "UNPLACED RESEARCH"
     },
     {
       "id": "20261107-nhl-401892670-ml",
@@ -622,7 +692,9 @@
       "confidence": "LOW",
       "generated_utc": "2026-11-07T16:22:25.199657+00:00",
       "published_utc": "2026-11-07T16:22:25.199657+00:00",
-      "grade": "Pending"
+      "grade": "Pending",
+      "value_status": "RESEARCH ONLY",
+      "placement": "UNPLACED RESEARCH"
     },
     {
       "id": "20261107-nhl-401892673-ml",
@@ -648,7 +720,9 @@
       "confidence": "MODERATE",
       "generated_utc": "2026-11-07T16:22:25.199657+00:00",
       "published_utc": "2026-11-07T16:22:25.199657+00:00",
-      "grade": "Pending"
+      "grade": "Pending",
+      "value_status": "RESEARCH ONLY",
+      "placement": "UNPLACED RESEARCH"
     },
     {
       "id": "20261107-nhl-401892673-total",
@@ -675,7 +749,9 @@
       "line": 6.5,
       "generated_utc": "2026-11-07T16:22:25.199657+00:00",
       "published_utc": "2026-11-07T16:22:25.199657+00:00",
-      "grade": "Pending"
+      "grade": "Pending",
+      "value_status": "RESEARCH ONLY",
+      "placement": "UNPLACED RESEARCH"
     },
     {
       "id": "20261107-nhl-401892665-total",
@@ -702,7 +778,9 @@
       "line": 6.5,
       "generated_utc": "2026-11-07T16:22:25.199657+00:00",
       "published_utc": "2026-11-07T16:22:25.199657+00:00",
-      "grade": "Pending"
+      "grade": "Pending",
+      "value_status": "RESEARCH ONLY",
+      "placement": "UNPLACED RESEARCH"
     },
     {
       "id": "20261107-nhl-401892662-pass",
@@ -728,7 +806,9 @@
       "confidence": "MODERATE",
       "generated_utc": "2026-11-07T16:22:25.199657+00:00",
       "published_utc": "2026-11-07T16:22:25.199657+00:00",
-      "grade": "Not applicable"
+      "grade": "Not applicable",
+      "value_status": "RESEARCH ONLY",
+      "placement": "UNPLACED RESEARCH"
     },
     {
       "id": "20261107-nhl-401892664-pass",
@@ -754,7 +834,9 @@
       "confidence": "MODERATE",
       "generated_utc": "2026-11-07T16:22:25.199657+00:00",
       "published_utc": "2026-11-07T16:22:25.199657+00:00",
-      "grade": "Not applicable"
+      "grade": "Not applicable",
+      "value_status": "RESEARCH ONLY",
+      "placement": "UNPLACED RESEARCH"
     },
     {
       "id": "20261107-nhl-401892666-pass",
@@ -780,7 +862,9 @@
       "confidence": "MODERATE",
       "generated_utc": "2026-11-07T16:22:25.199657+00:00",
       "published_utc": "2026-11-07T16:22:25.199657+00:00",
-      "grade": "Not applicable"
+      "grade": "Not applicable",
+      "value_status": "RESEARCH ONLY",
+      "placement": "UNPLACED RESEARCH"
     },
     {
       "id": "20261107-nhl-401892667-pass",
@@ -806,7 +890,9 @@
       "confidence": "MODERATE",
       "generated_utc": "2026-11-07T16:22:25.199657+00:00",
       "published_utc": "2026-11-07T16:22:25.199657+00:00",
-      "grade": "Not applicable"
+      "grade": "Not applicable",
+      "value_status": "RESEARCH ONLY",
+      "placement": "UNPLACED RESEARCH"
     },
     {
       "id": "20261107-nhl-401892671-pass",
@@ -832,7 +918,9 @@
       "confidence": "MODERATE",
       "generated_utc": "2026-11-07T16:22:25.199657+00:00",
       "published_utc": "2026-11-07T16:22:25.199657+00:00",
-      "grade": "Not applicable"
+      "grade": "Not applicable",
+      "value_status": "RESEARCH ONLY",
+      "placement": "UNPLACED RESEARCH"
     },
     {
       "id": "20261107-nhl-401892672-pass",
@@ -858,7 +946,9 @@
       "confidence": "MODERATE",
       "generated_utc": "2026-11-07T16:22:25.199657+00:00",
       "published_utc": "2026-11-07T16:22:25.199657+00:00",
-      "grade": "Not applicable"
+      "grade": "Not applicable",
+      "value_status": "RESEARCH ONLY",
+      "placement": "UNPLACED RESEARCH"
     },
     {
       "id": "20261107-nba-3112335-reb6",
@@ -889,7 +979,9 @@
       "confidence": "MODERATE",
       "generated_utc": "2026-11-07T16:23:35.091130+00:00",
       "published_utc": "2026-11-07T16:23:35.091130+00:00",
-      "grade": "Pending"
+      "grade": "Pending",
+      "value_status": "RESEARCH ONLY",
+      "placement": "UNPLACED RESEARCH"
     },
     {
       "id": "20261107-nba-3136195-reb6",
@@ -920,7 +1012,9 @@
       "confidence": "MODERATE",
       "generated_utc": "2026-11-07T16:23:35.091130+00:00",
       "published_utc": "2026-11-07T16:23:35.091130+00:00",
-      "grade": "Pending"
+      "grade": "Pending",
+      "value_status": "RESEARCH ONLY",
+      "placement": "UNPLACED RESEARCH"
     },
     {
       "id": "20261107-nba-3934672-ass4",
@@ -951,7 +1045,9 @@
       "confidence": "MODERATE",
       "generated_utc": "2026-11-07T16:23:35.091130+00:00",
       "published_utc": "2026-11-07T16:23:35.091130+00:00",
-      "grade": "Pending"
+      "grade": "Pending",
+      "value_status": "RESEARCH ONLY",
+      "placement": "UNPLACED RESEARCH"
     },
     {
       "id": "20261107-nba-4871144-reb6",
@@ -982,7 +1078,9 @@
       "confidence": "MODERATE",
       "generated_utc": "2026-11-07T16:23:35.091130+00:00",
       "published_utc": "2026-11-07T16:23:35.091130+00:00",
-      "grade": "Pending"
+      "grade": "Pending",
+      "value_status": "RESEARCH ONLY",
+      "placement": "UNPLACED RESEARCH"
     },
     {
       "id": "20261107-nba-4278073-poi20",
@@ -1013,7 +1111,9 @@
       "confidence": "MODERATE",
       "generated_utc": "2026-11-07T16:23:35.091130+00:00",
       "published_utc": "2026-11-07T16:23:35.091130+00:00",
-      "grade": "Pending"
+      "grade": "Pending",
+      "value_status": "RESEARCH ONLY",
+      "placement": "UNPLACED RESEARCH"
     },
     {
       "id": "20261107-nba-5104157-reb6",
@@ -1044,7 +1144,9 @@
       "confidence": "LOW",
       "generated_utc": "2026-11-07T16:23:35.091130+00:00",
       "published_utc": "2026-11-07T16:23:35.091130+00:00",
-      "grade": "Pending"
+      "grade": "Pending",
+      "value_status": "RESEARCH ONLY",
+      "placement": "UNPLACED RESEARCH"
     },
     {
       "id": "20261107-nba-4277905-ass4",
@@ -1075,7 +1177,9 @@
       "confidence": "LOW",
       "generated_utc": "2026-11-07T16:23:35.091130+00:00",
       "published_utc": "2026-11-07T16:23:35.091130+00:00",
-      "grade": "Pending"
+      "grade": "Pending",
+      "value_status": "RESEARCH ONLY",
+      "placement": "UNPLACED RESEARCH"
     }
   ],
   "notice": "Public sports research only. Actual wagers and bankroll are excluded. Shortlist selections are scouting judgments; raw models are separately labeled.",
