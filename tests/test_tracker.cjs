@@ -1,0 +1,16 @@
+const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict');
+const c=vm.createContext({Date,Intl,Number,Math});vm.runInContext(fs.readFileSync('tracker.js','utf8'),c);const run=s=>vm.runInContext(s,c);
+assert.equal(run("decimalOdds(-150,'american')"),1+100/150);
+assert.equal(run("decimalOdds(120,'american')"),2.2);
+assert.equal(run("decimalOdds(1.8,'decimal')"),1.8);
+assert.equal(run("decimalOdds(0,'american')"),null);
+assert.equal(run("betProfit({stake:10,decimal:2.2,result:'Win',returned:null})"),12);
+assert.equal(run("betProfit({stake:10,decimal:2,result:'Pending',returned:null})"),null);
+assert.equal(run("betProfit({stake:10,decimal:2,result:'Loss',returned:0})"),-10);
+assert.equal(run("betProfit({stake:10,decimal:2,result:'Cashout',returned:4.25})"),-5.75);
+assert.equal(run("betProfit({stake:10,decimal:null,result:'Win',returned:null})"),null);
+assert.equal(run("betProfit({stake:10,decimal:2,result:'Void',returned:null})"),0);
+assert.equal(run("validDate('2026-02-31')"),false);
+const csv='Tracker title\nDate,Ticket ID,Kind,Selections,Actual stake $,Accepted decimal,Bet status,Result,Returned $,Book / reference\n11/03/26,A,SINGLE,"Team A, win",2,2.1,PLACED,WIN,4.2,William Hill\n11/03/26,B,SINGLE,Team B,0,,SUGGESTED,HIT,,Reference\n11/03/26,C,SINGLE,Team C,2,,PLACED,LOSS,0,BetMGM';
+c.csv=csv;const imported=run('importTrackerCSV(csv)');assert.equal(imported.bets.length,2);assert.equal(imported.skipped,1);assert.equal(imported.bets[0].selection,'Team A, win');assert.equal(imported.bets[0].date,'2026-11-03');assert.equal(imported.bets[1].decimal,null);assert.equal(imported.bets[1].returned,0);assert.equal(imported.bets[0].book,'William Hill');
+console.log('PASS: private journal settlement math, unknown prices, real-stake CSV filter and quoted cells');

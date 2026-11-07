@@ -39,7 +39,7 @@ def build(day, leagues, output):
 if __name__=='__main__':
     p=argparse.ArgumentParser()
     p.add_argument('--date',default=datetime.now(__import__('zoneinfo').ZoneInfo('America/Los_Angeles')).strftime('%Y%m%d'))
-    p.add_argument('--leagues',nargs='+',default=['nba','epl','la_liga','bundesliga','serie_a','ligue_1','ucl','uel','uecl'])
+    p.add_argument('--leagues',nargs='+',default=list(LEAGUES))
     p.add_argument('--output',default='data/latest.json')
     args=p.parse_args()
     if len(args.date)!=8 or not args.date.isdigit():p.error('Use YYYYMMDD')

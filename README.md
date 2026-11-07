@@ -4,11 +4,11 @@ Phone-friendly soccer first-half and NBA research app. Standard-library Python i
 
 ## Current features
 
-- Nine ESPN league scoreboards: NBA, Premier League, La Liga, Bundesliga, Serie A, Ligue 1 and UEFA Champions, Europa and Conference leagues.
+- Ten ESPN league scoreboards: NHL, NBA, Premier League, La Liga, Bundesliga, Serie A, Ligue 1 and UEFA Champions, Europa and Conference leagues.
 - Soccer home/draw/away first-half outcomes only after a reported first half is complete and both period scores exist. Missing scores remain unknown.
 - NBA records, individual period scores, game state, score and source links.
-- Device-local pregame research selections, automatic Win/Loss/Pending grading, export and restore. NBA uses full-game winner; soccer uses 1H three-way result. This is a research log, not a betting ledger.
-- Pacific date filter; displayed tipoff/kickoff times follow the device timezone.
+- Device-local pregame research selections, automatic Win/Loss/Pending grading, export and restore. NBA uses full-game winner; soccer uses 1H three-way result. Saved research selections are separate from the private placed-bet journal.
+- Pacific date filter; displayed tipoff/kickoff times use Pacific time.
 - Current and prior-day feeds, stale/partial coverage notices, offline app shell.
 
 ## Deploy
@@ -33,9 +33,9 @@ ESPN's public endpoints are unofficial and can change. HT coverage depends on pe
 
 `pipeline.py` fits provisional first-half Poisson models with shrunk team rates and temperature calibration selected on an earlier validation block. It evaluates a later chronological test block and reports accuracy, log loss, Brier score, confidence bins and a league-frequency baseline. Entire fixture dates are excluded from their own training data. Domestic leagues currently have labels; UEFA competitions currently have none and stay WATCH. Exact canonical names or explicit aliases are required; unknown club mappings produce no forecast.
 
-NBA N+ research uses Beta(1,1)-smoothed hit rates over 20 prior played games, with validation-selected temperature calibration and held-out tests. Minutes, opponent history and source-reported injuries are displayed as context, not fitted causal adjustments. Queries cover summary-listed points, assists and rebound leaders in today's NBA fixtures, capped at 24 players. The player selection introduces selection bias; results do not represent all NBA players or all thresholds. DNPs are excluded rather than silently treated as zero. The estimate is conditional on playing; new teams, roles and injuries may invalidate historical rates.
+NBA N+ research uses Beta(1,1)-smoothed hit rates over 20 prior played games, with validation-selected temperature calibration and held-out tests. Minutes, opponent history and source-reported injuries are displayed as context, not fitted causal adjustments. Queries cover summary-listed points, assists and rebound leaders in today's NBA fixtures across the full slate. The player selection introduces selection bias; results do not represent all NBA players or all thresholds. DNPs are excluded rather than silently treated as zero. The estimate is conditional on playing; new teams, roles and injuries may invalidate historical rates.
 
-Public `performance.json` contains retrospective tests. `prediction_log.json` preserves first-generated pregame model snapshots, deduplicated by game/player/market/model. Completed matching source records grade the snapshots on later runs. Forward sample size starts at zero; retrospective tests are not forward results or profit. No verified odds, value-edge calculation, real bets or bankroll changes are implemented.
+Public `performance.json` contains retrospective tests. `prediction_log.json` preserves first-generated pregame model snapshots, deduplicated by game/player/market/model. Completed matching source records grade the snapshots on later runs. Forward sample size starts at zero; retrospective tests are not forward results or profit. No betting execution or bankroll changes are implemented. Actual placed tickets can be tracked privately in the on-device journal.
 
 The bound Apps Script in `integrations/` pulls public research and performance into separate private MatchLab tabs in your existing tracker. No private tracker data is sent to the public app. Google authorization and script installation are required before unattended synchronization works. See `integrations/SETUP.md`.
 
@@ -44,3 +44,29 @@ Historical CSV importer retains attribution to Open Matchday (https://github.com
 ## Reference odds
 
 Available full-game NBA moneyline, spread and total prices are read from ESPN's summary pickcenter, with its reported bookmaker name, source link and our actual retrieval timestamp. ESPN's endpoint does not provide a quote timestamp, so these are reference snapshots, not a guarantee of current executable prices. Cached/old cards show a stale notice after 45 minutes. No full-game quote is assigned to a soccer 1H or NBA N+ market. Real's FanDuel integration has no verified public import API in this project; exact user-provided prices would need independent import and matching. No new betting edges are calculated.
+
+## Today, history and desktop journal
+
+The responsive app opens on a dated researched shortlist in `data/picks.json`.
+Soccer, NBA and NHL scores use the Pacific slate date. Raw model queries remain
+separate in Models. The History view combines the researched shortlist archive
+and model forecast archive, with explicit types and source-linked grades.
+`grading.py` checks completed game box scores for previous NBA milestones and
+full-game selections, independently of today's player list. Unknown results stay
+pending; a reported DNP is separate from a loss.
+
+My bets is an on-device journal with sportsbook, event/selection, actual stake,
+accepted American or decimal odds, settlement and returned amount. The desktop
+layout includes a 13-week profit heat map, daily ticket filtering and sportsbook
+summaries. Export/import transfers the private journal between devices. The CSV
+import accepts the existing private tracker's Bets-tab headers and imports only
+confirmed placed/settled rows with actual stakes; suggestions and skipped rows
+are excluded. Reference odds never substitute for accepted prices. No actual
+wagers, receipts, stakes or journal imports belong in this public repository.
+
+Daily research publication must update `data/picks.json` as well as the private
+Sheet. Keep original research timestamps and prior selections, use exact ESPN
+IDs, and never add retrospective pregame picks. GitHub Actions refreshes scores,
+grades history and deploys the static app; it does not generate the editorial
+shortlist automatically. The user's daily and hourly research routines own that
+publication step.

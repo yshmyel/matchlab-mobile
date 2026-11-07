@@ -86,7 +86,7 @@ def main(day=None):
         except Exception as e:report['errors'][league]=str(e)[:200]
     # Join verified historical outcomes by exact canonical team/date keys only.
     for g in feed['games']:
-        if g['league']=='nba':continue
+        if g['league'] not in CSV_LEAGUES:continue
         rows=histories.get(g['league'],[]);h=mapped(g['home']['name'],rows);a=mapped(g['away']['name'],rows)
         model=report['soccer'].get(g['league'],{})
         reason='Insufficient verified HT history' if model.get('status')=='unavailable' else 'Team mapping unavailable'
@@ -113,11 +113,24 @@ def main(day=None):
                         if pid and pid not in players:players[pid]={'name':athlete.get('displayName'),'team':t.get('team',{}).get('id'),'game_id':game['id'],'game_date':game['date_utc'],'state':game['state'],'home_id':game['home']['id'],'away_id':game['away']['id']}
         except Exception as e:report['errors']['nba_summary_'+game['id']]=str(e)[:200]
     endyear=date.year+1 if date.month>=7 else date.year
-    for pid,player in list(players.items())[:24]:
+    logs={};log_errors={}
+    eligible={pid:p for pid,p in players.items() if str(injuries.get(pid,{}).get('status','')).lower() not in ('out','suspended','out for season')}
+    # Cover the entire slate without a first-24-player cutoff. Parallel I/O
+    # keeps the expanded coverage within the scheduled job's runtime budget.
+    with ThreadPoolExecutor(max_workers=6) as pool:
+        tasks={pool.submit(nba_log,pid,year):(pid,year) for pid in eligible for year in (endyear-1,endyear)}
+        for task in as_completed(tasks):
+            pid,year=tasks[task]
+            try:logs[(pid,year)]=task.result()
+            except Exception as exc:log_errors[pid]=str(exc)[:200]
+    for pid,player in players.items():
         try:
+            if str(injuries.get(pid,{}).get('status','')).lower() in ('out','suspended','out for season'):
+                continue
             rows=[];urls=[]
+            if pid in log_errors:raise RuntimeError(log_errors[pid])
             for year in [endyear-1,endyear]:
-                part,url=nba_log(pid,year);rows.extend(part);urls.append(url)
+                part,url=logs[(pid,year)];rows.extend(part);urls.append(url)
             rows=sorted({r['id']:r for r in rows if r['date']<now.isoformat()}.values(),key=lambda r:r['date'])
             nba_actuals[pid]=rows
             for stat,n in [('rebounds',6),('threes',3),('assists',4),('points',20)]:
@@ -126,15 +139,19 @@ def main(day=None):
                 if not est:continue
                 opponent=player['away_id'] if player['team']==player['home_id'] else player['home_id'];opp=[r for r in rows if r['opponent_id']==opponent and r.get(stat) is not None]
                 status=injuries.get(pid,{'status':'Not listed in fetched report; availability unconfirmed','updated':None})
-                pre=player['state']=='pre' and player['game_date']>now.isoformat()
+                pre=player['state']=='pre' and datetime.fromisoformat(player['game_date'].replace('Z','+00:00'))>now
                 nba_cards.append(dict(est,player=player['name'],player_id=pid,game_id=player['game_id'],game_date=player['game_date'],stat=stat,threshold=n,injury=status,
                     opponent_sample=len(opp),opponent_hits=sum(r[stat]>=n for r in opp),status='RESEARCH / PROVISIONAL' if pre else 'WATCH / GAME STARTED',model_version='nba-beta-binomial-v1',backtest_n=m.get('test',{}).get('n',0),source_urls=urls,generated_utc=now.isoformat(),odds=None,edge=None,
                     caveat='Conditional on playing. Minutes, injury and opponent context shown, not causally adjusted. Thresholds are research queries, not bookmaker lines.'))
         except Exception as e:report['errors']['player_'+pid]=str(e)[:200]
-    feed['nba_props']=nba_cards;feed['model_summary']={'soccer_leagues':len(report['soccer']),'nba_players':len(players)}
+    feed['player_availability']=injuries;feed['nba_props']=nba_cards;feed['model_summary']={'soccer_leagues':len(report['soccer']),'nba_players':len(players)}
     if feed['errors']:feed['status']='partial'
     atomic(DATA/'latest.json',feed);atomic(DATA/'performance.json',report)
     archive_predictions(feed,now,histories,nba_actuals)
+    # Grade previous snapshots from completed box scores even when those players
+    # are absent from today's slate. Keep unavailable results pending.
+    from grading import grade_files
+    grade_files(DATA,now)
     print(json.dumps({'games':len(feed['games']),'soccer_predictions':len(feed['predictions']),'nba_research_queries':len(nba_cards),'errors':report['errors']}))
     return feed,report
 

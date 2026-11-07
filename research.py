@@ -5,7 +5,7 @@ from datetime import datetime,timezone
 from pathlib import Path
 
 ESPN='https://site.api.espn.com/apis/site/v2/sports'
-LEAGUES={'nba':('basketball','nba'),'epl':('soccer','eng.1'),'la_liga':('soccer','esp.1'),'bundesliga':('soccer','ger.1'),'serie_a':('soccer','ita.1'),'ligue_1':('soccer','fra.1'),'ucl':('soccer','uefa.champions'),'uel':('soccer','uefa.europa'),'uecl':('soccer','uefa.europa.conf')}
+LEAGUES={'nba':('basketball','nba'),'nhl':('hockey','nhl'),'epl':('soccer','eng.1'),'la_liga':('soccer','esp.1'),'bundesliga':('soccer','ger.1'),'serie_a':('soccer','ita.1'),'ligue_1':('soccer','fra.1'),'ucl':('soccer','uefa.champions'),'uel':('soccer','uefa.europa'),'uecl':('soccer','uefa.europa.conf')}
 OPEN_MATCHDAY='https://raw.githubusercontent.com/oladeeayo/open-matchday/master/data'
 CSV_LEAGUES={'epl':'ENG_1_premier-league','la_liga':'ESP_1_la-liga','bundesliga':'GER_1_bundesliga','serie_a':'ITA_1_serie-a','ligue_1':'FRA_1_ligue-1','ucl':'UEFA_1_champions-league','uel':'UEFA_1_europa-league','uecl':'UEFA_1_conference-league'}
 
@@ -35,7 +35,7 @@ def normalize_event(e, league):
                 'records':[str(x.get('name') or x.get('type') or 'Record')+': '+x['summary'] for x in v.get('records',[]) if x.get('summary')]}
     home,away=team('home'),team('away')
     settled=bool(status.get('type',{}).get('completed'))
-    ht_ready=league!='nba' and (settled or (number(status.get('period')) or 0)>1 or status.get('type',{}).get('name')=='STATUS_HALFTIME')
+    ht_ready=sport=='soccer' and (settled or (number(status.get('period')) or 0)>1 or status.get('type',{}).get('name')=='STATUS_HALFTIME')
     hs=home['period_scores']; aws=away['period_scores']
     ht={'home':hs[0], 'away':aws[0]} if ht_ready and hs and aws and hs[0] is not None and aws[0] is not None else None
     if ht: ht['result']='home' if ht['home']>ht['away'] else 'away' if ht['away']>ht['home'] else 'draw'
@@ -44,7 +44,7 @@ def normalize_event(e, league):
             'state':status.get('type',{}).get('state'),'completed':settled,
             'clock':status.get('displayClock'),'period':status.get('period'),
             'home':home,'away':away,'halftime':ht,
-            'source_url':f'https://www.espn.com/{"nba" if league=="nba" else "soccer"}/game/_/gameId/{e.get("id")}',
+            'source_url':f'https://www.espn.com/{league if league in ("nba","nhl") else "soccer"}/game/_/gameId/{e.get("id")}',
             'detail_url':f'{ESPN}/{sport}/{slug}/summary?event={e.get("id")}'}
 
 

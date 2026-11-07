@@ -2,6 +2,7 @@ const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/st
 const elements=new Map();const el=id=>{if(!elements.has(id))elements.set(id,{value:'',classList:{toggle(){}},textContent:'',innerHTML:''});return elements.get(id)};
 const context=vm.createContext({document:{getElementById:el,querySelectorAll:()=>[]},localStorage:{getItem:()=>null,setItem(){}},navigator:{},location:{protocol:'http:'},Intl,Date,URL,Blob,console,setTimeout(){},setInterval(){},fetch:async()=>{throw Error('offline')}});
 vm.runInContext(fs.readFileSync('research_ui.js','utf8'),context);
+vm.runInContext(fs.readFileSync('tracker.js','utf8'),context);
 vm.runInContext(fs.readFileSync('app.js','utf8'),context);
 const run=s=>vm.runInContext(s,context);
 assert.equal(run("result({halftime:{result:'draw'}},'1h')"),'draw');

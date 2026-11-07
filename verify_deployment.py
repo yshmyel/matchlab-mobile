@@ -4,7 +4,7 @@ from datetime import datetime, timezone
 base=sys.argv[1].rstrip('/')+'/'
 for attempt in range(6):
     try:
-        for asset in ['','app.js','manifest.webmanifest','sw.js','research_ui.js','icons/apple-touch-icon.png','icons/icon-192.png','icons/icon-512.png','data/performance.json','data/prediction_log.json','data/latest.json']:
+        for asset in ['','app.js','tracker.js','manifest.webmanifest','sw.js','research_ui.js','icons/apple-touch-icon.png','icons/icon-192.png','icons/icon-512.png','data/performance.json','data/prediction_log.json','data/latest.json','data/picks.json']:
             with urllib.request.urlopen(base+asset+'?check='+str(time.time()),timeout=20) as r:
                 content=r.read()
                 if asset=='data/latest.json':
