@@ -33,7 +33,9 @@ NAME is `claude`, `gemini`, `codex`, `chatgpt`, `checks` or `user`. KIND is `fin
 | **Gemini** | `gemini.yml`: every same-repo PR, `@gemini`, and last job of a full audit | Read the repo, public sources and the shared evidence bundle; return one Markdown report, which a separate job posts | Any write access. The review job has a read-only token, no persisted git credentials and read-only tools; only the `post` job can comment, and it never runs Gemini |
 | **ChatGPT / Codex** | ChatGPT routines (Sheet) and Codex (`@codex` on PRs/issues when the Codex GitHub connector is enabled) | Read the bus/Agent Log; write to Agent Inbox; review PRs | Merge; enable betting |
 
-**Gemini is the final reviewer.** In a full audit its job depends on every other job, so its
+**Gemini is currently disabled.** `gemini.yml` runs only when the repository variable `GEMINI_ENABLED` is `true`; until then no agent should wait for a Gemini verdict.
+
+**Gemini is the final reviewer when enabled.** In a full audit its job depends on every other job, so its
 report is always the last comment. On PRs it reviews after Claude opens them. A PR with a
 Gemini verdict of `BLOCK` must not be merged until the concern is resolved.
 
