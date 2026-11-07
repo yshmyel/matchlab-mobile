@@ -12,6 +12,17 @@ The existing tracker now has MatchLab Integration, MatchLab Research and MatchLa
 
 The trigger pulls every 30 minutes, subject to Google's scheduling and quotas. It is not deployed as a public web app. No service-account keys, tokens, private exports, or public tracker sharing are needed. The source host is restricted to the expected MatchLab GitHub Pages URL. The script writes only its own named MatchLab tabs and validates their headers before updates. The public app never receives private sheet data. Device-local manual selections are separate from model-generated snapshots.
 
+## Update to the reconciliation release (re-paste required)
+
+Apps Script does not update from GitHub. After this release is merged, re-paste `MatchLab.gs` into the bound project and run **MatchLab → Refresh public research** once. Then:
+
+- **MatchLab Research** still mirrors `data/prediction_log.json`, the automated model archive (one row per player × N+ threshold and per soccer 1H forecast; 303 rows on Nov 7). Market labels now distinguish 1H, N+, full-game moneyline and totals. The Odds column reads `RESEARCH ONLY · no verified price` unless a verified sportsbook price exists.
+- **MatchLab Picks** (new) mirrors `data/picks.json`, the editorial shortlist, including PASS cards with their official result. Before this release editorial picks never reached the Sheet automatically.
+- Rows are upserted by stable key. A settled row (Win, Loss, Push, DNP, Not applicable) is never overwritten by an older Pending copy, and duplicate keys collapse to one row.
+- The sync refuses feeds whose timestamp is missing, unparseable, more than 5 minutes in the future or over 2 hours old. Previously an invalid timestamp passed as fresh.
+
+These tabs remain separate from your Bets, Dashboard and day tabs. Wagers, cashouts and bankroll are never read or written.
+
 ## Optional: keep the public feed fresh
 
 GitHub runs scheduled workflows on a best-effort basis and has been skipping most of the 30-minute runs (gaps of 3–7 hours observed Nov 5–7), which leaves the feed stale and makes this sync refuse to update. To let this trigger request a refresh when the feed is older than 40 minutes:
