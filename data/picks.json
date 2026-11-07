@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_utc": "2026-11-07T16:15:22.991890+00:00",
+  "updated_utc": "2026-11-07T16:19:56.540988+00:00",
   "picks": [
     {
       "status": "SCOUTING LEAN",
@@ -175,6 +175,294 @@
       "generated_utc": "2026-11-06T22:46:00+00:00",
       "published_utc": "2026-11-07T00:04:30.798399+00:00",
       "status": "PASS",
+      "grade": "Not applicable"
+    },
+    {
+      "id": "20261107-serie_a-401874974-1h",
+      "league": "serie_a",
+      "game_id": "401874974",
+      "game_date": "2026-11-07T17:00Z",
+      "match": "Bologna at Parma",
+      "label": "Parma vs Bologna · 1H Draw",
+      "selection": "draw",
+      "market": "1h",
+      "market_label": "First-half result · Home / Draw / Away (1X2)",
+      "reasoning": "Model rates the draw most likely (39.5%). Bologna were level at halftime in 6 of 10 matches; Parma have scored once in 5 home first halves. The full-game market favours Bologna (-145), but a slow first half is the common pattern for both.",
+      "risk": "Bologna are clear full-game favourites; an early Bologna goal settles it. Lineups confirmed (ESPN); Ferguson, Odgaard and Bernardeschi start.",
+      "model_probabilities": {
+        "home": 0.311,
+        "draw": 0.395,
+        "away": 0.294
+      },
+      "model_version": "ht-poisson-shrink-v1 (manual name mapping)",
+      "model_backtest": {
+        "test_n": 25,
+        "log_loss": 1.083,
+        "baseline_log_loss": 1.104
+      },
+      "reference_odds": "DraftKings FT: Parma +400 / Draw +245 / Bologna -145",
+      "price_note": "No verified first-half price. Full-game DraftKings line via ESPN is a strength reference only.",
+      "source_urls": [
+        "https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/summary?event=401874974",
+        "https://raw.githubusercontent.com/oladeeayo/open-matchday/master/data/ITA_1_serie-a/results_2627.csv"
+      ],
+      "status": "SCOUTING LEAN",
+      "picked_by": "Claude",
+      "confidence": "MODERATE",
+      "generated_utc": "2026-11-07T16:19:56.540988+00:00",
+      "published_utc": "2026-11-07T16:19:56.540988+00:00",
+      "grade": "Pending"
+    },
+    {
+      "id": "20261107-epl-401878757-1h",
+      "league": "epl",
+      "game_id": "401878757",
+      "game_date": "2026-11-07T17:30Z",
+      "match": "Manchester City at Nottingham Forest",
+      "label": "Nottingham Forest vs Manchester City · 1H Draw",
+      "selection": "draw",
+      "market": "1h",
+      "market_label": "First-half result · Home / Draw / Away (1X2)",
+      "reasoning": "Forest have been 0-0 at halftime in all four home league matches this season and rank 19th with 6 goals. Model: draw 45.5%. City lead at HT in 4 of 9 matches.",
+      "risk": "Market (City -140) rates City far higher than the model, which gives City only 16% to lead at HT. EPL model underperformed the league baseline in backtest. Lineups not yet confirmed.",
+      "model_probabilities": {
+        "home": 0.382,
+        "draw": 0.455,
+        "away": 0.164
+      },
+      "model_version": "ht-poisson-shrink-v1 (manual name mapping)",
+      "model_backtest": {
+        "test_n": 20,
+        "log_loss": 1.09,
+        "baseline_log_loss": 1.082
+      },
+      "reference_odds": "DraftKings FT: Forest +370 / Draw +300 / City -140",
+      "price_note": "No verified first-half price. Full-game DraftKings line via ESPN is a strength reference only.",
+      "source_urls": [
+        "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/summary?event=401878757",
+        "https://raw.githubusercontent.com/oladeeayo/open-matchday/master/data/ENG_1_premier-league/results_2627.csv"
+      ],
+      "status": "SCOUTING LEAN",
+      "picked_by": "Claude",
+      "confidence": "MODERATE",
+      "generated_utc": "2026-11-07T16:19:56.540988+00:00",
+      "published_utc": "2026-11-07T16:19:56.540988+00:00",
+      "grade": "Pending"
+    },
+    {
+      "id": "20261107-ligue_1-401876411-1h",
+      "league": "ligue_1",
+      "game_id": "401876411",
+      "game_date": "2026-11-07T18:00Z",
+      "match": "Paris FC at AJ Auxerre",
+      "label": "Auxerre vs Paris FC · 1H Draw",
+      "selection": "draw",
+      "market": "1h",
+      "market_label": "First-half result · Home / Draw / Away (1X2)",
+      "reasoning": "Model: draw 40%, the top outcome. Auxerre were level at the break in 3 of 4 home matches.",
+      "risk": "Paris FC have led at halftime in 6 of 9 matches and are full-game favourites (-145). Low conviction. Lineups not yet confirmed.",
+      "model_probabilities": {
+        "home": 0.292,
+        "draw": 0.4,
+        "away": 0.307
+      },
+      "model_version": "ht-poisson-shrink-v1 (manual name mapping)",
+      "model_backtest": {
+        "test_n": 16,
+        "log_loss": 1.005,
+        "baseline_log_loss": 1.023
+      },
+      "reference_odds": "DraftKings FT: Auxerre +380 / Draw +310 / Paris FC -145",
+      "price_note": "No verified first-half price. Full-game DraftKings line via ESPN is a strength reference only.",
+      "source_urls": [
+        "https://site.api.espn.com/apis/site/v2/sports/soccer/fra.1/summary?event=401876411",
+        "https://raw.githubusercontent.com/oladeeayo/open-matchday/master/data/FRA_1_ligue-1/results_2627.csv"
+      ],
+      "status": "SCOUTING LEAN · LOW",
+      "picked_by": "Claude",
+      "confidence": "LOW",
+      "generated_utc": "2026-11-07T16:19:56.540988+00:00",
+      "published_utc": "2026-11-07T16:19:56.540988+00:00",
+      "grade": "Pending"
+    },
+    {
+      "id": "20261107-serie_a-401874803-1h",
+      "league": "serie_a",
+      "game_id": "401874803",
+      "game_date": "2026-11-07T19:45Z",
+      "match": "Sassuolo at AS Roma",
+      "label": "Roma to lead at halftime",
+      "selection": "home",
+      "market": "1h",
+      "market_label": "First-half result · Home / Draw / Away (1X2)",
+      "reasoning": "Roma are 3rd, unbeaten (7-3-0), and led at HT in 3 of 5 home matches with 5 first-half goals for and 1 against. Sassuolo are 17th with 26 goals conceded. Model: Roma 41.4%, its top outcome. Market Roma -300.",
+      "risk": "Draw is close (35.5%); Serie A first halves are often tight. Model underperformed baseline in Serie A backtest. Lineups not yet confirmed.",
+      "model_probabilities": {
+        "home": 0.414,
+        "draw": 0.355,
+        "away": 0.231
+      },
+      "model_version": "ht-poisson-shrink-v1 (manual name mapping)",
+      "model_backtest": {
+        "test_n": 25,
+        "log_loss": 1.083,
+        "baseline_log_loss": 1.104
+      },
+      "reference_odds": "DraftKings FT: Roma -300 / Draw +425 / Sassuolo +600",
+      "price_note": "No verified first-half price. Full-game DraftKings line via ESPN is a strength reference only.",
+      "source_urls": [
+        "https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/summary?event=401874803",
+        "https://raw.githubusercontent.com/oladeeayo/open-matchday/master/data/ITA_1_serie-a/results_2627.csv"
+      ],
+      "status": "SCOUTING LEAN",
+      "picked_by": "Claude",
+      "confidence": "MODERATE",
+      "generated_utc": "2026-11-07T16:19:56.540988+00:00",
+      "published_utc": "2026-11-07T16:19:56.540988+00:00",
+      "grade": "Pending"
+    },
+    {
+      "id": "20261107-la_liga-401882808-1h",
+      "league": "la_liga",
+      "game_id": "401882808",
+      "game_date": "2026-11-07T20:00Z",
+      "match": "Real Madrid at Valencia",
+      "label": "Real Madrid to lead at halftime",
+      "selection": "away",
+      "market": "1h",
+      "market_label": "First-half result · Home / Draw / Away (1X2)",
+      "reasoning": "Real Madrid are unbeaten at halftime away (3W-3D, 7 HT goals for, 1 against) and 6-5-0 at HT overall. Valencia are 19th, level at HT in 7 of 11 and have 1 home first-half goal in 6. Market Madrid -380.",
+      "risk": "Model has the draw marginally ahead (43.5% vs 41.5%). Lineups and any rotation not yet confirmed.",
+      "model_probabilities": {
+        "home": 0.15,
+        "draw": 0.435,
+        "away": 0.415
+      },
+      "model_version": "ht-poisson-shrink-v1 (manual name mapping)",
+      "model_backtest": {
+        "test_n": 22,
+        "log_loss": 1.184,
+        "baseline_log_loss": 1.2
+      },
+      "reference_odds": "DraftKings FT: Valencia +950 / Draw +500 / Real Madrid -380",
+      "price_note": "No verified first-half price. Full-game DraftKings line via ESPN is a strength reference only.",
+      "source_urls": [
+        "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/summary?event=401882808",
+        "https://raw.githubusercontent.com/oladeeayo/open-matchday/master/data/ESP_1_la-liga/results_2627.csv"
+      ],
+      "status": "SCOUTING LEAN",
+      "picked_by": "Claude",
+      "confidence": "MODERATE",
+      "generated_utc": "2026-11-07T16:19:56.540988+00:00",
+      "published_utc": "2026-11-07T16:19:56.540988+00:00",
+      "grade": "Pending"
+    },
+    {
+      "id": "20261107-ligue_1-401876407-1h",
+      "league": "ligue_1",
+      "game_id": "401876407",
+      "game_date": "2026-11-07T20:05Z",
+      "match": "Troyes at Paris Saint-Germain",
+      "label": "PSG to lead at halftime",
+      "selection": "home",
+      "market": "1h",
+      "market_label": "First-half result · Home / Draw / Away (1X2)",
+      "reasoning": "PSG are 1st and have not conceded in three home first halves recorded; Troyes are 16th with 7 goals in 9. Market PSG -600.",
+      "risk": "Model is shrunk toward the league average (PSG 38.6% / draw 38.6%) and disagrees on the size of the edge. Rotation risk; lineup not yet confirmed.",
+      "model_probabilities": {
+        "home": 0.386,
+        "draw": 0.386,
+        "away": 0.228
+      },
+      "model_version": "ht-poisson-shrink-v1 (manual name mapping)",
+      "model_backtest": {
+        "test_n": 16,
+        "log_loss": 1.005,
+        "baseline_log_loss": 1.023
+      },
+      "reference_odds": "DraftKings FT: PSG -600 / Draw +700 / Troyes +1400",
+      "price_note": "No verified first-half price. Full-game DraftKings line via ESPN is a strength reference only.",
+      "source_urls": [
+        "https://site.api.espn.com/apis/site/v2/sports/soccer/fra.1/summary?event=401876407",
+        "https://raw.githubusercontent.com/oladeeayo/open-matchday/master/data/FRA_1_ligue-1/results_2627.csv"
+      ],
+      "status": "SCOUTING LEAN",
+      "picked_by": "Claude",
+      "confidence": "MODERATE",
+      "generated_utc": "2026-11-07T16:19:56.540988+00:00",
+      "published_utc": "2026-11-07T16:19:56.540988+00:00",
+      "grade": "Pending"
+    },
+    {
+      "id": "20261107-la_liga-401882811-1h",
+      "league": "la_liga",
+      "game_id": "401882811",
+      "game_date": "2026-11-07T17:30Z",
+      "match": "Athletic Club at Osasuna",
+      "label": "PASS · Osasuna vs Athletic Club",
+      "selection": "none",
+      "market": "pass",
+      "market_label": "First-half result · Home / Draw / Away (1X2)",
+      "reasoning": "Signals conflict: model leans draw (44.8%), Osasuna led at HT in 3 of 5 home matches, and the market makes Athletic slight favourites (+105).",
+      "risk": "No side.",
+      "model_probabilities": {
+        "home": 0.252,
+        "draw": 0.448,
+        "away": 0.301
+      },
+      "model_version": "ht-poisson-shrink-v1 (manual name mapping)",
+      "model_backtest": {
+        "test_n": 22,
+        "log_loss": 1.184,
+        "baseline_log_loss": 1.2
+      },
+      "reference_odds": "DraftKings FT: Osasuna +275 / Draw +240 / Athletic +105",
+      "price_note": "No verified first-half price. Full-game DraftKings line via ESPN is a strength reference only.",
+      "source_urls": [
+        "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/summary?event=401882811",
+        "https://raw.githubusercontent.com/oladeeayo/open-matchday/master/data/ESP_1_la-liga/results_2627.csv"
+      ],
+      "status": "PASS",
+      "picked_by": "Claude",
+      "confidence": "MODERATE",
+      "generated_utc": "2026-11-07T16:19:56.540988+00:00",
+      "published_utc": "2026-11-07T16:19:56.540988+00:00",
+      "grade": "Not applicable"
+    },
+    {
+      "id": "20261107-bundesliga-401884743-1h",
+      "league": "bundesliga",
+      "game_id": "401884743",
+      "game_date": "2026-11-07T17:30Z",
+      "match": "Werder Bremen at VfB Stuttgart",
+      "label": "PASS · Stuttgart vs Werder Bremen",
+      "selection": "none",
+      "market": "pass",
+      "market_label": "First-half result · Home / Draw / Away (1X2)",
+      "reasoning": "Model leans Stuttgart (42.4%) and the market agrees (-115), but Bremen are 5th and Stuttgart 12th, with only 8 matches of data each.",
+      "risk": "No side.",
+      "model_probabilities": {
+        "home": 0.424,
+        "draw": 0.37,
+        "away": 0.205
+      },
+      "model_version": "ht-poisson-shrink-v1 (manual name mapping)",
+      "model_backtest": {
+        "test_n": 17,
+        "log_loss": 1.115,
+        "baseline_log_loss": 1.171
+      },
+      "reference_odds": "DraftKings FT: Stuttgart -115 / Draw +295 / Bremen +245",
+      "price_note": "No verified first-half price. Full-game DraftKings line via ESPN is a strength reference only.",
+      "source_urls": [
+        "https://site.api.espn.com/apis/site/v2/sports/soccer/ger.1/summary?event=401884743",
+        "https://raw.githubusercontent.com/oladeeayo/open-matchday/master/data/GER_1_bundesliga/results_2627.csv"
+      ],
+      "status": "PASS",
+      "picked_by": "Claude",
+      "confidence": "MODERATE",
+      "generated_utc": "2026-11-07T16:19:56.540988+00:00",
+      "published_utc": "2026-11-07T16:19:56.540988+00:00",
       "grade": "Not applicable"
     }
   ],
