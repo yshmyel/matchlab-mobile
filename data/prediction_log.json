@@ -12944,6 +12944,170 @@
       "market": "nplus",
       "selection": "hit",
       "grade": "Pending"
+    },
+    {
+      "probability": 0.8636363636363636,
+      "hits": 18,
+      "sample": 20,
+      "empirical_hit_rate": 0.9,
+      "wilson95": [
+        0.6989617935882066,
+        0.9721341060158468
+      ],
+      "avg_minutes_last5": 33.6,
+      "avg_minutes_sample": 32.6,
+      "training_through": "2026-11-05T00:00:00+00:00",
+      "player": "Anthony Davis",
+      "player_id": "6583",
+      "game_id": "401909941",
+      "game_date": "2026-11-08T01:00Z",
+      "stat": "rebounds",
+      "threshold": 6,
+      "injury": {
+        "status": "Day-To-Day",
+        "updated": "2026-11-07T15:05Z"
+      },
+      "opponent_sample": 2,
+      "opponent_hits": 2,
+      "status": "RESEARCH / PROVISIONAL",
+      "model_version": "nba-beta-binomial-v1",
+      "backtest_n": 0,
+      "source_urls": [
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/6583/gamelog?season=2026",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/6583/gamelog?season=2027"
+      ],
+      "generated_utc": "2026-11-07T16:15:22.991890+00:00",
+      "odds": null,
+      "edge": null,
+      "caveat": "Conditional on playing. Minutes, injury and opponent context shown, not causally adjusted. Thresholds are research queries, not bookmaker lines.",
+      "key": "nba:401909941:6583:rebounds:6:nba-beta-binomial-v1",
+      "league": "nba",
+      "market": "nplus",
+      "selection": "hit",
+      "grade": "Pending"
+    },
+    {
+      "probability": 0.09090909090909091,
+      "hits": 1,
+      "sample": 20,
+      "empirical_hit_rate": 0.05,
+      "wilson95": [
+        0.008881219432873136,
+        0.23613589351256675
+      ],
+      "avg_minutes_last5": 33.6,
+      "avg_minutes_sample": 32.6,
+      "training_through": "2026-11-05T00:00:00+00:00",
+      "player": "Anthony Davis",
+      "player_id": "6583",
+      "game_id": "401909941",
+      "game_date": "2026-11-08T01:00Z",
+      "stat": "threes",
+      "threshold": 3,
+      "injury": {
+        "status": "Day-To-Day",
+        "updated": "2026-11-07T15:05Z"
+      },
+      "opponent_sample": 2,
+      "opponent_hits": 0,
+      "status": "RESEARCH / PROVISIONAL",
+      "model_version": "nba-beta-binomial-v1",
+      "backtest_n": 0,
+      "source_urls": [
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/6583/gamelog?season=2026",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/6583/gamelog?season=2027"
+      ],
+      "generated_utc": "2026-11-07T16:15:22.991890+00:00",
+      "odds": null,
+      "edge": null,
+      "caveat": "Conditional on playing. Minutes, injury and opponent context shown, not causally adjusted. Thresholds are research queries, not bookmaker lines.",
+      "key": "nba:401909941:6583:threes:3:nba-beta-binomial-v1",
+      "league": "nba",
+      "market": "nplus",
+      "selection": "hit",
+      "grade": "Pending"
+    },
+    {
+      "probability": 0.2727272727272727,
+      "hits": 5,
+      "sample": 20,
+      "empirical_hit_rate": 0.25,
+      "wilson95": [
+        0.11186005278940309,
+        0.4687050099580636
+      ],
+      "avg_minutes_last5": 33.6,
+      "avg_minutes_sample": 32.6,
+      "training_through": "2026-11-05T00:00:00+00:00",
+      "player": "Anthony Davis",
+      "player_id": "6583",
+      "game_id": "401909941",
+      "game_date": "2026-11-08T01:00Z",
+      "stat": "assists",
+      "threshold": 4,
+      "injury": {
+        "status": "Day-To-Day",
+        "updated": "2026-11-07T15:05Z"
+      },
+      "opponent_sample": 2,
+      "opponent_hits": 1,
+      "status": "RESEARCH / PROVISIONAL",
+      "model_version": "nba-beta-binomial-v1",
+      "backtest_n": 0,
+      "source_urls": [
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/6583/gamelog?season=2026",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/6583/gamelog?season=2027"
+      ],
+      "generated_utc": "2026-11-07T16:15:22.991890+00:00",
+      "odds": null,
+      "edge": null,
+      "caveat": "Conditional on playing. Minutes, injury and opponent context shown, not causally adjusted. Thresholds are research queries, not bookmaker lines.",
+      "key": "nba:401909941:6583:assists:4:nba-beta-binomial-v1",
+      "league": "nba",
+      "market": "nplus",
+      "selection": "hit",
+      "grade": "Pending"
+    },
+    {
+      "probability": 0.5909090909090909,
+      "hits": 12,
+      "sample": 20,
+      "empirical_hit_rate": 0.6,
+      "wilson95": [
+        0.3865779423152061,
+        0.7811960325858074
+      ],
+      "avg_minutes_last5": 33.6,
+      "avg_minutes_sample": 32.6,
+      "training_through": "2026-11-05T00:00:00+00:00",
+      "player": "Anthony Davis",
+      "player_id": "6583",
+      "game_id": "401909941",
+      "game_date": "2026-11-08T01:00Z",
+      "stat": "points",
+      "threshold": 20,
+      "injury": {
+        "status": "Day-To-Day",
+        "updated": "2026-11-07T15:05Z"
+      },
+      "opponent_sample": 2,
+      "opponent_hits": 1,
+      "status": "RESEARCH / PROVISIONAL",
+      "model_version": "nba-beta-binomial-v1",
+      "backtest_n": 0,
+      "source_urls": [
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/6583/gamelog?season=2026",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/6583/gamelog?season=2027"
+      ],
+      "generated_utc": "2026-11-07T16:15:22.991890+00:00",
+      "odds": null,
+      "edge": null,
+      "caveat": "Conditional on playing. Minutes, injury and opponent context shown, not causally adjusted. Thresholds are research queries, not bookmaker lines.",
+      "key": "nba:401909941:6583:points:20:nba-beta-binomial-v1",
+      "league": "nba",
+      "market": "nplus",
+      "selection": "hit",
+      "grade": "Pending"
     }
   ],
   "forward_metrics": {
@@ -12990,6 +13154,6 @@
       ]
     }
   },
-  "updated_utc": "2026-11-07T14:10:55.125217+00:00",
+  "updated_utc": "2026-11-07T16:15:22.991890+00:00",
   "grading_errors": []
 }
