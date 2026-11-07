@@ -20,4 +20,5 @@ const body=b.abInboxBody_(['','ChatGPT','Claude, Gemini','Check grades','Please 
 assert.match(body,/^<!-- agent:chatgpt kind:message -->/);assert.match(body,/@claude @gemini$/);assert.doesNotMatch(body,/@codex/);
 assert.match(b.abInboxBody_(['','chatgpt','all','','x']),/@claude @gemini @codex$/);
 assert.equal(b.abToken_(),null); // no PropertiesService: never throws
+assert.equal(b.abSummary_('Grade serie_a:401874815 in data/prediction_log.json, see #2'),'Grade serie_a:401874815 in data/prediction_log.json, see #2');
 console.log('PASS: agent bridge author markers, summaries, routing mentions');

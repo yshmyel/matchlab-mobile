@@ -24,7 +24,7 @@ function abAgent_(body,login){const m=/<!--\s*agent:([a-z0-9_-]+)(?:\s+kind:([a-
  const agent=l==='claude[bot]'?'claude':l.indexOf('gemini')>=0?'gemini':l.indexOf('chatgpt')>=0||l.indexOf('codex')>=0?'codex':l==='github-actions[bot]'?'checks':'user:'+l;
  return {agent:agent,kind:'note'};}
 /** Plain-text one-paragraph summary for a cell. */
-function abSummary_(body){return String(body||'').replace(/<!--[\s\S]*?-->/g,'').replace(/```[\s\S]*?```/g,'[code]').replace(/[#*_>`|]/g,'').replace(/\s+/g,' ').trim().slice(0,700);}
+function abSummary_(body){return String(body||'').replace(/<!--[\s\S]*?-->/g,'').replace(/```[\s\S]*?```/g,'[code]').replace(/^\s*#{1,6}\s+/gm,'').replace(/[*`|]|^>\s?/gm,'').replace(/\s+/g,' ').trim().slice(0,700);}
 /** Comment body for an Inbox row; mentions route the message to the named agents. */
 function abInboxBody_(row){const from=String(row[1]||'chatgpt').trim().toLowerCase().replace(/[^a-z0-9_-]/g,'')||'chatgpt';
  const to=String(row[2]||'').toLowerCase();const mentions=Object.keys(AB_AGENTS).filter(a=>to.indexOf(a)>=0||to.indexOf('all')>=0).map(a=>AB_AGENTS[a]);
