@@ -48,6 +48,16 @@ def outcome(row, summary):
         actual = 'home' if home > away else 'away'
         return {'grade': 'Win' if actual == row['selection'] else 'Loss', 'actual': actual,
                 'actual_score': {'home': home, 'away': away}}
+    if row.get('market') == 'total':
+        # Full-game total including overtime/shootout as reported in the final score.
+        teams = {x.get('homeAway'): x for x in competition.get('competitors', [])}
+        home, away = number(teams.get('home', {}).get('score')), number(teams.get('away', {}).get('score'))
+        line = row.get('line')
+        if home is None or away is None or not isinstance(line, (int, float)) or row.get('selection') not in ('over', 'under'):
+            return None
+        total = home + away
+        grade = 'Push' if total == line else 'Win' if (total > line) == (row['selection'] == 'over') else 'Loss'
+        return {'grade': grade, 'actual': total, 'actual_score': {'home': home, 'away': away}}
     return None
 
 
@@ -60,7 +70,7 @@ def grade_files(data, now):
         payload = json.loads(path.read_text())
         errors = []
         for row in payload.get(field, []):
-            if row.get('grade') not in (None, 'Pending') or row.get('market') not in ('nplus', 'ft', '1h'):
+            if row.get('grade') not in (None, 'Pending') or row.get('market') not in ('nplus', 'ft', '1h', 'total'):
                 continue
             date = row.get('game_date') or row.get('kickoff')
             if not date or datetime.fromisoformat(date.replace('Z', '+00:00')) > now:

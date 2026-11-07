@@ -21,6 +21,14 @@ class GradingTests(unittest.TestCase):
         self.assertEqual(outcome({'market':'nplus','player_id':'1','stat':'threes','threshold':4},self.summary())['grade'],'Loss')
     def test_nhl_final_including_overtime(self):
         self.assertEqual(outcome({'market':'ft','selection':'home'},self.summary())['grade'],'Win')
+    def test_total_over_under_and_push(self):
+        s = self.summary()  # final 3-2
+        self.assertEqual(outcome({'market':'total','selection':'over','line':4.5}, s)['grade'], 'Win')
+        self.assertEqual(outcome({'market':'total','selection':'under','line':4.5}, s)['grade'], 'Loss')
+        self.assertEqual(outcome({'market':'total','selection':'under','line':5}, s)['grade'], 'Push')
+    def test_total_unfinished_or_missing_line_stays_pending(self):
+        self.assertIsNone(outcome({'market':'total','selection':'over','line':4.5}, self.summary(completed=False)))
+        self.assertIsNone(outcome({'market':'total','selection':'over'}, self.summary()))
     def test_hockey_period_one_is_not_soccer_halftime(self):
         g=normalize_event(event(3,completed=True),'nhl')
         self.assertIsNone(g['halftime']);self.assertIn('/nhl/',g['source_url'])
