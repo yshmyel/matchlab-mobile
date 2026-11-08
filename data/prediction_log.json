@@ -14824,10 +14824,18 @@
       "risk": "HIGH",
       "selection": "draw",
       "key": "serie_a:401875003:1h:ht-poisson-shrink-v1",
-      "grade": "Pending",
+      "grade": "Win",
       "home": "Fiorentina",
       "away": "Juventus",
-      "placement": "UNPLACED RESEARCH"
+      "placement": "UNPLACED RESEARCH",
+      "actual": "draw",
+      "actual_score": {
+        "home": 1,
+        "away": 1
+      },
+      "result_basis": "halftime_score",
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/summary?event=401875003",
+      "graded_utc": "2026-11-08T20:36:17.621249+00:00"
     },
     {
       "probabilities": {
@@ -19694,17 +19702,17 @@
   ],
   "forward_metrics": {
     "soccer": {
-      "n": 14,
-      "accuracy": 0.35714285714285715,
-      "log_loss": 1.0723560870238518,
-      "brier": 0.6542133343061038,
-      "ece": 0.04824253769547373,
+      "n": 15,
+      "accuracy": 0.4,
+      "log_loss": 1.0642796425959065,
+      "brier": 0.6482667579179443,
+      "ece": 0.085941463607724,
       "calibration_bins": [
         {
           "lower": 0.3,
-          "n": 8,
-          "confidence": 0.3745425340923641,
-          "accuracy": 0.375
+          "n": 9,
+          "confidence": 0.37584598292885385,
+          "accuracy": 0.4444444444444444
         },
         {
           "lower": 0.4,
@@ -19754,6 +19762,6 @@
       ]
     }
   },
-  "updated_utc": "2026-11-08T18:46:10.190131+00:00",
+  "updated_utc": "2026-11-08T20:36:17.621249+00:00",
   "grading_errors": []
 }
