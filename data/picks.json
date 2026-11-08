@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_utc": "2026-11-08T01:54:38.357108+00:00",
+  "updated_utc": "2026-11-08T06:37:03.062391+00:00",
   "picks": [
     {
       "status": "SCOUTING LEAN",
@@ -634,9 +634,17 @@
       "confidence": "MODERATE",
       "generated_utc": "2026-11-07T16:22:25.199657+00:00",
       "published_utc": "2026-11-07T16:22:25.199657+00:00",
-      "grade": "Pending",
+      "grade": "Win",
       "value_status": "RESEARCH ONLY",
-      "placement": "UNPLACED RESEARCH"
+      "placement": "UNPLACED RESEARCH",
+      "actual": "home",
+      "actual_score": {
+        "home": 9,
+        "away": 2
+      },
+      "result_basis": "final_score",
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/summary?event=401892668",
+      "graded_utc": "2026-11-08T06:37:03.062391+00:00"
     },
     {
       "id": "20261107-nhl-401892668-total",
@@ -663,9 +671,17 @@
       "line": 6.5,
       "generated_utc": "2026-11-07T16:22:25.199657+00:00",
       "published_utc": "2026-11-07T16:22:25.199657+00:00",
-      "grade": "Pending",
+      "grade": "Loss",
       "value_status": "RESEARCH ONLY",
-      "placement": "UNPLACED RESEARCH"
+      "placement": "UNPLACED RESEARCH",
+      "actual": 11,
+      "actual_score": {
+        "home": 9,
+        "away": 2
+      },
+      "result_basis": "final_score",
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/summary?event=401892668",
+      "graded_utc": "2026-11-08T06:37:03.062391+00:00"
     },
     {
       "id": "20261107-nhl-401892669-ml",
@@ -691,9 +707,17 @@
       "confidence": "MODERATE",
       "generated_utc": "2026-11-07T16:22:25.199657+00:00",
       "published_utc": "2026-11-07T16:22:25.199657+00:00",
-      "grade": "Pending",
+      "grade": "Win",
       "value_status": "RESEARCH ONLY",
-      "placement": "UNPLACED RESEARCH"
+      "placement": "UNPLACED RESEARCH",
+      "actual": "home",
+      "actual_score": {
+        "home": 4,
+        "away": 3
+      },
+      "result_basis": "final_score",
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/summary?event=401892669",
+      "graded_utc": "2026-11-08T06:37:03.062391+00:00"
     },
     {
       "id": "20261107-nhl-401892669-total",
@@ -720,9 +744,17 @@
       "line": 6.5,
       "generated_utc": "2026-11-07T16:22:25.199657+00:00",
       "published_utc": "2026-11-07T16:22:25.199657+00:00",
-      "grade": "Pending",
+      "grade": "Loss",
       "value_status": "RESEARCH ONLY",
-      "placement": "UNPLACED RESEARCH"
+      "placement": "UNPLACED RESEARCH",
+      "actual": 7,
+      "actual_score": {
+        "home": 4,
+        "away": 3
+      },
+      "result_basis": "final_score",
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/summary?event=401892669",
+      "graded_utc": "2026-11-08T06:37:03.062391+00:00"
     },
     {
       "id": "20261107-nhl-401892670-ml",
@@ -748,9 +780,17 @@
       "confidence": "LOW",
       "generated_utc": "2026-11-07T16:22:25.199657+00:00",
       "published_utc": "2026-11-07T16:22:25.199657+00:00",
-      "grade": "Pending",
+      "grade": "Win",
       "value_status": "RESEARCH ONLY",
-      "placement": "UNPLACED RESEARCH"
+      "placement": "UNPLACED RESEARCH",
+      "actual": "away",
+      "actual_score": {
+        "home": 3,
+        "away": 4
+      },
+      "result_basis": "final_score",
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/summary?event=401892670",
+      "graded_utc": "2026-11-08T06:37:03.062391+00:00"
     },
     {
       "id": "20261107-nhl-401892673-ml",
@@ -776,9 +816,17 @@
       "confidence": "MODERATE",
       "generated_utc": "2026-11-07T16:22:25.199657+00:00",
       "published_utc": "2026-11-07T16:22:25.199657+00:00",
-      "grade": "Pending",
+      "grade": "Win",
       "value_status": "RESEARCH ONLY",
-      "placement": "UNPLACED RESEARCH"
+      "placement": "UNPLACED RESEARCH",
+      "actual": "home",
+      "actual_score": {
+        "home": 4,
+        "away": 2
+      },
+      "result_basis": "final_score",
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/summary?event=401892673",
+      "graded_utc": "2026-11-08T06:37:03.062391+00:00"
     },
     {
       "id": "20261107-nhl-401892673-total",
@@ -805,9 +853,17 @@
       "line": 6.5,
       "generated_utc": "2026-11-07T16:22:25.199657+00:00",
       "published_utc": "2026-11-07T16:22:25.199657+00:00",
-      "grade": "Pending",
+      "grade": "Loss",
       "value_status": "RESEARCH ONLY",
-      "placement": "UNPLACED RESEARCH"
+      "placement": "UNPLACED RESEARCH",
+      "actual": 6,
+      "actual_score": {
+        "home": 4,
+        "away": 2
+      },
+      "result_basis": "final_score",
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/summary?event=401892673",
+      "graded_utc": "2026-11-08T06:37:03.062391+00:00"
     },
     {
       "id": "20261107-nhl-401892665-total",
@@ -834,9 +890,17 @@
       "line": 6.5,
       "generated_utc": "2026-11-07T16:22:25.199657+00:00",
       "published_utc": "2026-11-07T16:22:25.199657+00:00",
-      "grade": "Pending",
+      "grade": "Loss",
       "value_status": "RESEARCH ONLY",
-      "placement": "UNPLACED RESEARCH"
+      "placement": "UNPLACED RESEARCH",
+      "actual": 6,
+      "actual_score": {
+        "home": 2,
+        "away": 4
+      },
+      "result_basis": "final_score",
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/summary?event=401892665",
+      "graded_utc": "2026-11-08T06:37:03.062391+00:00"
     },
     {
       "id": "20261107-nhl-401892662-pass",
@@ -936,7 +1000,15 @@
       "published_utc": "2026-11-07T16:22:25.199657+00:00",
       "grade": "Not applicable",
       "value_status": "RESEARCH ONLY",
-      "placement": "UNPLACED RESEARCH"
+      "placement": "UNPLACED RESEARCH",
+      "official_result": {
+        "final_score": {
+          "home": 4,
+          "away": 2
+        }
+      },
+      "official_result_source": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/summary?event=401892666",
+      "official_result_utc": "2026-11-08T06:37:03.062391+00:00"
     },
     {
       "id": "20261107-nhl-401892667-pass",
@@ -964,7 +1036,15 @@
       "published_utc": "2026-11-07T16:22:25.199657+00:00",
       "grade": "Not applicable",
       "value_status": "RESEARCH ONLY",
-      "placement": "UNPLACED RESEARCH"
+      "placement": "UNPLACED RESEARCH",
+      "official_result": {
+        "final_score": {
+          "home": 4,
+          "away": 5
+        }
+      },
+      "official_result_source": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/summary?event=401892667",
+      "official_result_utc": "2026-11-08T06:37:03.062391+00:00"
     },
     {
       "id": "20261107-nhl-401892671-pass",
@@ -992,7 +1072,15 @@
       "published_utc": "2026-11-07T16:22:25.199657+00:00",
       "grade": "Not applicable",
       "value_status": "RESEARCH ONLY",
-      "placement": "UNPLACED RESEARCH"
+      "placement": "UNPLACED RESEARCH",
+      "official_result": {
+        "final_score": {
+          "home": 4,
+          "away": 0
+        }
+      },
+      "official_result_source": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/summary?event=401892671",
+      "official_result_utc": "2026-11-08T06:37:03.062391+00:00"
     },
     {
       "id": "20261107-nhl-401892672-pass",
@@ -1020,7 +1108,15 @@
       "published_utc": "2026-11-07T16:22:25.199657+00:00",
       "grade": "Not applicable",
       "value_status": "RESEARCH ONLY",
-      "placement": "UNPLACED RESEARCH"
+      "placement": "UNPLACED RESEARCH",
+      "official_result": {
+        "final_score": {
+          "home": 2,
+          "away": 5
+        }
+      },
+      "official_result_source": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/summary?event=401892672",
+      "official_result_utc": "2026-11-08T06:37:03.062391+00:00"
     },
     {
       "id": "20261107-nba-3112335-reb6",
@@ -1089,9 +1185,14 @@
       "confidence": "MODERATE",
       "generated_utc": "2026-11-07T16:23:35.091130+00:00",
       "published_utc": "2026-11-07T16:23:35.091130+00:00",
-      "grade": "Pending",
+      "grade": "Win",
       "value_status": "RESEARCH ONLY",
-      "placement": "UNPLACED RESEARCH"
+      "placement": "UNPLACED RESEARCH",
+      "actual": 1,
+      "actual_value": 13,
+      "result_basis": "player_boxscore",
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909940",
+      "graded_utc": "2026-11-08T06:37:03.062391+00:00"
     },
     {
       "id": "20261107-nba-3934672-ass4",
@@ -1122,9 +1223,14 @@
       "confidence": "MODERATE",
       "generated_utc": "2026-11-07T16:23:35.091130+00:00",
       "published_utc": "2026-11-07T16:23:35.091130+00:00",
-      "grade": "Pending",
+      "grade": "Win",
       "value_status": "RESEARCH ONLY",
-      "placement": "UNPLACED RESEARCH"
+      "placement": "UNPLACED RESEARCH",
+      "actual": 1,
+      "actual_value": 9,
+      "result_basis": "player_boxscore",
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909940",
+      "graded_utc": "2026-11-08T06:37:03.062391+00:00"
     },
     {
       "id": "20261107-nba-4871144-reb6",
@@ -1155,9 +1261,14 @@
       "confidence": "MODERATE",
       "generated_utc": "2026-11-07T16:23:35.091130+00:00",
       "published_utc": "2026-11-07T16:23:35.091130+00:00",
-      "grade": "Pending",
+      "grade": "Win",
       "value_status": "RESEARCH ONLY",
-      "placement": "UNPLACED RESEARCH"
+      "placement": "UNPLACED RESEARCH",
+      "actual": 1,
+      "actual_value": 6,
+      "result_basis": "player_boxscore",
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909943",
+      "graded_utc": "2026-11-08T06:37:03.062391+00:00"
     },
     {
       "id": "20261107-nba-4278073-poi20",
@@ -1188,9 +1299,14 @@
       "confidence": "MODERATE",
       "generated_utc": "2026-11-07T16:23:35.091130+00:00",
       "published_utc": "2026-11-07T16:23:35.091130+00:00",
-      "grade": "Pending",
+      "grade": "Win",
       "value_status": "RESEARCH ONLY",
-      "placement": "UNPLACED RESEARCH"
+      "placement": "UNPLACED RESEARCH",
+      "actual": 1,
+      "actual_value": 30,
+      "result_basis": "player_boxscore",
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909941",
+      "graded_utc": "2026-11-08T06:37:03.062391+00:00"
     },
     {
       "id": "20261107-nba-5104157-reb6",
@@ -1221,9 +1337,14 @@
       "confidence": "LOW",
       "generated_utc": "2026-11-07T16:23:35.091130+00:00",
       "published_utc": "2026-11-07T16:23:35.091130+00:00",
-      "grade": "Pending",
+      "grade": "Win",
       "value_status": "RESEARCH ONLY",
-      "placement": "UNPLACED RESEARCH"
+      "placement": "UNPLACED RESEARCH",
+      "actual": 1,
+      "actual_value": 7,
+      "result_basis": "player_boxscore",
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909944",
+      "graded_utc": "2026-11-08T06:37:03.062391+00:00"
     },
     {
       "id": "20261107-nba-4277905-ass4",
@@ -1254,9 +1375,14 @@
       "confidence": "LOW",
       "generated_utc": "2026-11-07T16:23:35.091130+00:00",
       "published_utc": "2026-11-07T16:23:35.091130+00:00",
-      "grade": "Pending",
+      "grade": "Loss",
       "value_status": "RESEARCH ONLY",
-      "placement": "UNPLACED RESEARCH"
+      "placement": "UNPLACED RESEARCH",
+      "actual": 0,
+      "actual_value": 3,
+      "result_basis": "player_boxscore",
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909941",
+      "graded_utc": "2026-11-08T06:37:03.062391+00:00"
     }
   ],
   "notice": "Public sports research only. Actual wagers and bankroll are excluded. Shortlist selections are scouting judgments; raw models are separately labeled.",
