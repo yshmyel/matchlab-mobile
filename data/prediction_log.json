@@ -14640,10 +14640,18 @@
       "risk": "HIGH",
       "selection": "home",
       "key": "bundesliga:401884741:1h:ht-poisson-shrink-v1",
-      "grade": "Pending",
+      "grade": "Loss",
       "home": "SC Freiburg",
       "away": "1. FC Union Berlin",
-      "placement": "UNPLACED RESEARCH"
+      "placement": "UNPLACED RESEARCH",
+      "actual": "draw",
+      "actual_score": {
+        "home": 0,
+        "away": 0
+      },
+      "result_basis": "halftime_score",
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/soccer/ger.1/summary?event=401884741",
+      "graded_utc": "2026-11-08T18:46:10.190131+00:00"
     },
     {
       "probabilities": {
@@ -14770,10 +14778,18 @@
       "risk": "HIGH",
       "selection": "draw",
       "key": "serie_a:401874808:1h:ht-poisson-shrink-v1",
-      "grade": "Pending",
+      "grade": "Loss",
       "home": "Internazionale",
       "away": "Como",
-      "placement": "UNPLACED RESEARCH"
+      "placement": "UNPLACED RESEARCH",
+      "actual": "home",
+      "actual_score": {
+        "home": 2,
+        "away": 0
+      },
+      "result_basis": "halftime_score",
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/summary?event=401874808",
+      "graded_utc": "2026-11-08T18:46:10.190131+00:00"
     },
     {
       "probabilities": {
@@ -14846,10 +14862,18 @@
       "risk": "HIGH",
       "selection": "home",
       "key": "la_liga:401882810:1h:ht-poisson-shrink-v1",
-      "grade": "Pending",
+      "grade": "Loss",
       "home": "Real Sociedad",
       "away": "Rayo Vallecano",
-      "placement": "UNPLACED RESEARCH"
+      "placement": "UNPLACED RESEARCH",
+      "actual": "draw",
+      "actual_score": {
+        "home": 0,
+        "away": 0
+      },
+      "result_basis": "halftime_score",
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/summary?event=401882810",
+      "graded_utc": "2026-11-08T18:46:10.190131+00:00"
     },
     {
       "probability": 0.6680812826175608,
@@ -19670,23 +19694,23 @@
   ],
   "forward_metrics": {
     "soccer": {
-      "n": 11,
-      "accuracy": 0.45454545454545453,
-      "log_loss": 1.07198834078202,
-      "brier": 0.647412485627475,
-      "ece": 0.05844242853962741,
+      "n": 14,
+      "accuracy": 0.35714285714285715,
+      "log_loss": 1.0723560870238518,
+      "brier": 0.6542133343061038,
+      "ece": 0.04824253769547373,
       "calibration_bins": [
         {
           "lower": 0.3,
-          "n": 7,
-          "confidence": 0.37673762396395066,
-          "accuracy": 0.42857142857142855
+          "n": 8,
+          "confidence": 0.3745425340923641,
+          "accuracy": 0.375
         },
         {
           "lower": 0.4,
-          "n": 4,
-          "confidence": 0.4299924795791109,
-          "accuracy": 0.5
+          "n": 6,
+          "confidence": 0.4452893000792575,
+          "accuracy": 0.3333333333333333
         }
       ]
     },
@@ -19730,6 +19754,6 @@
       ]
     }
   },
-  "updated_utc": "2026-11-08T16:04:32.121921+00:00",
+  "updated_utc": "2026-11-08T18:46:10.190131+00:00",
   "grading_errors": []
 }
