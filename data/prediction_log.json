@@ -14548,10 +14548,18 @@
       "risk": "HIGH",
       "selection": "draw",
       "key": "epl:401879243:1h:ht-poisson-shrink-v1",
-      "grade": "Pending",
+      "grade": "Loss",
       "home": "Crystal Palace",
       "away": "Liverpool",
-      "placement": "UNPLACED RESEARCH"
+      "placement": "UNPLACED RESEARCH",
+      "actual": "away",
+      "actual_score": {
+        "home": 0,
+        "away": 1
+      },
+      "result_basis": "halftime_score",
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/summary?event=401879243",
+      "graded_utc": "2026-11-08T16:04:15.381955+00:00"
     },
     {
       "probabilities": {
@@ -14586,10 +14594,18 @@
       "risk": "HIGH",
       "selection": "draw",
       "key": "epl:401879239:1h:ht-poisson-shrink-v1",
-      "grade": "Pending",
+      "grade": "Loss",
       "home": "Sunderland",
       "away": "Chelsea",
-      "placement": "UNPLACED RESEARCH"
+      "placement": "UNPLACED RESEARCH",
+      "actual": "home",
+      "actual_score": {
+        "home": 1,
+        "away": 0
+      },
+      "result_basis": "halftime_score",
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/summary?event=401879239",
+      "graded_utc": "2026-11-08T16:04:15.381955+00:00"
     },
     {
       "probabilities": {
@@ -14662,10 +14678,18 @@
       "risk": "HIGH",
       "selection": "draw",
       "key": "serie_a:401875018:1h:ht-poisson-shrink-v1",
-      "grade": "Pending",
+      "grade": "Loss",
       "home": "Genoa",
       "away": "AC Milan",
-      "placement": "UNPLACED RESEARCH"
+      "placement": "UNPLACED RESEARCH",
+      "actual": "away",
+      "actual_score": {
+        "home": 0,
+        "away": 2
+      },
+      "result_basis": "halftime_score",
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/summary?event=401875018",
+      "graded_utc": "2026-11-08T16:04:15.381955+00:00"
     },
     {
       "probabilities": {
@@ -14700,10 +14724,18 @@
       "risk": "HIGH",
       "selection": "draw",
       "key": "serie_a:401874800:1h:ht-poisson-shrink-v1",
-      "grade": "Pending",
+      "grade": "Win",
       "home": "Monza",
       "away": "Atalanta",
-      "placement": "UNPLACED RESEARCH"
+      "placement": "UNPLACED RESEARCH",
+      "actual": "draw",
+      "actual_score": {
+        "home": 0,
+        "away": 0
+      },
+      "result_basis": "halftime_score",
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/summary?event=401874800",
+      "graded_utc": "2026-11-08T16:04:15.381955+00:00"
     },
     {
       "probabilities": {
@@ -19638,23 +19670,23 @@
   ],
   "forward_metrics": {
     "soccer": {
-      "n": 7,
-      "accuracy": 0.5714285714285714,
-      "log_loss": 0.9763766113595731,
-      "brier": 0.5864743361390266,
-      "ece": 0.18226742518417324,
+      "n": 11,
+      "accuracy": 0.45454545454545453,
+      "log_loss": 1.07198834078202,
+      "brier": 0.647412485627475,
+      "ece": 0.05844242853962741,
       "calibration_bins": [
         {
           "lower": 0.3,
-          "n": 5,
-          "confidence": 0.38152831437962986,
-          "accuracy": 0.4
+          "n": 7,
+          "confidence": 0.37673762396395066,
+          "accuracy": 0.42857142857142855
         },
         {
           "lower": 0.4,
-          "n": 2,
-          "confidence": 0.408243225906319,
-          "accuracy": 1.0
+          "n": 4,
+          "confidence": 0.4299924795791109,
+          "accuracy": 0.5
         }
       ]
     },
@@ -19698,6 +19730,6 @@
       ]
     }
   },
-  "updated_utc": "2026-11-08T13:50:49.627076+00:00",
+  "updated_utc": "2026-11-08T16:04:15.381955+00:00",
   "grading_errors": []
 }
