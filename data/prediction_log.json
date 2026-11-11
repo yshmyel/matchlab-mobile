@@ -37762,6 +37762,178 @@
       "selection": "hit",
       "grade": "Pending",
       "placement": "UNPLACED RESEARCH"
+    },
+    {
+      "probability": 0.1780347607907627,
+      "hits": 4,
+      "sample": 20,
+      "empirical_hit_rate": 0.2,
+      "wilson95": [
+        0.08065635327120002,
+        0.41602172202575993
+      ],
+      "avg_minutes_last5": 31.4,
+      "avg_minutes_sample": 29.55,
+      "training_through": "2026-11-09T00:00:00+00:00",
+      "player": "Keyonte George",
+      "player_id": "4433627",
+      "game_id": "401909973",
+      "game_date": "2026-11-12T02:00Z",
+      "stat": "rebounds",
+      "threshold": 6,
+      "injury": {
+        "status": "Day-To-Day",
+        "updated": "2026-11-11T20:04Z"
+      },
+      "opponent_sample": 2,
+      "opponent_hits": 0,
+      "status": "RESEARCH / PROVISIONAL",
+      "model_version": "nba-beta-binomial-v1",
+      "backtest_n": 13,
+      "source_urls": [
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4433627/gamelog?season=2026",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4433627/gamelog?season=2027"
+      ],
+      "generated_utc": "2026-11-11T21:51:53.161158+00:00",
+      "odds": null,
+      "edge": null,
+      "value_status": "RESEARCH ONLY",
+      "caveat": "Conditional on playing. Minutes, injury and opponent context shown, not causally adjusted. Thresholds are research queries, not bookmaker lines.",
+      "key": "nba:401909973:4433627:rebounds:6:nba-beta-binomial-v1",
+      "league": "nba",
+      "market": "nplus",
+      "selection": "hit",
+      "grade": "Pending",
+      "placement": "UNPLACED RESEARCH"
+    },
+    {
+      "probability": 0.37564059082155704,
+      "hits": 6,
+      "sample": 20,
+      "empirical_hit_rate": 0.3,
+      "wilson95": [
+        0.1454752739689939,
+        0.5189767762289794
+      ],
+      "avg_minutes_last5": 31.4,
+      "avg_minutes_sample": 29.55,
+      "training_through": "2026-11-09T00:00:00+00:00",
+      "player": "Keyonte George",
+      "player_id": "4433627",
+      "game_id": "401909973",
+      "game_date": "2026-11-12T02:00Z",
+      "stat": "threes",
+      "threshold": 3,
+      "injury": {
+        "status": "Day-To-Day",
+        "updated": "2026-11-11T20:04Z"
+      },
+      "opponent_sample": 2,
+      "opponent_hits": 0,
+      "status": "RESEARCH / PROVISIONAL",
+      "model_version": "nba-beta-binomial-v1",
+      "backtest_n": 13,
+      "source_urls": [
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4433627/gamelog?season=2026",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4433627/gamelog?season=2027"
+      ],
+      "generated_utc": "2026-11-11T21:51:53.161158+00:00",
+      "odds": null,
+      "edge": null,
+      "value_status": "RESEARCH ONLY",
+      "caveat": "Conditional on playing. Minutes, injury and opponent context shown, not causally adjusted. Thresholds are research queries, not bookmaker lines.",
+      "key": "nba:401909973:4433627:threes:3:nba-beta-binomial-v1",
+      "league": "nba",
+      "market": "nplus",
+      "selection": "hit",
+      "grade": "Pending",
+      "placement": "UNPLACED RESEARCH"
+    },
+    {
+      "probability": 0.6243594091784429,
+      "hits": 14,
+      "sample": 20,
+      "empirical_hit_rate": 0.7,
+      "wilson95": [
+        0.4810232237710206,
+        0.854524726031006
+      ],
+      "avg_minutes_last5": 31.4,
+      "avg_minutes_sample": 29.55,
+      "training_through": "2026-11-09T00:00:00+00:00",
+      "player": "Keyonte George",
+      "player_id": "4433627",
+      "game_id": "401909973",
+      "game_date": "2026-11-12T02:00Z",
+      "stat": "assists",
+      "threshold": 4,
+      "injury": {
+        "status": "Day-To-Day",
+        "updated": "2026-11-11T20:04Z"
+      },
+      "opponent_sample": 2,
+      "opponent_hits": 1,
+      "status": "RESEARCH / PROVISIONAL",
+      "model_version": "nba-beta-binomial-v1",
+      "backtest_n": 13,
+      "source_urls": [
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4433627/gamelog?season=2026",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4433627/gamelog?season=2027"
+      ],
+      "generated_utc": "2026-11-11T21:51:53.161158+00:00",
+      "odds": null,
+      "edge": null,
+      "value_status": "RESEARCH ONLY",
+      "caveat": "Conditional on playing. Minutes, injury and opponent context shown, not causally adjusted. Thresholds are research queries, not bookmaker lines.",
+      "key": "nba:401909973:4433627:assists:4:nba-beta-binomial-v1",
+      "league": "nba",
+      "market": "nplus",
+      "selection": "hit",
+      "grade": "Pending",
+      "placement": "UNPLACED RESEARCH"
+    },
+    {
+      "probability": 0.469650429656516,
+      "hits": 9,
+      "sample": 20,
+      "empirical_hit_rate": 0.45,
+      "wilson95": [
+        0.25819502085709295,
+        0.6579179916924003
+      ],
+      "avg_minutes_last5": 31.4,
+      "avg_minutes_sample": 29.55,
+      "training_through": "2026-11-09T00:00:00+00:00",
+      "player": "Keyonte George",
+      "player_id": "4433627",
+      "game_id": "401909973",
+      "game_date": "2026-11-12T02:00Z",
+      "stat": "points",
+      "threshold": 20,
+      "injury": {
+        "status": "Day-To-Day",
+        "updated": "2026-11-11T20:04Z"
+      },
+      "opponent_sample": 2,
+      "opponent_hits": 1,
+      "status": "RESEARCH / PROVISIONAL",
+      "model_version": "nba-beta-binomial-v1",
+      "backtest_n": 13,
+      "source_urls": [
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4433627/gamelog?season=2026",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4433627/gamelog?season=2027"
+      ],
+      "generated_utc": "2026-11-11T21:51:53.161158+00:00",
+      "odds": null,
+      "edge": null,
+      "value_status": "RESEARCH ONLY",
+      "caveat": "Conditional on playing. Minutes, injury and opponent context shown, not causally adjusted. Thresholds are research queries, not bookmaker lines.",
+      "key": "nba:401909973:4433627:points:20:nba-beta-binomial-v1",
+      "league": "nba",
+      "market": "nplus",
+      "selection": "hit",
+      "grade": "Pending",
+      "placement": "UNPLACED RESEARCH"
     }
   ],
   "forward_metrics": {
@@ -37826,6 +37998,6 @@
       ]
     }
   },
-  "updated_utc": "2026-11-11T15:04:02.212899+00:00",
+  "updated_utc": "2026-11-11T21:51:53.161158+00:00",
   "grading_errors": []
 }
