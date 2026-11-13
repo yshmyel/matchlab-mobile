@@ -2,6 +2,8 @@
 
 Phone-friendly soccer first-half and NBA research app. Standard-library Python importer and buildless PWA; no API keys or paid dependencies.
 
+The Kalshi view tracks explicitly confirmed pick-to-contract links with sampled bid/ask history and fee-aware hypothetical exit scenarios. It does not predict a future price peak or execute trades. See [the Kalshi tracker guide](docs/KALSHI.md) for linking markets and running fresh on-demand assessments.
+
 ## Current features
 
 - Ten ESPN league scoreboards: NHL, NBA, Premier League, La Liga, Bundesliga, Serie A, Ligue 1 and UEFA Champions, Europa and Conference leagues.

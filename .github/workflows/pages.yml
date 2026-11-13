@@ -10,7 +10,7 @@ permissions:
   pages: write
   id-token: write
 concurrency:
-  group: pages
+  group: matchlab-public-data
   cancel-in-progress: false
 jobs:
   deploy:
@@ -21,6 +21,8 @@ jobs:
     timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
       - name: Expand uploaded source package on first run
         if: hashFiles('matchlab-source.zip') != ''
         run: |
@@ -38,7 +40,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - run: node --check app.js && node --check research_ui.js && node --check tracker.js && node tests/test_tracker.cjs && node tests/test_app.cjs && node tests/test_sheets.cjs
+      - run: node --check app.js && node --check research_ui.js && node --check tracker.js && node --check kalshi_ui.js && node tests/test_tracker.cjs && node tests/test_app.cjs && node tests/test_sheets.cjs && node tests/test_kalshi_ui.cjs && node tests/test_kalshi_app.cjs
       - uses: actions/cache@v4
         with:
           path: .cache
@@ -48,16 +50,29 @@ jobs:
         run: |
           python pipeline.py
           python build_feed.py --date "$(TZ=America/Los_Angeles date -d yesterday +%Y%m%d)" --output data/yesterday.json
+      - name: Refresh confirmed Kalshi contracts once
+        run: |
+          # Partial API failures publish errors; invalid local schemas abort deployment.
+          python -c "from kalshi_bot import refresh; report = refresh(); print('Kalshi:', report['status'], 'linked:', len(report['markets']), 'errors:', report['errors'])"
       - name: Preserve generated research snapshots
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add data/prediction_log.json data/picks.json
+          if [ -f data/kalshi_observations.jsonl ]; then git add data/kalshi_observations.jsonl; fi
           if ! git diff --cached --quiet; then git commit -m 'Archive public research snapshots'; git push; fi
+      - name: Retain observation archive if publishing fails
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: kalshi-observations-${{ github.run_id }}
+          path: data/kalshi_observations.jsonl
+          if-no-files-found: ignore
+          retention-days: 30
       - name: Stage public assets only
         run: |
           mkdir -p _site/data
-          cp index.html app.js research_ui.js tracker.js sw.js manifest.webmanifest icon.svg _site/
+          cp index.html app.js research_ui.js tracker.js kalshi_ui.js sw.js manifest.webmanifest icon.svg _site/
           cp -R icons _site/
           cp data/*.json _site/data/
       - uses: actions/configure-pages@v5
