@@ -38747,8 +38747,12 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending",
-      "placement": "UNPLACED RESEARCH"
+      "grade": "Loss",
+      "placement": "UNPLACED RESEARCH",
+      "actual_value": 2,
+      "actual": 0,
+      "graded_utc": "2026-11-13T07:09:04.035607+00:00",
+      "grade_source": "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4431678/gamelog?season=2027"
     },
     {
       "probability": 0.43901764326592185,
@@ -38790,8 +38794,12 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending",
-      "placement": "UNPLACED RESEARCH"
+      "grade": "Loss",
+      "placement": "UNPLACED RESEARCH",
+      "actual_value": 1,
+      "actual": 0,
+      "graded_utc": "2026-11-13T07:09:04.035607+00:00",
+      "grade_source": "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4431678/gamelog?season=2027"
     },
     {
       "probability": 0.7739150198273039,
@@ -38833,8 +38841,12 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending",
-      "placement": "UNPLACED RESEARCH"
+      "grade": "Win",
+      "placement": "UNPLACED RESEARCH",
+      "actual_value": 8,
+      "actual": 1,
+      "graded_utc": "2026-11-13T07:09:04.035607+00:00",
+      "grade_source": "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4431678/gamelog?season=2027"
     },
     {
       "probability": 0.8676222385041489,
@@ -38876,8 +38888,12 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending",
-      "placement": "UNPLACED RESEARCH"
+      "grade": "Win",
+      "placement": "UNPLACED RESEARCH",
+      "actual_value": 27,
+      "actual": 1,
+      "graded_utc": "2026-11-13T07:09:04.035607+00:00",
+      "grade_source": "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4431678/gamelog?season=2027"
     },
     {
       "probability": 0.6578856667788827,
@@ -38919,8 +38935,12 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending",
-      "placement": "UNPLACED RESEARCH"
+      "grade": "DNP",
+      "placement": "UNPLACED RESEARCH",
+      "actual": null,
+      "result_basis": "absent_from_final_boxscore",
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909976",
+      "graded_utc": "2026-11-13T07:09:04.035607+00:00"
     },
     {
       "probability": 0.1279931077766788,
@@ -38962,8 +38982,12 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending",
-      "placement": "UNPLACED RESEARCH"
+      "grade": "DNP",
+      "placement": "UNPLACED RESEARCH",
+      "actual": null,
+      "result_basis": "absent_from_final_boxscore",
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909976",
+      "graded_utc": "2026-11-13T07:09:04.035607+00:00"
     },
     {
       "probability": 0.9094784503037392,
@@ -39005,8 +39029,12 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending",
-      "placement": "UNPLACED RESEARCH"
+      "grade": "DNP",
+      "placement": "UNPLACED RESEARCH",
+      "actual": null,
+      "result_basis": "absent_from_final_boxscore",
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909976",
+      "graded_utc": "2026-11-13T07:09:04.035607+00:00"
     },
     {
       "probability": 0.4077976732953601,
@@ -39048,8 +39076,12 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending",
-      "placement": "UNPLACED RESEARCH"
+      "grade": "DNP",
+      "placement": "UNPLACED RESEARCH",
+      "actual": null,
+      "result_basis": "absent_from_final_boxscore",
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909976",
+      "graded_utc": "2026-11-13T07:09:04.035607+00:00"
     },
     {
       "probability": 0.9467597847979775,
@@ -39091,8 +39123,13 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending",
-      "placement": "UNPLACED RESEARCH"
+      "grade": "Loss",
+      "placement": "UNPLACED RESEARCH",
+      "actual": 0,
+      "actual_value": 4,
+      "result_basis": "player_boxscore",
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909976",
+      "graded_utc": "2026-11-13T07:09:04.035607+00:00"
     },
     {
       "probability": 0.26840731391833883,
@@ -39134,8 +39171,13 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending",
-      "placement": "UNPLACED RESEARCH"
+      "grade": "Loss",
+      "placement": "UNPLACED RESEARCH",
+      "actual": 0,
+      "actual_value": 0,
+      "result_basis": "player_boxscore",
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909976",
+      "graded_utc": "2026-11-13T07:09:04.035607+00:00"
     },
     {
       "probability": 0.469650429656516,
@@ -39177,8 +39219,13 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending",
-      "placement": "UNPLACED RESEARCH"
+      "grade": "Loss",
+      "placement": "UNPLACED RESEARCH",
+      "actual": 0,
+      "actual_value": 3,
+      "result_basis": "player_boxscore",
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909976",
+      "graded_utc": "2026-11-13T07:09:04.035607+00:00"
     },
     {
       "probability": 0.5922023267046399,
@@ -39220,8 +39267,13 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending",
-      "placement": "UNPLACED RESEARCH"
+      "grade": "Win",
+      "placement": "UNPLACED RESEARCH",
+      "actual": 1,
+      "actual_value": 20,
+      "result_basis": "player_boxscore",
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909976",
+      "graded_utc": "2026-11-13T07:09:04.035607+00:00"
     },
     {
       "probability": 0.045454545454545456,
@@ -39263,8 +39315,13 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending",
-      "placement": "UNPLACED RESEARCH"
+      "grade": "Loss",
+      "placement": "UNPLACED RESEARCH",
+      "actual": 0,
+      "actual_value": 1,
+      "result_basis": "player_boxscore",
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909976",
+      "graded_utc": "2026-11-13T07:09:04.035607+00:00"
     },
     {
       "probability": 0.0905215496962608,
@@ -39306,8 +39363,13 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending",
-      "placement": "UNPLACED RESEARCH"
+      "grade": "Loss",
+      "placement": "UNPLACED RESEARCH",
+      "actual": 0,
+      "actual_value": 1,
+      "result_basis": "player_boxscore",
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909976",
+      "graded_utc": "2026-11-13T07:09:04.035607+00:00"
     },
     {
       "probability": 0.7315926860816612,
@@ -39349,8 +39411,13 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending",
-      "placement": "UNPLACED RESEARCH"
+      "grade": "Win",
+      "placement": "UNPLACED RESEARCH",
+      "actual": 1,
+      "actual_value": 5,
+      "result_basis": "player_boxscore",
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909976",
+      "graded_utc": "2026-11-13T07:09:04.035607+00:00"
     },
     {
       "probability": 0.05324021520202245,
@@ -39392,8 +39459,13 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending",
-      "placement": "UNPLACED RESEARCH"
+      "grade": "Loss",
+      "placement": "UNPLACED RESEARCH",
+      "actual": 0,
+      "actual_value": 5,
+      "result_basis": "player_boxscore",
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909976",
+      "graded_utc": "2026-11-13T07:09:04.035607+00:00"
     },
     {
       "probability": 0.9094784503037392,
@@ -39435,8 +39507,12 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending",
-      "placement": "UNPLACED RESEARCH"
+      "grade": "Win",
+      "placement": "UNPLACED RESEARCH",
+      "actual_value": 15,
+      "actual": 1,
+      "graded_utc": "2026-11-13T07:09:04.035607+00:00",
+      "grade_source": "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/6583/gamelog?season=2027"
     },
     {
       "probability": 0.17725503036342632,
@@ -39478,8 +39554,12 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending",
-      "placement": "UNPLACED RESEARCH"
+      "grade": "Loss",
+      "placement": "UNPLACED RESEARCH",
+      "actual_value": 0,
+      "actual": 0,
+      "graded_utc": "2026-11-13T07:09:04.035607+00:00",
+      "grade_source": "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/6583/gamelog?season=2027"
     },
     {
       "probability": 0.3066452379331905,
@@ -39521,8 +39601,12 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending",
-      "placement": "UNPLACED RESEARCH"
+      "grade": "Win",
+      "placement": "UNPLACED RESEARCH",
+      "actual_value": 4,
+      "actual": 1,
+      "graded_utc": "2026-11-13T07:09:04.035607+00:00",
+      "grade_source": "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/6583/gamelog?season=2027"
     },
     {
       "probability": 0.5922023267046399,
@@ -39564,8 +39648,12 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending",
-      "placement": "UNPLACED RESEARCH"
+      "grade": "Win",
+      "placement": "UNPLACED RESEARCH",
+      "actual_value": 30,
+      "actual": 1,
+      "graded_utc": "2026-11-13T07:09:04.035607+00:00",
+      "grade_source": "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/6583/gamelog?season=2027"
     },
     {
       "probability": 0.13636363636363635,
@@ -39607,8 +39695,12 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending",
-      "placement": "UNPLACED RESEARCH"
+      "grade": "Loss",
+      "placement": "UNPLACED RESEARCH",
+      "actual_value": 2,
+      "actual": 0,
+      "graded_utc": "2026-11-13T07:09:04.035607+00:00",
+      "grade_source": "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4277905/gamelog?season=2027"
     },
     {
       "probability": 0.4090909090909091,
@@ -39650,8 +39742,12 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending",
-      "placement": "UNPLACED RESEARCH"
+      "grade": "Win",
+      "placement": "UNPLACED RESEARCH",
+      "actual_value": 4,
+      "actual": 1,
+      "graded_utc": "2026-11-13T07:09:04.035607+00:00",
+      "grade_source": "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4277905/gamelog?season=2027"
     },
     {
       "probability": 0.9090909090909091,
@@ -39693,8 +39789,12 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending",
-      "placement": "UNPLACED RESEARCH"
+      "grade": "Win",
+      "placement": "UNPLACED RESEARCH",
+      "actual_value": 14,
+      "actual": 1,
+      "graded_utc": "2026-11-13T07:09:04.035607+00:00",
+      "grade_source": "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4277905/gamelog?season=2027"
     },
     {
       "probability": 0.5,
@@ -39736,8 +39836,12 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending",
-      "placement": "UNPLACED RESEARCH"
+      "grade": "Win",
+      "placement": "UNPLACED RESEARCH",
+      "actual_value": 37,
+      "actual": 1,
+      "graded_utc": "2026-11-13T07:09:04.035607+00:00",
+      "grade_source": "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4277905/gamelog?season=2027"
     },
     {
       "probability": 0.3421143332211173,
@@ -39779,8 +39883,12 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending",
-      "placement": "UNPLACED RESEARCH"
+      "grade": "Loss",
+      "placement": "UNPLACED RESEARCH",
+      "actual_value": 5,
+      "actual": 0,
+      "graded_utc": "2026-11-13T07:09:04.035607+00:00",
+      "grade_source": "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4432166/gamelog?season=2027"
     },
     {
       "probability": 0.37564059082155704,
@@ -39822,8 +39930,12 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending",
-      "placement": "UNPLACED RESEARCH"
+      "grade": "Win",
+      "placement": "UNPLACED RESEARCH",
+      "actual_value": 3,
+      "actual": 1,
+      "graded_utc": "2026-11-13T07:09:04.035607+00:00",
+      "grade_source": "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4432166/gamelog?season=2027"
     },
     {
       "probability": 0.8227449696365736,
@@ -39865,8 +39977,12 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending",
-      "placement": "UNPLACED RESEARCH"
+      "grade": "Win",
+      "placement": "UNPLACED RESEARCH",
+      "actual_value": 11,
+      "actual": 1,
+      "graded_utc": "2026-11-13T07:09:04.035607+00:00",
+      "grade_source": "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4432166/gamelog?season=2027"
     },
     {
       "probability": 0.5,
@@ -39908,8 +40024,12 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending",
-      "placement": "UNPLACED RESEARCH"
+      "grade": "Win",
+      "placement": "UNPLACED RESEARCH",
+      "actual_value": 52,
+      "actual": 1,
+      "graded_utc": "2026-11-13T07:09:04.035607+00:00",
+      "grade_source": "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4432166/gamelog?season=2027"
     },
     {
       "probability": 0.530349570343484,
@@ -39951,8 +40071,12 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending",
-      "placement": "UNPLACED RESEARCH"
+      "grade": "Win",
+      "placement": "UNPLACED RESEARCH",
+      "actual_value": 11,
+      "actual": 1,
+      "graded_utc": "2026-11-13T07:09:04.035607+00:00",
+      "grade_source": "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4684742/gamelog?season=2027"
     },
     {
       "probability": 0.021760608154326302,
@@ -39994,8 +40118,12 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending",
-      "placement": "UNPLACED RESEARCH"
+      "grade": "Loss",
+      "placement": "UNPLACED RESEARCH",
+      "actual_value": 0,
+      "actual": 0,
+      "graded_utc": "2026-11-13T07:09:04.035607+00:00",
+      "grade_source": "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4684742/gamelog?season=2027"
     },
     {
       "probability": 0.6243594091784429,
@@ -40037,8 +40165,12 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending",
-      "placement": "UNPLACED RESEARCH"
+      "grade": "Win",
+      "placement": "UNPLACED RESEARCH",
+      "actual_value": 11,
+      "actual": 1,
+      "graded_utc": "2026-11-13T07:09:04.035607+00:00",
+      "grade_source": "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4684742/gamelog?season=2027"
     },
     {
       "probability": 0.021760608154326302,
@@ -40080,8 +40212,12 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending",
-      "placement": "UNPLACED RESEARCH"
+      "grade": "Loss",
+      "placement": "UNPLACED RESEARCH",
+      "actual_value": 17,
+      "actual": 0,
+      "graded_utc": "2026-11-13T07:09:04.035607+00:00",
+      "grade_source": "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4684742/gamelog?season=2027"
     },
     {
       "probability": 0.3421143332211173,
@@ -40123,8 +40259,12 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending",
-      "placement": "UNPLACED RESEARCH"
+      "grade": "Loss",
+      "placement": "UNPLACED RESEARCH",
+      "actual_value": 3,
+      "actual": 0,
+      "graded_utc": "2026-11-13T07:09:04.035607+00:00",
+      "grade_source": "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4432816/gamelog?season=2027"
     },
     {
       "probability": 0.7731241279204543,
@@ -40166,8 +40306,12 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending",
-      "placement": "UNPLACED RESEARCH"
+      "grade": "Win",
+      "placement": "UNPLACED RESEARCH",
+      "actual_value": 6,
+      "actual": 1,
+      "graded_utc": "2026-11-13T07:09:04.035607+00:00",
+      "grade_source": "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4432816/gamelog?season=2027"
     },
     {
       "probability": 0.8232012915967931,
@@ -40209,8 +40353,12 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending",
-      "placement": "UNPLACED RESEARCH"
+      "grade": "Win",
+      "placement": "UNPLACED RESEARCH",
+      "actual_value": 9,
+      "actual": 1,
+      "graded_utc": "2026-11-13T07:09:04.035607+00:00",
+      "grade_source": "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4432816/gamelog?season=2027"
     },
     {
       "probability": 0.5,
@@ -40252,8 +40400,12 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending",
-      "placement": "UNPLACED RESEARCH"
+      "grade": "Win",
+      "placement": "UNPLACED RESEARCH",
+      "actual_value": 22,
+      "actual": 1,
+      "graded_utc": "2026-11-13T07:09:04.035607+00:00",
+      "grade_source": "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4432816/gamelog?season=2027"
     },
     {
       "probability": 0.9467597847979775,
@@ -40295,8 +40447,13 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending",
-      "placement": "UNPLACED RESEARCH"
+      "grade": "Win",
+      "placement": "UNPLACED RESEARCH",
+      "actual": 1,
+      "actual_value": 6,
+      "result_basis": "player_boxscore",
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909978",
+      "graded_utc": "2026-11-13T07:09:04.035607+00:00"
     },
     {
       "probability": 0.021760608154326302,
@@ -40338,8 +40495,13 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending",
-      "placement": "UNPLACED RESEARCH"
+      "grade": "Loss",
+      "placement": "UNPLACED RESEARCH",
+      "actual": 0,
+      "actual_value": 0,
+      "result_basis": "player_boxscore",
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909978",
+      "graded_utc": "2026-11-13T07:09:04.035607+00:00"
     },
     {
       "probability": 0.17725503036342632,
@@ -40381,8 +40543,13 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending",
-      "placement": "UNPLACED RESEARCH"
+      "grade": "Loss",
+      "placement": "UNPLACED RESEARCH",
+      "actual": 0,
+      "actual_value": 1,
+      "result_basis": "player_boxscore",
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909978",
+      "graded_utc": "2026-11-13T07:09:04.035607+00:00"
     },
     {
       "probability": 0.1279931077766788,
@@ -40424,8 +40591,13 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending",
-      "placement": "UNPLACED RESEARCH"
+      "grade": "Loss",
+      "placement": "UNPLACED RESEARCH",
+      "actual": 0,
+      "actual_value": 9,
+      "result_basis": "player_boxscore",
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909978",
+      "graded_utc": "2026-11-13T07:09:04.035607+00:00"
     },
     {
       "probability": 0.5609823567340781,
@@ -40467,8 +40639,12 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending",
-      "placement": "UNPLACED RESEARCH"
+      "grade": "Win",
+      "placement": "UNPLACED RESEARCH",
+      "actual_value": 7,
+      "actual": 1,
+      "graded_utc": "2026-11-13T07:09:04.035607+00:00",
+      "grade_source": "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/5041939/gamelog?season=2027"
     },
     {
       "probability": 0.1780347607907627,
@@ -40510,8 +40686,12 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending",
-      "placement": "UNPLACED RESEARCH"
+      "grade": "Loss",
+      "placement": "UNPLACED RESEARCH",
+      "actual_value": 1,
+      "actual": 0,
+      "graded_utc": "2026-11-13T07:09:04.035607+00:00",
+      "grade_source": "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/5041939/gamelog?season=2027"
     },
     {
       "probability": 0.5922023267046399,
@@ -40553,8 +40733,12 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending",
-      "placement": "UNPLACED RESEARCH"
+      "grade": "Loss",
+      "placement": "UNPLACED RESEARCH",
+      "actual_value": 3,
+      "actual": 0,
+      "graded_utc": "2026-11-13T07:09:04.035607+00:00",
+      "grade_source": "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/5041939/gamelog?season=2027"
     },
     {
       "probability": 0.5922023267046399,
@@ -40596,8 +40780,12 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending",
-      "placement": "UNPLACED RESEARCH"
+      "grade": "Loss",
+      "placement": "UNPLACED RESEARCH",
+      "actual_value": 12,
+      "actual": 0,
+      "graded_utc": "2026-11-13T07:09:04.035607+00:00",
+      "grade_source": "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/5041939/gamelog?season=2027"
     },
     {
       "probability": 0.6243594091784429,
@@ -40639,8 +40827,13 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending",
-      "placement": "UNPLACED RESEARCH"
+      "grade": "Loss",
+      "placement": "UNPLACED RESEARCH",
+      "actual": 0,
+      "actual_value": 3,
+      "result_basis": "player_boxscore",
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909978",
+      "graded_utc": "2026-11-13T07:09:04.035607+00:00"
     },
     {
       "probability": 0.4077976732953601,
@@ -40682,8 +40875,13 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending",
-      "placement": "UNPLACED RESEARCH"
+      "grade": "Loss",
+      "placement": "UNPLACED RESEARCH",
+      "actual": 0,
+      "actual_value": 1,
+      "result_basis": "player_boxscore",
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909978",
+      "graded_utc": "2026-11-13T07:09:04.035607+00:00"
     },
     {
       "probability": 0.021760608154326302,
@@ -40725,8 +40923,13 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending",
-      "placement": "UNPLACED RESEARCH"
+      "grade": "Loss",
+      "placement": "UNPLACED RESEARCH",
+      "actual": 0,
+      "actual_value": 0,
+      "result_basis": "player_boxscore",
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909978",
+      "graded_utc": "2026-11-13T07:09:04.035607+00:00"
     },
     {
       "probability": 0.4077976732953601,
@@ -40768,8 +40971,13 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending",
-      "placement": "UNPLACED RESEARCH"
+      "grade": "Loss",
+      "placement": "UNPLACED RESEARCH",
+      "actual": 0,
+      "actual_value": 10,
+      "result_basis": "player_boxscore",
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909978",
+      "graded_utc": "2026-11-13T07:09:04.035607+00:00"
     },
     {
       "probability": 0.1279931077766788,
@@ -40811,8 +41019,12 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending",
-      "placement": "UNPLACED RESEARCH"
+      "grade": "Loss",
+      "placement": "UNPLACED RESEARCH",
+      "actual_value": 1,
+      "actual": 0,
+      "graded_utc": "2026-11-13T07:09:04.035607+00:00",
+      "grade_source": "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/3136193/gamelog?season=2027"
     },
     {
       "probability": 0.4077976732953601,
@@ -40854,8 +41066,12 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending",
-      "placement": "UNPLACED RESEARCH"
+      "grade": "Win",
+      "placement": "UNPLACED RESEARCH",
+      "actual_value": 4,
+      "actual": 1,
+      "graded_utc": "2026-11-13T07:09:04.035607+00:00",
+      "grade_source": "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/3136193/gamelog?season=2027"
     },
     {
       "probability": 0.7778874876874425,
@@ -40897,8 +41113,12 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending",
-      "placement": "UNPLACED RESEARCH"
+      "grade": "Win",
+      "placement": "UNPLACED RESEARCH",
+      "actual_value": 7,
+      "actual": 1,
+      "graded_utc": "2026-11-13T07:09:04.035607+00:00",
+      "grade_source": "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/3136193/gamelog?season=2027"
     },
     {
       "probability": 0.8676222385041489,
@@ -40940,8 +41160,12 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending",
-      "placement": "UNPLACED RESEARCH"
+      "grade": "Win",
+      "placement": "UNPLACED RESEARCH",
+      "actual_value": 30,
+      "actual": 1,
+      "graded_utc": "2026-11-13T07:09:04.035607+00:00",
+      "grade_source": "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/3136193/gamelog?season=2027"
     },
     {
       "probability": 0.5609823567340781,
@@ -40983,8 +41207,12 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending",
-      "placement": "UNPLACED RESEARCH"
+      "grade": "Win",
+      "placement": "UNPLACED RESEARCH",
+      "actual_value": 6,
+      "actual": 1,
+      "graded_utc": "2026-11-13T07:09:04.035607+00:00",
+      "grade_source": "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4066383/gamelog?season=2027"
     },
     {
       "probability": 0.27834716312902447,
@@ -41026,8 +41254,12 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending",
-      "placement": "UNPLACED RESEARCH"
+      "grade": "Loss",
+      "placement": "UNPLACED RESEARCH",
+      "actual_value": 0,
+      "actual": 0,
+      "graded_utc": "2026-11-13T07:09:04.035607+00:00",
+      "grade_source": "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4066383/gamelog?season=2027"
     },
     {
       "probability": 0.27834716312902447,
@@ -41069,8 +41301,12 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending",
-      "placement": "UNPLACED RESEARCH"
+      "grade": "Loss",
+      "placement": "UNPLACED RESEARCH",
+      "actual_value": 3,
+      "actual": 0,
+      "graded_utc": "2026-11-13T07:09:04.035607+00:00",
+      "grade_source": "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4066383/gamelog?season=2027"
     },
     {
       "probability": 0.1780347607907627,
@@ -41112,8 +41348,12 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending",
-      "placement": "UNPLACED RESEARCH"
+      "grade": "Loss",
+      "placement": "UNPLACED RESEARCH",
+      "actual_value": 11,
+      "actual": 0,
+      "graded_utc": "2026-11-13T07:09:04.035607+00:00",
+      "grade_source": "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4066383/gamelog?season=2027"
     },
     {
       "probability": 0.7778874876874425,
@@ -41155,8 +41395,12 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending",
-      "placement": "UNPLACED RESEARCH"
+      "grade": "Win",
+      "placement": "UNPLACED RESEARCH",
+      "actual_value": 13,
+      "actual": 1,
+      "graded_utc": "2026-11-13T07:09:04.035607+00:00",
+      "grade_source": "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4433249/gamelog?season=2027"
     },
     {
       "probability": 0.021760608154326302,
@@ -41198,8 +41442,12 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending",
-      "placement": "UNPLACED RESEARCH"
+      "grade": "Loss",
+      "placement": "UNPLACED RESEARCH",
+      "actual_value": 0,
+      "actual": 0,
+      "graded_utc": "2026-11-13T07:09:04.035607+00:00",
+      "grade_source": "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4433249/gamelog?season=2027"
     },
     {
       "probability": 0.22608498017269596,
@@ -41241,8 +41489,12 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending",
-      "placement": "UNPLACED RESEARCH"
+      "grade": "Loss",
+      "placement": "UNPLACED RESEARCH",
+      "actual_value": 2,
+      "actual": 0,
+      "graded_utc": "2026-11-13T07:09:04.035607+00:00",
+      "grade_source": "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4433249/gamelog?season=2027"
     },
     {
       "probability": 0.021760608154326302,
@@ -41284,8 +41536,12 @@
       "league": "nba",
       "market": "nplus",
       "selection": "hit",
-      "grade": "Pending",
-      "placement": "UNPLACED RESEARCH"
+      "grade": "Loss",
+      "placement": "UNPLACED RESEARCH",
+      "actual_value": 7,
+      "actual": 0,
+      "graded_utc": "2026-11-13T07:09:04.035607+00:00",
+      "grade_source": "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4433249/gamelog?season=2027"
     }
   ],
   "forward_metrics": {
@@ -41311,45 +41567,45 @@
       ]
     },
     "nba": {
-      "n": 748,
-      "accuracy": 0.7566844919786097,
-      "log_loss": 0.5149757721942347,
-      "brier": 0.3392110389908618,
-      "ece": 0.03662305948890977,
+      "n": 804,
+      "accuracy": 0.7599502487562189,
+      "log_loss": 0.5082809464230744,
+      "brier": 0.3337479896503743,
+      "ece": 0.03443735072712073,
       "calibration_bins": [
         {
           "lower": 0.5,
-          "n": 180,
-          "confidence": 0.5544206568329142,
-          "accuracy": 0.5944444444444444
+          "n": 196,
+          "confidence": 0.5549780092788538,
+          "accuracy": 0.5918367346938775
         },
         {
           "lower": 0.6,
-          "n": 164,
-          "confidence": 0.6558140958450412,
-          "accuracy": 0.676829268292683
+          "n": 170,
+          "confidence": 0.6555042120102744,
+          "accuracy": 0.6705882352941176
         },
         {
           "lower": 0.7,
-          "n": 114,
-          "confidence": 0.7475896220368167,
-          "accuracy": 0.8245614035087719
+          "n": 124,
+          "confidence": 0.747903466025274,
+          "accuracy": 0.8387096774193549
         },
         {
           "lower": 0.8,
-          "n": 117,
-          "confidence": 0.8452163395305707,
-          "accuracy": 0.8205128205128205
+          "n": 128,
+          "confidence": 0.8450669767897896,
+          "accuracy": 0.8359375
         },
         {
           "lower": 0.9,
-          "n": 173,
-          "confidence": 0.9426484603083014,
-          "accuracy": 0.9132947976878613
+          "n": 186,
+          "confidence": 0.9433897451776773,
+          "accuracy": 0.9139784946236559
         }
       ]
     }
   },
-  "updated_utc": "2026-11-13T00:07:43.953313+00:00",
+  "updated_utc": "2026-11-13T07:09:04.035607+00:00",
   "grading_errors": []
 }
