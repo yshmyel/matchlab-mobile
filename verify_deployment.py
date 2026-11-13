@@ -4,9 +4,12 @@ from datetime import datetime, timezone
 base=sys.argv[1].rstrip('/')+'/'
 for attempt in range(6):
     try:
-        for asset in ['','app.js','tracker.js','manifest.webmanifest','sw.js','research_ui.js','icons/apple-touch-icon.png','icons/icon-192.png','icons/icon-512.png','data/performance.json','data/prediction_log.json','data/latest.json','data/picks.json']:
+        for asset in ['','app.js','tracker.js','kalshi_ui.js','manifest.webmanifest','sw.js','research_ui.js','icons/apple-touch-icon.png','icons/icon-192.png','icons/icon-512.png','data/performance.json','data/prediction_log.json','data/latest.json','data/picks.json','data/kalshi.json']:
             with urllib.request.urlopen(base+asset+'?check='+str(time.time()),timeout=20) as r:
                 content=r.read()
+                if asset=='data/kalshi.json':
+                    k=json.loads(content)
+                    assert k['schema_version']==1 and isinstance(k['markets'],list) and isinstance(k['unlinked_picks'],list)
                 if asset=='data/latest.json':
                     f=json.loads(content)
                     assert f['schema_version']==1 and isinstance(f['games'],list)

@@ -8,7 +8,7 @@ on:
 permissions:
   contents: read
 concurrency:
-  group: matchlab-grading
+  group: matchlab-public-data
   cancel-in-progress: false
 jobs:
   grade:
@@ -20,6 +20,8 @@ jobs:
       issues: write
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'

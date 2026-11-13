@@ -1,0 +1,226 @@
+{
+  "schema_version": 1,
+  "generated_utc": "2026-11-13T22:24:13.350515+00:00",
+  "status": "ok",
+  "errors": [],
+  "markets": [],
+  "unlinked_picks": [
+    {
+      "pick_id": "20261106-nba-maxey-p20",
+      "label": "Tyrese Maxey 20+ points",
+      "league": "nba",
+      "game_date": "2026-11-07T00:30:00Z",
+      "grade": "Loss",
+      "reason": "Exact Kalshi event, period, participant, threshold, side and rules not confirmed"
+    },
+    {
+      "pick_id": "20261106-nba-harden-a4",
+      "label": "James Harden 4+ assists",
+      "league": "nba",
+      "game_date": "2026-11-07T00:30:00Z",
+      "grade": "Loss",
+      "reason": "Exact Kalshi event, period, participant, threshold, side and rules not confirmed"
+    },
+    {
+      "pick_id": "20261106-nba-sga-p20",
+      "label": "Shai Gilgeous-Alexander 20+ points",
+      "league": "nba",
+      "game_date": "2026-11-07T01:00:00Z",
+      "grade": "Win",
+      "reason": "Exact Kalshi event, period, participant, threshold, side and rules not confirmed"
+    },
+    {
+      "pick_id": "20261106-nhl-buffalo",
+      "label": "Buffalo to win (including OT/SO)",
+      "league": "nhl",
+      "game_date": "2026-11-07T00:00:00Z",
+      "grade": "Win",
+      "reason": "Exact Kalshi event, period, participant, threshold, side and rules not confirmed"
+    },
+    {
+      "pick_id": "20261106-nhl-minnesota",
+      "label": "Minnesota to win (including OT/SO)",
+      "league": "nhl",
+      "game_date": "2026-11-07T01:00:00Z",
+      "grade": "Win",
+      "reason": "Exact Kalshi event, period, participant, threshold, side and rules not confirmed"
+    },
+    {
+      "pick_id": "20261107-serie_a-401874974-1h",
+      "label": "Parma vs Bologna · 1H Draw",
+      "league": "serie_a",
+      "game_date": "2026-11-07T17:00Z",
+      "grade": "Win",
+      "reason": "Exact Kalshi event, period, participant, threshold, side and rules not confirmed"
+    },
+    {
+      "pick_id": "20261107-epl-401878757-1h",
+      "label": "Nottingham Forest vs Manchester City · 1H Draw",
+      "league": "epl",
+      "game_date": "2026-11-07T17:30Z",
+      "grade": "Loss",
+      "reason": "Exact Kalshi event, period, participant, threshold, side and rules not confirmed"
+    },
+    {
+      "pick_id": "20261107-ligue_1-401876411-1h",
+      "label": "Auxerre vs Paris FC · 1H Draw",
+      "league": "ligue_1",
+      "game_date": "2026-11-07T18:00Z",
+      "grade": "Win",
+      "reason": "Exact Kalshi event, period, participant, threshold, side and rules not confirmed"
+    },
+    {
+      "pick_id": "20261107-serie_a-401874803-1h",
+      "label": "Roma to lead at halftime",
+      "league": "serie_a",
+      "game_date": "2026-11-07T19:45Z",
+      "grade": "Win",
+      "reason": "Exact Kalshi event, period, participant, threshold, side and rules not confirmed"
+    },
+    {
+      "pick_id": "20261107-la_liga-401882808-1h",
+      "label": "Real Madrid to lead at halftime",
+      "league": "la_liga",
+      "game_date": "2026-11-07T20:00Z",
+      "grade": "Win",
+      "reason": "Exact Kalshi event, period, participant, threshold, side and rules not confirmed"
+    },
+    {
+      "pick_id": "20261107-ligue_1-401876407-1h",
+      "label": "PSG to lead at halftime",
+      "league": "ligue_1",
+      "game_date": "2026-11-07T20:05Z",
+      "grade": "Win",
+      "reason": "Exact Kalshi event, period, participant, threshold, side and rules not confirmed"
+    },
+    {
+      "pick_id": "20261107-nhl-401892663-total",
+      "label": "St. Louis at Nashville · Over 5.5",
+      "league": "nhl",
+      "game_date": "2026-11-07T18:00Z",
+      "grade": "Loss",
+      "reason": "Exact Kalshi event, period, participant, threshold, side and rules not confirmed"
+    },
+    {
+      "pick_id": "20261107-nhl-401892668-ml",
+      "label": "Carolina to win (incl. OT/SO)",
+      "league": "nhl",
+      "game_date": "2026-11-08T01:00Z",
+      "grade": "Win",
+      "reason": "Exact Kalshi event, period, participant, threshold, side and rules not confirmed"
+    },
+    {
+      "pick_id": "20261107-nhl-401892668-total",
+      "label": "Chicago at Carolina · Under 6.5",
+      "league": "nhl",
+      "game_date": "2026-11-08T01:00Z",
+      "grade": "Loss",
+      "reason": "Exact Kalshi event, period, participant, threshold, side and rules not confirmed"
+    },
+    {
+      "pick_id": "20261107-nhl-401892669-ml",
+      "label": "Dallas to win (incl. OT/SO)",
+      "league": "nhl",
+      "game_date": "2026-11-08T01:00Z",
+      "grade": "Win",
+      "reason": "Exact Kalshi event, period, participant, threshold, side and rules not confirmed"
+    },
+    {
+      "pick_id": "20261107-nhl-401892669-total",
+      "label": "San Jose at Dallas · Under 6.5",
+      "league": "nhl",
+      "game_date": "2026-11-08T01:00Z",
+      "grade": "Loss",
+      "reason": "Exact Kalshi event, period, participant, threshold, side and rules not confirmed"
+    },
+    {
+      "pick_id": "20261107-nhl-401892670-ml",
+      "label": "Tampa Bay to win (incl. OT/SO)",
+      "league": "nhl",
+      "game_date": "2026-11-08T01:00Z",
+      "grade": "Win",
+      "reason": "Exact Kalshi event, period, participant, threshold, side and rules not confirmed"
+    },
+    {
+      "pick_id": "20261107-nhl-401892673-ml",
+      "label": "Edmonton to win (incl. OT/SO)",
+      "league": "nhl",
+      "game_date": "2026-11-08T03:00Z",
+      "grade": "Win",
+      "reason": "Exact Kalshi event, period, participant, threshold, side and rules not confirmed"
+    },
+    {
+      "pick_id": "20261107-nhl-401892673-total",
+      "label": "Vancouver at Edmonton · Over 6.5",
+      "league": "nhl",
+      "game_date": "2026-11-08T03:00Z",
+      "grade": "Loss",
+      "reason": "Exact Kalshi event, period, participant, threshold, side and rules not confirmed"
+    },
+    {
+      "pick_id": "20261107-nhl-401892665-total",
+      "label": "Montreal at Toronto · Over 6.5",
+      "league": "nhl",
+      "game_date": "2026-11-08T00:00Z",
+      "grade": "Loss",
+      "reason": "Exact Kalshi event, period, participant, threshold, side and rules not confirmed"
+    },
+    {
+      "pick_id": "20261107-nba-3112335-reb6",
+      "label": "Nikola Jokic 6+ rebounds",
+      "league": "nba",
+      "game_date": "2026-11-07T22:00Z",
+      "grade": "Win",
+      "reason": "Exact Kalshi event, period, participant, threshold, side and rules not confirmed"
+    },
+    {
+      "pick_id": "20261107-nba-3136195-reb6",
+      "label": "Karl-Anthony Towns 6+ rebounds",
+      "league": "nba",
+      "game_date": "2026-11-08T01:00Z",
+      "grade": "Win",
+      "reason": "Exact Kalshi event, period, participant, threshold, side and rules not confirmed"
+    },
+    {
+      "pick_id": "20261107-nba-3934672-ass4",
+      "label": "Jalen Brunson 4+ assists",
+      "league": "nba",
+      "game_date": "2026-11-08T01:00Z",
+      "grade": "Win",
+      "reason": "Exact Kalshi event, period, participant, threshold, side and rules not confirmed"
+    },
+    {
+      "pick_id": "20261107-nba-4871144-reb6",
+      "label": "Alperen Sengun 6+ rebounds",
+      "league": "nba",
+      "game_date": "2026-11-08T02:00Z",
+      "grade": "Win",
+      "reason": "Exact Kalshi event, period, participant, threshold, side and rules not confirmed"
+    },
+    {
+      "pick_id": "20261107-nba-4278073-poi20",
+      "label": "Shai Gilgeous-Alexander 20+ points",
+      "league": "nba",
+      "game_date": "2026-11-08T01:00Z",
+      "grade": "Win",
+      "reason": "Exact Kalshi event, period, participant, threshold, side and rules not confirmed"
+    },
+    {
+      "pick_id": "20261107-nba-5104157-reb6",
+      "label": "Victor Wembanyama 6+ rebounds",
+      "league": "nba",
+      "game_date": "2026-11-08T03:00Z",
+      "grade": "Win",
+      "reason": "Exact Kalshi event, period, participant, threshold, side and rules not confirmed"
+    },
+    {
+      "pick_id": "20261107-nba-4277905-ass4",
+      "label": "Trae Young 4+ assists",
+      "league": "nba",
+      "game_date": "2026-11-08T01:00Z",
+      "grade": "Loss",
+      "reason": "Exact Kalshi event, period, participant, threshold, side and rules not confirmed"
+    }
+  ],
+  "disclaimer": "Read-only research. Sampled highs describe past quotes. Future peak prices and target probabilities are unknown. No wagers are placed."
+}
