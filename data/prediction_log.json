@@ -68990,6 +68990,178 @@
       "selection": "hit",
       "grade": "Pending",
       "placement": "UNPLACED RESEARCH"
+    },
+    {
+      "probability": 0.30632483222426216,
+      "hits": 5,
+      "sample": 20,
+      "empirical_hit_rate": 0.25,
+      "wilson95": [
+        0.11186005278940309,
+        0.4687050099580636
+      ],
+      "avg_minutes_last5": 31.8,
+      "avg_minutes_sample": 31.5,
+      "training_through": "2026-11-17T01:00:00+00:00",
+      "player": "Ayo Dosunmu",
+      "player_id": "4397002",
+      "game_id": "401910003",
+      "game_date": "2026-11-18T01:00Z",
+      "stat": "rebounds",
+      "threshold": 6,
+      "injury": {
+        "status": "Not listed in fetched report; availability unconfirmed",
+        "updated": null
+      },
+      "opponent_sample": 5,
+      "opponent_hits": 1,
+      "status": "RESEARCH / PROVISIONAL",
+      "model_version": "nba-beta-binomial-v1",
+      "backtest_n": 17,
+      "source_urls": [
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4397002/gamelog?season=2026",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4397002/gamelog?season=2027"
+      ],
+      "generated_utc": "2026-11-17T18:26:35.199135+00:00",
+      "odds": null,
+      "edge": null,
+      "value_status": "RESEARCH ONLY",
+      "caveat": "Conditional on playing. Minutes, injury and opponent context shown, not causally adjusted. Thresholds are research queries, not bookmaker lines.",
+      "key": "nba:401910003:4397002:rebounds:6:nba-beta-binomial-v1",
+      "league": "nba",
+      "market": "nplus",
+      "selection": "hit",
+      "grade": "Pending",
+      "placement": "UNPLACED RESEARCH"
+    },
+    {
+      "probability": 0.30632483222426216,
+      "hits": 5,
+      "sample": 20,
+      "empirical_hit_rate": 0.25,
+      "wilson95": [
+        0.11186005278940309,
+        0.4687050099580636
+      ],
+      "avg_minutes_last5": 31.8,
+      "avg_minutes_sample": 31.5,
+      "training_through": "2026-11-17T01:00:00+00:00",
+      "player": "Ayo Dosunmu",
+      "player_id": "4397002",
+      "game_id": "401910003",
+      "game_date": "2026-11-18T01:00Z",
+      "stat": "threes",
+      "threshold": 3,
+      "injury": {
+        "status": "Not listed in fetched report; availability unconfirmed",
+        "updated": null
+      },
+      "opponent_sample": 5,
+      "opponent_hits": 1,
+      "status": "RESEARCH / PROVISIONAL",
+      "model_version": "nba-beta-binomial-v1",
+      "backtest_n": 17,
+      "source_urls": [
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4397002/gamelog?season=2026",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4397002/gamelog?season=2027"
+      ],
+      "generated_utc": "2026-11-17T18:26:35.199135+00:00",
+      "odds": null,
+      "edge": null,
+      "value_status": "RESEARCH ONLY",
+      "caveat": "Conditional on playing. Minutes, injury and opponent context shown, not causally adjusted. Thresholds are research queries, not bookmaker lines.",
+      "key": "nba:401910003:4397002:threes:3:nba-beta-binomial-v1",
+      "league": "nba",
+      "market": "nplus",
+      "selection": "hit",
+      "grade": "Pending",
+      "placement": "UNPLACED RESEARCH"
+    },
+    {
+      "probability": 0.43901764326592185,
+      "hits": 8,
+      "sample": 20,
+      "empirical_hit_rate": 0.4,
+      "wilson95": [
+        0.21880396741419272,
+        0.613422057684794
+      ],
+      "avg_minutes_last5": 31.8,
+      "avg_minutes_sample": 31.5,
+      "training_through": "2026-11-17T01:00:00+00:00",
+      "player": "Ayo Dosunmu",
+      "player_id": "4397002",
+      "game_id": "401910003",
+      "game_date": "2026-11-18T01:00Z",
+      "stat": "assists",
+      "threshold": 4,
+      "injury": {
+        "status": "Not listed in fetched report; availability unconfirmed",
+        "updated": null
+      },
+      "opponent_sample": 5,
+      "opponent_hits": 2,
+      "status": "RESEARCH / PROVISIONAL",
+      "model_version": "nba-beta-binomial-v1",
+      "backtest_n": 17,
+      "source_urls": [
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4397002/gamelog?season=2026",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4397002/gamelog?season=2027"
+      ],
+      "generated_utc": "2026-11-17T18:26:35.199135+00:00",
+      "odds": null,
+      "edge": null,
+      "value_status": "RESEARCH ONLY",
+      "caveat": "Conditional on playing. Minutes, injury and opponent context shown, not causally adjusted. Thresholds are research queries, not bookmaker lines.",
+      "key": "nba:401910003:4397002:assists:4:nba-beta-binomial-v1",
+      "league": "nba",
+      "market": "nplus",
+      "selection": "hit",
+      "grade": "Pending",
+      "placement": "UNPLACED RESEARCH"
+    },
+    {
+      "probability": 0.27834716312902447,
+      "hits": 6,
+      "sample": 20,
+      "empirical_hit_rate": 0.3,
+      "wilson95": [
+        0.1454752739689939,
+        0.5189767762289794
+      ],
+      "avg_minutes_last5": 31.8,
+      "avg_minutes_sample": 31.5,
+      "training_through": "2026-11-17T01:00:00+00:00",
+      "player": "Ayo Dosunmu",
+      "player_id": "4397002",
+      "game_id": "401910003",
+      "game_date": "2026-11-18T01:00Z",
+      "stat": "points",
+      "threshold": 20,
+      "injury": {
+        "status": "Not listed in fetched report; availability unconfirmed",
+        "updated": null
+      },
+      "opponent_sample": 5,
+      "opponent_hits": 0,
+      "status": "RESEARCH / PROVISIONAL",
+      "model_version": "nba-beta-binomial-v1",
+      "backtest_n": 17,
+      "source_urls": [
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4397002/gamelog?season=2026",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4397002/gamelog?season=2027"
+      ],
+      "generated_utc": "2026-11-17T18:26:35.199135+00:00",
+      "odds": null,
+      "edge": null,
+      "value_status": "RESEARCH ONLY",
+      "caveat": "Conditional on playing. Minutes, injury and opponent context shown, not causally adjusted. Thresholds are research queries, not bookmaker lines.",
+      "key": "nba:401910003:4397002:points:20:nba-beta-binomial-v1",
+      "league": "nba",
+      "market": "nplus",
+      "selection": "hit",
+      "grade": "Pending",
+      "placement": "UNPLACED RESEARCH"
     }
   ],
   "forward_metrics": {
@@ -69054,6 +69226,6 @@
       ]
     }
   },
-  "updated_utc": "2026-11-17T09:02:23.610324+00:00",
+  "updated_utc": "2026-11-17T18:26:35.199135+00:00",
   "grading_errors": []
 }
