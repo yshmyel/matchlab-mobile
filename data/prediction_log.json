@@ -78330,6 +78330,350 @@
       "selection": "hit",
       "grade": "Pending",
       "placement": "UNPLACED RESEARCH"
+    },
+    {
+      "probability": 0.9523809523809523,
+      "hits": 19,
+      "sample": 19,
+      "empirical_hit_rate": 1.0,
+      "wilson95": [
+        0.8318156346315496,
+        1
+      ],
+      "avg_minutes_last5": 31.4,
+      "avg_minutes_sample": 30.894736842105264,
+      "training_through": "2026-11-15T21:00:00+00:00",
+      "player": "Walker Kessler",
+      "player_id": "4433136",
+      "game_id": "401910017",
+      "game_date": "2026-11-19T03:00Z",
+      "stat": "rebounds",
+      "threshold": 6,
+      "injury": {
+        "status": "Day-To-Day",
+        "updated": "2026-11-18T15:02Z"
+      },
+      "opponent_sample": 1,
+      "opponent_hits": 1,
+      "status": "RESEARCH / PROVISIONAL",
+      "model_version": "nba-beta-binomial-v1",
+      "backtest_n": 0,
+      "source_urls": [
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4433136/gamelog?season=2026",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4433136/gamelog?season=2027"
+      ],
+      "generated_utc": "2026-11-18T17:56:47.507464+00:00",
+      "odds": null,
+      "edge": null,
+      "value_status": "RESEARCH ONLY",
+      "caveat": "Conditional on playing. Minutes, injury and opponent context shown, not causally adjusted. Thresholds are research queries, not bookmaker lines.",
+      "key": "nba:401910017:4433136:rebounds:6:nba-beta-binomial-v1",
+      "league": "nba",
+      "market": "nplus",
+      "selection": "hit",
+      "grade": "Pending",
+      "placement": "UNPLACED RESEARCH"
+    },
+    {
+      "probability": 0.09523809523809523,
+      "hits": 1,
+      "sample": 19,
+      "empirical_hit_rate": 0.05263157894736842,
+      "wilson95": [
+        0.009351752490529969,
+        0.2463921533654521
+      ],
+      "avg_minutes_last5": 31.4,
+      "avg_minutes_sample": 30.894736842105264,
+      "training_through": "2026-11-15T21:00:00+00:00",
+      "player": "Walker Kessler",
+      "player_id": "4433136",
+      "game_id": "401910017",
+      "game_date": "2026-11-19T03:00Z",
+      "stat": "threes",
+      "threshold": 3,
+      "injury": {
+        "status": "Day-To-Day",
+        "updated": "2026-11-18T15:02Z"
+      },
+      "opponent_sample": 1,
+      "opponent_hits": 0,
+      "status": "RESEARCH / PROVISIONAL",
+      "model_version": "nba-beta-binomial-v1",
+      "backtest_n": 0,
+      "source_urls": [
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4433136/gamelog?season=2026",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4433136/gamelog?season=2027"
+      ],
+      "generated_utc": "2026-11-18T17:56:47.507464+00:00",
+      "odds": null,
+      "edge": null,
+      "value_status": "RESEARCH ONLY",
+      "caveat": "Conditional on playing. Minutes, injury and opponent context shown, not causally adjusted. Thresholds are research queries, not bookmaker lines.",
+      "key": "nba:401910017:4433136:threes:3:nba-beta-binomial-v1",
+      "league": "nba",
+      "market": "nplus",
+      "selection": "hit",
+      "grade": "Pending",
+      "placement": "UNPLACED RESEARCH"
+    },
+    {
+      "probability": 0.2857142857142857,
+      "hits": 5,
+      "sample": 19,
+      "empirical_hit_rate": 0.2631578947368421,
+      "wilson95": [
+        0.11806238339540168,
+        0.48791968441070654
+      ],
+      "avg_minutes_last5": 31.4,
+      "avg_minutes_sample": 30.894736842105264,
+      "training_through": "2026-11-15T21:00:00+00:00",
+      "player": "Walker Kessler",
+      "player_id": "4433136",
+      "game_id": "401910017",
+      "game_date": "2026-11-19T03:00Z",
+      "stat": "assists",
+      "threshold": 4,
+      "injury": {
+        "status": "Day-To-Day",
+        "updated": "2026-11-18T15:02Z"
+      },
+      "opponent_sample": 1,
+      "opponent_hits": 0,
+      "status": "RESEARCH / PROVISIONAL",
+      "model_version": "nba-beta-binomial-v1",
+      "backtest_n": 0,
+      "source_urls": [
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4433136/gamelog?season=2026",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4433136/gamelog?season=2027"
+      ],
+      "generated_utc": "2026-11-18T17:56:47.507464+00:00",
+      "odds": null,
+      "edge": null,
+      "value_status": "RESEARCH ONLY",
+      "caveat": "Conditional on playing. Minutes, injury and opponent context shown, not causally adjusted. Thresholds are research queries, not bookmaker lines.",
+      "key": "nba:401910017:4433136:assists:4:nba-beta-binomial-v1",
+      "league": "nba",
+      "market": "nplus",
+      "selection": "hit",
+      "grade": "Pending",
+      "placement": "UNPLACED RESEARCH"
+    },
+    {
+      "probability": 0.2857142857142857,
+      "hits": 5,
+      "sample": 19,
+      "empirical_hit_rate": 0.2631578947368421,
+      "wilson95": [
+        0.11806238339540168,
+        0.48791968441070654
+      ],
+      "avg_minutes_last5": 31.4,
+      "avg_minutes_sample": 30.894736842105264,
+      "training_through": "2026-11-15T21:00:00+00:00",
+      "player": "Walker Kessler",
+      "player_id": "4433136",
+      "game_id": "401910017",
+      "game_date": "2026-11-19T03:00Z",
+      "stat": "points",
+      "threshold": 20,
+      "injury": {
+        "status": "Day-To-Day",
+        "updated": "2026-11-18T15:02Z"
+      },
+      "opponent_sample": 1,
+      "opponent_hits": 0,
+      "status": "RESEARCH / PROVISIONAL",
+      "model_version": "nba-beta-binomial-v1",
+      "backtest_n": 0,
+      "source_urls": [
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4433136/gamelog?season=2026",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4433136/gamelog?season=2027"
+      ],
+      "generated_utc": "2026-11-18T17:56:47.507464+00:00",
+      "odds": null,
+      "edge": null,
+      "value_status": "RESEARCH ONLY",
+      "caveat": "Conditional on playing. Minutes, injury and opponent context shown, not causally adjusted. Thresholds are research queries, not bookmaker lines.",
+      "key": "nba:401910017:4433136:points:20:nba-beta-binomial-v1",
+      "league": "nba",
+      "market": "nplus",
+      "selection": "hit",
+      "grade": "Pending",
+      "placement": "UNPLACED RESEARCH"
+    },
+    {
+      "probability": 0.5294117647058824,
+      "hits": 8,
+      "sample": 15,
+      "empirical_hit_rate": 0.5333333333333333,
+      "wilson95": [
+        0.3011663015105079,
+        0.7519077474025355
+      ],
+      "avg_minutes_last5": 24.4,
+      "avg_minutes_sample": 18.133333333333333,
+      "training_through": "2026-11-18T03:30:00+00:00",
+      "player": "Mo Bamba",
+      "player_id": "4277919",
+      "game_id": "401910017",
+      "game_date": "2026-11-19T03:00Z",
+      "stat": "rebounds",
+      "threshold": 6,
+      "injury": {
+        "status": "Not listed in fetched report; availability unconfirmed",
+        "updated": null
+      },
+      "opponent_sample": 0,
+      "opponent_hits": 0,
+      "status": "RESEARCH / PROVISIONAL",
+      "model_version": "nba-beta-binomial-v1",
+      "backtest_n": 0,
+      "source_urls": [
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4277919/gamelog?season=2026",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4277919/gamelog?season=2027"
+      ],
+      "generated_utc": "2026-11-18T17:56:47.507464+00:00",
+      "odds": null,
+      "edge": null,
+      "value_status": "RESEARCH ONLY",
+      "caveat": "Conditional on playing. Minutes, injury and opponent context shown, not causally adjusted. Thresholds are research queries, not bookmaker lines.",
+      "key": "nba:401910017:4277919:rebounds:6:nba-beta-binomial-v1",
+      "league": "nba",
+      "market": "nplus",
+      "selection": "hit",
+      "grade": "Pending",
+      "placement": "UNPLACED RESEARCH"
+    },
+    {
+      "probability": 0.11764705882352941,
+      "hits": 1,
+      "sample": 15,
+      "empirical_hit_rate": 0.06666666666666667,
+      "wilson95": [
+        0.011866588606194856,
+        0.2981707755242399
+      ],
+      "avg_minutes_last5": 24.4,
+      "avg_minutes_sample": 18.133333333333333,
+      "training_through": "2026-11-18T03:30:00+00:00",
+      "player": "Mo Bamba",
+      "player_id": "4277919",
+      "game_id": "401910017",
+      "game_date": "2026-11-19T03:00Z",
+      "stat": "threes",
+      "threshold": 3,
+      "injury": {
+        "status": "Not listed in fetched report; availability unconfirmed",
+        "updated": null
+      },
+      "opponent_sample": 0,
+      "opponent_hits": 0,
+      "status": "RESEARCH / PROVISIONAL",
+      "model_version": "nba-beta-binomial-v1",
+      "backtest_n": 0,
+      "source_urls": [
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4277919/gamelog?season=2026",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4277919/gamelog?season=2027"
+      ],
+      "generated_utc": "2026-11-18T17:56:47.507464+00:00",
+      "odds": null,
+      "edge": null,
+      "value_status": "RESEARCH ONLY",
+      "caveat": "Conditional on playing. Minutes, injury and opponent context shown, not causally adjusted. Thresholds are research queries, not bookmaker lines.",
+      "key": "nba:401910017:4277919:threes:3:nba-beta-binomial-v1",
+      "league": "nba",
+      "market": "nplus",
+      "selection": "hit",
+      "grade": "Pending",
+      "placement": "UNPLACED RESEARCH"
+    },
+    {
+      "probability": 0.11764705882352941,
+      "hits": 1,
+      "sample": 15,
+      "empirical_hit_rate": 0.06666666666666667,
+      "wilson95": [
+        0.011866588606194856,
+        0.2981707755242399
+      ],
+      "avg_minutes_last5": 24.4,
+      "avg_minutes_sample": 18.133333333333333,
+      "training_through": "2026-11-18T03:30:00+00:00",
+      "player": "Mo Bamba",
+      "player_id": "4277919",
+      "game_id": "401910017",
+      "game_date": "2026-11-19T03:00Z",
+      "stat": "assists",
+      "threshold": 4,
+      "injury": {
+        "status": "Not listed in fetched report; availability unconfirmed",
+        "updated": null
+      },
+      "opponent_sample": 0,
+      "opponent_hits": 0,
+      "status": "RESEARCH / PROVISIONAL",
+      "model_version": "nba-beta-binomial-v1",
+      "backtest_n": 0,
+      "source_urls": [
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4277919/gamelog?season=2026",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4277919/gamelog?season=2027"
+      ],
+      "generated_utc": "2026-11-18T17:56:47.507464+00:00",
+      "odds": null,
+      "edge": null,
+      "value_status": "RESEARCH ONLY",
+      "caveat": "Conditional on playing. Minutes, injury and opponent context shown, not causally adjusted. Thresholds are research queries, not bookmaker lines.",
+      "key": "nba:401910017:4277919:assists:4:nba-beta-binomial-v1",
+      "league": "nba",
+      "market": "nplus",
+      "selection": "hit",
+      "grade": "Pending",
+      "placement": "UNPLACED RESEARCH"
+    },
+    {
+      "probability": 0.11764705882352941,
+      "hits": 1,
+      "sample": 15,
+      "empirical_hit_rate": 0.06666666666666667,
+      "wilson95": [
+        0.011866588606194856,
+        0.2981707755242399
+      ],
+      "avg_minutes_last5": 24.4,
+      "avg_minutes_sample": 18.133333333333333,
+      "training_through": "2026-11-18T03:30:00+00:00",
+      "player": "Mo Bamba",
+      "player_id": "4277919",
+      "game_id": "401910017",
+      "game_date": "2026-11-19T03:00Z",
+      "stat": "points",
+      "threshold": 20,
+      "injury": {
+        "status": "Not listed in fetched report; availability unconfirmed",
+        "updated": null
+      },
+      "opponent_sample": 0,
+      "opponent_hits": 0,
+      "status": "RESEARCH / PROVISIONAL",
+      "model_version": "nba-beta-binomial-v1",
+      "backtest_n": 0,
+      "source_urls": [
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4277919/gamelog?season=2026",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4277919/gamelog?season=2027"
+      ],
+      "generated_utc": "2026-11-18T17:56:47.507464+00:00",
+      "odds": null,
+      "edge": null,
+      "value_status": "RESEARCH ONLY",
+      "caveat": "Conditional on playing. Minutes, injury and opponent context shown, not causally adjusted. Thresholds are research queries, not bookmaker lines.",
+      "key": "nba:401910017:4277919:points:20:nba-beta-binomial-v1",
+      "league": "nba",
+      "market": "nplus",
+      "selection": "hit",
+      "grade": "Pending",
+      "placement": "UNPLACED RESEARCH"
     }
   ],
   "forward_metrics": {
@@ -78394,6 +78738,6 @@
       ]
     }
   },
-  "updated_utc": "2026-11-18T09:02:01.997756+00:00",
+  "updated_utc": "2026-11-18T17:56:47.507464+00:00",
   "grading_errors": []
 }
