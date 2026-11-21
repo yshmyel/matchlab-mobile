@@ -95310,6 +95310,178 @@
       "selection": "hit",
       "grade": "Pending",
       "placement": "UNPLACED RESEARCH"
+    },
+    {
+      "probability": 0.22727272727272727,
+      "hits": 4,
+      "sample": 20,
+      "empirical_hit_rate": 0.2,
+      "wilson95": [
+        0.08065635327120002,
+        0.41602172202575993
+      ],
+      "avg_minutes_last5": 30.0,
+      "avg_minutes_sample": 27.8,
+      "training_through": "2026-11-14T01:00:00+00:00",
+      "player": "Ty Jerome",
+      "player_id": "4065733",
+      "game_id": "401910026",
+      "game_date": "2026-11-22T01:00Z",
+      "stat": "rebounds",
+      "threshold": 6,
+      "injury": {
+        "status": "Not listed in fetched report; availability unconfirmed",
+        "updated": null
+      },
+      "opponent_sample": 3,
+      "opponent_hits": 1,
+      "status": "RESEARCH / PROVISIONAL",
+      "model_version": "nba-beta-binomial-v1",
+      "backtest_n": 0,
+      "source_urls": [
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4065733/gamelog?season=2026",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4065733/gamelog?season=2027"
+      ],
+      "generated_utc": "2026-11-21T21:56:50.556856+00:00",
+      "odds": null,
+      "edge": null,
+      "value_status": "RESEARCH ONLY",
+      "caveat": "Conditional on playing. Minutes, injury and opponent context shown, not causally adjusted. Thresholds are research queries, not bookmaker lines.",
+      "key": "nba:401910026:4065733:rebounds:6:nba-beta-binomial-v1",
+      "league": "nba",
+      "market": "nplus",
+      "selection": "hit",
+      "grade": "Pending",
+      "placement": "UNPLACED RESEARCH"
+    },
+    {
+      "probability": 0.5,
+      "hits": 10,
+      "sample": 20,
+      "empirical_hit_rate": 0.5,
+      "wilson95": [
+        0.2992949144298199,
+        0.7007050855701801
+      ],
+      "avg_minutes_last5": 30.0,
+      "avg_minutes_sample": 27.8,
+      "training_through": "2026-11-14T01:00:00+00:00",
+      "player": "Ty Jerome",
+      "player_id": "4065733",
+      "game_id": "401910026",
+      "game_date": "2026-11-22T01:00Z",
+      "stat": "threes",
+      "threshold": 3,
+      "injury": {
+        "status": "Not listed in fetched report; availability unconfirmed",
+        "updated": null
+      },
+      "opponent_sample": 3,
+      "opponent_hits": 0,
+      "status": "RESEARCH / PROVISIONAL",
+      "model_version": "nba-beta-binomial-v1",
+      "backtest_n": 0,
+      "source_urls": [
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4065733/gamelog?season=2026",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4065733/gamelog?season=2027"
+      ],
+      "generated_utc": "2026-11-21T21:56:50.556856+00:00",
+      "odds": null,
+      "edge": null,
+      "value_status": "RESEARCH ONLY",
+      "caveat": "Conditional on playing. Minutes, injury and opponent context shown, not causally adjusted. Thresholds are research queries, not bookmaker lines.",
+      "key": "nba:401910026:4065733:threes:3:nba-beta-binomial-v1",
+      "league": "nba",
+      "market": "nplus",
+      "selection": "hit",
+      "grade": "Pending",
+      "placement": "UNPLACED RESEARCH"
+    },
+    {
+      "probability": 0.7272727272727273,
+      "hits": 15,
+      "sample": 20,
+      "empirical_hit_rate": 0.75,
+      "wilson95": [
+        0.5312949900419365,
+        0.888139947210597
+      ],
+      "avg_minutes_last5": 30.0,
+      "avg_minutes_sample": 27.8,
+      "training_through": "2026-11-14T01:00:00+00:00",
+      "player": "Ty Jerome",
+      "player_id": "4065733",
+      "game_id": "401910026",
+      "game_date": "2026-11-22T01:00Z",
+      "stat": "assists",
+      "threshold": 4,
+      "injury": {
+        "status": "Not listed in fetched report; availability unconfirmed",
+        "updated": null
+      },
+      "opponent_sample": 3,
+      "opponent_hits": 2,
+      "status": "RESEARCH / PROVISIONAL",
+      "model_version": "nba-beta-binomial-v1",
+      "backtest_n": 0,
+      "source_urls": [
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4065733/gamelog?season=2026",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4065733/gamelog?season=2027"
+      ],
+      "generated_utc": "2026-11-21T21:56:50.556856+00:00",
+      "odds": null,
+      "edge": null,
+      "value_status": "RESEARCH ONLY",
+      "caveat": "Conditional on playing. Minutes, injury and opponent context shown, not causally adjusted. Thresholds are research queries, not bookmaker lines.",
+      "key": "nba:401910026:4065733:assists:4:nba-beta-binomial-v1",
+      "league": "nba",
+      "market": "nplus",
+      "selection": "hit",
+      "grade": "Pending",
+      "placement": "UNPLACED RESEARCH"
+    },
+    {
+      "probability": 0.6363636363636364,
+      "hits": 13,
+      "sample": 20,
+      "empirical_hit_rate": 0.65,
+      "wilson95": [
+        0.43285051021946463,
+        0.8188104521320554
+      ],
+      "avg_minutes_last5": 30.0,
+      "avg_minutes_sample": 27.8,
+      "training_through": "2026-11-14T01:00:00+00:00",
+      "player": "Ty Jerome",
+      "player_id": "4065733",
+      "game_id": "401910026",
+      "game_date": "2026-11-22T01:00Z",
+      "stat": "points",
+      "threshold": 20,
+      "injury": {
+        "status": "Not listed in fetched report; availability unconfirmed",
+        "updated": null
+      },
+      "opponent_sample": 3,
+      "opponent_hits": 1,
+      "status": "RESEARCH / PROVISIONAL",
+      "model_version": "nba-beta-binomial-v1",
+      "backtest_n": 0,
+      "source_urls": [
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4065733/gamelog?season=2026",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4065733/gamelog?season=2027"
+      ],
+      "generated_utc": "2026-11-21T21:56:50.556856+00:00",
+      "odds": null,
+      "edge": null,
+      "value_status": "RESEARCH ONLY",
+      "caveat": "Conditional on playing. Minutes, injury and opponent context shown, not causally adjusted. Thresholds are research queries, not bookmaker lines.",
+      "key": "nba:401910026:4065733:points:20:nba-beta-binomial-v1",
+      "league": "nba",
+      "market": "nplus",
+      "selection": "hit",
+      "grade": "Pending",
+      "placement": "UNPLACED RESEARCH"
     }
   ],
   "forward_metrics": {
@@ -95374,6 +95546,6 @@
       ]
     }
   },
-  "updated_utc": "2026-11-21T21:56:14.398457+00:00",
+  "updated_utc": "2026-11-21T21:56:50.556856+00:00",
   "grading_errors": []
 }
