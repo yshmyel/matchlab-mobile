@@ -90404,10 +90404,18 @@
       "risk": "HIGH",
       "selection": "home",
       "key": "epl:401878756:1h:ht-poisson-shrink-v1",
-      "grade": "Pending",
+      "grade": "Loss",
       "home": "Aston Villa",
       "away": "Sunderland",
-      "placement": "UNPLACED RESEARCH"
+      "placement": "UNPLACED RESEARCH",
+      "actual": "draw",
+      "actual_score": {
+        "home": 0,
+        "away": 0
+      },
+      "result_basis": "halftime_score",
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/summary?event=401878756",
+      "graded_utc": "2026-11-21T16:27:59.591261+00:00"
     },
     {
       "probabilities": {
@@ -90442,10 +90450,18 @@
       "risk": "HIGH",
       "selection": "draw",
       "key": "serie_a:401875056:1h:ht-poisson-shrink-v1",
-      "grade": "Pending",
+      "grade": "Loss",
       "home": "Como",
       "away": "Cagliari",
-      "placement": "UNPLACED RESEARCH"
+      "placement": "UNPLACED RESEARCH",
+      "actual": "home",
+      "actual_score": {
+        "home": 1,
+        "away": 0
+      },
+      "result_basis": "halftime_score",
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/summary?event=401875056",
+      "graded_utc": "2026-11-21T16:27:59.591261+00:00"
     },
     {
       "probabilities": {
@@ -90480,10 +90496,18 @@
       "risk": "HIGH",
       "selection": "home",
       "key": "serie_a:401874981:1h:ht-poisson-shrink-v1",
-      "grade": "Pending",
+      "grade": "Win",
       "home": "Lazio",
       "away": "Lecce",
-      "placement": "UNPLACED RESEARCH"
+      "placement": "UNPLACED RESEARCH",
+      "actual": "home",
+      "actual_score": {
+        "home": 1,
+        "away": 0
+      },
+      "result_basis": "halftime_score",
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/summary?event=401874981",
+      "graded_utc": "2026-11-21T16:27:59.591261+00:00"
     },
     {
       "probabilities": {
@@ -90556,10 +90580,18 @@
       "risk": "HIGH",
       "selection": "draw",
       "key": "bundesliga:401884732:1h:ht-poisson-shrink-v1",
-      "grade": "Pending",
+      "grade": "Win",
       "home": "1. FC Union Berlin",
       "away": "RB Leipzig",
-      "placement": "UNPLACED RESEARCH"
+      "placement": "UNPLACED RESEARCH",
+      "actual": "draw",
+      "actual_score": {
+        "home": 1,
+        "away": 1
+      },
+      "result_basis": "halftime_score",
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/soccer/ger.1/summary?event=401884732",
+      "graded_utc": "2026-11-21T16:27:59.591261+00:00"
     },
     {
       "probabilities": {
@@ -90594,10 +90626,18 @@
       "risk": "HIGH",
       "selection": "draw",
       "key": "bundesliga:401884731:1h:ht-poisson-shrink-v1",
-      "grade": "Pending",
+      "grade": "Win",
       "home": "Borussia Mönchengladbach",
       "away": "Borussia Dortmund",
-      "placement": "UNPLACED RESEARCH"
+      "placement": "UNPLACED RESEARCH",
+      "actual": "draw",
+      "actual_score": {
+        "home": 0,
+        "away": 0
+      },
+      "result_basis": "halftime_score",
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/soccer/ger.1/summary?event=401884731",
+      "graded_utc": "2026-11-21T16:27:59.591261+00:00"
     },
     {
       "probabilities": {
@@ -90632,10 +90672,18 @@
       "risk": "HIGH",
       "selection": "draw",
       "key": "bundesliga:401884734:1h:ht-poisson-shrink-v1",
-      "grade": "Pending",
+      "grade": "Loss",
       "home": "Eintracht Frankfurt",
       "away": "TSG Hoffenheim",
-      "placement": "UNPLACED RESEARCH"
+      "placement": "UNPLACED RESEARCH",
+      "actual": "home",
+      "actual_score": {
+        "home": 1,
+        "away": 0
+      },
+      "result_basis": "halftime_score",
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/soccer/ger.1/summary?event=401884734",
+      "graded_utc": "2026-11-21T16:27:59.591261+00:00"
     },
     {
       "probabilities": {
@@ -95150,23 +95198,23 @@
   ],
   "forward_metrics": {
     "soccer": {
-      "n": 15,
-      "accuracy": 0.4,
-      "log_loss": 1.0642796425959065,
-      "brier": 0.6482667579179443,
-      "ece": 0.085941463607724,
+      "n": 21,
+      "accuracy": 0.42857142857142855,
+      "log_loss": 1.0344146149338367,
+      "brier": 0.6287437433294717,
+      "ece": 0.07711344355503527,
       "calibration_bins": [
         {
           "lower": 0.3,
-          "n": 9,
-          "confidence": 0.37584598292885385,
-          "accuracy": 0.4444444444444444
+          "n": 13,
+          "confidence": 0.37594328971970675,
+          "accuracy": 0.46153846153846156
         },
         {
           "lower": 0.4,
-          "n": 6,
-          "confidence": 0.4452893000792575,
-          "accuracy": 0.3333333333333333
+          "n": 8,
+          "confidence": 0.438330635126491,
+          "accuracy": 0.375
         }
       ]
     },
@@ -95210,6 +95258,6 @@
       ]
     }
   },
-  "updated_utc": "2026-11-21T11:40:10.910796+00:00",
+  "updated_utc": "2026-11-21T16:27:59.591261+00:00",
   "grading_errors": []
 }
