@@ -95892,10 +95892,18 @@
       "risk": "HIGH",
       "selection": "home",
       "key": "serie_a:401874989:1h:ht-poisson-shrink-v1",
-      "grade": "Pending",
+      "grade": "Win",
       "home": "AC Milan",
       "away": "Frosinone",
-      "placement": "UNPLACED RESEARCH"
+      "placement": "UNPLACED RESEARCH",
+      "actual": "home",
+      "actual_score": {
+        "home": 2,
+        "away": 1
+      },
+      "result_basis": "halftime_score",
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/summary?event=401874989",
+      "graded_utc": "2026-11-22T17:53:31.770746+00:00"
     },
     {
       "probabilities": {
@@ -100754,17 +100762,17 @@
   ],
   "forward_metrics": {
     "soccer": {
-      "n": 23,
-      "accuracy": 0.43478260869565216,
-      "log_loss": 1.054839550184413,
-      "brier": 0.6399477286240705,
-      "ece": 0.1146207026227767,
+      "n": 24,
+      "accuracy": 0.4583333333333333,
+      "log_loss": 1.0532928737794065,
+      "brier": 0.638877528368646,
+      "ece": 0.1364524116114112,
       "calibration_bins": [
         {
           "lower": 0.3,
-          "n": 14,
-          "confidence": 0.37675654851793444,
-          "accuracy": 0.5
+          "n": 15,
+          "confidence": 0.37573399739340513,
+          "accuracy": 0.5333333333333333
         },
         {
           "lower": 0.4,
@@ -100814,6 +100822,6 @@
       ]
     }
   },
-  "updated_utc": "2026-11-22T14:51:17.777063+00:00",
+  "updated_utc": "2026-11-22T17:53:31.770746+00:00",
   "grading_errors": []
 }
