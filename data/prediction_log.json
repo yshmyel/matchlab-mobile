@@ -95938,10 +95938,18 @@
       "risk": "HIGH",
       "selection": "draw",
       "key": "serie_a:401875001:1h:ht-poisson-shrink-v1",
-      "grade": "Pending",
+      "grade": "Loss",
       "home": "Atalanta",
       "away": "Internazionale",
-      "placement": "UNPLACED RESEARCH"
+      "placement": "UNPLACED RESEARCH",
+      "actual": "away",
+      "actual_score": {
+        "home": 1,
+        "away": 2
+      },
+      "result_basis": "halftime_score",
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/summary?event=401875001",
+      "graded_utc": "2026-11-22T20:59:36.373141+00:00"
     },
     {
       "probability": 0.05324021520202245,
@@ -101106,17 +101114,17 @@
   ],
   "forward_metrics": {
     "soccer": {
-      "n": 24,
-      "accuracy": 0.4583333333333333,
-      "log_loss": 1.0532928737794065,
-      "brier": 0.638877528368646,
-      "ece": 0.1364524116114112,
+      "n": 25,
+      "accuracy": 0.44,
+      "log_loss": 1.0599209230179967,
+      "brier": 0.6431006637214332,
+      "ece": 0.11674187117003096,
       "calibration_bins": [
         {
           "lower": 0.3,
-          "n": 15,
-          "confidence": 0.37573399739340513,
-          "accuracy": 0.5333333333333333
+          "n": 16,
+          "confidence": 0.37452006627026074,
+          "accuracy": 0.5
         },
         {
           "lower": 0.4,
@@ -101166,6 +101174,6 @@
       ]
     }
   },
-  "updated_utc": "2026-11-22T17:53:48.534308+00:00",
+  "updated_utc": "2026-11-22T20:59:36.373141+00:00",
   "grading_errors": []
 }
