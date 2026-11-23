@@ -101724,10 +101724,18 @@
       "risk": "HIGH",
       "selection": "draw",
       "key": "epl:401879237:1h:ht-poisson-shrink-v1",
-      "grade": "Pending",
+      "grade": "Loss",
       "home": "Brentford",
       "away": "Everton",
-      "placement": "UNPLACED RESEARCH"
+      "placement": "UNPLACED RESEARCH",
+      "actual": "home",
+      "actual_score": {
+        "home": 2,
+        "away": 0
+      },
+      "result_basis": "halftime_score",
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/summary?event=401879237",
+      "graded_utc": "2026-11-23T21:59:41.156781+00:00"
     },
     {
       "probabilities": {
@@ -101762,10 +101770,18 @@
       "risk": "HIGH",
       "selection": "draw",
       "key": "serie_a:401875009:1h:ht-poisson-shrink-v1",
-      "grade": "Pending",
+      "grade": "Loss",
       "home": "Monza",
       "away": "Fiorentina",
-      "placement": "UNPLACED RESEARCH"
+      "placement": "UNPLACED RESEARCH",
+      "actual": "home",
+      "actual_score": {
+        "home": 1,
+        "away": 0
+      },
+      "result_basis": "halftime_score",
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/summary?event=401875009",
+      "graded_utc": "2026-11-23T21:59:41.156781+00:00"
     },
     {
       "probability": 0.4077976732953601,
@@ -108990,27 +109006,371 @@
       "selection": "hit",
       "grade": "Pending",
       "placement": "UNPLACED RESEARCH"
+    },
+    {
+      "probability": 0.22687587207954574,
+      "hits": 5,
+      "sample": 20,
+      "empirical_hit_rate": 0.25,
+      "wilson95": [
+        0.11186005278940309,
+        0.4687050099580636
+      ],
+      "avg_minutes_last5": 35.6,
+      "avg_minutes_sample": 32.4,
+      "training_through": "2026-11-21T01:00:00+00:00",
+      "player": "Shai Gilgeous-Alexander",
+      "player_id": "4278073",
+      "game_id": "401910038",
+      "game_date": "2026-11-24T00:30Z",
+      "stat": "rebounds",
+      "threshold": 6,
+      "injury": {
+        "status": "Not listed in fetched report; availability unconfirmed",
+        "updated": null
+      },
+      "opponent_sample": 2,
+      "opponent_hits": 1,
+      "status": "RESEARCH / PROVISIONAL",
+      "model_version": "nba-beta-binomial-v1",
+      "backtest_n": 17,
+      "source_urls": [
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4278073/gamelog?season=2026",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4278073/gamelog?season=2027"
+      ],
+      "generated_utc": "2026-11-23T21:59:41.156781+00:00",
+      "odds": null,
+      "edge": null,
+      "value_status": "RESEARCH ONLY",
+      "caveat": "Conditional on playing. Minutes, injury and opponent context shown, not causally adjusted. Thresholds are research queries, not bookmaker lines.",
+      "key": "nba:401910038:4278073:rebounds:6:nba-beta-binomial-v1",
+      "league": "nba",
+      "market": "nplus",
+      "selection": "hit",
+      "grade": "Pending",
+      "placement": "UNPLACED RESEARCH"
+    },
+    {
+      "probability": 0.469650429656516,
+      "hits": 9,
+      "sample": 20,
+      "empirical_hit_rate": 0.45,
+      "wilson95": [
+        0.25819502085709295,
+        0.6579179916924003
+      ],
+      "avg_minutes_last5": 35.6,
+      "avg_minutes_sample": 32.4,
+      "training_through": "2026-11-21T01:00:00+00:00",
+      "player": "Shai Gilgeous-Alexander",
+      "player_id": "4278073",
+      "game_id": "401910038",
+      "game_date": "2026-11-24T00:30Z",
+      "stat": "threes",
+      "threshold": 3,
+      "injury": {
+        "status": "Not listed in fetched report; availability unconfirmed",
+        "updated": null
+      },
+      "opponent_sample": 2,
+      "opponent_hits": 0,
+      "status": "RESEARCH / PROVISIONAL",
+      "model_version": "nba-beta-binomial-v1",
+      "backtest_n": 17,
+      "source_urls": [
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4278073/gamelog?season=2026",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4278073/gamelog?season=2027"
+      ],
+      "generated_utc": "2026-11-23T21:59:41.156781+00:00",
+      "odds": null,
+      "edge": null,
+      "value_status": "RESEARCH ONLY",
+      "caveat": "Conditional on playing. Minutes, injury and opponent context shown, not causally adjusted. Thresholds are research queries, not bookmaker lines.",
+      "key": "nba:401910038:4278073:threes:3:nba-beta-binomial-v1",
+      "league": "nba",
+      "market": "nplus",
+      "selection": "hit",
+      "grade": "Pending",
+      "placement": "UNPLACED RESEARCH"
+    },
+    {
+      "probability": 0.5909090909090909,
+      "hits": 12,
+      "sample": 20,
+      "empirical_hit_rate": 0.6,
+      "wilson95": [
+        0.3865779423152061,
+        0.7811960325858074
+      ],
+      "avg_minutes_last5": 35.6,
+      "avg_minutes_sample": 32.4,
+      "training_through": "2026-11-21T01:00:00+00:00",
+      "player": "Shai Gilgeous-Alexander",
+      "player_id": "4278073",
+      "game_id": "401910038",
+      "game_date": "2026-11-24T00:30Z",
+      "stat": "assists",
+      "threshold": 4,
+      "injury": {
+        "status": "Not listed in fetched report; availability unconfirmed",
+        "updated": null
+      },
+      "opponent_sample": 2,
+      "opponent_hits": 2,
+      "status": "RESEARCH / PROVISIONAL",
+      "model_version": "nba-beta-binomial-v1",
+      "backtest_n": 17,
+      "source_urls": [
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4278073/gamelog?season=2026",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4278073/gamelog?season=2027"
+      ],
+      "generated_utc": "2026-11-23T21:59:41.156781+00:00",
+      "odds": null,
+      "edge": null,
+      "value_status": "RESEARCH ONLY",
+      "caveat": "Conditional on playing. Minutes, injury and opponent context shown, not causally adjusted. Thresholds are research queries, not bookmaker lines.",
+      "key": "nba:401910038:4278073:assists:4:nba-beta-binomial-v1",
+      "league": "nba",
+      "market": "nplus",
+      "selection": "hit",
+      "grade": "Pending",
+      "placement": "UNPLACED RESEARCH"
+    },
+    {
+      "probability": 0.9467597847979775,
+      "hits": 19,
+      "sample": 20,
+      "empirical_hit_rate": 0.95,
+      "wilson95": [
+        0.7638641064874331,
+        0.9911187805671268
+      ],
+      "avg_minutes_last5": 35.6,
+      "avg_minutes_sample": 32.4,
+      "training_through": "2026-11-21T01:00:00+00:00",
+      "player": "Shai Gilgeous-Alexander",
+      "player_id": "4278073",
+      "game_id": "401910038",
+      "game_date": "2026-11-24T00:30Z",
+      "stat": "points",
+      "threshold": 20,
+      "injury": {
+        "status": "Not listed in fetched report; availability unconfirmed",
+        "updated": null
+      },
+      "opponent_sample": 2,
+      "opponent_hits": 2,
+      "status": "RESEARCH / PROVISIONAL",
+      "model_version": "nba-beta-binomial-v1",
+      "backtest_n": 17,
+      "source_urls": [
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4278073/gamelog?season=2026",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4278073/gamelog?season=2027"
+      ],
+      "generated_utc": "2026-11-23T21:59:41.156781+00:00",
+      "odds": null,
+      "edge": null,
+      "value_status": "RESEARCH ONLY",
+      "caveat": "Conditional on playing. Minutes, injury and opponent context shown, not causally adjusted. Thresholds are research queries, not bookmaker lines.",
+      "key": "nba:401910038:4278073:points:20:nba-beta-binomial-v1",
+      "league": "nba",
+      "market": "nplus",
+      "selection": "hit",
+      "grade": "Pending",
+      "placement": "UNPLACED RESEARCH"
+    },
+    {
+      "probability": 0.55,
+      "hits": 10,
+      "sample": 18,
+      "empirical_hit_rate": 0.5555555555555556,
+      "wilson95": [
+        0.3371606942825164,
+        0.7544076889861088
+      ],
+      "avg_minutes_last5": 26.6,
+      "avg_minutes_sample": 18.77777777777778,
+      "training_through": "2026-11-23T00:00:00+00:00",
+      "player": "Mo Bamba",
+      "player_id": "4277919",
+      "game_id": "401910044",
+      "game_date": "2026-11-24T03:00Z",
+      "stat": "rebounds",
+      "threshold": 6,
+      "injury": {
+        "status": "Not listed in fetched report; availability unconfirmed",
+        "updated": null
+      },
+      "opponent_sample": 1,
+      "opponent_hits": 1,
+      "status": "RESEARCH / PROVISIONAL",
+      "model_version": "nba-beta-binomial-v1",
+      "backtest_n": 0,
+      "source_urls": [
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4277919/gamelog?season=2026",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4277919/gamelog?season=2027"
+      ],
+      "generated_utc": "2026-11-23T21:59:41.156781+00:00",
+      "odds": null,
+      "edge": null,
+      "value_status": "RESEARCH ONLY",
+      "caveat": "Conditional on playing. Minutes, injury and opponent context shown, not causally adjusted. Thresholds are research queries, not bookmaker lines.",
+      "key": "nba:401910044:4277919:rebounds:6:nba-beta-binomial-v1",
+      "league": "nba",
+      "market": "nplus",
+      "selection": "hit",
+      "grade": "Pending",
+      "placement": "UNPLACED RESEARCH"
+    },
+    {
+      "probability": 0.1,
+      "hits": 1,
+      "sample": 18,
+      "empirical_hit_rate": 0.05555555555555555,
+      "wilson95": [
+        0.009874935830924525,
+        0.2575779980200754
+      ],
+      "avg_minutes_last5": 26.6,
+      "avg_minutes_sample": 18.77777777777778,
+      "training_through": "2026-11-23T00:00:00+00:00",
+      "player": "Mo Bamba",
+      "player_id": "4277919",
+      "game_id": "401910044",
+      "game_date": "2026-11-24T03:00Z",
+      "stat": "threes",
+      "threshold": 3,
+      "injury": {
+        "status": "Not listed in fetched report; availability unconfirmed",
+        "updated": null
+      },
+      "opponent_sample": 1,
+      "opponent_hits": 0,
+      "status": "RESEARCH / PROVISIONAL",
+      "model_version": "nba-beta-binomial-v1",
+      "backtest_n": 0,
+      "source_urls": [
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4277919/gamelog?season=2026",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4277919/gamelog?season=2027"
+      ],
+      "generated_utc": "2026-11-23T21:59:41.156781+00:00",
+      "odds": null,
+      "edge": null,
+      "value_status": "RESEARCH ONLY",
+      "caveat": "Conditional on playing. Minutes, injury and opponent context shown, not causally adjusted. Thresholds are research queries, not bookmaker lines.",
+      "key": "nba:401910044:4277919:threes:3:nba-beta-binomial-v1",
+      "league": "nba",
+      "market": "nplus",
+      "selection": "hit",
+      "grade": "Pending",
+      "placement": "UNPLACED RESEARCH"
+    },
+    {
+      "probability": 0.1,
+      "hits": 1,
+      "sample": 18,
+      "empirical_hit_rate": 0.05555555555555555,
+      "wilson95": [
+        0.009874935830924525,
+        0.2575779980200754
+      ],
+      "avg_minutes_last5": 26.6,
+      "avg_minutes_sample": 18.77777777777778,
+      "training_through": "2026-11-23T00:00:00+00:00",
+      "player": "Mo Bamba",
+      "player_id": "4277919",
+      "game_id": "401910044",
+      "game_date": "2026-11-24T03:00Z",
+      "stat": "assists",
+      "threshold": 4,
+      "injury": {
+        "status": "Not listed in fetched report; availability unconfirmed",
+        "updated": null
+      },
+      "opponent_sample": 1,
+      "opponent_hits": 0,
+      "status": "RESEARCH / PROVISIONAL",
+      "model_version": "nba-beta-binomial-v1",
+      "backtest_n": 0,
+      "source_urls": [
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4277919/gamelog?season=2026",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4277919/gamelog?season=2027"
+      ],
+      "generated_utc": "2026-11-23T21:59:41.156781+00:00",
+      "odds": null,
+      "edge": null,
+      "value_status": "RESEARCH ONLY",
+      "caveat": "Conditional on playing. Minutes, injury and opponent context shown, not causally adjusted. Thresholds are research queries, not bookmaker lines.",
+      "key": "nba:401910044:4277919:assists:4:nba-beta-binomial-v1",
+      "league": "nba",
+      "market": "nplus",
+      "selection": "hit",
+      "grade": "Pending",
+      "placement": "UNPLACED RESEARCH"
+    },
+    {
+      "probability": 0.1,
+      "hits": 1,
+      "sample": 18,
+      "empirical_hit_rate": 0.05555555555555555,
+      "wilson95": [
+        0.009874935830924525,
+        0.2575779980200754
+      ],
+      "avg_minutes_last5": 26.6,
+      "avg_minutes_sample": 18.77777777777778,
+      "training_through": "2026-11-23T00:00:00+00:00",
+      "player": "Mo Bamba",
+      "player_id": "4277919",
+      "game_id": "401910044",
+      "game_date": "2026-11-24T03:00Z",
+      "stat": "points",
+      "threshold": 20,
+      "injury": {
+        "status": "Not listed in fetched report; availability unconfirmed",
+        "updated": null
+      },
+      "opponent_sample": 1,
+      "opponent_hits": 0,
+      "status": "RESEARCH / PROVISIONAL",
+      "model_version": "nba-beta-binomial-v1",
+      "backtest_n": 0,
+      "source_urls": [
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4277919/gamelog?season=2026",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4277919/gamelog?season=2027"
+      ],
+      "generated_utc": "2026-11-23T21:59:41.156781+00:00",
+      "odds": null,
+      "edge": null,
+      "value_status": "RESEARCH ONLY",
+      "caveat": "Conditional on playing. Minutes, injury and opponent context shown, not causally adjusted. Thresholds are research queries, not bookmaker lines.",
+      "key": "nba:401910044:4277919:points:20:nba-beta-binomial-v1",
+      "league": "nba",
+      "market": "nplus",
+      "selection": "hit",
+      "grade": "Pending",
+      "placement": "UNPLACED RESEARCH"
     }
   ],
   "forward_metrics": {
     "soccer": {
-      "n": 25,
-      "accuracy": 0.44,
-      "log_loss": 1.0599209230179967,
-      "brier": 0.6431006637214332,
-      "ece": 0.11674187117003096,
+      "n": 27,
+      "accuracy": 0.4074074074074074,
+      "log_loss": 1.0550513799237924,
+      "brier": 0.6417727348044373,
+      "ece": 0.11252391653592789,
       "calibration_bins": [
         {
           "lower": 0.3,
-          "n": 16,
-          "confidence": 0.37452006627026074,
-          "accuracy": 0.5
+          "n": 17,
+          "confidence": 0.37355838455687174,
+          "accuracy": 0.47058823529411764
         },
         {
           "lower": 0.4,
-          "n": 9,
-          "confidence": 0.4345408710638829,
-          "accuracy": 0.3333333333333333
+          "n": 10,
+          "confidence": 0.43886382839368726,
+          "accuracy": 0.3
         }
       ]
     },
@@ -109054,6 +109414,6 @@
       ]
     }
   },
-  "updated_utc": "2026-11-23T09:42:13.191597+00:00",
+  "updated_utc": "2026-11-23T21:59:41.156781+00:00",
   "grading_errors": []
 }
