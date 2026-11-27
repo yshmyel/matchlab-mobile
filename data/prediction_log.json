@@ -119712,10 +119712,18 @@
       "risk": "HIGH",
       "selection": "draw",
       "key": "serie_a:401875004:1h:ht-poisson-shrink-v1",
-      "grade": "Pending",
+      "grade": "Win",
       "home": "Venezia",
       "away": "Bologna",
-      "placement": "UNPLACED RESEARCH"
+      "placement": "UNPLACED RESEARCH",
+      "actual": "draw",
+      "actual_score": {
+        "home": 0,
+        "away": 0
+      },
+      "result_basis": "halftime_score",
+      "grade_source": "https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/summary?event=401875004",
+      "graded_utc": "2026-11-27T22:38:14.211525+00:00"
     },
     {
       "probability": 0.0905215496962608,
@@ -127976,11 +127984,11 @@
   ],
   "forward_metrics": {
     "soccer": {
-      "n": 27,
-      "accuracy": 0.4074074074074074,
-      "log_loss": 1.0550513799237924,
-      "brier": 0.6417727348044373,
-      "ece": 0.11252391653592789,
+      "n": 28,
+      "accuracy": 0.42857142857142855,
+      "log_loss": 1.0468170259614396,
+      "brier": 0.6358613788726967,
+      "ece": 0.0884501617362338,
       "calibration_bins": [
         {
           "lower": 0.3,
@@ -127990,9 +127998,9 @@
         },
         {
           "lower": 0.4,
-          "n": 10,
-          "confidence": 0.43886382839368726,
-          "accuracy": 0.3
+          "n": 11,
+          "confidence": 0.43882700600739694,
+          "accuracy": 0.36363636363636365
         }
       ]
     },
@@ -128036,6 +128044,6 @@
       ]
     }
   },
-  "updated_utc": "2026-11-27T13:45:27.073120+00:00",
+  "updated_utc": "2026-11-27T22:38:14.211525+00:00",
   "grading_errors": []
 }
